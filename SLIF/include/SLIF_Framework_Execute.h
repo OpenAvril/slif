@@ -3,10 +3,10 @@
 #include <cstdint>
 #include <list>
 namespace slif {
-    class slif_Framework_Execute {
+    class SLIF_Framework_Execute {
     public:
-        slif_Framework_Execute(uint8_t threadId);
-        virtual ~slif_Framework_Execute();
+        SLIF_Framework_Execute(uint8_t threadId);
+        virtual ~SLIF_Framework_Execute();
         void dyn_REG_boot1_DEFINE_slif_Framework_Execute(uint8_t threadId);
         void dyn_REG_boot2_SUBSTANTIATE_slif_Framework_Execute(uint8_t threadId);
         void dyn_REG_boot3_INITIALISE_slif_Framework_Execute(uint8_t threadId);

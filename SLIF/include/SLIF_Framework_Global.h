@@ -3,10 +3,10 @@
 #include <list>
 #include <cstdint>
 namespace slif {
-    class slif_Framework_Global {
+    class SLIF_Framework_Global {
     public:
-        slif_Framework_Global(uint8_t threadId);
-        ~slif_Framework_Global();
+        SLIF_Framework_Global(uint8_t threadId);
+        ~SLIF_Framework_Global();
         static void boot0_CLASS_DECLARE_slif_Framework_Global(uint8_t threadId);
         static void boot1_CLASS_DEFINE_slif_Framework_Global(uint8_t threadId);
         static void boot3_CLASS_INITIALISE_slif_Framework_Global(uint8_t threadId);
