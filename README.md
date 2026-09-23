@@ -20,27 +20,54 @@
 ### Dependencies.
 #### Ubuntu Terminal.
 ````
-sudo apt update
+sudo apt install git
+````
+
+````
 sudo apt install build-essential
-sudo apt install cmake gcc g++ clang
-sudo apt install cmake=4.2.3* cmake-data=4.2.3*
+````
+
+````
+sudo apt install cmake
+````
+
+````
+sudo apt install snapd
+````
+
+````
+sudo snap install clion --classic
 ````
 
 #### CLion plugins.
-JetBrains remembers your selected plugings, do initial set of...
 - Native Build Tools.
 - Cmake.
 - CLion C and C++.
 
 ---
 ## Building - Compiler Terminal Commands.
-Open individual each project in its own window and...
+### CLIB_LaunchEnableForConcurrentThreadsAt_END.so
+
+*** Load Root CMake Project ***
+
 ````
 cmake -B build
 ````
 ````
 cmake --build build
 ````
+*** manual copy build library file to libs folder in TESTBENCH ***
+
+*** Reload Root CMake Project ***
+
+````
+cmake -B build
+````
+````
+cmake --build build
+````
+
+*** run TESTBENCH ***
 
 ---
 ## Implementation.
