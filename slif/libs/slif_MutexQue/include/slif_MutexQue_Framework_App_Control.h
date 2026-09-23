@@ -1,24 +1,23 @@
 #ifndef slif_MutexQue_FRAMEWORK_APP_CONTROL_H
 #define slif_MutexQue_FRAMEWORK_APP_CONTROL_H
-#include "../include/slif_MutexQueQue_Framework.h"
 #include <array>
 #include <cstdint>
 #include <list>
 namespace slif {
-    class slif_MutexQueQue_Framework_App_Control {
+    class slif_MutexQue_Framework_App_Control {
     public:
-        slif_MutexQueQue_Framework_App_Control(uint8_t threadId);
-        ~slif_MutexQueQue_Framework_App_Control();
-        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_dynamicIn(uint8_t threadId, class slif_MutexQueQue_Framework* obj, uint8_t coreId);
-        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_dynamicOut(uint8_t threadId, class slif_MutexQueQue_Framework* obj, uint8_t coreId);
-        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_writeEnable_Activate(uint8_t threadId, class slif_MutexQueQue_Framework* obj, uint8_t coreId);
-        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_writeEnable_ShiftQueValues(uint8_t threadId, class slif_MutexQueQue_Framework* obj, uint8_t coreId_A, uint8_t coreId_B);
-        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_writeEnable_SortQue(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
-        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_writeQue_Update(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
-        void dyn_REG_boot1_DEFINE_slif_MutexQue_Framework_App_Control(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
-        void dyn_REG_boot2_SUBSTANTIATE_slif_MutexQue_Framework_App_Control(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
-        void dyn_REG_boot3_INITIALISE_slif_MutexQue_Framework_App_Control(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
-        void dyn_REG_boot3_INITIALISE_slif_MutexQue_Framework_App_Control_For_New_Access_Count(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
+        slif_MutexQue_Framework_App_Control(uint8_t threadId);
+        ~slif_MutexQue_Framework_App_Control();
+        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_dynamicIn(uint8_t threadId, class slif_MutexQue_Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_dynamicOut(uint8_t threadId, class slif_MutexQue_Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_writeEnable_Activate(uint8_t threadId, class slif_MutexQue_Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_writeEnable_ShiftQueValues(uint8_t threadId, class slif_MutexQue_Framework* obj, uint8_t coreId_A, uint8_t coreId_B);
+        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_writeEnable_SortQue(uint8_t threadId, class slif_MutexQue_Framework* obj);
+        void dyn_APP_FUNCT_slif_MutexQue_Framework_App_Control_writeQue_Update(uint8_t threadId, class slif_MutexQue_Framework* obj);
+        void dyn_REG_boot1_DEFINE_slif_MutexQue_Framework_App_Control(uint8_t threadId, class slif_MutexQue_Framework* obj);
+        void dyn_REG_boot2_SUBSTANTIATE_slif_MutexQue_Framework_App_Control(uint8_t threadId, class slif_MutexQue_Framework* obj);
+        void dyn_REG_boot3_INITIALISE_slif_MutexQue_Framework_App_Control(uint8_t threadId, class slif_MutexQue_Framework* obj);
+        void dyn_REG_boot3_INITIALISE_slif_MutexQue_Framework_App_Control_For_New_Access_Count(uint8_t threadId, class slif_MutexQue_Framework* obj);
         bool dyn_REG_get_FLAG_slif_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_ONE(uint8_t threadId);
         bool dyn_REG_get_FLAG_slif_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(uint8_t threadId);
         bool dyn_REG_get_FLAG_slif_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t threadId);
@@ -69,10 +68,10 @@ namespace slif {
         static void stat_REG_boot2_SUBSTANTIATE_ptr_FLAG_slif_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t threadId);
         static void stat_REG_boot2_SUBSTANTIATE_ptr_FLAG_slif_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(uint8_t threadId);
         static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_3STATE_FLAG_WriteState(uint8_t threadId);
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_WriteACTIVE_Count_For_threadId(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_WriteIDLE_Count_For_threadId(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_WriteWAIT_Count_For_threadId(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_ptr_QUE_Of_threadId_To_WRITE(uint8_t threadId, class slif_MutexQueQue_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_WriteACTIVE_Count_For_threadId(uint8_t threadId, class slif_MutexQue_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_WriteIDLE_Count_For_threadId(uint8_t threadId, class slif_MutexQue_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_WriteWAIT_Count_For_threadId(uint8_t threadId, class slif_MutexQue_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_ptr_QUE_Of_threadId_To_WRITE(uint8_t threadId, class slif_MutexQue_Framework* obj);
         static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(uint8_t threadId);
         static void stat_REG_boot2_SUBSTANTIATE_ptr_slif_MutexQue_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(uint8_t threadId);
         static void stat_REG_boot3_INITIALISE_ptr_FLAG_slif_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_ONE(uint8_t threadId);
@@ -80,10 +79,10 @@ namespace slif {
         static void stat_REG_boot3_INITIALISE_ptr_FLAG_slif_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t threadId);
         static void stat_REG_boot3_INITIALISE_ptr_FLAG_slif_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(uint8_t threadId);
         static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_3STATE_FLAG_WriteState(uint8_t threadId);
-        static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_WriteACTIVE_Count_For_threadId(uint8_t threadId, slif_MutexQueQue_Framework* obj);
-        static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_WriteIDLE_Count_For_threadId(uint8_t threadId, slif_MutexQueQue_Framework* obj);
-        static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_WriteWAIT_Count_For_threadIdd(uint8_t threadId, slif_MutexQueQue_Framework* obj);
-        static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_ptr_QUE_Of_threadId_To_WRITE(uint8_t threadId, slif_MutexQueQue_Framework* obj);
+        static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_WriteACTIVE_Count_For_threadId(uint8_t threadId, slif_MutexQue_Framework* obj);
+        static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_WriteIDLE_Count_For_threadId(uint8_t threadId, slif_MutexQue_Framework* obj);
+        static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_WriteWAIT_Count_For_threadIdd(uint8_t threadId, slif_MutexQue_Framework* obj);
+        static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_ptr_QUE_Of_threadId_To_WRITE(uint8_t threadId, slif_MutexQue_Framework* obj);
         static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_writeCycle_Try_WriteStartthreadId_Index(uint8_t threadId);
         static void stat_REG_boot3_INITIALISE_ptr_slif_MutexQue_Framework_App_Control_writeCycle_Try_WriteEndthreadId_Index(uint8_t threadId);
         static bool stat_REG_get_FLAG_slif_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_ONE(uint8_t threadId);

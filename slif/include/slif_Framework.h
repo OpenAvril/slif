@@ -1,7 +1,6 @@
-#ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_ENDS_slif_Framework_H
-#define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_ENDS_slif_Framework_H
-#include "../include/slif_Framework_App.h"
-#include "../include/slif_Framework_Global.h"
+#ifndef CLIB_PACKAGE_SLIF_FRAMEWORK_H
+#define CLIB_PACKAGE_SLIF_FRAMEWORK_H
+#include "slif_Framework_Global.h"
 namespace slif {
     class slif_Framework {
     public:

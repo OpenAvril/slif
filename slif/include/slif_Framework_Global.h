@@ -1,5 +1,5 @@
-#ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_ENDS_slif_Framework_Global_H
-#define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_ENDS_slif_Framework_Global_H
+#ifndef CLIB_PACKAGE_SLIF_FRAMEWORK_GLOBAL_H
+#define CLIB_PACKAGE_SLIF_FRAMEWORK_GLOBAL_H
 #include <list>
 #include <cstdint>
 namespace slif {

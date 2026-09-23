@@ -3,10 +3,10 @@
 #include <array>
 #include <cstdint>
 namespace slif {
-    class slif_MutexQueQue_Framework_Global {
+    class slif_MutexQue_Framework_Global {
     public:
-        slif_MutexQueQue_Framework_Global(uint8_t threadId);
-        ~slif_MutexQueQue_Framework_Global();
+        slif_MutexQue_Framework_Global(uint8_t threadId);
+        ~slif_MutexQue_Framework_Global();
         void dyn_REG_boot0_DECLARE_slif_MutexQue_Global(uint8_t threadId);
         void dyn_REG_boot1_DEFINE_slif_MutexQue_Global(uint8_t threadId);
         void dyn_REG_boot2_SUBSTANTIATE_slif_MutexQue_Global(uint8_t threadId);

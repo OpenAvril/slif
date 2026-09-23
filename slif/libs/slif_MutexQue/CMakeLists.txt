@@ -5,11 +5,11 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(slif_MutexQue STATIC
-        src/slif_MutexQueQue.cpp
-        src/slif_MutexQueQue_Framework.cpp
-        src/slif_MutexQueQue_Framework_Global.cpp
-        src/slif_MutexQueQue_Framework_App.cpp
-        src/slif_MutexQueQue_Framework_App_Control.cpp
+        src/slif_MutexQue.cpp
+        src/slif_MutexQue_Framework.cpp
+        src/slif_MutexQue_Framework_Global.cpp
+        src/slif_MutexQue_Framework_App.cpp
+        src/slif_MutexQue_Framework_App_Control.cpp
 )
 
 target_include_directories(${PROJECT_NAME}

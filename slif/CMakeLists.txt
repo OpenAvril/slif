@@ -16,7 +16,6 @@ add_library(slif STATIC
         libs/slif_LaunchQue/src/slif_LaunchQue_Framework_App.cpp
         libs/slif_LaunchQue/src/slif_LaunchQue_Framework_App_Control.cpp
         libs/slif_LaunchQue/src/slif_LaunchQue_Framework_Execute.cpp
-        src/slif.cpp
         src/slif_Framework.cpp
         src/slif_Framework_Global.cpp
         src/slif_Framework_Execute.cpp
