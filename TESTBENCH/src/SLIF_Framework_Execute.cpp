@@ -1,9 +1,9 @@
-#include "SLIF_Framework_Execute.h"
-#include "SLIF_MutexQue.h"
-#include "SLIF_MutexQue_Framework.h"
-#include "SLIF_MutexQue_Framework_App.h"
-#include "SLIF_MutexQue_Framework_App_Control.h"
-#include "SLIF_MutexQue_Framework_Global.h"
+#include "../include/SLIF_Framework_Execute.h"
+#include "../include/SLIF_MutexQue.h"
+#include "../include/SLIF_MutexQue_Framework.h"
+#include "../include/SLIF_MutexQue_Framework_App.h"
+#include "../include/SLIF_MutexQue_Framework_App_Control.h"
+#include "../include/SLIF_MutexQue_Framework_Global.h"
 #include <iostream>
 
 #include "SLIF_LaunchQue.h"

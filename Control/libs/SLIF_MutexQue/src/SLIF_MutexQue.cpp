@@ -1,8 +1,8 @@
-#include "SLIF_MutexQue.h"
-#include "SLIF_MutexQue_Framework.h"
-#include "SLIF_MutexQue_Framework_App.h"
-#include "SLIF_MutexQue_Framework_App_Control.h"
-#include "SLIF_MutexQue_Framework_Global.h"
+#include "../include/SLIF_MutexQue.h"
+#include "../include/SLIF_MutexQue_Framework.h"
+#include "../include/SLIF_MutexQue_Framework_App.h"
+#include "../include/SLIF_MutexQue_Framework_App_Control.h"
+#include "../include/SLIF_MutexQue_Framework_Global.h"
 #include <iostream>
 	static std::list<void*>* stat_REG_ptr_SLIF_MutexQue_array_of_ptr_MutexQue;//todo number of data clusters.
 	static std::array<bool, 5>* stat_REG_ptr_SLIF_MutexQue_array_of_array_of_isMemberFunctionINSTANTIATED;//todo number of data clusters.

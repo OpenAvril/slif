@@ -136,7 +136,6 @@
             auto tempObj = *temp;
             tempObj->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_Global(threadId)->dyn_REG_set_SLIF_LaunchQue_Framework_Global_number_Implemented_Threads(threadId, MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);
             tempObj->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_App_Control(threadId)->dyn_REG_boot3_INITIALISE_SLIF_LaunchQue_Framework_App_Control_For_New_Count(threadId);
-            slif::MutexQue::reInitialiseHandle(threadId, handleId, reinterpret_cast<std::byte*>(SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->size()));
         }
         else {
             SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(*memberFunctionId) = !SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0);
@@ -297,6 +296,7 @@
     }
     void slif::LaunchQue::SLIF_LaunchQue_stat_REG_boot3_INITIALISE_HandleId_For_PGM_slifMutexQue(uint8_t* threadId) {
         stat_REG_HandleId_For_PGM_slifMutexQue = slif::MutexQue::generateHandle(threadId);
+        slif::MutexQue::reInitialiseHandle(threadId, stat_REG_HandleId_For_PGM_slifMutexQue, reinterpret_cast<std::byte*>(SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->size()));
     }
     std::array<bool, 13>* slif::LaunchQue::SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(uint8_t* threadId) {
         return stat_REG_Flag_SLIF_LaunchQue_isMemberFunctionINSTANTIATED;

@@ -23,7 +23,7 @@ target_include_directories(slif_control PUBLIC
         "libs/SLIF_MutexQue/include"
 )
 
-target_link_libraries(slif_control PRIVATE
+target_link_libraries(slif_control PUBLIC
         SLIF_MutexQue
         SLIF_LaunchQue
 )
