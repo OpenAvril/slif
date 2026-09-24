@@ -106,7 +106,7 @@
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj)
 	{
 		_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised = new std::array<bool, 3>();//todo number of concurrent threads.
-		for (uint8_t threadId = 0; threadId < stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->size(); threadId++) {
+		for (uint8_t* threadId = 0; threadId < stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->size(); threadId++) {
 			auto temp = stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->begin();
 			std::advance(temp, threadId);
 			*temp = true;
@@ -114,7 +114,7 @@
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj) {
 		_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads = new std::array<std::thread*, 3>;//todo number of concurrent threads.
-		for (uint8_t threadId = 0; threadId < _stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads->size(); threadId++) {
+		for (uint8_t* threadId = 0; threadId < _stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads->size(); threadId++) {
 			auto temp = _stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads->begin();
 			std::advance(temp, threadId);
 			*temp = nullptr;
@@ -124,7 +124,7 @@
 		*_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised = true;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj)	{
-		for (uint8_t threadId = 0; threadId < stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->size(); threadId++) {
+		for (uint8_t* threadId = 0; threadId < stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->size(); threadId++) {
 			auto temp = stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->begin();
 			std::advance(temp, threadId);
 			*temp = true;
@@ -141,7 +141,7 @@
 	{
 		bool* result = nullptr;
 		result = new bool(false);
-		for (uint8_t threadId = 0; threadId < sizeof(*_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised); threadId++) {
+		for (uint8_t* threadId = 0; threadId < sizeof(*_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised); threadId++) {
 			auto temp = stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->begin();
 			std::advance(temp, threadId);
 			if (*temp == true) {
@@ -160,6 +160,6 @@
 	{
 		*_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised = newFLAG_;
 	}
-	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_set_ptr_CLIB_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t threadId, bool state) {
+	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_set_ptr_CLIB_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t* threadId, bool state) {
 		_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised->at(threadId) = state;
 	}

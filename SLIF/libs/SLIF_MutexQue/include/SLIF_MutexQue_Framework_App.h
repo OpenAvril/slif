@@ -5,23 +5,23 @@
 namespace slif {
     class SLIF_MutexQue_Framework_App {
     public:
-        SLIF_MutexQue_Framework_App(uint8_t threadId);
+        SLIF_MutexQue_Framework_App(uint8_t* threadId);
         virtual ~SLIF_MutexQue_Framework_App();
-        void dyn_APP_FUNCT_write_End(uint8_t threadId, class SLIF_MutexQue_Framework* obj, uint8_t coreId);
-        void dyn_APP_FUNCT_write_Start(uint8_t threadId, class SLIF_MutexQue_Framework* obj, uint8_t coreId);
-        class SLIF_MutexQue_Framework_App_Control* dyn_CLASS_get_ptr_SLIF_MutexQue_App_Control(uint8_t threadId);
-        void REG_boot1_DEFINE_SLIF_MutexQue_App(uint8_t threadId, class SLIF_MutexQue_Framework* obj);
-        void REG_boot2_SUBSTANTIATE_SLIF_MutexQue_App(uint8_t threadId, class SLIF_MutexQue_Framework* obj);
-        void REG_boot3_INITIALISE_SLIF_MutexQue_App(uint8_t threadId, class SLIF_MutexQue_Framework* obj);
-        static void CLASS_boot0_DECLARE_SLIF_MutexQue_App(uint8_t threadId);
-        static void CLASS_boot1_DEFINE_SLIF_MutexQue_App(uint8_t threadId);
-        static void CLASS_boot3_INITIALISE_SLIF_MutexQue_App(uint8_t threadId);
-        static void REG_boot0_DECLARE_SLIF_MutexQue_App(uint8_t threadId);
+        void dyn_APP_FUNCT_write_End(uint8_t* threadId, class SLIF_MutexQue_Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_write_Start(uint8_t* threadId, class SLIF_MutexQue_Framework* obj, uint8_t coreId);
+        class SLIF_MutexQue_Framework_App_Control* dyn_CLASS_get_ptr_SLIF_MutexQue_App_Control(uint8_t* threadId);
+        void REG_boot1_DEFINE_SLIF_MutexQue_App(uint8_t* threadId, class SLIF_MutexQue_Framework* obj);
+        void REG_boot2_SUBSTANTIATE_SLIF_MutexQue_App(uint8_t* threadId, class SLIF_MutexQue_Framework* obj);
+        void REG_boot3_INITIALISE_SLIF_MutexQue_App(uint8_t* threadId, class SLIF_MutexQue_Framework* obj);
+        static void CLASS_boot0_DECLARE_SLIF_MutexQue_App(uint8_t* threadId);
+        static void CLASS_boot1_DEFINE_SLIF_MutexQue_App(uint8_t* threadId);
+        static void CLASS_boot3_INITIALISE_SLIF_MutexQue_App(uint8_t* threadId);
+        static void REG_boot0_DECLARE_SLIF_MutexQue_App(uint8_t* threadId);
     private:
         static class SLIF_MutexQue_Framework_App_Control* _stat_CLASS_ptr_SLIF_MutexQue_App_Control;
-        static void stat_CLASS_boot1_DEFINE_SLIF_MutexQue_App_Control(uint8_t threadId);
-        static void stat_CLASS_boot3_INITIALISE_SLIF_MutexQue_App_Control(uint8_t threadId);
-        static class SLIF_MutexQue_Framework_App_Control* stat_CLASS_get_ptr_SLIF_MutexQue_App_Control(uint8_t threadId);
+        static void stat_CLASS_boot1_DEFINE_SLIF_MutexQue_App_Control(uint8_t* threadId);
+        static void stat_CLASS_boot3_INITIALISE_SLIF_MutexQue_App_Control(uint8_t* threadId);
+        static class SLIF_MutexQue_Framework_App_Control* stat_CLASS_get_ptr_SLIF_MutexQue_App_Control(uint8_t* threadId);
     };
 }
 #endif
