@@ -16,15 +16,11 @@ add_library(slif_control STATIC
         libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_App.cpp
         libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_App_Control.cpp
         libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_Execute.cpp
-        src/SLIF_Framework.cpp
-        src/SLIF_Framework_Global.cpp
-        src/SLIF_Framework_Execute.cpp
 )
 
 target_include_directories(slif_control PUBLIC
         "libs/SLIF_LaunchQue/include"
         "libs/SLIF_MutexQue/include"
-        "include"
 )
 
 target_link_libraries(slif_control PRIVATE
