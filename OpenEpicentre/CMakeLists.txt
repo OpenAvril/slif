@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 4.2.3)
-project(CLIB_OpenEpiCentre VERSION 1.0 LANGUAGES CXX)
+project(slif_EpiCentre VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(CLIB_OpenEpiCentre STATIC
+add_library(slif_EpiCentre STATIC
         src/CLIB_OpenEpiCentre.cpp
         src/engine/CLIB_OpenEpiCentre_Framework.cpp
         src/engine/CLIB_OpenEpiCentre_Framework_Global.cpp
@@ -56,7 +56,7 @@ add_library(CLIB_OpenEpiCentre STATIC
         src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp
 )
 
-target_include_directories(CLIB_OpenEpiCentre PUBLIC
+target_include_directories(slif_EpiCentre PUBLIC
         /libs/CLIB_WriteQueForThreadsAt_MutexQue/include
         /libs/CLIB_LaunchQueForThreadsAt_Server/include
         /libs/CLIB_ThreadLogs/include
