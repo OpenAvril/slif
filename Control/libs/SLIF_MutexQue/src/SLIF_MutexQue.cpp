@@ -26,7 +26,7 @@
 		auto handleId = new int();
 		slif_MutexQue_stat_PGM_get_array_of_ptr_SLIF_MutexQue(threadId)->resize(static_cast<uint8_t>(slif_MutexQue_stat_PGM_get_array_of_ptr_SLIF_MutexQue(threadId)->size()+1));
 		slif_MutexQue_stat_PGM_get_array_of_ptr_SLIF_MutexQue(threadId)->assign(slif_MutexQue_stat_PGM_get_array_of_ptr_SLIF_MutexQue(threadId)->size(), *slif_MutexQue_stat_PGM_get_array_of_ptr_SLIF_MutexQue(threadId)->begin());
-		*handleId = *reinterpret_cast<int*>(slif_MutexQue_stat_PGM_get_array_of_ptr_SLIF_MutexQue(threadId)->size() - 1);
+		*handleId = static_cast<int>(slif_MutexQue_stat_PGM_get_array_of_ptr_SLIF_MutexQue(threadId)->size() - 1);
 		std::cout << "thread " << std::to_string(*threadId) << " :: exiting LIB :: slif : SLIF_MutexQue : generateHandle(threadId)." << std::endl;
 		return handleId;
 	}

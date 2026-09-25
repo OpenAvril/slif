@@ -51,7 +51,7 @@ namespace slif {
         static void stat_REG_boot3_INITIALISE_CONST_SLIF_MutexQue_2bitFLAG_WAIT(uint8_t* threadId);
         static void stat_REG_boot3_INITIALISE_CONST_SLIF_MutexQue_2bitFLAG_WRITE(uint8_t* threadId);
         static void stat_REG_boot3_INITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* threadId);
-        static void stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* threadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+        static void stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* threadId, const std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS);
         static std::array<bool,2>* stat_REG_get_ptr_CONST_SLIF_MutexQue_2bitFLAG_IDLE(uint8_t* threadId);
         static std::array<bool,2>* stat_REG_get_ptr_CONST_SLIF_MutexQue_2bitFLAG_WAIT(uint8_t* threadId);
         static std::array<bool,2>* stat_REG_get_ptr_CONST_SLIF_MutexQue_2bitFLAG_WRITE(uint8_t* threadId);
