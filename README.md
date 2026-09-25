@@ -1,6 +1,6 @@
 # Silicon Life Open Source Package: 
 ## slif_control.
- - Optimus                      Package INSTANTIATION Primer.
+ - Optimus:                     Package INSTANTIATION Primer.
  - ExclusiveCohesionMutexQueue: CLIB Request, Wait, Write-Read for 'AccessId' at 'DataCluster'.
  - LaunchQue:                   CLIB Request, Wait, Launch for 'ConcurrentThreadId' at Server-Client.
  - ThreadsLog:                  CLIB Console output via MutexQue, DataCluster is 'Console'.
