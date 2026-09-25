@@ -237,7 +237,7 @@
         *_stat_REG_ptr_SLIF_MutexQue_number_Of_Implemented_Threads = static_cast<std::byte>(2);
         std::cout << "thread " << std::to_string(*threadId) << " :: exiting LIB :: slif : SLIF_MutexQue_Global : stat_REG_boot3_INITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(threadId)." << std::endl;
     }
-    void c {
+    void slif::SLIF_MutexQue_Framework_Global::stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* threadId, const std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
         std::cout << "thread " << std::to_string(*threadId) << " :: entered LIB :: slif : SLIF_MutexQue_Global : stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(threadId)." << std::endl;
         *_stat_REG_ptr_SLIF_MutexQue_number_Of_Implemented_Threads = *MAX_NUMBER_OF_THREADS_FOR_ACCESS;
         std::cout << "thread " << std::to_string(*threadId) << " :: exiting LIB :: slif : SLIF_MutexQue_Global : stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(threadId)." << std::endl;
