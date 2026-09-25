@@ -8,7 +8,7 @@
 ### slif_control : LaunchQueue.
  - LaunchQue:                   CLIB Request, Wait, Launch for 'ConcurrentThreadId' at Server-Client.
 ### slif_control : Transporter.
- - MainStreamBus:               CLIB
+ - MainStreamBus:               CLIB 'StationId' 'Direction' compound of ExclusiveCohesionMutexQueue(s).
 
 ---
 ## slif_epicentre.
