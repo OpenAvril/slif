@@ -19,10 +19,10 @@ add_library(SLIF_LaunchQue STATIC
 )
 
 target_include_directories(SLIF_LaunchQue PUBLIC
+        "../SLIF_MutexQue/include"
         "include"
-        "../SLIF_Mutex/include"
 )
 
-target_link_libraries(SLIF_LaunchQue PRIVATE
-        SLIF_Mutex
+target_link_libraries(SLIF_LaunchQue PUBLIC
+        SLIF_MutexQue
 )

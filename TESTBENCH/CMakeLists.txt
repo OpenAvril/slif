@@ -11,12 +11,4 @@ add_executable(TESTBENCH main.cpp
         src/SLIF_Framework_Execute.cpp
 )
 
-target_include_directories(slif_control PUBLIC
-        "../Control/libs/SLIF_LaunchQue/include"
-        "../Control/libs/SLIF_MutexQue/include"
-        "include"
-)
-
-target_link_libraries(TESTBENCH PUBLIC
-        slif_control
-)
+target_link_libraries(TESTBENCH PRIVATE slif_control)
