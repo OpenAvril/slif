@@ -1,2 +1,0 @@
-/usr/bin/ar qc libSLIF_MutexQue.a CMakeFiles/SLIF_MutexQue.dir/src/SLIF_MutexQue.cpp.o CMakeFiles/SLIF_MutexQue.dir/src/SLIF_MutexQue_Framework.cpp.o CMakeFiles/SLIF_MutexQue.dir/src/SLIF_MutexQue_Framework_Global.cpp.o CMakeFiles/SLIF_MutexQue.dir/src/SLIF_MutexQue_Framework_App.cpp.o CMakeFiles/SLIF_MutexQue.dir/src/SLIF_MutexQue_Framework_App_Control.cpp.o
-/usr/bin/ranlib libSLIF_MutexQue.a
