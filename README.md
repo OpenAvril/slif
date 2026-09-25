@@ -5,7 +5,7 @@
 ### slif_control : ExclusiveCohesionMutexQueue.
  - ExclusiveCohesionMutexQueue: CLIB Request, Wait, Write-Read for 'AccessId' at 'DataCluster'.
  - ThreadsLog:                  CLIB Console output via MutexQue, DataCluster is 'Console'.
-### slif_control : LaunchQue.
+### slif_control : LaunchQueue.
  - LaunchQue:                   CLIB Request, Wait, Launch for 'ConcurrentThreadId' at Server-Client.
 ### slif_control : Transporter.
  - MainStreamBus:               CLIB
