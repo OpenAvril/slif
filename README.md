@@ -3,12 +3,12 @@
 ## slif_control.
 - Optimus:                     Package INSTANTIATION Primer.
 ### slif_control : ExclusiveCohesionMutexQueue.
- - ExclusiveCohesionMutexQueue: CLIB Request, Wait, Write-Read for 'AccessId' at 'DataCluster'.
+ - ExclusiveCohesionMutexQueue: CLIB Request, Wait, Write-Read for 'AccessId' at 'DataClusterId'.
  - ThreadsLog:                  CLIB Console output via MutexQue, DataCluster is 'Console'.
 ### slif_control : LaunchQueue.
  - LaunchQue:                   CLIB Request, Wait, Launch for 'ConcurrentThreadId' at Server-Client.
 ### slif_control : Transporter.
- - MainStreamBus:               CLIB Compound of ExclusiveCohesionMutexQueue(s) where 'AccessId=StationId' and every stationId deploys a ExclusiveCohesionMutexQueue.
+ - MainStreamBus:               CLIB Compound of ExclusiveCohesionMutexQueue(s) where 'AccessId=StationId' and every stationId deploys an IO buffer via ExclusiveCohesionMutexQueue with 2xDataClusterId(s).
 
 ---
 ## slif_epicentre.
