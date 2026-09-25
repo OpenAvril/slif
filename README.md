@@ -1,5 +1,5 @@
 # Silicon Life Open Source Package: 
-## MutexQue:         CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
+## MutexQue:        CLIB Request, Wait, Write-Read for 'AccessId' at 'DataCluster'.
 ## LaunchQue:       CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
 ## ThreadsLog:      CLIB Console output via MutexQue, DataCluster is 'Console'.
 ## OpenEpicentre:   CLIB Concurrent Server with independent task threads and IO wrapper.
