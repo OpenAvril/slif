@@ -8,7 +8,7 @@
 ### slif_control : LaunchQueue.
  - LaunchQue:                   CLIB Request, Wait, Launch for 'ConcurrentThreadId' at Server-Client.
 ### slif_control : Transporter.
- - MainStreamBus:               CLIB Compound of ExclusiveCohesionMutexQueue(s). A route array of ('AccessId=StationId','DataClusterId=StationId'), and every 'stationId' deploys an IO buffer via ExclusiveCohesionMutexQueue ('AccessId','DataClusterId=StationId'), with 2xDataClusterId(s).
+ - MainStreamBus:               CLIB Compound of ExclusiveCohesionMutexQueue(s). A route array of ('AccessId=StationId','DataClusterId=StationId'), and every prior 'AccessId' deploys an IO buffer via ExclusiveCohesionMutexQueue ('AccessId','DataClusterId=StationId'), with 2xDataClusterId(s).
 
 ---
 ## slif_epicentre.
