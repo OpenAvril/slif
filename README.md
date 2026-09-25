@@ -1,16 +1,21 @@
 # Silicon Life Open Source Package: 
+---
 ## slif_control.
- - Optimus:                     Package INSTANTIATION Primer.
- - ExclusiveCohesionMutexQueue: CLIB Request, Wait, Write-Read for 'AccessId' at 'DataCluster'.
- - LaunchQue:                   CLIB Request, Wait, Launch for 'ConcurrentThreadId' at Server-Client.
- - ThreadsLog:                  CLIB Console output via MutexQue, DataCluster is 'Console'.
+- Optimus:                     Package INSTANTIATION Primer.
+### slif_control : ExclusiveCohesionMutexQueue.
+ - ExclusiveCohesionMutexQueue: CLIB Request, Wait, Write-Read for : ('AccessId' at 'DataClusterId').
+ - ThreadsLog:                  CLIB Console output via MutexQue for : ('DataCluster="Console"')
+### slif_control : LaunchQueue.
+ - LaunchQue:                   CLIB Request, Wait, Launch for : ('ConcurrentThreadId' at Server-Client).
+### slif_control : Transporter.
+ - MainStreamBus:               CLIB Compound of ExclusiveCohesionMutexQueue(s). A single Bus with route array of Stations for : A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=StationId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
+
+---
 ## slif_epicentre.
+ - Optimus:                     Package INSTANTIATION Primer.
  - OpenEpicentre:               CLIB Concurrent Server with independent task threads and IO wrapper.
 
 ---
-## Branches.
- - 
-
 ---
 ## Using.
 ### LINUX Ubuntu.
