@@ -1,12 +1,7 @@
 #include "../include/SLIF_Framework_Execute.h"
-#include "../include/SLIF_MutexQue.h"
-#include "../include/SLIF_MutexQue_Framework.h"
-#include "../include/SLIF_MutexQue_Framework_App.h"
-#include "../include/SLIF_MutexQue_Framework_App_Control.h"
-#include "../include/SLIF_MutexQue_Framework_Global.h"
-#include <iostream>
-
 #include "SLIF_LaunchQue.h"
+#include "SLIF_MutexQue.h"
+#include <iostream>
     int* slif::SLIF_Framework_Execute::stat_REG_HandleId_For_PGM_slifMutexQue;
     int* slif::SLIF_Framework_Execute::stat_REG_HandleId_For_PGM_slifLaunchQue;
 // public.

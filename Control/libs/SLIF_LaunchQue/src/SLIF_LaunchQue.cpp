@@ -1,9 +1,9 @@
 #include "../include/SLIF_LaunchQue.h"
+#include "SLIF_MutexQue.h"
 #include "../include/SLIF_LaunchQue_Framework_App.h"
 #include "../include/SLIF_LaunchQue_Framework_App_Control.h"
 #include "../include/SLIF_LaunchQue_Framework_Execute.h"
 #include "../include/SLIF_LaunchQue_Framework_Global.h"
-#include "../../SLIF_MutexQue/include/SLIF_MutexQue.h"
 #include <iostream>
     static std::list<slif::SLIF_LaunchQue_Framework*>* stat_REG_List_Of_PGM_SLIF_LaunchQue;
     static std::array<bool, 13>* stat_REG_Flag_SLIF_LaunchQue_isMemberFunctionINSTANTIATED;
@@ -64,13 +64,13 @@
         slif::MutexQue::endByUnlock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
         return SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_bool_to_ByteArray(threadId, *result);
     }
-    unsigned char* slif::LaunchQue::get_FlagSTATEofConcurrentCore(uint8_t* threadId, int* handleId, unsigned char* bytes) {
+    unsigned char* slif::LaunchQue::get_FlagSTATEofConcurrentCore(uint8_t* threadId, int* handleId, unsigned char* bytes_concuurentThreadId) {
         auto memberFunctionId = new uint8_t(3);
         slif::MutexQue::startByLock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
         bool* result = nullptr;
         result = new bool(true);
         if (!SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0)) {
-            *result = SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_App_Control(threadId)->dyn_REG_get_SLIF_LaunchQue_Item_On_list_Of_STATE_For_ConcurrentCore(threadId, slif::SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_ByteArray_To_uint8_t(threadId, bytes));
+            *result = SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_App_Control(threadId)->dyn_REG_get_SLIF_LaunchQue_Item_On_list_Of_STATE_For_ConcurrentCore(threadId, slif::SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_ByteArray_To_uint8_t(threadId, bytes_concuurentThreadId));
         }
         else {
             SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(*memberFunctionId) = !SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0);
@@ -143,11 +143,11 @@
         }
         slif::MutexQue::endByUnlock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
     }
-    void slif::LaunchQue::set_FlagSTATEofConcurrentCore(uint8_t* threadId, int* handleId, unsigned char* bytesThreadId, unsigned char*  byteBool) {
+    void slif::LaunchQue::set_FlagSTATEofConcurrentCore(uint8_t* threadId, int* handleId, unsigned char* bytesThreadId, unsigned char*  bytes_concuurentThreadId) {
         auto memberFunctionId = new uint8_t(8);
         slif::MutexQue::startByLock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
         if (!SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0)) {
-            SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_App_Control(threadId)->dyn_REG_set_SLIF_LaunchQue_Item_On_list_Of_STATE_For_ConcurrentCore(threadId, slif::SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_ByteArray_To_uint8_t(threadId, bytesThreadId), byteBool);
+            SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_App_Control(threadId)->dyn_REG_set_SLIF_LaunchQue_Item_On_list_Of_STATE_For_ConcurrentCore(threadId, slif::SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_ByteArray_To_uint8_t(threadId, bytesThreadId), bytes_concuurentThreadId);
         }
         else {
             SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(*memberFunctionId) = !SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0);
@@ -168,11 +168,11 @@
             }
             slif::MutexQue::endByUnlock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
         }
-    void slif::LaunchQue::threadRequestlaunch(uint8_t* threadId, int* handleId, unsigned char* bytes) {
+    void slif::LaunchQue::threadRequestlaunch(uint8_t* threadId, int* handleId, unsigned char* bytes_concuurentThreadId) {
         auto memberFunctionId = new uint8_t(10);
         slif::MutexQue::startByLock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
             if (!SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0)) {
-                SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_APP_FUNCT_SLIF_LaunchQue_thread_Start(threadId, SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId), slif::SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_ByteArray_To_uint8_t(threadId, bytes));
+                SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_APP_FUNCT_SLIF_LaunchQue_thread_Start(threadId, SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId), slif::SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_ByteArray_To_uint8_t(threadId, bytes_concuurentThreadId));
             }
             else {
                 SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(*memberFunctionId) = !SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0);
@@ -180,11 +180,11 @@
             }
             slif::MutexQue::endByUnlock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
         }
-    void slif::LaunchQue::threadEnd(uint8_t* threadId, int* handleId, unsigned char* bytes) {
+    void slif::LaunchQue::threadEnd(uint8_t* threadId, int* handleId, unsigned char* bytes_concuurentThreadId) {
         auto memberFunctionId = new uint8_t(11);
         slif::MutexQue::startByLock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
         if (!SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0)) {
-            SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_APP_FUNCT_SLIF_LaunchQue_thread_End(threadId, SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId,handleId), (uint8_t)*bytes);
+            SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_APP_FUNCT_SLIF_LaunchQue_thread_End(threadId, SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId,handleId), (uint8_t)*bytes_concuurentThreadId);
         }
         else {
             SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(*memberFunctionId) = !SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0);
