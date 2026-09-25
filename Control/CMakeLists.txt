@@ -4,6 +4,9 @@ project(slif_control VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+add_subdirectory(libs/SLIF_MutexQue)
+add_subdirectory(libs/SLIF_LaunchQue)
+
 add_library(slif_control STATIC
         libs/SLIF_MutexQue/src/SLIF_MutexQue.cpp
         libs/SLIF_MutexQue/src/SLIF_MutexQue_Framework_App.cpp
@@ -23,7 +26,7 @@ target_include_directories(slif_control PUBLIC
         "libs/SLIF_MutexQue/include"
 )
 
-target_link_libraries(slif_control PRIVATE
+target_link_libraries(slif_control PUBLIC
         SLIF_MutexQue
         SLIF_LaunchQue
 )

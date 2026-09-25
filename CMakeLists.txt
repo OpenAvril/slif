@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(Control)
 #add_subdirectory(OpenEpicentre)
-#add_subdirectory(TESTBENCH)
+add_subdirectory(TESTBENCH)

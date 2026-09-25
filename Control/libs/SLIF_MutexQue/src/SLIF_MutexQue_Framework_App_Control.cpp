@@ -1,6 +1,6 @@
-#include "SLIF_MutexQue_Framework_App_Control.h"
-#include "SLIF_MutexQue_Framework_App.h"
-#include "SLIF_MutexQue_Framework_Global.h"
+#include "../include/SLIF_MutexQue_Framework_App_Control.h"
+#include "../include/SLIF_MutexQue_Framework_App.h"
+#include "../include/SLIF_MutexQue_Framework_Global.h"
 #include <iostream>
 #include <iterator>
     bool* slif::SLIF_MutexQue_Framework_App_Control::_stat_REG_FLAG_SLIF_MutexQue_FLAG_Control_isWriteStartThreadRELASE_ONE;
