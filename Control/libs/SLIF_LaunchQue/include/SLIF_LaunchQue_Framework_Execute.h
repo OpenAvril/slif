@@ -5,21 +5,21 @@
 namespace slif {
     class SLIF_LaunchQue_Framework_Execute {
     public:
-        SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
+        SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
         virtual ~SLIF_LaunchQue_Framework_Execute();
-        void dyn_REG_boot1_DEFINE_SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
-        void dyn_REG_boot2_SUBSTANTIATE_SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
-        void dyn_REG_boot3_INITIALISE_SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
-        void dyn_PGM_boot4_INSTANTIATE_SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
-        static void stat_CLASS_boot0_DECLARE_SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
-        static void stat_CLASS_boot1_DEFINE_SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
-        static void stat_CLASS_boot3_INITIALISE_SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
-        static void stat_REG_boot0_DECLARE_SLIF_LaunchQue_Framework_Execute(uint8_t* threadId);
+        void dyn_REG_boot1_DEFINE_SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
+        void dyn_REG_boot2_SUBSTANTIATE_SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
+        void dyn_REG_boot3_INITIALISE_SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
+        void dyn_PGM_boot4_INSTANTIATE_SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
+        static void stat_CLASS_boot0_DECLARE_SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
+        static void stat_CLASS_boot1_DEFINE_SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
+        static void stat_CLASS_boot3_INITIALISE_SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
+        static void stat_REG_boot0_DECLARE_SLIF_LaunchQue_Framework_Execute(uint8_t* sysThreadId);
     private:
         static int* stat_REG_HandleId_For_PGM_slifMutexQue;
-        static void stat_REG_boot1_DEFINE_HandleId_For_PGM_slifMutexQue(uint8_t* threadId);
-        static void stat_REG_boot2_SUBSTANTIATE_HandleId_For_PGM_slifMutexQue(uint8_t* threadId);
-        static void stat_REG_boot3_INITIALISE_HandleId_For_PGM_slifMutexQue(uint8_t* threadId);
+        static void stat_REG_boot1_DEFINE_HandleId_For_PGM_slifMutexQue(uint8_t* sysThreadId);
+        static void stat_REG_boot2_SUBSTANTIATE_HandleId_For_PGM_slifMutexQue(uint8_t* sysThreadId);
+        static void stat_REG_boot3_INITIALISE_HandleId_For_PGM_slifMutexQue(uint8_t* sysThreadId);
 
 
     };

@@ -7,24 +7,24 @@
 // public.
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise0::dyn_REG_boot1_DEFINE_Input_praise0()
 	{
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_Input_praise0()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(sysThreadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_Input_praise0()" << std::endl;
 		stat_REG_boot1_DEFINE_Input_praise0_valueA();
 		stat_REG_boot1_DEFINE_Input_praise0_valueB();
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_Input_praise0()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(sysThreadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_Input_praise0()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise0::dyn_REG_boot2_SUBSTANTIATE_Input_praise0()
 	{
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_Input_praise0()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(sysThreadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_Input_praise0()" << std::endl;
 		stat_REG_boot2_SUBSTANTIATE_Input_praise0_valueA();
 		stat_REG_boot2_SUBSTANTIATE_Input_praise0_valueB();
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_Input_praise0()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(sysThreadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_Input_praise0()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise0::dyn_REG_boot3_INITIALISE_Input_praise0()
 	{
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_Input_praise0()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(sysThreadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_Input_praise0()" << std::endl;
 		stat_REG_boot3_INITIALISE_Input_praise0_valueA();
 		stat_REG_boot3_INITIALISE_Input_praise0_valueB();
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_Input_praise0()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(sysThreadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_Input_praise0()" << std::endl;
 	}
 	double CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise0::dyn_REG_get_Item_Input_praise0_valueA()
 	{
