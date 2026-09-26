@@ -311,7 +311,7 @@
     }
     void slif::LaunchQue::SLIF_LaunchQue_stat_REG_boot3_INITIALISE_HandleId_For_PGM_slifMutexQue(uint8_t* threadId) {
         stat_REG_HandleId_For_PGM_slifMutexQue = slif::MutexQue::generateHandle(threadId);
-        slif::MutexQue::reInitialiseHandle(threadId, stat_REG_HandleId_For_PGM_slifMutexQue, reinterpret_cast<std::byte*>(SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->size()));
+        slif::MutexQue::reInitialiseHandle(threadId, stat_REG_HandleId_For_PGM_slifMutexQue, static_cast<std::byte>(SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->size()));
     }
     std::array<bool, 13>* slif::LaunchQue::SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(uint8_t* threadId) {
         return stat_REG_Flag_SLIF_LaunchQue_isMemberFunctionINSTANTIATED;
