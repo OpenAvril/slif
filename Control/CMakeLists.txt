@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(libs/SLIF_MutexQue)
 add_subdirectory(libs/SLIF_LaunchQue)
+add_subdirectory(libs/SLIF_ThreadsLog)
 
 add_library(slif_control STATIC
         libs/SLIF_MutexQue/src/SLIF_MutexQue.cpp
@@ -19,14 +20,22 @@ add_library(slif_control STATIC
         libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_App.cpp
         libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_App_Control.cpp
         libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_Execute.cpp
+        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs.cpp
+        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
+        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
+        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
+        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
+        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
 )
 
 target_include_directories(slif_control PUBLIC
         "libs/SLIF_LaunchQue/include"
         "libs/SLIF_MutexQue/include"
+        "libs/SLIF_ThreadsLog/include"
 )
 
 target_link_libraries(slif_control PUBLIC
         SLIF_MutexQue
         SLIF_LaunchQue
+        slif_threads_log
 )
