@@ -1,17 +1,17 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Execute_Control.h"
-#include <iostream>
+#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
 #include <thread>
 	bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised;
 	std::array<bool, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised;//NUMBER OF THREADS.
 	std::array<std::thread*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads;
 // public.
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::CLIB_OpenEpiCentre_Execute_Control()	{
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered CONSTRUCTOR of CLIB_OpenEpiCentre_Execute_Control()."));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered CONSTRUCTOR of CLIB_OpenEpiCentre_Execute_Control()." << std::endl;
 		stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control();
 		stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control();
 		stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control();
 		stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control();
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting CONSTRUCTOR of CLIB_OpenEpiCentre_Execute_Control()."));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting CONSTRUCTOR of CLIB_OpenEpiCentre_Execute_Control()." << std::endl;
 	}
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::~CLIB_OpenEpiCentre_Execute_Control() {
 		delete _stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised;
@@ -19,31 +19,31 @@
 		delete _stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj) {
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 		stat_REG_boot1_DEFINE_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised();
 		stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised();
 		stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads();
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj) {
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 		stat_REG_boot2_SUBSTANTIATE_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised(obj);
 		stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised(obj);
 		stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads(obj);
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj) {
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 		stat_REG_boot3_INITIALISE_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised(obj);
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: a"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: a" << std::endl;
 		stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised(obj);
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: B"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: B" << std::endl;
 		stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads(obj);
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj) {
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()"));
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 	bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_get_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised() {
 		return stat_REG_get_ptr_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised();
@@ -61,32 +61,32 @@
 	}
 
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control() {
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control() {
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()
 	{
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()
 	{
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()
 	{
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 
-		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()"));
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control()" << std::endl;
 	}
 // private.
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_REG_boot1_DEFINE_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised() {

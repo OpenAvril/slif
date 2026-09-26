@@ -1,10 +1,10 @@
 #include "../include/SLIF_LaunchQue.h"
+#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
 #include "SLIF_MutexQue.h"
 #include "../include/SLIF_LaunchQue_Framework_App.h"
 #include "../include/SLIF_LaunchQue_Framework_App_Control.h"
 #include "../include/SLIF_LaunchQue_Framework_Execute.h"
 #include "../include/SLIF_LaunchQue_Framework_Global.h"
-#include <iostream>
     static std::list<slif::SLIF_LaunchQue_Framework*>* stat_REG_List_Of_PGM_SLIF_LaunchQue;
     static std::array<bool, 13>* stat_REG_Flag_SLIF_LaunchQue_isMemberFunctionINSTANTIATED;
     int* slif::LaunchQue::stat_REG_HandleId_For_PGM_slifMutexQue;
@@ -13,33 +13,29 @@
         auto memberFunctionId = new uint8_t(0);
         auto handleId = new int();
         slif::MutexQue::startByLock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
-        std::cout << "thread " << std::to_string(*threadId) << " :: entered LIB :: slif : LaunchQue : generateHandle(threadId)." << std::endl;
+        slif::ThreadLogs::printl(threadId, new std::string(" :: entered LIB :: slif : LaunchQue : generateHandle(threadId)"));
         if (!SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0)) {
-            std::cout << "thread " << std::to_string(*threadId) << " :: alpha." << std::endl;
+            slif::ThreadLogs::printl(threadId, new std::string(" :: alpha"));
             SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId)->resize(static_cast<uint8_t>(SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId)->size()+1));
-            std::cout << "thread " << std::to_string(*threadId) << " :: bravo." << std::endl;
+            slif::ThreadLogs::printl(threadId, new std::string(" :: bravo"));
             SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId)->assign(SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId)->size(), *SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId)->begin());
-            std::cout << "thread " << std::to_string(*threadId) << " :: charlie." << std::endl;
+            slif::ThreadLogs::printl(threadId, new std::string(" :: charlie"));
             *handleId = static_cast<int>(SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId)->size() - 1);
-            std::cout << "thread " << std::to_string(*threadId) << " :: end." << std::endl;
+            slif::ThreadLogs::printl(threadId, new std::string(" :: end"));
         }
         else {
             SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(*memberFunctionId) = !SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0);
             SLIF_LaunchQue_stat_app_FUNCT_Calc_IsAllINSTANTIATED(threadId);
         }
-        std::cout << "thread " << std::to_string(*threadId) << " :: exiting LIB :: slif : LaunchQue : generateHandle(threadId)." << std::endl;
+        slif::ThreadLogs::printl(threadId, new std::string(" :: exiting LIB :: slif : LaunchQue : generateHandle(threadId)"));
         slif::MutexQue::endByUnlock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
         return handleId;
     }
     void slif::LaunchQue::generateProgram(uint8_t* threadId) {
         SLIF_LaunchQue_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED(threadId);
-        std::cout << "thread " << std::to_string(*threadId) << " :: alpha." << std::endl;
         SLIF_LaunchQue_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED(threadId);
-        std::cout << "thread " << std::to_string(*threadId) << " :: bravo." << std::endl;
         SLIF_LaunchQue_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED(threadId);
-        std::cout << "thread " << std::to_string(*threadId) << " :: charlie." << std::endl;
         SLIF_LaunchQue_stat_boot1_CLASS_DEFINE_List_Of_PGM_SLIF_LaunchQue_Framework(threadId);
-        std::cout << "thread " << std::to_string(*threadId) << " :: delta." << std::endl;
         SLIF_LaunchQue_stat_boot3_CLASS_INITIALISE_List_Of_PGM_SLIF_LaunchQue_Framework(threadId);
     }
     unsigned char* slif::LaunchQue::get_coreIdTolaunch(uint8_t* threadId, int* handleId) {
@@ -120,7 +116,7 @@
     unsigned char* slif::LaunchQue::isINSTANTIATED(uint8_t* threadId)	{
         auto memberFunctionId = new uint8_t(6);
         slif::MutexQue::startByLock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
-        std::cout << "thread " << std::to_string(*threadId) << " :: entered LIB :: slif : SLIF_MutexQue : SLIF_MutexQue_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(threadId)." << std::endl;
+        slif::ThreadLogs::printl(threadId, new std::string(" :: entered LIB :: slif : SLIF_MutexQue : SLIF_MutexQue_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(threadId)"));
         bool* result = nullptr;
         result = new bool(threadId);
         *result = true;
@@ -131,7 +127,7 @@
             SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(*memberFunctionId) = !SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0);
             SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId);
         }
-        std::cout << "thread " << std::to_string(*threadId) << " :: exiting LIB :: slif : SLIF_MutexQue : SLIF_MutexQue_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(threadId)." << std::endl;
+        slif::ThreadLogs::printl(threadId, new std::string(" :: exiting LIB :: slif : SLIF_MutexQue : SLIF_MutexQue_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(threadId)"));
         slif::MutexQue::endByUnlock(threadId, SLIF_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_slifMutexQue(threadId), SLIF_LaunchQue_Framework_Global::stat_CONVERT_SLIF_LaunchQue_Framework_Global_uint8_t_To_ByteArray(threadId, *memberFunctionId));
         return slif::SLIF_MutexQue_Framework_Global::stat_APP_CONVERT_SLIF_MutexQue_MsbBoolean_To_MsbByteArray(threadId, *result);
     }
@@ -203,53 +199,54 @@
 // private.
     void slif::LaunchQue::SLIF_LaunchQue_generateProgram(uint8_t* threadId) {
         auto handleId = new int(0);
-		std::cout << "entered app_FUNCT_generate_Program(threadId)." << std::endl;
+        slif::ThreadLogs::printl(threadId, new std::string(" :: alpha"));
+		slif::ThreadLogs::printl(threadId, new std::string("entered app_FUNCT_generate_Program(threadId)"));
 
-		std::cout << "started SLIF_LaunchQue_Framework_Global Meta-Data and Settings." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("started SLIF_LaunchQue_Framework_Global Meta-Data and Settings"));
 		SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_create_SLIF_LaunchQue_Framework_Global_and_Settings(threadId);
 		SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_Global(threadId)->boot1_REG_DEFINE_SLIF_LaunchQue_Framework_Global(threadId);
 		SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_Global(threadId)->boot2_REG_SUBSTANTIATE_SLIF_LaunchQue_Framework_Global(threadId);
 		SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_Global(threadId)->boot3_REG_INITIALISE_SLIF_LaunchQue_Framework_Global(threadId, SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId));
-		std::cout << "done SLIF_LaunchQue_Framework_Global Meta-Data and Settings." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("done SLIF_LaunchQue_Framework_Global Meta-Data and Settings"));
 
-		std::cout << "started IndepENDSent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-		std::cout << "done IndepENDSent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("started IndepENDSent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE"));
+		slif::ThreadLogs::printl(threadId, new std::string("done IndepENDSent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE"));
 
-		std::cout << "started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE"));
         SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_create_Architecture(threadId);
-		std::cout << "started Registers - DEFINE" << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("started Registers - DEFINE"));
 
 		SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_App_Control(threadId)->dyn_REG_boot1_DEFINE_SLIF_LaunchQue_Framework_App_Control(threadId);
-		std::cout << "done Registers - DEFINE." << std::endl;
-		std::cout << "started Registers - SUBSTANTIATE." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("done Registers - DEFINE"));
+		slif::ThreadLogs::printl(threadId, new std::string("started Registers - SUBSTANTIATE"));
 		SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_App_Control(threadId)->dyn_REG_boot2_SUBSTANTIATE_SLIF_LaunchQue_Framework_App_Control(threadId, SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId));
-		std::cout << "done Registers - SUBSTANTIATE." << std::endl;
-		std::cout << "started Registers - INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("done Registers - SUBSTANTIATE"));
+		slif::ThreadLogs::printl(threadId, new std::string("started Registers - INITIALISE"));
 		SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_App_Control(threadId)->dyn_REG_boot3_INITIALISE_SLIF_LaunchQue_Framework_App_Control(threadId);
-		std::cout << "done Registers - INITIALISE." << std::endl;
-		std::cout << "done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("done Registers - INITIALISE"));
+		slif::ThreadLogs::printl(threadId, new std::string("done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE"));
 
-		std::cout << "started Program - INSTANTIATION." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("started Program - INSTANTIATION"));
 		SLIF_LaunchQue_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED(threadId);
 		SLIF_LaunchQue_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED(threadId);
 		SLIF_LaunchQue_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED(threadId);
         SLIF_LaunchQue_stat_CLASS_get_ptr_PGM_SLIF_LaunchQue_Framework(threadId, handleId)->dyn_CLASS_get_ptr_SLIF_LaunchQue_Framework_App(threadId)->dyn_CLASS_get_SLIF_LaunchQue_Framework_Execute(threadId)->dyn_PGM_boot4_INSTANTIATE_SLIF_LaunchQue_Framework_Execute(threadId);
-		std::cout << "done Program - INSTANTIATION." << std::endl;
+		slif::ThreadLogs::printl(threadId, new std::string("done Program - INSTANTIATION"));
 
-        std::cout << "" << std::endl;
-        std::cout << "        ,     \\      /      ," << std::endl;
-        std::cout << "       / \\    )\\ _ /(     / \\ " << std::endl;
-        std::cout << "      /   \\   (_\\  /_)    /   \\ " << std::endl;
-        std::cout << "_ / _\\_ \\@  @/ _/__\\__" << std::endl;
-        std::cout << "|              |\\../|               |" << std::endl;
-        std::cout << "|               \\VV/                |" << std::endl;
-        std::cout << "|        MIT Launch Que .dll        |" << std::endl;
-        std::cout << "|_________|" << std::endl;
-        std::cout << "|    / \\ /        \\\\        \\ /\\    |" << std::endl;
-        std::cout << "|  /    V          ))        V   \\  |" << std::endl;
-        std::cout << "|/                //               \\| " << std::endl;
-        std::cout << "`                 V                 '" << std::endl;
-        std::cout << "" << std::endl;
+        slif::ThreadLogs::printl(threadId, new std::string(""));
+        slif::ThreadLogs::printl(threadId, new std::string("        ,     \\      /      ,"));
+        slif::ThreadLogs::printl(threadId, new std::string("       / \\    )\\ _ /(     / \\ "));
+        slif::ThreadLogs::printl(threadId, new std::string("      /   \\   (_\\  /_)    /   \\ "));
+        slif::ThreadLogs::printl(threadId, new std::string("_ / _\\_ \\@  @/ _/__\\__"));
+        slif::ThreadLogs::printl(threadId, new std::string("|              |\\../|               |"));
+        slif::ThreadLogs::printl(threadId, new std::string("|               \\VV/                |"));
+        slif::ThreadLogs::printl(threadId, new std::string("|        MIT Launch Que .dll        |"));
+        slif::ThreadLogs::printl(threadId, new std::string("|_________|"));
+        slif::ThreadLogs::printl(threadId, new std::string("|    / \\ /        \\\\        \\ /\\    |"));
+        slif::ThreadLogs::printl(threadId, new std::string("|  /    V          ))        V   \\  |"));
+        slif::ThreadLogs::printl(threadId, new std::string("|/                //               \\| "));
+        slif::ThreadLogs::printl(threadId, new std::string("`                 V                 '"));
+        slif::ThreadLogs::printl(threadId, new std::string(""));
     }
     void slif::LaunchQue::SLIF_LaunchQue_stat_app_FUNCT_Calc_IsAllINSTANTIATED(uint8_t* threadId) {
         SLIF_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(threadId)->at(0) = false;
@@ -265,19 +262,12 @@
     }
     void slif::LaunchQue::SLIF_LaunchQue_stat_boot3_CLASS_INITIALISE_List_Of_PGM_SLIF_LaunchQue_Framework(uint8_t* threadId) {
         auto handleId = new int(0);
-        std::cout << "thread " << std::to_string(*threadId) << " :: alpha." << std::endl;
         stat_REG_List_Of_PGM_SLIF_LaunchQue = new std::list<slif::SLIF_LaunchQue_Framework*>;
-        std::cout << "thread " << std::to_string(*threadId) << " :: bravo." << std::endl;
         while (SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId) == nullptr) {}
-        std::cout << "thread " << std::to_string(*threadId) << " :: charlie." << std::endl;
         SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId)->resize(1);
-        std::cout << "thread " << std::to_string(*threadId) << " :: delta." << std::endl;
         SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(threadId)->assign(*handleId, new class slif::SLIF_LaunchQue_Framework(threadId));
-        std::cout << "thread " << std::to_string(*threadId) << " :: foxtrot." << std::endl;
         SLIF_LaunchQue_generateProgram(threadId);
-        std::cout << "thread " << std::to_string(*threadId) << " :: echo." << std::endl;
         SLIF_LaunchQue_stat_REG_boot3_INITIALISE_HandleId_For_PGM_slifMutexQue(threadId);
-        std::cout << "thread " << std::to_string(*threadId) << " :: giga." << std::endl;
     }
     std::list<slif::SLIF_LaunchQue_Framework*>*  slif::LaunchQue::SLIF_LaunchQue_stat_REG_get_ptr_List_Of_PGM_SLIF_LaunchQue(uint8_t* threadId) {
         return stat_REG_List_Of_PGM_SLIF_LaunchQue;

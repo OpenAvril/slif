@@ -1,0 +1,2 @@
+/usr/bin/ar qc libOptimusPrime.a CMakeFiles/OptimusPrime.dir/SLIF_OptimusPrime.cpp.o
+/usr/bin/ranlib libOptimusPrime.a

@@ -1,9 +1,8 @@
-#include <iostream>
-#include <ostream>
-
-#include "../OptimusPrime/SLIF_OptimusPrime.h"
 #include "../Control/libs/SLIF_MutexQue/include/SLIF_MutexQue.h"
+#include "../Control/libs/SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
 #include "../Control/libs/SLIF_LaunchQue/include/SLIF_LaunchQue.h"
+#include "../OptimusPrime/SLIF_OptimusPrime.h"
+#include <iostream>
 using namespace slif;
 
 int main() {
