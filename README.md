@@ -13,7 +13,7 @@
 ### slif_control : Buses.
  - MainStreamBussing:           CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
 
-### slif_contro : Mind.
+### slif_control : Mind.
  - TheMindInHumanImage:         CLIB Compound of Busses. An array of Busses for each Zone: Id, Ego, SuperEgo. Junctions as Bus Station(s) named 'Id-Ego', 'Ego-SuperEgo'; . Half the number of Stations as Busses due to paired exclusive communication potential.
    - Id        : binary neural algorithms.
    - Ego       : binary neural controls.
