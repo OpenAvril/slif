@@ -11,15 +11,15 @@ extern "C" {
             static void generateProgram(uint8_t* threadId);
             static unsigned char* get_coreIdTolaunch(uint8_t* threadId, int* handleId);
             static unsigned char* get_FlagSTATEisActive(uint8_t* threadId, int* handleId);
-            static unsigned char* get_FlagSTATEofConcurrentCore(uint8_t* threadId, int* handleId, unsigned char* bytes);
+            static unsigned char* get_FlagSTATEofConcurrentCore(uint8_t* threadId, int* handleId, unsigned char* bytes_concuurentThreadId);
             static unsigned char* get_FlagisIdle(uint8_t* threadId, int* handleId);
             static unsigned char* get_FlagSTATEofThreadToLaunch(uint8_t* threadId, int* handleId);
             static unsigned char* isINSTANTIATED(uint8_t* threadId);
             static void reInitialiseHandle(uint8_t* threadId, int* handleId, std::byte* MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);
-            static void set_FlagSTATEofConcurrentCore(uint8_t* threadId, int* handleId, unsigned char* bytesThreadId, unsigned char* byteBool);
+            static void set_FlagSTATEofConcurrentCore(uint8_t* threadId, int* handleId, unsigned char* bytes_concuurentThreadId, unsigned char* byteBool);
             static void terminateProgaram(uint8_t* threadId);
-            static void threadRequestlaunch(uint8_t* threadId, int* handleId, unsigned char* bytes);
-            static void threadEnd(uint8_t* threadId, int* handleId, unsigned char* bytes);
+            static void threadRequestlaunch(uint8_t* threadId, int* handleId, unsigned char* bytes_concuurentThreadId);
+            static void threadEnd(uint8_t* threadId, int* handleId, unsigned char* bytes_concuurentThreadId);
         private:
             static int* stat_REG_HandleId_For_PGM_slifMutexQue;
             static void SLIF_LaunchQue_generateProgram(uint8_t* threadId);

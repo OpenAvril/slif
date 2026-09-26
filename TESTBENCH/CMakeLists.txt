@@ -7,3 +7,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(TESTBENCH main.cpp)
 
 target_link_libraries(TESTBENCH PRIVATE slif_control)
+target_link_libraries(TESTBENCH PRIVATE OptimusPrime)

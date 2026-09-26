@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/brenton-james/CLionProjects/slif/Control/libs/SLIF_MutexQue/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
