@@ -32,7 +32,7 @@
 		int* tempA0 = slif::MutexQue::generateHandle(threadId);
 		//slif::MutexQue::generateProgram(threadId);
 		unsigned char* tempA1 = slif::MutexQue::isINSTANTIATED(threadId);
-		slif::MutexQue::reInitialiseHandle(threadId, handleId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+		slif::MutexQue::reInitialiseHandle(threadId, handleId, *MAX_NUMBER_OF_THREADS_FOR_ACCESS);
 		slif::MutexQue::startByLock(threadId, handleId, bytes_AccessId);
 		slif::MutexQue::terminateProgram(threadId, handleId);
 

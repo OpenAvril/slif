@@ -59,21 +59,18 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONST : dyn_REG_get_ptr_CONST_SLIF_MutexQue_2bitFLAG_WRITE(sysThreadId)." << std::endl;
         return *stat_REG_get_ptr_CONST_SLIF_MutexQue_2bitFLAG_WRITE(sysThreadId);
     }
-    std::byte slif::SLIF_MutexQue_Framework_Global::dyn_REG_get_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= uint8_t : dyn_REG_get_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId)." << std::endl;
+    std::byte slif::SLIF_MutexQue_Framework_Global::dyn_REG_get_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId) {
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= uint8_t : dyn_REG_get_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId)." << std::endl;
         return *stat_REG_get_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId);
     }
-    void slif::SLIF_MutexQue_Framework_Global::dyn_REG_set_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
-        stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+    void slif::SLIF_MutexQue_Framework_Global::dyn_REG_set_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: => std::byte : dyn_REG_set_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId)." << std::endl;
+        stat_REG_set_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId, *MAX_NUMBER_OF_THREADS_FOR_ACCESS);
     }
     int slif::SLIF_MutexQue_Framework_Global::stat_APP_CONVERT_SLIF_MutexQue_Bool_To_Int(uint8_t* sysThreadId, bool value)
     {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= int : stat_APP_CONVERT_SLIF_MutexQue_Bool_To_Int(sysThreadId)." << std::endl;
         return pr_stat_APP_CONVERT_SLIF_MutexQue_Bool_To_Int(sysThreadId, value);
-    }
-    unsigned char* slif::SLIF_MutexQue_Framework_Global::stat_APP_CONVERT_SLIF_MutexQue_Msbdouble_To_MsbByteArray(uint8_t* sysThreadId, double value) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= unsigned char* : stat_APP_CONVERT_SLIF_MutexQue_Msbdouble_To_MsbByteArray(sysThreadId)." << std::endl;
-        return pr_stat_APP_CONVERT_SLIF_MutexQue_Msbdouble_To_MsbByteArray(sysThreadId, value);
     }
     unsigned char* slif::SLIF_MutexQue_Framework_Global::stat_APP_CONVERT_SLIF_MutexQue_MsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double value) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= unsigned char* : stat_APP_CONVERT_SLIF_MutexQue_MsbDouble_To_MsbByteArray(sysThreadId)." << std::endl;
@@ -97,11 +94,6 @@
     {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= double : stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_MsbDouble(sysThreadId)." << std::endl;
         return pr_stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_MsbDouble(sysThreadId, byteArray);
-    }
-    double slif::SLIF_MutexQue_Framework_Global::stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_Msbdouble(uint8_t* sysThreadId, const unsigned char* byteArray)
-    {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= double : stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_Msbdouble(sysThreadId)." << std::endl;
-        return pr_stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_Msbdouble(sysThreadId, byteArray);
     }
     uint8_t slif::SLIF_MutexQue_Framework_Global::stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_Msbuint8_t(uint8_t* sysThreadId, const unsigned char* byteArray)
     {
@@ -140,24 +132,11 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= double : pr_stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_MsbDouble(sysThreadId)." << std::endl;
         return temp;
     }
-    double slif::SLIF_MutexQue_Framework_Global::pr_stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_Msbdouble(uint8_t* sysThreadId, const unsigned char* byteArray) {
-        double temp;
-        std::memcpy(&temp, byteArray, sizeof(double));
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= double : pr_stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_Msbdouble(sysThreadId)." << std::endl;
-        return temp;
-    }
     uint8_t slif::SLIF_MutexQue_Framework_Global::pr_stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_Msbuint8_t(uint8_t* sysThreadId, const unsigned char* byteArray) {
         uint8_t temp;
         std::memcpy(&temp, byteArray, sizeof(uint8_t));
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= uint8_t : pr_stat_APP_CONVERT_SLIF_MutexQue_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
         return temp;
-    }
-    unsigned char* slif::SLIF_MutexQue_Framework_Global::pr_stat_APP_CONVERT_SLIF_MutexQue_Msbdouble_To_MsbByteArray(uint8_t* sysThreadId, double value) {
-        unsigned char* buffer = nullptr;
-        buffer = new unsigned char[4] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX};
-        std::memcpy(buffer, &value, sizeof(double));
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= unsigned char* : pr_stat_APP_CONVERT_SLIF_MutexQue_Msbdouble_To_MsbByteArray(sysThreadId)." << std::endl;
-        return buffer;
     }
     unsigned char* slif::SLIF_MutexQue_Framework_Global::pr_stat_APP_CONVERT_SLIF_MutexQue_MsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double value) {
         unsigned char* buffer = nullptr;
@@ -237,11 +216,6 @@
         *_stat_REG_ptr_SLIF_MutexQue_number_Of_Implemented_Threads = static_cast<std::byte>(2);
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : SLIF_MutexQue_Global : stat_REG_boot3_INITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId)." << std::endl;
     }
-    void slif::SLIF_MutexQue_Framework_Global::stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : SLIF_MutexQue_Global : stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId)." << std::endl;
-        *_stat_REG_ptr_SLIF_MutexQue_number_Of_Implemented_Threads = *MAX_NUMBER_OF_THREADS_FOR_ACCESS;
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : SLIF_MutexQue_Global : stat_REG_boot3_REINITIALISE_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId)." << std::endl;
-    }
     std::array<bool,2>* slif::SLIF_MutexQue_Framework_Global::stat_REG_get_ptr_CONST_SLIF_MutexQue_2bitFLAG_IDLE(uint8_t* sysThreadId) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= std::array<bool,2>* : stat_REG_get_ptr_CONST_SLIF_MutexQue_2bitFLAG_IDLE(sysThreadId)." << std::endl;
         return _stat_REG_CONST_SLIF_MutexQue_2bitFLAG_IDLE;
@@ -257,4 +231,8 @@
     std::byte* slif::SLIF_MutexQue_Framework_Global::stat_REG_get_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= uint8_t* : stat_REG_get_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId)." << std::endl;
         return _stat_REG_ptr_SLIF_MutexQue_number_Of_Implemented_Threads;
+    }
+    void slif::SLIF_MutexQue_Framework_Global::stat_REG_set_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId, std::byte MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: => std::byte : stat_REG_set_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId)." << std::endl;
+        *_stat_REG_ptr_SLIF_MutexQue_number_Of_Implemented_Threads = MAX_NUMBER_OF_THREADS_FOR_ACCESS;
     }

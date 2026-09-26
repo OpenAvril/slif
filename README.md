@@ -20,7 +20,7 @@
 - MainStreamBussing:           CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
 
 ---
-### slif_binary_neural.
+## slif_binary_neural.
 - TheMindInHumanImage:         CLIB Compound of Busses. An array of Busses for each Zone: Id, Ego, SuperEgo. Junctions as Bus Station(s) named 'Id-Ego', 'Ego-SuperEgo'; . Half the number of Stations as Busses due to paired exclusive communication potential.
 - Id        : binary neural algorithms. : left hemisphore as self requested tasks, right hemisphore as communicated tasks; for 'slif_epicentre'.
 - Ego       : binary neural controls.
@@ -73,6 +73,16 @@ sudo snap install clion --classic
 ### CLIB_LaunchEnableForConcurrentThreadsAt_END.so
 
 *** Load Root CMake Project ***
+
+````
+cmake -B build
+````
+````
+cmake --build build
+````
+*** manual copy build library file to libs folder in TESTBENCH ***
+
+*** Reload Root CMake Project ***
 
 ````
 cmake -B build

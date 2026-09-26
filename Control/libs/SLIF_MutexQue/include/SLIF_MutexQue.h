@@ -12,7 +12,7 @@ extern "C" {
             static int* generateHandle(uint8_t* sysThreadId);
             static void generateProgram(uint8_t* sysThreadId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
-            static void reInitialiseHandle(uint8_t* sysThreadId, int* handleId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+            static void reInitialiseHandle(uint8_t* sysThreadId, int* handleId, std::byte MAX_NUMBER_OF_THREADS_FOR_ACCESS);
             static void startByLock(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_ACCESS_ID);
             static void terminateProgram(uint8_t* sysThreadId, int* handleId);
         private:

@@ -18,7 +18,7 @@ namespace slif {
         void dyn_REG_boot1_DEFINE_SLIF_MutexQue_Framework_App_Control(uint8_t* sysThreadId, class SLIF_MutexQue_Framework* obj);
         void dyn_REG_boot2_SUBSTANTIATE_SLIF_MutexQue_Framework_App_Control(uint8_t* sysThreadId, class SLIF_MutexQue_Framework* obj);
         void dyn_REG_boot3_INITIALISE_SLIF_MutexQue_Framework_App_Control(uint8_t* sysThreadId, class SLIF_MutexQue_Framework* obj);
-        void dyn_REG_boot3_INITIALISE_SLIF_MutexQue_Framework_App_Control_For_New_Access_Count(uint8_t* sysThreadId, class SLIF_MutexQue_Framework* obj);
+        void dyn_REG_boot3_REINITIALISE_SLIF_MutexQue_Framework_App_Control_For_New_Access_Count(uint8_t* sysThreadId, class SLIF_MutexQue_Framework* obj);
         bool dyn_REG_get_FLAG_SLIF_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_ONE(uint8_t* sysThreadId);
         bool dyn_REG_get_FLAG_SLIF_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(uint8_t* sysThreadId);
         bool dyn_REG_get_FLAG_SLIF_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t* sysThreadId);

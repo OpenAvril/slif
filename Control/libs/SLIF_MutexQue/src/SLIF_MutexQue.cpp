@@ -52,13 +52,13 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : SLIF_MutexQue : isINSTANTIATED(sysThreadId)." << std::endl;
 		return slif::SLIF_MutexQue_Framework_Global::stat_APP_CONVERT_SLIF_MutexQue_MsbBoolean_To_MsbByteArray(sysThreadId, *result);
 	}
-	void slif::MutexQue::reInitialiseHandle(uint8_t* sysThreadId, int* handleId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
+	void slif::MutexQue::reInitialiseHandle(uint8_t* sysThreadId, int* handleId, std::byte MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : SLIF_MutexQue : reInitialiseHandle(sysThreadId)." << std::endl;
 		auto temp = slif_MutexQue_stat_PGM_get_array_of_ptr_SLIF_MutexQue(sysThreadId)->begin();
 		std::advance(temp, *handleId);
-		auto* tempObj = static_cast<SLIF_MutexQue_Framework*>(*temp);
-		tempObj->dyn_CLASS_get_ptr_SLIF_MutexQue_Global(sysThreadId)->dyn_REG_set_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
-		tempObj->dyn_CLASS_get_ptr_SLIF_MutexQue_App(sysThreadId)->dyn_CLASS_get_ptr_SLIF_MutexQue_App_Control(sysThreadId)->dyn_REG_boot3_INITIALISE_SLIF_MutexQue_Framework_App_Control_For_New_Access_Count(sysThreadId, tempObj);
+		const auto tempObj = static_cast<SLIF_MutexQue_Framework*>(*temp);
+		tempObj->dyn_CLASS_get_ptr_SLIF_MutexQue_Global(sysThreadId)->dyn_REG_set_ptr_SLIF_MutexQue_number_Of_Implemented_Threads(sysThreadId, &MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+		tempObj->dyn_CLASS_get_ptr_SLIF_MutexQue_App(sysThreadId)->dyn_CLASS_get_ptr_SLIF_MutexQue_App_Control(sysThreadId)->dyn_REG_boot3_REINITIALISE_SLIF_MutexQue_Framework_App_Control_For_New_Access_Count(sysThreadId, tempObj);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : SLIF_MutexQue : reInitialiseHandle(sysThreadId)." << std::endl;
 	}
 	void slif::MutexQue::startByLock(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_ACCESS_ID) {
