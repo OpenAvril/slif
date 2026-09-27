@@ -1,10 +1,7 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_Bus.h"
-
-#include <cstddef>
-
 #include "../../include/CLIB_Bus_Framework_Global.h"
 #include "independent/CLIB_Bus_STRUCT_Bus_CLASS_Ticket.h"
-
+#include <cstddef>
     class slif::Ticket* slif::CLIB_Bus_STRUCT_Bus::stat_REG_of_CLIB_Bus_CLASS_Ticket;
     unsigned char* slif::CLIB_Bus_STRUCT_Bus::stat_REG_of_CLIB_Bus_DATA;
 // public.

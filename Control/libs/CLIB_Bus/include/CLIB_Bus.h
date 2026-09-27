@@ -11,8 +11,8 @@ extern "C" {
             public:
             static void generateProgram(uint8_t* sysThreadId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
-            static void load(uint8_t* sysThreadId,Ticket ticket, unsigned char* bytes_Cargo);
-            static void unload(uint8_t* sysThreadId,Ticket ticket, unsigned char* bytes_Cargo);
+            static void load(uint8_t* sysThreadId, Ticket ticket, unsigned char* bytes_Cargo);
+            static void unload(uint8_t* sysThreadId, Ticket ticket, unsigned char* bytes_Cargo);
             static void reInitialiseHandle(uint8_t* sysThreadId, std::byte* MAX_NUMBER_OF_JUNCTIONS);
             static void terminateProgram(uint8_t* sysThreadId);
         private:
