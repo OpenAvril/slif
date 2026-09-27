@@ -43,5 +43,5 @@
     }
     void slif::CLIB_Bus_STRUCT_Bus::stat_REG_boot1_INITIALISE_CLIB_Bus_DATA(uint8_t* sysThreadId){
         auto* DATA = new std::byte[1028];
-        *stat_REG_of_CLIB_Bus_DATA = *CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(DATA));
+        *stat_REG_of_CLIB_Bus_DATA = *CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(DATA));
     }
