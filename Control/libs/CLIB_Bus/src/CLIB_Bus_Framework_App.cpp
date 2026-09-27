@@ -1,7 +1,7 @@
 #include "../include/CLIB_Bus_Framework_App.h"
 #include <iostream>
-	slif::CLIB_Bus_Framework_App_Algorithms* slif::CLIB_Bus_Framework_App::_stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms;
-	slif::CLIB_Bus_Framework_App_Execute* slif::CLIB_Bus_Framework_App::_stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute;
+	slif::CLIB_Bus_Framework_App_Algorithms* slif::CLIB_Bus_Framework_App::stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms;
+	slif::CLIB_Bus_Framework_App_Execute* slif::CLIB_Bus_Framework_App::stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute;
 // public.
 	slif::CLIB_Bus_Framework_App::CLIB_Bus_Framework_App(uint8_t* sysThreadId)	{
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework_App : CLIB_Bus_Framework_App(sysThreadId)." << std::endl;
@@ -13,8 +13,8 @@
 	}
 	slif::CLIB_Bus_Framework_App::~CLIB_Bus_Framework_App() {
 		std::cout << "thread "  << 0 << " :: entered LIB :: slif : CLIB_Bus_Framework_App : ~CLIB_Bus_Framework_App()." << std::endl;
-		delete _stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms;
-		delete _stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute;
+		delete stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms;
+		delete stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute;
 		std::cout << "thread "  << 0 << " :: exiting LIB :: slif : CLIB_Bus_Framework_App : ~CLIB_Bus_Framework_App()." << std::endl;
 	}
 	void slif::CLIB_Bus_Framework_App::dyn_REG_boot1_DEFINE_CLIB_Bus_Framework_App(uint8_t* sysThreadId) {
@@ -64,31 +64,31 @@
 // private
 	void slif::CLIB_Bus_Framework_App::stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App_Algorithms(uint8_t* sysThreadId)	{
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework_App : stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App_Algorithms(sysThreadId)." << std::endl;
-		_stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms = nullptr;
+		stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms = nullptr;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework_App : stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App_Algorithms(sysThreadId)." << std::endl;
 	}
 	void slif::CLIB_Bus_Framework_App::stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId)	{
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework_App : stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App_Execute(sysThreadId)." << std::endl;
-		_stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute = nullptr;
+		stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute = nullptr;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework_App : stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App_Execute(sysThreadId)." << std::endl;
 	}
 	void slif::CLIB_Bus_Framework_App::stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Algorithms(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework_App : stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Algorithms(sysThreadId)." << std::endl;
-		_stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms = new class CLIB_Bus_Framework_App_Algorithms(sysThreadId);
+		stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms = new class CLIB_Bus_Framework_App_Algorithms(sysThreadId);
 		while(stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Algorithms(sysThreadId) == nullptr) { }
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework_App : stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Algorithms(sysThreadId)." << std::endl;
 	}
 	void slif::CLIB_Bus_Framework_App::stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework_App : stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Execute(sysThreadId)." << std::endl;
-		_stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute = new class CLIB_Bus_Framework_App_Execute(sysThreadId);
+		stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute = new class CLIB_Bus_Framework_App_Execute(sysThreadId);
 		while(stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Algorithms(sysThreadId) == nullptr) { }
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework_App : stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Execute(sysThreadId)." << std::endl;
 	}
 	slif::CLIB_Bus_Framework_App_Algorithms* slif::CLIB_Bus_Framework_App::stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Algorithms(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Algorithms(sysThreadId)." << std::endl;
-		return _stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms;
+		return stat_CLASS_ptr_CLIB_Bus_Framework_App_Algorithms;
 	}
 	slif::CLIB_Bus_Framework_App_Execute* slif::CLIB_Bus_Framework_App::stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)." << std::endl;
-		return _stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute;
+		return stat_CLASS_ptr_CLIB_Bus_Framework_App_Execute;
 	}
