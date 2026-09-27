@@ -11,12 +11,11 @@ namespace slif {
         virtual ~CLIB_Bus_Framework();
         void dyn_APP_CLIB_Bus_Framework_create_Architecture(uint8_t* sysThreadId);
         void dyn_APP_CLIB_Bus_Framework_create_Global_and_Settings(uint8_t* sysThreadId);
-        class CLIB_Bus_Framework_App* dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_App(uint8_t* sysThreadId);
-        class CLIB_Bus_Framework_Global*dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Global(uint8_t* sysThreadId);
         void dyn_APP_CLIB_Bus_STRUCT_boot1_DEFINE(uint8_t* sysThreadId);
         void dyn_APP_CLIB_Bus_STRUCT_boot3_INITIALISE(uint8_t* sysThreadId);
         class CLIB_Bus_Framework_App* dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(uint8_t* sysThreadId);
         class CLIB_Bus_Framework_Global* dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(uint8_t* sysThreadId);
+        class CLIB_Bus_STRUCT_Bus* dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_Bus(uint8_t* sysThreadId);
         void dyn_REG_boot1_DEFINE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         void dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework(uint8_t* sysThreadId);

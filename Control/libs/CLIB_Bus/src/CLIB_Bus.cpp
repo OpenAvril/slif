@@ -17,17 +17,17 @@
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started CLIB_OpenEpiCentre_Global Meta-Data and Settings." << std::endl;
 		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_APP_CLIB_Bus_Framework_create_Global_and_Settings(sysThreadId);
-		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Global(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_Bus_Framework_Global(sysThreadId);
-		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Global(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework_Global(sysThreadId);
-		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Global(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework_Global(sysThreadId);
+		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_Bus_Framework_Global(sysThreadId);
+		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework_Global(sysThreadId);
+		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework_Global(sysThreadId);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done CLIB_OpenEpiCentre_Global Meta-Data and Settings." << std::endl;
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_APP_CLIB_Bus_STRUCT_boot1_DEFINE(sysThreadId);
 		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_APP_CLIB_Bus_STRUCT_boot3_INITIALISE(sysThreadId);
-		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework(sysThreadId);
-		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework(sysThreadId);
-			stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework(sysThreadId);
+		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_Bus(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_Bus_CLASS_Bus(sysThreadId);
+		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_Bus(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_CLASS_Bus(sysThreadId);
+		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_Bus(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_Bus_CLASS_Bus(sysThreadId);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
