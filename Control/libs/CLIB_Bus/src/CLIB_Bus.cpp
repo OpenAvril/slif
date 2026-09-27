@@ -25,6 +25,9 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_APP_CLIB_Bus_STRUCT_boot1_DEFINE(sysThreadId);
 		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_APP_CLIB_Bus_STRUCT_boot3_INITIALISE(sysThreadId);
+		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework(sysThreadId);
+		stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework(sysThreadId);
+			stat_CLASS_get_ptr_slif_CLIB_Bus_Framework(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework(sysThreadId);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;

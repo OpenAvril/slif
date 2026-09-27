@@ -6,6 +6,8 @@ namespace slif {
     public:
         CLIB_Bus_Framework_Global(uint8_t* sysThreadId);
         ~CLIB_Bus_Framework_Global();
+        static unsigned char* stat_APP_CONVERT_CLIB_Bus_DATA_To_MsbByteArray(uint8_t* sysThreadId, class Object* value_DATA);
+
         static unsigned char* stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbBoolean_To_MsbByteArray(uint8_t* sysThreadId, bool value);
         static unsigned char* stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbdouble_To_MsbByteArray(uint8_t* sysThreadId, double value);
         static unsigned char* stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t value);
@@ -16,6 +18,9 @@ namespace slif {
         void dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework_Global(uint8_t* sysThreadId);
         void dyn_REG_boot4_INSTANTIATE_CLIB_Bus_Framework_Global(uint8_t* sysThreadId);
     private:
+        static unsigned char* pr_stat_APP_CONVERT_CLIB_Bus_DATA_To_MsbByteArray(uint8_t* sysThreadId, class Object* value_DATA);
+
+
         static unsigned char* pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbBoolean_To_MsbByteArray(uint8_t* sysThreadId, bool value);
         static unsigned char* pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbdouble_To_MsbByteArray(uint8_t* sysThreadId, double value);
         static unsigned char* pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t value);

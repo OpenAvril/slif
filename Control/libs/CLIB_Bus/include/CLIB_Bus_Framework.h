@@ -20,7 +20,6 @@ namespace slif {
         void dyn_REG_boot1_DEFINE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         void dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework(uint8_t* sysThreadId);
-        static void stat_CLASS_boot0_DECLAIRE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         static void stat_REG_boot0_DECLAIRE_CLIB_Bus_Framework(uint8_t* sysThreadId);

@@ -16,6 +16,12 @@
         std::cout << "thread "  << 0 << " :: entered LIB :: slif : CLIB_Bus_Framework_Global : ~CLIB_Bus_Framework_Global()." << std::endl;
         std::cout << "thread "  << 0 << " :: exiting LIB :: slif : CLIB_Bus_Framework_Global : ~CLIB_Bus_Framework_Global()." << std::endl;
     }
+    unsigned char* slif::CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_DATA_To_MsbByteArray(uint8_t* sysThreadId, class Object* value_DATA) {
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbdouble_To_MsbByteArray(sysThreadId, value)." << std::endl;
+        return pr_stat_APP_CONVERT_CLIB_Bus_DATA_To_MsbByteArray(sysThreadId, value_DATA);
+    }
+
+
     unsigned char* slif::CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbdouble_To_MsbByteArray(uint8_t* sysThreadId, double value) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbdouble_To_MsbByteArray(sysThreadId, value)." << std::endl;
         return pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbdouble_To_MsbByteArray(sysThreadId, value);
@@ -53,6 +59,14 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_Bus_Framework_Global(sysThreadId)." << std::endl;
     }
 // private.
+    unsigned char* slif::CLIB_Bus_Framework_Global::pr_stat_APP_CONVERT_CLIB_Bus_DATA_To_MsbByteArray(uint8_t* sysThreadId, class Object* value_DATA) {
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbdouble_To_MsbByteArray(sysThreadId, value)." << std::endl;
+        return reinterpret_cast<unsigned char*>(value_DATA);
+    }
+
+
+
+
     unsigned char* slif::CLIB_Bus_Framework_Global::pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbBoolean_To_MsbByteArray(uint8_t* sysThreadId, bool value) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char[1];
