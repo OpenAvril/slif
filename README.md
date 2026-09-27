@@ -1,4 +1,6 @@
 # Silicon Life Open Source Package:
+A master by coursework with five specialisation electives, I propose Convener of Masters of Engineering – Electronic Engineer; (1) Embedded Control Systems, (2) Concurrency; Core, Post-Process., (3) Networking, (4) Full Stack Development, (5) Bus Systems, (6) Binary Neural Intelligence..
+
 ## ExclusiveCohesionMutexQueue:         CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 ## LaunchQue:       CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
 ## ThreadsLog:      CLIB Console output via MutexQue, DataCluster is 'Console'.
