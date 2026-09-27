@@ -39,7 +39,6 @@ namespace slif {
         static void stat_REG_boot3_INITIALISE_CLIB_Bus_CLASS_Ticket_arrivalAccessId();
         static void stat_REG_boot3_INITIALISE_CLIB_Bus_CLASS_Ticket_departureBusId();
         static void stat_REG_boot3_INITIALISE_CLIB_Bus_CLASS_Ticket_departureAccessId();
-
         static uint8_t* stat_get_Arrival_AccessId();
         static uint8_t* stat_get_Arrival_BusId();
         static uint8_t* stat_get_Departure_AccessId();
