@@ -96,16 +96,6 @@ cmake -B build
 ````
 cmake --build build
 ````
-*** manual copy build library file to libs folder in TESTBENCH ***
-
-*** Reload Root CMake Project ***
-
-````
-cmake -B build
-````
-````
-cmake --build build
-````
 
 *** run TESTBENCH ***
 
