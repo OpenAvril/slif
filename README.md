@@ -1,6 +1,22 @@
 # Silicon Life Open Source Package:
-## ExclusiveCohesionMutexQueue:         CLIB Request, Wait, Write-Read for 'sysThreadId' at 'DataCluster'.
-## LaunchQue:       CLIB Request, Wait, Launch for 'sysThreadId' at Server-Client.
+OpenAvril / slif is an open-source development project hosted on GitHub under the Silicon Lifeecosystem.
+
+The repository is officially marked as "UNDER DEVELOPMENT" and serves as a collection of full-stack concurrent programming packages.
+
+Key Focus Areas & Features
+The project contains architectural implementations centered heavily around high-concurrency, systems-level logic, and early-stage artificial intelligence:
+ - Concurrent Programming Tools: Implementations for full-stack concurrent pipelines, including custom mutex locks, mutex synchronization, and concurrent queues.
+- Silicon Life Concepts: Targeted frameworks designed for "Silicon Life" computing architectures.
+- Neural Networks: Repositories and logic patterns explicitly tagged for handling Artificial Neural Networks (ANN) and Binary Neural Networks (BNN).
+
+The Silicon Life Project reverlates the field of digital electronics post epitome, which is what I bring after six year reduced hours. 
+A master by coursework with five specialisation electives, I propose Convener of Masters of Engineering – Silicon Life Engineer; (1) Concurrent Embedded Control Systems, (2) Concurrency; Core, Post-Process., (3) Concurrent Networking, (4) Concurrent Bus Systems. (5) Concurrent Full Stack Development, (6) Hemesphoric Binary Neural Intelligence.. 
+
+* Google. (2026, 09 28). GitHub OpenAvril slif. Gemini AI search. (https://www.google.com/search?q=github+openavril+slif&rlz=1CDGOYI_enAU1216AU1216&oq=GitHub+OpenAvril+slif&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg8MgcIBBAhGKABMgcIBRAhGKABMgcIBhAhGKABMgcIBxAhGKABMgcICBAhGI8C0gEJMTU4ODRqMGo5qAIBsAIB4gMEGAEgXw&hl=en-GB&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe).
+
+---
+## ExclusiveCohesionMutexQueue:         CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
+## LaunchQue:       CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
 ## ThreadsLog:      CLIB Console output via MutexQue, DataCluster is 'Console'.
 ## OpenEpicentre:   CLIB Concurrent Server with independent task threads and IO wrapper.
 
@@ -9,25 +25,25 @@
 ## slif_control.
 - Optimus:                     Package INSTANTIATION Primer.
 
-### slif_control : ExclusiveCohesionMutexQueue.
+### slif_control : ConcurrentExclusiveCohesionMutexQueue.
 - ExclusiveCohesionMutexQueue: CLIB Request, Wait, Write-Read for : ('AccessId' at 'DataClusterId').
 - ThreadsLog:                  CLIB Console output via MutexQue for : ('DataCluster="Console"')
 
-### slif_control : LaunchQueue.
-- LaunchQue:                   CLIB Request, Wait, Launch for : ('ConcurrentsysThreadId') deployed at Server or Client.
+### slif_control : ConcurrentLaunchQueue.
+- LaunchQue:                   CLIB Request, Wait, Launch for : ('ConcurrentThreadId') deployed at Server or Client.
 
-### slif_control : Buses.
+### slif_control : ConcurrentBusSystem.
 - MainStreamBussing:           CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
 
 ---
-## slif_binary_neural.
+## slif_binary_neural : HemisphoricBinaryNeuralNetworking.
 - TheMindInHumanImage:         CLIB Compound of Busses. An array of Busses for each Zone: Id, Ego, SuperEgo. Junctions as Bus Station(s) named 'Id-Ego', 'Ego-SuperEgo'; . Half the number of Stations as Busses due to paired exclusive communication potential.
 - Id        : binary neural algorithms. : left hemisphore as self requested tasks, right hemisphore as communicated tasks; for 'slif_epicentre'.
 - Ego       : binary neural controls.
 - Super-Ego : binary neural desires.
 
 ---
-## slif_epicentre.
+## slif_epicentre : ConcurrentLeftHemisphore.
 - Optimus:                     Package INSTANTIATION Primer.
 - OpenEpicentre:               CLIB Concurrent Server with independent task threads and IO wrapper.
 
