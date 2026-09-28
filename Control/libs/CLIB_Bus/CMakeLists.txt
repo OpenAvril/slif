@@ -16,7 +16,7 @@ add_library(slif_threads_log STATIC
         src/independent/CLIB_Bus_STRUCT_Bus_CLASS_Ticket.cpp
         src/independent/CLIB_Bus_STRUCT_Bus.cpp
         src/CLIB_Bus_Framework_App.cpp
-        src/CLIB_Bus_Framework_App_Algorithms.cpp
+        src/CLIB_Bus_Framework_App_Data.cpp
         src/CLIB_Bus_Framework_App_Execute.cpp
 )
 
