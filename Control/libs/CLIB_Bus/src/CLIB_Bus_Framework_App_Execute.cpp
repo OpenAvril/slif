@@ -96,28 +96,6 @@
         }
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework_App_Data : stat_PGM_boot3_INITIALISE_ForThreadsAt__BusId(sysThreadId)." << std::endl;
     }
-    void slif::CLIB_Bus_Framework_App_Execute::stat_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_MutexQue_At_Junction(uint8_t* sysThreadId) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework_App_Data : stat_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_MutexQue(sysThreadId)." << std::endl;
-        auto oldCount = stat_REG_get_PGM_CLIB_ForThreadsAt_MutexQue_At_Junction(sysThreadId)->size();
-        stat_REG_get_PGM_CLIB_ForThreadsAt_MutexQue_At_Junction(sysThreadId)->resize(slif::CLIB_Bus_Framework_Global::dyn_REG_get_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId));
-        for (uint8_t junctionID = 0; junctionID < stat_REG_get_PGM_CLIB_ForThreadsAt_MutexQue_At_Junction(sysThreadId)->size(); junctionID++) {
-            auto temp = stat_REG_get_PGM_CLIB_ForThreadsAt_MutexQue_Junction_At_AccessLock(sysThreadId)->begin();
-            std::advance(temp, junctionID);
-            auto max = CLIB_Bus_Framework_Global::dyn_REG_get_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId)->begin();
-            std::advance(max, junctionID);
-            for (uint8_t accessId = 0; accessId < *max; accessId++) {
-                std::advance(temp, accessId);
-                temp->assign(accessId, slif::MutexQue::generateHandle(sysThreadId));
-            }
-        }
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework_App_Data : stat_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_MutexQue(sysThreadId)." << std::endl;
-    }
-    void slif::CLIB_Bus_Framework_App_Execute::stat_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_MutexQue_At_Junction_At_AccessLock(uint8_t* sysThreadId, std::byte* List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework_App_Data : stat_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_MutexQue(sysThreadId)." << std::endl;
-
-
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework_App_Data : stat_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_MutexQue(sysThreadId)." << std::endl;
-    }
     std::list<int*>* slif::CLIB_Bus_Framework_App_Execute::stat_REG_get_PGM_CLIB_ForThreadsAt_MutexQue_At_Junction(uint8_t* sysThreadId) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= PGM : stat_PGM_get_ptr_ForThreadsAt__BusId(sysThreadId)." << std::endl;
         return stat_PGM_CLIB_ForThreadsAt_MutexQue_At_Junction;
