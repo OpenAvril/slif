@@ -15,7 +15,8 @@ extern "C" {
             static void reInitialiseHandle(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_JUNCTIONS);
             static void terminateProgram(uint8_t* sysThreadId);
         private:
-            static uint8_t *internalSide;
+            static uint8_t* internalSide;
+            static uint8_t* externalSide;
             static void stat_APP_FUNCT_slif_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);
             static void stat_CLASS_boot1_DEFINE_CLIB_SystemBus_Framework(uint8_t* sysThreadId);
             static void stat_CLASS_boot3_INITIALISE_CLIB_SystemBus_Framework(uint8_t* sysThreadId);
