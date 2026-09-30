@@ -1,6 +1,6 @@
 *** UNDER DEVELOPMENT ***
 
-Copyright (c) 2026, CLIB_Bus_System, Brenton James Maddocks, King Crown of Queensland to
+Copyright (c) 2026, CLIB_SystemBus_System, Brenton James Maddocks, King Crown of Queensland to
 the King Emperor of the Commonwealth.
 
 -

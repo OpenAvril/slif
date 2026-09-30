@@ -61,14 +61,14 @@
     uint8_t slif::CLIB_Bus_Framework_Global::dyn_REG_get_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
         return *stat_REG_get_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId);
     }
-    std::list<uint8_t> slif::CLIB_Bus_Framework_Global::dyn_REG_get_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId) {
-        return *stat_REG_get_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId);
+    std::list<uint8_t>* slif::CLIB_Bus_Framework_Global::dyn_REG_get_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId) {
+        return stat_REG_get_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId);
     }
-    void slif::CLIB_Bus_Framework_Global::dyn_REG_set_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_JUNCTIONS) {
-        stat_REG_set_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId, *MAX_NUMBER_OF_JUNCTIONS);
+    void slif::CLIB_Bus_Framework_Global::dyn_REG_set_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId, uint8_t MAX_NUMBER_OF_JUNCTIONS) {
+        stat_REG_set_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId, MAX_NUMBER_OF_JUNCTIONS);
     }
-    void slif::CLIB_Bus_Framework_Global::dyn_REG_set_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId, std::list<uint8_t>* List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS) {
-        stat_REG_set_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId, *List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS);
+    void slif::CLIB_Bus_Framework_Global::dyn_REG_set_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId, std::list<uint8_t> List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS) {
+        stat_REG_set_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId, List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS);
     }
 // private.
     unsigned char* slif::CLIB_Bus_Framework_Global::pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_DATA_To_MsbByteArray(uint8_t* sysThreadId, class Object* value_DATA) {
@@ -101,6 +101,19 @@
     bool slif::CLIB_Bus_Framework_Global::pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbByteArray_To_MsbBoolean(uint8_t* sysThreadId, const unsigned char* byteArray) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbByteArray_To_MsbBoolean(sysThreadId)." << std::endl;
         return (byteArray[7] & 1) != 0;
+    }
+    slif::Object* slif::CLIB_Bus_Framework_Global::pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, unsigned char* DATA) {
+        class Object* temp;
+        auto tempDATA = reinterpret_cast<class Object*>(DATA);
+        std::memcpy(&temp, tempDATA, sizeof(tempDATA));
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId)." << std::endl;
+        return temp;
+    }
+    unsigned char* slif::CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, class Object* DATA) {
+        unsigned char* temp;
+        std::memcpy(&temp, DATA, sizeof(double));
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbByteArray_To_MsbDouble(sysThreadId)." << std::endl;
+        return temp;
     }
     double slif::CLIB_Bus_Framework_Global::pr_stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbByteArray_To_MsbDouble(uint8_t* sysThreadId, const unsigned char* byteArray) {
         double temp;
@@ -154,9 +167,6 @@
             *temp = 2;
         }
     }
-
-
-
     uint8_t* slif::CLIB_Bus_Framework_Global::stat_REG_get_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
         return stat_REG_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS;
     }
@@ -164,8 +174,8 @@
         return stat_REG_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
     }
     void slif::CLIB_Bus_Framework_Global::stat_REG_set_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId, uint8_t MAX_NUMBER_OF_JUNCTIONS) {
-        *stat_REG_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS = *MAX_NUMBER_OF_JUNCTIONS;
+        *stat_REG_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS = MAX_NUMBER_OF_JUNCTIONS;
     }
     void slif::CLIB_Bus_Framework_Global::stat_REG_set_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId, std::list<uint8_t> List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS) {
-        *stat_REG_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS = *List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
+        *stat_REG_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS = List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
     }

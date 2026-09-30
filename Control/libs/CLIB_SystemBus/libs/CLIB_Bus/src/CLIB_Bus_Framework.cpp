@@ -63,6 +63,10 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework : dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework(sysThreadId)." << std::endl;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework : dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework(sysThreadId)." << std::endl;
 	}
+void slif::CLIB_Bus_Framework::stat_CLASS_boot0_DECLAIRE_CLIB_Bus_Framework(uint8_t* sysThreadId) {
+		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework : stat_CLASS_boot0_DECLAIRE_CLIB_Bus_Framework(sysThreadId)." << std::endl;
+		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_Framework : stat_CLASS_boot0_DECLAIRE_CLIB_Bus_Framework(sysThreadId)." << std::endl;
+	}
 	void slif::CLIB_Bus_Framework::stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_Framework : stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework(sysThreadId)." << std::endl;
 		stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App(sysThreadId);

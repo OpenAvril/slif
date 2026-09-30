@@ -21,7 +21,7 @@ add_library(slif_control_bus STATIC
 )
 
 target_include_directories(slif_control_bus PUBLIC
-        "../../../CLIB_MutexQue/include"
+        "../../../libs/CLIB_MutexQue/include"
         "include"
 )
 

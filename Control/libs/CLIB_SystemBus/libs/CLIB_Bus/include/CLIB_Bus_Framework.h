@@ -1,5 +1,5 @@
-#ifndef CLIB_THEADLOGS_slif_CLIB_Bus_Framework_H
-#define CLIB_THEADLOGS_slif_CLIB_Bus_Framework_H
+#ifndef CLIB_THEADLOGS_CLIB_Bus_Framework_H
+#define CLIB_THEADLOGS_CLIB_Bus_Framework_H
 #include "CLIB_Bus_Framework_App.h"
 #include "CLIB_Bus_Framework_Global.h"
 #include "../include/independent/CLIB_Bus_STRUCT_Bus.h"
@@ -17,8 +17,10 @@ namespace slif {
         class CLIB_Bus_Framework_Global* dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(uint8_t* sysThreadId);
         class CLIB_Bus_STRUCT_Bus* dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_Bus(uint8_t* sysThreadId);
         void dyn_REG_boot1_DEFINE_CLIB_Bus_Framework(uint8_t* sysThreadId);
+
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         void dyn_REG_boot3_INITIALISE_CLIB_Bus_Framework(uint8_t* sysThreadId);
+        static void stat_CLASS_boot0_DECLAIRE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework(uint8_t* sysThreadId);
         static void stat_REG_boot0_DECLAIRE_CLIB_Bus_Framework(uint8_t* sysThreadId);

@@ -20,7 +20,7 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class Object* : get_DATA(sysThreadId)." << std::endl;
 		return stat_REG_get_CLIB_Bus_Framework_App_Data_DATA(sysThreadId);
 	}
-	void slif::CLIB_Bus_Framework_App_Data::dyn_REG_set_CLIB_Bus_Framework_App_Data_DATA(uint8_t* sysThreadId, class Object* newValue_DATA) {
+	void slif::CLIB_Bus_Framework_App_Data::dyn_REG_set_CLIB_Bus_Framework_App_Data_DATA(uint8_t* sysThreadId, unsigned char* newValue_DATA) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: => class Object* : set_DATA(sysThreadId)." << std::endl;
 		stat_REG_set_CLIB_Bus_Framework_App_Data_DATA(sysThreadId, newValue_DATA);
 	}
@@ -80,7 +80,7 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class Object* : stat_get_DATA(sysThreadId)." << std::endl;
 		return stat_REG_CLIB_Bus_Framework_App_Data_DATA;
 	}
-	void slif::CLIB_Bus_Framework_App_Data::stat_REG_set_CLIB_Bus_Framework_App_Data_DATA(uint8_t* sysThreadId, class Object* newValue_DATA) {
+	void slif::CLIB_Bus_Framework_App_Data::stat_REG_set_CLIB_Bus_Framework_App_Data_DATA(uint8_t* sysThreadId, unsigned char* newValue_DATA) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: => class Object* : stat_set_DATA(sysThreadId)." << std::endl;
 		stat_REG_CLIB_Bus_Framework_App_Data_DATA = reinterpret_cast<unsigned char*>(newValue_DATA);
 	}
