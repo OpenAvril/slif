@@ -6,7 +6,7 @@
 #include "../structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise2.h"
 #include "../structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.h"
 #include <list>
-namespace CLIBOpenEpiCentre {
+namespace slifOpenEpiCentre {
     struct CLIB_OpenEpiCentre_STRUCT_Output {
     public:
         void dyn_APP_select_And_Set_OpenEpiCentre_STRUCT_Output_Subset(CLIB_OpenEpiCentre_Framework* obj, unsigned long long praiseEventId);

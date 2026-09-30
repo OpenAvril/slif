@@ -1,5 +1,5 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Execute_Control.h"
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 #include <thread>
 	bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised;
 	std::array<bool, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised;//NUMBER OF THREADS.

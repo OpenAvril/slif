@@ -3,7 +3,7 @@
 #include "../engine/CLIB_OpenEpiCentre_Framework.h"
 #include <cstddef>
 #include <cstdint>
-namespace CLIBOpenEpiCentre
+namespace slifOpenEpiCentre
 {
     class CLIB_OpenEpiCentre_Data_Control
     {

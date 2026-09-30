@@ -4,7 +4,7 @@
 #include "CLIB_OpenEpiCentre_Execute_Control.h"
 #include <list>
 #include <thread>
-namespace CLIBOpenEpiCentre
+namespace slifOpenEpiCentre
 {
     class CLIB_OpenEpiCentre_Execute
     {

@@ -4,7 +4,7 @@
 #include <cstdint>
 #include <list>
 extern "C" {
-	namespace CLIBOpenEpiCentre	{
+	namespace slif	{
 		class CLIB_OpenEpiCentre {
 		public:
 			static void* CLIB_OpenEpiCentre_app_FUNCT_generate_Program(uint8_t* sysThreadId);

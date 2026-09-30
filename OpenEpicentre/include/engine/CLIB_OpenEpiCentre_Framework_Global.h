@@ -1,7 +1,7 @@
 #ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H
 #define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H
 #include <cstdint>
-namespace CLIBOpenEpiCentre {
+namespace slifOpenEpiCentre {
     enum Axis
     {
         X,

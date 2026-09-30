@@ -1,6 +1,6 @@
 #include "../../../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.h"
 #include <cfloat>
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 	double* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise0::_REG_ptr_CLIB_OpenEpiCentre_STRUCT_Output_praise0_Value;
 // public.
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise0::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise0()

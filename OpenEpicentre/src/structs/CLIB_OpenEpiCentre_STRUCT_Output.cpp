@@ -2,7 +2,7 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_App.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Data.h"
 #include <cstdint>
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 #include <list>
     uint8_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output::_REG_ptr_OpenEpiCentre_STRUCT_Output_playerId;
     unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output::_REG_ptr_OpenEpiCentre_STRUCT_Output_praiseEventId;

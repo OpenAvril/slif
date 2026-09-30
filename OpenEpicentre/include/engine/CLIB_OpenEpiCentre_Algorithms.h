@@ -4,7 +4,7 @@
 #include "../structs/CLIB_OpenEpiCentre_STRUCT_Concurrent.h"
 #include <cstdint>
 #include <list>
-namespace CLIBOpenEpiCentre
+namespace slifOpenEpiCentre
 {
     class CLIB_OpenEpiCentre_Algorithms
     {

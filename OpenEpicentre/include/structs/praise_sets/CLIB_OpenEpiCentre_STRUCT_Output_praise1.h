@@ -1,6 +1,6 @@
 #ifndef TESTBENCH_CLIB_OPENEPICENTRE_STRUCT_OUTPUT_PRAISE1_H
 #define TESTBENCH_CLIB_OPENEPICENTRE_STRUCT_OUTPUT_PRAISE1_H
-namespace CLIBOpenEpiCentre
+namespace slifOpenEpiCentre
 {
     struct CLIB_OpenEpiCentre_STRUCT_Output_praise1
     {

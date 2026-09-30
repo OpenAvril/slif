@@ -4,7 +4,7 @@
 #include <array>
 #include <cstdint>
 #include <thread>
-namespace CLIBOpenEpiCentre {
+namespace slifOpenEpiCentre {
     class CLIB_OpenEpiCentre_Execute_Control {
     public:
         CLIB_OpenEpiCentre_Execute_Control();

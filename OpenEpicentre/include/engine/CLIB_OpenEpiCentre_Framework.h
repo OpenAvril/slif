@@ -8,7 +8,7 @@
 #include "../structs/CLIB_OpenEpiCentre_STRUCT_User_Algorithm.h"
 #include "../structs/CLIB_OpenEpiCentre_STRUCT_User_Input.h"
 #include "../structs/CLIB_OpenEpiCentre_STRUCT_User_Output.h"
-namespace CLIBOpenEpiCentre {
+namespace slifOpenEpiCentre {
     class CLIB_OpenEpiCentre_Framework {
     public:
         CLIB_OpenEpiCentre_Framework(uint8_t* sysThreadId);

@@ -6,7 +6,7 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Execute_Control.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_Global.h"
 #include "../../include/structs/CLIB_OpenEpiCentre_STRUCT_Concurrent.h"
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 
 #include "../../libs/CLIB_WriteQueForThreadsAt_DataStack/include/CLIB_WriteEnableForThreadsAt_DataStack.h"
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute::_stat_CLASS_CLIB_OpenEpiCentre_Execute_Control;

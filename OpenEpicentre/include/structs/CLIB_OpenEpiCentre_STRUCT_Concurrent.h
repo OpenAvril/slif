@@ -2,7 +2,7 @@
 #define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_STRUCT_CONCURRENT_H
 #include "../engine/CLIB_OpenEpiCentre_Framework.h"
 #include <cstdint>
-namespace CLIBOpenEpiCentre
+namespace slifOpenEpiCentre
 {
     struct CLIB_OpenEpiCentre_STRUCT_Concurrent
     {

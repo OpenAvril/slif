@@ -2,7 +2,7 @@
 #include "../../libs/CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
 #include <climits>
 #include <cstring>
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
     uint8_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Global::_stat_REG_ptr_number_Of_Implemented_Cores;
     unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Global::_stat_REG_ptr_number_Of_Praise_Events;
 // public.

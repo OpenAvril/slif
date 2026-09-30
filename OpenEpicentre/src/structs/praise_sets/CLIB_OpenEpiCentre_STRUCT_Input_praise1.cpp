@@ -1,6 +1,6 @@
 #include "../../../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.h"
 #include <cfloat>
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 	double* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise1::_stat_REG_ptr_Input_praise1_valueA;
 	double* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise1::_stat_REG_ptr_Input_praise1_valueB;
 // public.

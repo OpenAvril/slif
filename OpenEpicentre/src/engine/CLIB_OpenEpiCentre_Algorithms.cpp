@@ -1,5 +1,5 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Algorithms.h"
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
     std::list<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Concurrent*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::_stat_REG_ptr_list_Of_ptr_Concurrent;
 // public.
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::CLIB_OpenEpiCentre_Algorithms()

@@ -6,7 +6,7 @@
 #include "../structs/CLIB_OpenEpiCentre_STRUCT_Output.h"
 #include <array>
 #include <vector>
-namespace CLIBOpenEpiCentre {
+namespace slifOpenEpiCentre {
     class CLIB_OpenEpiCentre_Data {
      public:
         CLIB_OpenEpiCentre_Data(uint8_t* sysThreadId);

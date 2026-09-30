@@ -1,5 +1,5 @@
 #include "../../include/structs/CLIB_OpenEpiCentre_STRUCT_User_Output.h"
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise0* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_User_Output::_stat_CLASS_ptr_CLIB_OpenEpiCentre_STRUCT_UserOutput_Output_praise0;
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise1* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_User_Output::_stat_CLASS_ptr_CLIB_OpenEpiCentre_STRUCT_UserOutput_Output_praise1;
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_User_Output::_stat_CLASS_ptr_CLIB_OpenEpiCentre_STRUCT_UserOutput_Output_praise2;

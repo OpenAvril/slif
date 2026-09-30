@@ -3,7 +3,7 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_Global.h"
 #include "../../libs/CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
 #include <array>
-#include "../../SLIF_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_CLASS_ptr_CLIB_OpenEpiCentre_Data_Control;
     std::array<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_REG_ptr_array_Of_buffer_Input_ReferenceForThread;//todo number of implemented CONCURRENT threads.
     std::array<CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_REG_ptr_array_Of_buffer_Output_ReferenceForThread;//todo number of implemented CONCURRENT threads.

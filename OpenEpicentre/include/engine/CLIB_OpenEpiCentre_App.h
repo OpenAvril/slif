@@ -3,7 +3,7 @@
 #include "CLIB_OpenEpiCentre_Algorithms.h"
 #include "CLIB_OpenEpiCentre_Data.h"
 #include "CLIB_OpenEpiCentre_Execute.h"
-namespace CLIBOpenEpiCentre {
+namespace slifOpenEpiCentre {
     class CLIB_OpenEpiCentre_App {
     public:
         CLIB_OpenEpiCentre_App(uint8_t* sysThreadId);

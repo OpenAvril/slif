@@ -4,38 +4,45 @@ project(slif_control VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_subdirectory(libs/SLIF_MutexQue)
-add_subdirectory(libs/SLIF_ThreadsLog)
-add_subdirectory(libs/SLIF_LaunchQue)
+add_subdirectory(libs/CLIB_MutexQue)
+add_subdirectory(libs/CLIB_ThreadsLog)
+add_subdirectory(libs/CLIB_LaunchQue)
 
 add_library(slif_control STATIC
-        libs/SLIF_MutexQue/src/SLIF_MutexQue.cpp
-        libs/SLIF_MutexQue/src/SLIF_MutexQue_Framework_App.cpp
-        libs/SLIF_MutexQue/src/SLIF_MutexQue_Framework_Global.cpp
-        libs/SLIF_MutexQue/src/SLIF_MutexQue_Framework_App.cpp
-        libs/SLIF_MutexQue/src/SLIF_MutexQue_Framework_App_Control.cpp
-        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs.cpp
-        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
-        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
-        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
-        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
-        libs/SLIF_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
-        libs/SLIF_LaunchQue/src/SLIF_LaunchQue.cpp
-        libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework.cpp
-        libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_Global.cpp
-        libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_App.cpp
-        libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_App_Control.cpp
-        libs/SLIF_LaunchQue/src/SLIF_LaunchQue_Framework_Execute.cpp
+        libs/CLIB_MutexQue/src/CLIB_MutexQue.cpp
+        libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
+        libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
+        libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
+        libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
+        libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs.cpp
+        libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
+        libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
+        libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
+        libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
+        libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
+        libs/CLIB_LaunchQue/src/CLIB_LaunchQue.cpp
+        libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework.cpp
+        libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Global.cpp
+        libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App.cpp
+        libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App_Control.cpp
+        libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Execute.cpp
+        #libs/CLIB_BusSystem/libs/CLIB_Bus/src/CLIB_Bus.h
+        #libs/CLIB_BusSystem/libs/CLIB_Bus/src/CLIB_Bus_Framework.h
+        #libs/CLIB_BusSystem/libs/CLIB_Bus/src/CLIB_Bus_Framework_Global.h
+        #libs/CLIB_BusSystem/libs/CLIB_Bus/src/CLIB_Bus_Framework_App.h
+        #libs/CLIB_BusSystem/libs/CLIB_Bus/src/CLIB_Bus_Framework_App_Data.h
+        #libs/CLIB_BusSystem/libs/CLIB_Bus/src/CLIB_Bus_Framework_App_Execute.h
 )
 
 target_include_directories(slif_control PUBLIC
-        "libs/SLIF_MutexQue/include"
-        "libs/SLIF_ThreadsLog/include"
-        "libs/SLIF_LaunchQue/include"
+        "libs/CLIB_MutexQue/include"
+        "libs/CLIB_ThreadsLog/include"
+        "libs/CLIB_LaunchQue/include"
 )
 
 target_link_libraries(slif_control PUBLIC
-        SLIF_MutexQue
-        slif_threads_log
-        SLIF_LaunchQue
+        CLIB_MutexQue
+        CLIB_threads_log
+        CLIB_LaunchQue
 )
+
