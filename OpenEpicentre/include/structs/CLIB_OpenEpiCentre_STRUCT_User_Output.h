@@ -5,7 +5,7 @@
 #include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise2.h"
 #include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.h"
 #include <list>
-namespace CLIBOpenEpiCentre {
+namespace slifOpenEpiCentre {
 	struct CLIB_OpenEpiCentre_STRUCT_User_Output {
 	public:
 		class Object* dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT_UserOutput_Item_On_List_Of_ptr_PraiseOutputSubsets(unsigned long long praiseId);
