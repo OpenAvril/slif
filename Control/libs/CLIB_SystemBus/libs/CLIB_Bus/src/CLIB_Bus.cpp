@@ -1,6 +1,8 @@
 #include "../include/CLIB_Bus.h"
+#include "../include/CLIB_Bus_Framework.h"
 #include "../../CLIB_MutexQue/include/CLIB_MutexQue.h"
 #include "../include/CLIB_Bus_Framework_Global.h"
+#include "../include/independent/CLIB_Bus_STRUCT_Bus_CLASS_Ticket.h"
 #include <array>
 #include <cstdint>
 #include <iostream>
@@ -40,7 +42,7 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-		stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_APP_CLIB_Bus_Framework_create_Architecture(sysThreadId);
+		stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_APP_CLIB_Bus_Framework_create_Architecture(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId));
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Registers - DEFINE" << std::endl;
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Registers - DEFINE." << std::endl;

@@ -49,7 +49,7 @@ target_include_directories(slif_control PUBLIC
         "libs/CLIB_SystemBus/include"
 )
 
-target_link_libraries(slif_control PUBLIC
+target_link_libraries(slif_control PRIVATE
         CLIB_MutexQue
         CLIB_threads_log
         CLIB_LaunchQue

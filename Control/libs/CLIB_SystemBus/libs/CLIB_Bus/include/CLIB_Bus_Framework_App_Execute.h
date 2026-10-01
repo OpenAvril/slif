@@ -1,12 +1,12 @@
 #ifndef CLIB_Bus_CLIB_Bus_FRAMEWORK_APP_EXECUTE_H
 #define CLIB_Bus_CLIB_Bus_FRAMEWORK_APP_EXECUTE_H
-#include "CLIB_Bus_Framework.h"
+#include "../include/CLIB_Bus_Framework.h"
 #include <cstdint>
 #include <list>
 namespace slif {
     class CLIB_Bus_Framework_App_Execute {
     public:
-        CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId, CLIB_Bus_Framework* obj);
+        CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId, class CLIB_Bus_Framework* obj);
         virtual ~CLIB_Bus_Framework_App_Execute();
         void dyn_REG_boot1_DEFINE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId);
@@ -17,8 +17,8 @@ namespace slif {
         void* dyn_REG_get_PGM_CLIB_Bus_Item_On_List_Of_Busses(uint8_t* sysThreadId, uint8_t* busId);
         int* dyn_REG_get_PGM_CLIB_Bus_MutexQue_Of_For_Bus(uint8_t* sysThreadId);
         std::list<void*>* dyn_REG_get_PGM_CLIB_Bus_List_Of_Busses(uint8_t* sysThreadId);
-        int* dyn_REG_get_PGM_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction(uint8_t* sysThreadId, uint8_t* busId);
-        int*  dyn_REG_get_PGM_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction_At_AccessLock(uint8_t* sysThreadId, uint8_t* busId, uint8_t* junctionId);
+        int* dyn_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction(uint8_t* sysThreadId, uint8_t* busId);
+        int*  dyn_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction_At_AccessLock(uint8_t* sysThreadId, uint8_t* busId, uint8_t* junctionId);
         static void stat_CLASS_boot0_DECLARE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId, CLIB_Bus_Framework* obj);

@@ -1,10 +1,7 @@
 #ifndef CLIB_THEADLOGS_slif_H
 #define CLIB_THEADLOGS_slif_H
-#include "CLIB_Bus_Framework.h"
-#include "independent/CLIB_Bus_STRUCT_Bus_CLASS_Ticket.h"
+#include "../include/CLIB_Bus_Framework.h"
 #include <cstdint>
-#include <list>
-#include <string>
 extern "C" {
     namespace slif {
         class Bus {

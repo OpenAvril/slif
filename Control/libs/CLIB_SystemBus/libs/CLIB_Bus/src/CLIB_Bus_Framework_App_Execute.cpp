@@ -55,12 +55,12 @@
     std::list<void*>* slif::CLIB_Bus_Framework_App_Execute::dyn_REG_get_PGM_CLIB_Bus_List_Of_Busses(uint8_t* sysThreadId) {
         return stat_REG_get_PGM_CLIB_List_Of_Busses(sysThreadId);
     }
-    int* slif::CLIB_Bus_Framework_App_Execute::dyn_REG_get_PGM_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction(uint8_t* sysThreadId, uint8_t* busId) {
+    int* slif::CLIB_Bus_Framework_App_Execute::dyn_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction(uint8_t* sysThreadId, uint8_t* busId) {
         auto temp = stat_REG_get_PGM_CLIB_MutexQue_Of_Bus_At_Junction(sysThreadId)->begin();
         std::advance(temp, *busId);
         return *temp;
     }
-    int*  slif::CLIB_Bus_Framework_App_Execute::dyn_REG_get_PGM_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction_At_AccessLock(uint8_t* sysThreadId, uint8_t* busId, uint8_t* junctionId) {
+    int*  slif::CLIB_Bus_Framework_App_Execute::dyn_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction_At_AccessLock(uint8_t* sysThreadId, uint8_t* busId, uint8_t* junctionId) {
         
     }
     void slif::CLIB_Bus_Framework_App_Execute::stat_CLASS_boot0_DECLARE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId) {

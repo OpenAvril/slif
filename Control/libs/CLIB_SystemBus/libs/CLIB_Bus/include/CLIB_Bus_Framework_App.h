@@ -1,12 +1,13 @@
 #ifndef CLIB_CLIB_Bus_Framework_App_H
 #define CLIB_CLIB_Bus_Framework_App_H
-#include "CLIB_Bus_Framework_App_Data.h"
-#include "CLIB_Bus_Framework_App_Execute.h"
+#include "../include/CLIB_Bus_Framework.h"
+#include "../include/CLIB_Bus_Framework_App_Data.h"
+#include "../include/CLIB_Bus_Framework_App_Execute.h"
 #include <cstdint>
 namespace slif {
     class CLIB_Bus_Framework_App {
     public:
-        CLIB_Bus_Framework_App(uint8_t* sysThreadId);
+        CLIB_Bus_Framework_App(uint8_t* sysThreadId, class CLIB_Bus_Framework* obj);
         virtual ~CLIB_Bus_Framework_App();
         void dyn_REG_boot1_DEFINE_CLIB_Bus_Framework_App(uint8_t* sysThreadId);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_Framework_App(uint8_t* sysThreadId);
@@ -16,7 +17,7 @@ namespace slif {
         class CLIB_Bus_Framework_App_Execute* dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId);
         static void stat_CLASS_boot0_DECLAIRE_CLIB_Bus_Framework_App(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App(uint8_t* sysThreadId);
-        static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App(uint8_t* sysThreadId);
+        static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App(uint8_t* sysThreadId, class CLIB_Bus_Framework* obj);
         static void stat_REG_boot0_DECLAIRE_CLIB_Bus_Framework_App(uint8_t* sysThreadId);
     private:
         static class CLIB_Bus_Framework_App_Data* stat_CLASS_ptr_CLIB_Bus_Framework_App_Data;
@@ -24,9 +25,9 @@ namespace slif {
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App_Data(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Data(uint8_t* sysThreadId);
-        static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId);
-        static class CLIB_Bus_Framework_App_Data* stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Data(uint8_t* sysThreadId);
-        static class CLIB_Bus_Framework_App_Execute* stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId);
+        static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId, class CLIB_Bus_Framework* obj);
+        static class CLIB_Bus_Framework_App_Data* pr_stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Data(uint8_t* sysThreadId);
+        static class CLIB_Bus_Framework_App_Execute* pr_stat_CLASS_get_ptr_CLIB_Bus_Framework_App_Execute(uint8_t* sysThreadId);
     };
 }
 #endif
