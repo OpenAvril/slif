@@ -9,6 +9,7 @@ extern "C" {
     namespace slif {
         class Bus {
             public:
+            static int* generateHandle(uint8_t* sysThreadId);
             static void generateProgram(uint8_t* sysThreadId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
             static void load(uint8_t* sysThreadId, Ticket ticket, unsigned char* bytes_Cargo);

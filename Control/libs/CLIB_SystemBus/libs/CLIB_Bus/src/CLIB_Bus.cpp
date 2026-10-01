@@ -7,8 +7,17 @@
 	static slif::CLIB_Bus_Framework* stat_REG_CLIB_Bus_Framework;
 	static std::array<bool, 4>* stat_REG_flag_slif_isMemberFunctionINSTANTIATED;
 // public.
+	int* slif::Bus::generateHandle(uint8_t* sysThreadId) {
+		auto oldSize = stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_List_Of_Busses(sysThreadId)->size();
+		stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_List_Of_Busses(sysThreadId)->resize(oldSize+1);
+		for (uint8_t i = oldSize; i < stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_List_Of_Busses(sysThreadId)->size(); i++) {
+			auto temp = stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_List_Of_Busses(sysThreadId)->begin();
+			std::advance(temp, i);
+			temp = stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_List_Of_Busses(sysThreadId)->begin();
+		}
+		return new int(static_cast<int>(stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_List_Of_Busses(sysThreadId)->size() - 1));
+	}
 	void slif::Bus::generateProgram(uint8_t* sysThreadId) {
-		void* result = nullptr;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : Bus : stat_App_FUNCT_slif_generate_Program(sysThreadId)." << std::endl;
 		
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
@@ -50,8 +59,8 @@
 			list->assign(i, 2);
 		}
 		stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(sysThreadId)->dyn_REG_set_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId, *list);
-		stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_Bus_At_Junction(sysThreadId);
-		stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_Bus_At_Junction_At_AccessLock(sysThreadId);
+		stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_PGM_boot3_REINITIALISE_CLIB_MutexQue_Of_Bus_At_Junction(sysThreadId);
+		stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_PGM_boot3_REINITIALISE_CLIB_MutexQue_Of_Bus_At_Junction_At_AccessLock(sysThreadId);
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Program - INSTANTIATION." << std::endl;
 		stat_REG_boot1_DEFINE_slif_array_Of_flag_isINSTANTIATED(sysThreadId);
@@ -77,7 +86,7 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : Bus : stat_App_FUNCT_slif_generate_Program(sysThreadId)." << std::endl;
 	}
 	unsigned char* slif::Bus::isINSTANTIATED(uint8_t* sysThreadId) {
-		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
+		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_MutexQue_Of_For_Bus(sysThreadId), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, 0));
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : Bus : isINSTANTIATED(sysThreadId)." << std::endl;
 		unsigned char* result = nullptr;
 		bool* temp = nullptr;
@@ -92,11 +101,10 @@
 		}
 		result = CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbBoolean_To_MsbByteArray(sysThreadId, *temp);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " ::  exiting LIB :: slif : Bus : isINSTANTIATED(sysThreadId)." << std::endl;
-		slif::MutexQue::endByUnlock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
+		slif::MutexQue::endByUnlock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_MutexQue_Of_For_Bus(sysThreadId), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, 0));
 		return result;
 	}
 	void slif::Bus::load(uint8_t* sysThreadId, Ticket ticket, unsigned char* bytes_DATA) {
-		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
 		if (!stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0)) {
 			stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Data(sysThreadId)->dyn_REG_set_CLIB_Bus_Framework_App_Data_DATA(sysThreadId, CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_MsbByteArray_To_DATA(sysThreadId, reinterpret_cast<class Object*>(bytes_DATA)));
 		}
@@ -104,11 +112,9 @@
 			stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(1) = !stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0);
 			stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId);
 		}
-		slif::MutexQue::endByUnlock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
 	}
 	unsigned char* slif::Bus::unload(uint8_t* sysThreadId, Ticket ticket) {
 		auto bytes_DATA = new unsigned char();
-		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
 		if (!stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0)) {
 			bytes_DATA = CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Data(sysThreadId)->dyn_REG_get_CLIB_Bus_Framework_App_Data_DATA(sysThreadId)));
 		}
@@ -116,11 +122,10 @@
 			stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(2) = !stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0);
 			stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId);
 		}
-		slif::MutexQue::endByUnlock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
 		return bytes_DATA;
 	}
 	void slif::Bus::reInitialiseHandle(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_JUNCTIONS) {
-		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
+		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_MutexQue_Of_For_Bus(sysThreadId), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, 0));
 		if (!stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0)) {
 			auto oldSize = stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(sysThreadId)->dyn_REG_get_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId);
 			stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(sysThreadId)->dyn_REG_set_CLIB_Bus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId, *MAX_NUMBER_OF_JUNCTIONS);
@@ -130,16 +135,16 @@
 				list->assign(i, 2);
 			}
 			stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_Global(sysThreadId)->dyn_REG_set_CLIB_Bus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId, *list);
-			stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_Bus_At_Junction(sysThreadId);
-			stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_Bus_At_Junction_At_AccessLock(sysThreadId);
+			stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_PGM_boot3_REINITIALISE_CLIB_MutexQue_Of_Bus_At_Junction(sysThreadId);
+			stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_PGM_boot3_REINITIALISE_CLIB_MutexQue_Of_Bus_At_Junction_At_AccessLock(sysThreadId);
 		}
 		else {
 			stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(3) = !stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0);
 		}
-		slif::MutexQue::endByUnlock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
+		slif::MutexQue::endByUnlock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_MutexQue_Of_For_Bus(sysThreadId), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, 0));
 	}
 	void slif::Bus::terminateProgram(uint8_t* sysThreadId) {
-		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
+		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_MutexQue_Of_For_Bus(sysThreadId), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, 0));
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : Bus : terminateProgram(sysThreadId)." << std::endl;
 		if (!stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0)) {
 			delete stat_REG_CLIB_Bus_Framework;
@@ -149,7 +154,7 @@
 			stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(4) = !stat_REG_get_slif_array_Of_flag_isINSTANTIATED(sysThreadId)->at(2);
 		}
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : Bus : terminateProgram(sysThreadId)." << std::endl;
-		slif::MutexQue::endByUnlock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(sysThreadId, 0), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
+		slif::MutexQue::endByUnlock(sysThreadId, stat_CLASS_get_ptr_CLIB_Bus_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_Bus_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_Bus_Framework_App_Execute(sysThreadId)->dyn_REG_get_PGM_CLIB_Bus_MutexQue_Of_For_Bus(sysThreadId), CLIB_Bus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, 0));
 	}
 // private.
 	void slif::Bus::stat_APP_FUNCT_slif_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId) {

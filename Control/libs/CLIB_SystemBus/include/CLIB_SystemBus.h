@@ -12,8 +12,9 @@ extern "C" {
             static void generateProgram(uint8_t* sysThreadId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
             static void load(uint8_t* sysThreadId, Ticket ticket, unsigned char* bytes_Cargo);
+            static void reInitialiseHandle(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_JUNCTIONS);
             static unsigned char* unload(uint8_t* sysThreadId, Ticket ticket);
-                        static void terminateProgram(uint8_t* sysThreadId);
+            static void terminateProgram(uint8_t* sysThreadId);
         private:
             static uint8_t* internalSide;
             static uint8_t* externalSide;
