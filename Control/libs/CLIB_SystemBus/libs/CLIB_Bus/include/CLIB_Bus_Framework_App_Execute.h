@@ -14,7 +14,8 @@ namespace slif {
         void dyn_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_Bus_At_Junction(uint8_t* sysThreadId);
         void dyn_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_Bus_At_Junction_At_AccessLock(uint8_t* sysThreadId);
         void dyn_PGM_boot4_INSTANTIATE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId);
-        int* dyn_REG_get_HandleId_For_PGM_CLIB_ForThreads_At_Bus(uint8_t* sysThreadId, uint8_t* junctionId);
+        std::list<int*>* dyn_REG_get_PGM_CLIB_ForThreadsAt_Bus_At_Junction(uint8_t* sysThreadId);
+        std::list<std::list<int*>>*  dyn_REG_get_PGM_CLIB_ForThreadsAt_MutexQue_Junction_At_AccessLock(uint8_t* sysThreadId);
         static void stat_CLASS_boot0_DECLARE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework_Execute(uint8_t* sysThreadId);
