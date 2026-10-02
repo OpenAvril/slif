@@ -1,6 +1,7 @@
-#include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_STRUCT_Bus_CLASS_Ticket.h"
-uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJunctionId;
+#include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
+    uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJunctionId;
     uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId;
+    uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId;
     uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId;
     uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureAccessId;
 // public.
@@ -32,6 +33,9 @@ uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJun
     uint8_t* slif::Ticket::get_Departure_AccessId(){
         return stat_get_Departure_AccessId();
     }
+    uint8_t* slif::Ticket::get_busId() {
+        return stat_get_busId();
+    }
     uint8_t* slif::Ticket::get_Departure_JunctionId(){
         return stat_get_Departure_JunctionId();
     }
@@ -40,6 +44,9 @@ uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJun
     }
     void slif::Ticket::set_Arrival_JunctionId(uint8_t* newValue_arrivalJunctionId){
         stat_set_Arrival_JunctionId(*newValue_arrivalJunctionId);
+    }
+    void slif::Ticket::set_busId(uint8_t* value_busId) {
+        stat_set_busId(*value_busId);
     }
     void slif::Ticket::set_Departure_AccessId(uint8_t* newValue_departureAccessId){
         stat_set_Departure_AccessId(*newValue_departureAccessId);
@@ -76,6 +83,9 @@ uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJun
     void slif::Ticket::stat_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId() {
         reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId = nullptr;
     }
+    void slif::Ticket::stat_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId() {
+        reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId = nullptr;
+    }
     void slif::Ticket::stat_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId() {
         reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId = nullptr;
     }
@@ -95,6 +105,10 @@ uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJun
     void slif::Ticket::stat_REG_boot2_SUBSTANTIATE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId() {
         reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId = new uint8_t();
         *reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId = static_cast<uint8_t>(INT8_MAX);
+    }
+    void slif::Ticket::stat_REG_boot2_SUBSTANTIATE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId() {
+        reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId = new uint8_t();
+        *reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId = static_cast<uint8_t>(INT8_MAX);
     }
     void slif::Ticket::stat_REG_boot2_SUBSTANTIATE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId() {
         reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId = new uint8_t();
@@ -116,6 +130,9 @@ uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJun
     void slif::Ticket::stat_REG_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId() {
         *reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId = static_cast<uint8_t>(0);
     }
+    void slif::Ticket::stat_REG_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId() {
+        *reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId = static_cast<uint8_t>(0);
+    }
     void slif::Ticket::stat_REG_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId() {
         *reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId = static_cast<uint8_t>(0);
     }
@@ -128,6 +145,10 @@ uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJun
     uint8_t* slif::Ticket::stat_get_Arrival_JunctionId(){
         return reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId;
     }
+    uint8_t* slif::Ticket::stat_get_busId() {
+        return reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId;
+    }
+
     uint8_t* slif::Ticket::stat_get_Departure_AccessId(){
         return reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId;
     }
@@ -139,6 +160,9 @@ uint8_t* slif::Ticket::reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalJun
     }
     void slif::Ticket::stat_set_Arrival_JunctionId(uint8_t newValue_arrivalJunctionId){
         *reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_arrivalAccessId = newValue_arrivalJunctionId;
+    }
+    void slif::Ticket::stat_set_busId(uint8_t value_busId) {
+        *reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_busId = value_busId;
     }
     void slif::Ticket::stat_set_Departure_AccessId(uint8_t newValue_departureAccessId){
         *reg_ptr_CLIB_Bus_STRUCT_SingleBus_CLASS_Ticket_departureJunctionId = newValue_departureAccessId;;

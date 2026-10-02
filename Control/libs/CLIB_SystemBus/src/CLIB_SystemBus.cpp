@@ -2,7 +2,7 @@
 #include "../../CLIB_MutexQue/include/CLIB_MutexQue.h"
 #include "../../CLIB_SystemBus/include/CLIB_SystemBus_Framework_Global.h"
 #include "../libs/CLIB_Bus_STRUCT_SingleBus/include/CLIB_Bus_STRUCT_SingleBus_Framework.h"
-#include "independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_STRUCT_Bus_CLASS_Ticket.h"
+#include "independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
 #include <array>
 #include <cstdint>
 #include <iostream>
