@@ -67,7 +67,7 @@
 		slif::LaunchQue::threadEnd(sysThreadId, handleId, bytes_concuurentsysThreadId);
 
 		int* tempD0 = slif::SystemBusses::generateHandle(sysThreadId);
-		slif::SystemBusses::generateProgram(sysThreadId);
+		//slif::SystemBusses::generateProgram(sysThreadId);
 		unsigned char* tempD1 = slif::SystemBusses::isINSTANTIATED(sysThreadId);
 		slif::SystemBusses::load(sysThreadId, *ticket, bytes_Cargo);
 		slif::SystemBusses::reInitialiseHandle(sysThreadId, MAX_NUMBER_OF_JUNCTIONS);
