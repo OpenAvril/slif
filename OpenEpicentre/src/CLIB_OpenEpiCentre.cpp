@@ -27,21 +27,21 @@
 	static struct slif::CLIB_OpenEpiCentre_STRUCT_Output_praise3* objOutput_praise3 = nullptr;
 // public
 	void DEVELOPMENT::CLIB_OpenEpiCentre::generateProgram(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_generate_Program(sysThreadId)." << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_generate_Program(sysThreadId)."));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Architecture Framework CLASS - DECLARE DEFINE INITIALISE."));
 		CLIB_OpenEpiCentre_stat_CLASS_boot1_DEFINE_Framework(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_boot3_INITIALISE_Framework(sysThreadId);
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Architecture Framework CLASS - DECLARE DEFINE INITIALISE."));
 
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started CLIB_OpenEpiCentre_Global Meta-Data and Settings." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started CLIB_OpenEpiCentre_Global Meta-Data and Settings."));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_create_CLIB_OpenEpiCentre_Framework_Global_and_Settings(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Global(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global(sysThreadId);
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: done CLIB_OpenEpiCentre_Global Meta-Data and Settings." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done CLIB_OpenEpiCentre_Global Meta-Data and Settings."));
 
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started STRUCTS Generate." << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started STRUCTS Generate."));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE."));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_User_Input(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_User_Input(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_User_Input(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_UserInput(sysThreadId);
@@ -77,59 +77,59 @@
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_Concurrent(sysThreadId)->dyn_REG_boot1_DEFINE_Concurrent(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_Concurrent(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_Concurrent(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_Concurrent(sysThreadId)->dyn_REG_boot3_INITIALISE_Concurrent(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE."));
 
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE."));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_create_CLIB_OpenEpiCentre_Framework_Architecture(sysThreadId);
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started Architecture Registers - DEFINE" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Architecture Registers - DEFINE"));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Algorithms(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Algorithm(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute(sysThreadId)->dyn_CLASS_get_ptr_Execute_Control(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute_Control(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: done Architecture Registers - DEFINE." << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started Architecture Registers - SUBSTANTIATE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done Architecture Registers - DEFINE."));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Architecture Registers - SUBSTANTIATE."));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Algorithms(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Algorithm(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute(sysThreadId)->dyn_CLASS_get_ptr_Execute_Control(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute_Control(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: done Architecture Registers - SUBSTANTIATE." << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started Architecture Registers - INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done Architecture Registers - SUBSTANTIATE."));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Architecture Registers - INITIALISE."));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Algorithms(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Algorithm(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId), CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_Concurrent(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId), CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_Input(sysThreadId), CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_Output(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute(sysThreadId)->dyn_CLASS_get_ptr_Execute_Control(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute_Control(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: done Architecture Registers - INITIALISE." << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done Architecture Registers - INITIALISE."));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE."));
 
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: started Program - INSTANTIATE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Program - INSTANTIATE."));
 		CLIB_OpenEpiCentre_stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(sysThreadId);
 		CLIB_OpenEpiCentre_stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(sysThreadId);
 		CLIB_OpenEpiCentre_stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_PGM_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework(sysThreadId, CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId));
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: done Program - INSTANTIATE." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done Program - INSTANTIATE."));
 
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: " << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" ::         ,     \\      /      ," << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" ::         ,     \\      /      ," << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" ::        / \\    )\\ _ /(     / \\ " << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" ::       /   \\   (_\\  /_)    /   \\ " << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: __ / __\\_ \\@  @/ __/___\\___" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: |              |\\../|               |" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: |               \\VV/                |" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: |      Open Source MIT Package       |" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: |     OpenAvril : OpenEpicentre      |" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: |__________________|" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: |    / \\ /        \\\\        \\ /\\    |" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: |  /    V          ))        V   \\  |" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: |/                //               \\| " << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: `                 V                 '" << std::endl;
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_generate_Program(sysThreadId)" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: "));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" ::         ,     \\      /      ,"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" ::         ,     \\      /      ,"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" ::        / \\    )\\ _ /(     / \\ "));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" ::       /   \\   (_\\  /_)    /   \\ "));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: __ / __\\_ \\@  @/ __/___\\___"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: |              |\\../|               |"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: |               \\VV/                |"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: |      Open Source MIT Package       |"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: |     OpenAvril : OpenEpicentre      |"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: |__________________|"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: |    / \\ /        \\\\        \\ /\\    |"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: |  /    V          ))        V   \\  |"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: |/                //               \\| "));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: `                 V                 '"));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_generate_Program(sysThreadId)"));
 		return (void*)CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId);
 	}
 	unsigned char* DEVELOPMENT::CLIB_OpenEpiCentre::get_Output(uint8_t* sysThreadId, unsigned char* bytes_praiseId) {
@@ -160,8 +160,8 @@
 		}
 		return result;
 	}
-	unsigned char* DEVELOPMENT::CLIB_OpenEpiCentre::dyn_FLAG_isINITIALISED(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_IsInitialised_slif(sysThreadId)." << std::endl;
+	unsigned char* DEVELOPMENT::CLIB_OpenEpiCentre::get_FLAG_isINITIALISED(uint8_t* sysThreadId) {
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_IsInitialised_slif(sysThreadId)."));
 		bool* temp = nullptr;
 		temp = new bool(sysThreadId);
 		*temp = true;
@@ -172,28 +172,28 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(13) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_IsInitialised_slif(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_IsInitialised_slif(sysThreadId)."));
 		return CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbbool_to_MsbByteArray(*temp);
 	}
 	unsigned char* DEVELOPMENT::CLIB_OpenEpiCentre::get_FLAG_isINSTANTIATED(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(sysThreadId)" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(sysThreadId)"));
 		bool* temp = nullptr;
 		temp = new bool(sysThreadId);
 		*temp = true;
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0)) {
-			slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: <= slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId) = PRIMED" << std::endl;
+			slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: <= slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId) = PRIMED"));
 			*temp = CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 		}
 		else {
-			slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: <= slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId) = PRIMING" << std::endl;
+			slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: <= slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId) = PRIMING"));
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(2) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(sysThreadId)" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(sysThreadId)"));
 		return CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbbool_to_MsbByteArray(*temp);
 	}
 	unsigned char* DEVELOPMENT::CLIB_OpenEpiCentre::get_FLAG_isStackLoaded_ServerInputReceive(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerInputReceive(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerInputReceive(sysThreadId)."));
 		bool* temp = nullptr;
 		temp = new bool(sysThreadId);
 		*temp = true;
@@ -204,11 +204,11 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(11) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerInputReceive(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerInputReceive(sysThreadId)."));
 		return CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbbool_to_MsbByteArray(*temp);
 	}
 	unsigned char* DEVELOPMENT::CLIB_OpenEpiCentre::get_FLAG_isStackLoaded_ServerOutputSend(uint8_t* sysThreadId)	{
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend(sysThreadId)."));
 		bool* temp = nullptr;
 		temp = new bool(sysThreadId);
 		*temp = true;
@@ -219,11 +219,11 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(12) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend(sysThreadId)."));
 		return CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbbool_to_MsbByteArray(*temp);
 	}
 	unsigned char* DEVELOPMENT::CLIB_OpenEpiCentre::get_MetaData_PraiseEventId(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_get_MetaData_PraiseEventId(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_get_MetaData_PraiseEventId(sysThreadId)."));
 		unsigned long long* temp = nullptr;
 		temp = new unsigned long long (sysThreadId);
 		*temp = ULLONG_MAX;
@@ -234,11 +234,11 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(18) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_get_MetaData_PraiseEventId(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_get_MetaData_PraiseEventId(sysThreadId)."));
 		return CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray(*temp);
 	}
 	void DEVELOPMENT::CLIB_OpenEpiCentre::set_InputItemsFor_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)"));
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0)) {
 			CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_CLIB_OpenEpiCentre_WriteEnable_ServerInputReceive()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_DataStack_App(sysThreadId)->dyn_APP_FUNCT_write_Start(sysThreadId, CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_CLIB_OpenEpiCentre_WriteEnable_ServerInputReceive(),sysThreadId);
 
@@ -256,11 +256,11 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(3) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)"));
 
 	}
 	void DEVELOPMENT::CLIB_OpenEpiCentre::set_InputItemsFor_praise1(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)"));
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0)) {
 			CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_CLIB_OpenEpiCentre_WriteEnable_ServerInputReceive()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_DataStack_App(sysThreadId)->dyn_APP_FUNCT_write_Start(sysThreadId, CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_CLIB_OpenEpiCentre_WriteEnable_ServerInputReceive(),sysThreadId);
 			CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Input_at_ItemSideToWRITE_For_doubleBufferInput(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId))->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT_Input_praiseEventId(CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbunsignedLongLong(sysThreadId, bytesPraiseId));
@@ -276,11 +276,11 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(3) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)"));
 
 	}
 	void DEVELOPMENT::CLIB_OpenEpiCentre::set_InputItemsFor_praise2(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)"));
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0)) {
 			CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_CLIB_OpenEpiCentre_WriteEnable_ServerInputReceive()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_DataStack_App(sysThreadId)->dyn_APP_FUNCT_write_Start(sysThreadId, temp,sysThreadId);
 			CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Input_at_ItemSideToWRITE_For_doubleBufferInput(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId))->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT_Input_praiseEventId(CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbunsignedLongLong(sysThreadId, bytesPraiseId));
@@ -296,11 +296,11 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(3) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)."));
 
 	}
 	void DEVELOPMENT::CLIB_OpenEpiCentre::set_InputItemsFor_praise3(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)."));
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0)) {
 			CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_CLIB_OpenEpiCentre_WriteEnable_ServerInputReceive()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_DataStack_App(sysThreadId)->dyn_APP_FUNCT_write_Start(sysThreadId, temp,sysThreadId);
 			CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Input_at_ItemSideToWRITE_For_doubleBufferInput(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId))->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT_Input_praiseEventId(CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbunsignedLongLong(sysThreadId, bytesPraiseId));
@@ -316,23 +316,23 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(3) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B)."));
 	}
 	void DEVELOPMENT::CLIB_OpenEpiCentre::set_MetaData_PraiseEventId(uint8_t* sysThreadId, unsigned char* bytes) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(sysThreadId)."));
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0)) {
-			slif::ThreadLogs::printl(*sysThreadId, new std::string(" ::<= slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(sysThreadId) = PRIMED." << std::endl;
+			slif::ThreadLogs::printl(sysThreadId, new std::string(" ::<= slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(sysThreadId) = PRIMED."));
 			CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Input_at_ItemSideToWRITE_For_doubleBufferInput(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId))->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT_Input_praiseEventId(CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbunsignedLongLong(bytes));
 		}
 		else {
-			slif::ThreadLogs::printl(*sysThreadId, new std::string(" ::<= slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(sysThreadId) = PRIMING." << std::endl;
+			slif::ThreadLogs::printl(sysThreadId, new std::string(" ::<= slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(sysThreadId) = PRIMING."));
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(27) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(sysThreadId)."));
 	}
 	void DEVELOPMENT::CLIB_OpenEpiCentre::terminateProgram(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_terminate_Program(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_terminate_Program(sysThreadId)."));
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0)) {
 			delete stat_CLASS_CLIB_OpenEpiCentre_Framework;
 			delete stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED;
@@ -349,7 +349,7 @@
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(4) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(0) ;
 			CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(sysThreadId);
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_terminate_Program(sysThreadId)." << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_Framework_App_FUNCT_terminate_Program(sysThreadId)."));
 	}
 // private.
 	void DEVELOPMENT::CLIB_OpenEpiCentre::CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId) {
@@ -360,7 +360,7 @@
 				break;
 			}
 		}
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: TEST :: <= ";
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: TEST :: <= ";
 		for (int index = 0; index < sizeof(*CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)); index++) {
 			std::cout << CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(sysThreadId)->at(index);
 		}

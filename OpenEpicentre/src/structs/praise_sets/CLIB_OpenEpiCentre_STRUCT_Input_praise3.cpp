@@ -6,24 +6,24 @@
 // public.
 	void slif::CLIB_OpenEpiCentre_STRUCT_Input_praise3::dyn_REG_boot1_DEFINE_Input_praise3()
 	{
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_Input_praise3()" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_Input_praise3()" << std::endl;
 		stat_REG_boot1_DEFINE_Input_praise3_valueA();
 		stat_REG_boot1_DEFINE_Input_praise3_valueB();
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_Input_praise3()" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_Input_praise3()" << std::endl;
 	}
 	void slif::CLIB_OpenEpiCentre_STRUCT_Input_praise3::dyn_REG_boot2_SUBSTANTIATE_Input_praise3()
 	{
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_Input_praise3()" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_Input_praise3()" << std::endl;
 		stat_REG_boot2_SUBSTANTIATE_Input_praise3_valueA();
 		stat_REG_boot2_SUBSTANTIATE_Input_praise3_valueB();
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_Input_praise3()" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_Input_praise3()" << std::endl;
 	}
 	void slif::CLIB_OpenEpiCentre_STRUCT_Input_praise3::dyn_REG_boot3_INITIALISE_Input_praise3()
 	{
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_Input_praise3()" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_Input_praise3()" << std::endl;
 		stat_REG_boot3_INITIALISE_Input_praise3_valueA();
 		stat_REG_boot3_INITIALISE_Input_praise3_valueB();
-		slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_Input_praise3()" << std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_Input_praise3()" << std::endl;
 	}
 	double slif::CLIB_OpenEpiCentre_STRUCT_Input_praise3::dyn_REG_get_Item_Input_praise3_valueA()
 	{

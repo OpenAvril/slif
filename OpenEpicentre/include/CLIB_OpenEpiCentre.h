@@ -9,7 +9,7 @@ extern "C" {
 		public:
 			static void generateProgram(uint8_t* sysThreadId);
 			static unsigned char* get_Output(uint8_t* sysThreadId, unsigned char* bytes_praiseId);
-			static unsigned char* dyn_FLAG_isINITIALISED(uint8_t* sysThreadId);
+			static unsigned char* get_FLAG_isINITIALISED(uint8_t* sysThreadId);
 			static unsigned char* get_FLAG_isINSTANTIATED(uint8_t* sysThreadId);
 			static unsigned char* get_FLAG_isStackLoaded_ServerInputReceive(uint8_t* sysThreadId);
 			static unsigned char* get_FLAG_isStackLoaded_ServerOutputSend(uint8_t* sysThreadId);

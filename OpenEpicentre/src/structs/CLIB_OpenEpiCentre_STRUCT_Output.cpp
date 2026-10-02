@@ -31,25 +31,25 @@
         }
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::dyn_REG_boot1_DEFINE_OpenEpiCentre_STRUCT_Output() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_OpenEpiCentre_STRUCT_Output()" << std::endl;
         stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_playerId();
         stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId();
         stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_Subset();
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_OpenEpiCentre_STRUCT_Output()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::dyn_REG_boot2_SUBSTANTIATE_OpenEpiCentre_STRUCT_Output() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_OpenEpiCentre_STRUCT_Output()" << std::endl;
         stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_playerId();
         stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId();
         stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_Subset();
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_OpenEpiCentre_STRUCT_Output()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::dyn_REG_boot3_INITIALISE_OpenEpiCentre_STRUCT_Output(slif::CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_OpenEpiCentre_STRUCT_Output()" << std::endl;
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_playerId();
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId();
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_Subset(obj);
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_OpenEpiCentre_STRUCT_Output()" << std::endl;
     }
     uint8_t slif::CLIB_OpenEpiCentre_STRUCT_Output::dyn_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_Output_playerId() {
         return *stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_Output_playerId();
@@ -87,75 +87,75 @@
         *temp = reinterpret_cast<slif::Object*>(objOutputSubset);
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output()" << std::endl;
     }
 // private.
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_playerId() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_playerId = nullptr;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_praiseEventId = nullptr;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_Subset() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_Subset = nullptr;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_playerId() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_playerId = new uint8_t();
         *_REG_ptr_OpenEpiCentre_STRUCT_Output_playerId = static_cast<uint8_t>(255);
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_praiseEventId = new unsigned long long();
         *_REG_ptr_OpenEpiCentre_STRUCT_Output_praiseEventId = ULONG_LONG_MAX;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_Subset() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_Subset = new std::list<Object*>();
         while (stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_Output_Subset() == nullptr) { }
         stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_Output_Subset()->resize(1);
         *stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_Output_Subset()->begin() = nullptr;
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_playerId() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_playerId = static_cast<uint8_t*>(0);
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_playerId()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId() {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_praiseEventId = static_cast<unsigned long long*>(0);
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praiseEventId()" << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_Subset(CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
         _REG_ptr_OpenEpiCentre_STRUCT_Output_Subset->assign(0, obj->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_User_Output()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT_UserOutput_Item_On_List_Of_ptr_PraiseOutputSubsets(0));
-        slif::ThreadLogs::printl(*sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_Subset()" << std::endl;
     }
     uint8_t* slif::CLIB_OpenEpiCentre_STRUCT_Output::stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_Output_playerId() {
         return _REG_ptr_OpenEpiCentre_STRUCT_Output_playerId;
