@@ -70,7 +70,7 @@
 		slif::SystemBusses::generateProgram(sysThreadId);
 		unsigned char* tempD1 = slif::SystemBusses::isINSTANTIATED(sysThreadId);
 		slif::SystemBusses::load(sysThreadId, *ticket, bytes_Cargo);
-		slif::SystemBusses::reInitialiseHandle(sysThreadId, *MAX_NUMBER_OF_JUNCTIONS);
+		slif::SystemBusses::reInitialiseHandle(sysThreadId, MAX_NUMBER_OF_JUNCTIONS);
 		unsigned char* tempD2 = slif::SystemBusses::unload(sysThreadId, *ticket);
 		slif::SystemBusses::terminateProgram(sysThreadId);
 	}
