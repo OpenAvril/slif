@@ -1,7 +1,7 @@
 #ifndef CLIB_CLIB_Bus_STRUCT_SingleBus_Framework_App_H
 #define CLIB_CLIB_Bus_STRUCT_SingleBus_Framework_App_H
 #include "CLIB_Bus_STRUCT_SingleBus_Framework.h"
-#include "../../libs/CLIB_Bus_STRUCT_SingleBus/include/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.h"
+#include "CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.h"
 #include "CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute.h"
 #include <cstdint>
 namespace slif {
