@@ -1,42 +1,42 @@
 #ifndef CLIB_THEADLOGS_CLIB_Bus_STRUCT_SingleBus_Framework_H
 #define CLIB_THEADLOGS_CLIB_Bus_STRUCT_SingleBus_Framework_H
-#include "CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_App.h"
-#include "CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_Global.h"
-#include "CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus.h"
+#include "CLIB_Bus_STRUCT_SingleBus_Framework_App.h"
+#include "CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
+#include "CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA.h"
 #include <cstdint>
 namespace slif {
-    class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework {
+    class CLIB_Bus_STRUCT_SingleBus_Framework {
     public:
-        CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
-        virtual ~CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework();
-        void dyn_APP_CLIB_Bus_STRUCT_SingleBus_Framework_create_Architecture(uint8_t* sysThreadId, CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework* obj);
+        CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
+        virtual ~CLIB_Bus_STRUCT_SingleBus_Framework();
+        void dyn_APP_CLIB_Bus_STRUCT_SingleBus_Framework_create_Architecture(uint8_t* sysThreadId, CLIB_Bus_STRUCT_SingleBus_Framework* obj);
         void dyn_APP_CLIB_Bus_STRUCT_SingleBus_Framework_create_Global_and_Settings(uint8_t* sysThreadId);
         void dyn_APP_CLIB_Bus_STRUCT_SingleBus_STRUCT_boot1_DEFINE(uint8_t* sysThreadId);
         void dyn_APP_CLIB_Bus_STRUCT_SingleBus_STRUCT_boot3_INITIALISE(uint8_t* sysThreadId);
-        class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_App* dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId);
-        class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_Global* dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
-        class CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus* dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus(uint8_t* sysThreadId);
+        class CLIB_Bus_STRUCT_SingleBus_Framework_App* dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId);
+        class CLIB_Bus_STRUCT_SingleBus_Framework_Global* dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
+        class CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA* dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(uint8_t* sysThreadId);
         void dyn_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
         void dyn_REG_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
         static void stat_CLASS_boot0_DECLAIRE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
-        static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId, CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework* obj);
+        static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId, CLIB_Bus_STRUCT_SingleBus_Framework* obj);
         static void stat_REG_boot0_DECLAIRE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
-        static class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_App* stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId);
+        static class CLIB_Bus_STRUCT_SingleBus_Framework_App* stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId);
     private:
-        static class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_App* stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App;
-        static class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_Global* stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global;
-        static struct CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus* stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus;
+        static class CLIB_Bus_STRUCT_SingleBus_Framework_App* stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App;
+        static class CLIB_Bus_STRUCT_SingleBus_Framework_Global* stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global;
+        static struct CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA* stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA;
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
-        static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId, CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework* obj);
+        static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId, CLIB_Bus_STRUCT_SingleBus_Framework* obj);
         static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
-        static class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_App* pr_stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId);
-        static class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_Global* stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
-        static void stat_STRUCT_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus(uint8_t* sysThreadId);
-        static void stat_STRUCT_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus(uint8_t* sysThreadId);
-        static class CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus* stat_STRUCT_get_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus(uint8_t* sysThreadId);
+        static class CLIB_Bus_STRUCT_SingleBus_Framework_App* pr_stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId);
+        static class CLIB_Bus_STRUCT_SingleBus_Framework_Global* stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
+        static void stat_STRUCT_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(uint8_t* sysThreadId);
+        static void stat_STRUCT_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(uint8_t* sysThreadId);
+        static class CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA* stat_STRUCT_get_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(uint8_t* sysThreadId);
 
     };
 }

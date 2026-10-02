@@ -2,10 +2,10 @@
 #define CLIB_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_H
 #include <cstdint>
 namespace slif {
-    class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_App_Data {
+    class CLIB_Bus_STRUCT_SingleBus_Framework_App_Data {
     public:
-        CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_App_Data(uint8_t* sysThreadId);
-        virtual ~CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_App_Data();
+        CLIB_Bus_STRUCT_SingleBus_Framework_App_Data(uint8_t* sysThreadId);
+        virtual ~CLIB_Bus_STRUCT_SingleBus_Framework_App_Data();
         unsigned char* dyn_REG_get_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA(uint8_t* sysThreadId);
         void dyn_REG_set_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA(uint8_t* sysThreadId, unsigned char* newValue_DATA);
         void dyn_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data(uint8_t* sysThreadId);

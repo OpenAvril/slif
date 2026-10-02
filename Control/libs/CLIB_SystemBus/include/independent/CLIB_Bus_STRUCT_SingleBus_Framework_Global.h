@@ -3,10 +3,10 @@
 #include <cstdint>
 #include <list>
 namespace slif {
-    class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_Global {
+    class CLIB_Bus_STRUCT_SingleBus_Framework_Global {
     public:
-        CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
-        ~CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework_Global();
+        CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
+        ~CLIB_Bus_STRUCT_SingleBus_Framework_Global();
         void dyn_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);
         void dyn_REG_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId);

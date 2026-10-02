@@ -1,5 +1,5 @@
-#ifndef CLIB_THREADS_LOG_CLIB_Bus_STRUCT_SingleBus_STRUCT_BUS_H
-#define CLIB_THREADS_LOG_CLIB_Bus_STRUCT_SingleBus_STRUCT_BUS_H
+#ifndef CLIB_THREADS_LOG_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_H
+#define CLIB_THREADS_LOG_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_H
 #include <cstdint>
 namespace slif {
     struct CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_STRUCT_Bus {
