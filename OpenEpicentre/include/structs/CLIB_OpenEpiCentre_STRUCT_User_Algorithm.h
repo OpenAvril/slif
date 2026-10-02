@@ -4,7 +4,7 @@
 #include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise1.h"
 #include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise2.h"
 #include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise3.h"
-namespace slifOpenEpiCentre
+namespace slif
 {
 	struct CLIB_OpenEpiCentre_STRUCT_User_Algorithm
 	{

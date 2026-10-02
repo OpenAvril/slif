@@ -1,7 +1,7 @@
-#ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H
-#define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H
+#ifndef CLIB_OPENEPICENTRE_FRAMEWORK_GLOBAL_H
+#define CLIB_OPENEPICENTRE_FRAMEWORK_GLOBAL_H
 #include <cstdint>
-namespace slifOpenEpiCentre {
+namespace slif {
     enum Axis
     {
         X,
@@ -55,4 +55,4 @@ namespace slifOpenEpiCentre {
         static unsigned long long* stat_REG_get_Ptr_number_Of_Praise_Events(uint8_t* sysThreadId);
     };
 }
-#endif //OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H
+#endif

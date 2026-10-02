@@ -44,12 +44,12 @@ add_library(slif_epicentre STATIC
         src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.cpp
         src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.cpp
         src/engine/CLIB_OpenEpiCentre_Framework.cpp
-        src/engine/CLIB_OpenEpiCentre_App.cpp
-        src/engine/CLIB_OpenEpiCentre_Algorithms.cpp
-        src/engine/CLIB_OpenEpiCentre_Data.cpp
-        src/engine/CLIB_OpenEpiCentre_Data_Control.cpp
-        src/engine/CLIB_OpenEpiCentre_Execute.cpp
-        src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp
+        src/engine/CLIB_OpenEpiCentre_Framework_App.cpp
+        src/engine/CLIB_OpenEpiCentre_Framework_App_Algorithms.cpp
+        src/engine/CLIB_OpenEpiCentre_Framework_App_Data.cpp
+        src/engine/CLIB_OpenEpiCentre_Framework_App_Data_Control.cpp
+        src/engine/CLIB_OpenEpiCentre_Framework_App_Execute.cpp
+        src/engine/CLIB_OpenEpiCentre_Framework_App_Execute_Control.cpp
 )
 
 target_include_directories(slif_epicentre PUBLIC
