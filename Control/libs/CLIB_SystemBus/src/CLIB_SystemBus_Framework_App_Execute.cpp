@@ -1,7 +1,7 @@
 #include "../include/CLIB_SystemBus_Framework_App_Execute.h"
 #include "../include/CLIB_SystemBus_Framework_Global.h"
+#include "../include/independent/CLIB_Bus_STRUCT_SingleBus.h"
 #include <iostream>
-#include "CLIB_Bus_STRUCT_SingleBus.h"
     int* slif::CLIB_SystemBus_Framework_App_Execute::stat_PGM_CLIB_MutexQue_Of_SystemBusses;
     std::list<int*>* slif::CLIB_SystemBus_Framework_App_Execute::stat_PGM_CLIB_List_Of_Busses;
 // public.
@@ -31,8 +31,11 @@
     void slif::CLIB_SystemBus_Framework_App_Execute::dyn_PGM_boot3_REINITIALISE_CLIB_List_Of_Busses(uint8_t* sysThreadId) {
         stat_PGM_boot3_REINITIALISE_CLIB_List_Of_Busses(sysThreadId);
     }
+    std::list<int*>* slif::CLIB_SystemBus_Framework_App_Execute::dyn_PGM_get_List_CLIB_List_Of_Busses(uint8_t* sysThreadId) {
+        return stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId);
+    }
     int* slif::CLIB_SystemBus_Framework_App_Execute::dyn_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(uint8_t* sysThreadId, uint8_t* busId) {
-        auto temp = stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(sysThreadId)->begin();
+        auto temp = stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->begin();
         std::advance(temp, *busId);
         return *temp;
     }
@@ -71,9 +74,9 @@
     void slif::CLIB_SystemBus_Framework_App_Execute::stat_PGM_boot3_INITIALISE_CLIB_List_Of_Busses(uint8_t* sysThreadId) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_SystemBus_Framework_App_Data : stat_PGM_boot3_INITIALISE_ForThreadsAt__BusId(sysThreadId)." << std::endl;
         stat_PGM_CLIB_List_Of_Busses = new std::list<int*>;
-        stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(sysThreadId)->resize(1);
+        stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->resize(1);
         slif::CLIB_Bus_STRUCT_SingleBus::generateProgram(sysThreadId);
-        stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(sysThreadId)->assign(0, slif::CLIB_Bus_STRUCT_SingleBus::generateHandle(sysThreadId));
+        stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->assign(0, slif::CLIB_Bus_STRUCT_SingleBus::generateHandle(sysThreadId));
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_SystemBus_Framework_App_Data : stat_PGM_boot3_INITIALISE_ForThreadsAt__BusId(sysThreadId)." << std::endl;
     }
     void slif::CLIB_SystemBus_Framework_App_Execute::stat_PGM_boot3_INITIALISE_CLIB_MutexQue_Of_SystemBusses(uint8_t* sysThreadId) {
@@ -83,15 +86,15 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_SystemBus_Framework_App_Data : stat_PGM_boot3_INITIALISE_ForThreadsAt__BusId(sysThreadId)." << std::endl;
     }
     void slif::CLIB_SystemBus_Framework_App_Execute::stat_PGM_boot3_REINITIALISE_CLIB_List_Of_Busses(uint8_t* sysThreadId) {
-        auto oldSize = stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(sysThreadId)->size();
-        stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(sysThreadId)->resize(static_cast<int8_t>(slif::CLIB_SystemBus_Framework_Global::dyn_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId) / 2));
-        for (uint8_t index = oldSize; index < static_cast<int8_t>(stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(sysThreadId)->size()); index++) {
-            stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(sysThreadId)->assign(index, slif::CLIB_Bus_STRUCT_SingleBus::generateHandle(sysThreadId));
+        auto oldSize = stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->size();
+        stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->resize((*slif::CLIB_SystemBus_Framework_Global::dyn_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId) / 2));
+        for (uint8_t index = oldSize; index < static_cast<int8_t>(stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->size()); index++) {
+            stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->assign(index, slif::CLIB_Bus_STRUCT_SingleBus::generateHandle(sysThreadId));
         }
-        slif::CLIB_Bus_STRUCT_SingleBus::reInitialiseHandle(sysThreadId, slif::CLIB_SystemBus_Framework_Global::dyn_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId));
+        slif::CLIB_Bus_STRUCT_SingleBus::reInitialiseHandle(sysThreadId, *slif::CLIB_SystemBus_Framework_Global::dyn_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId));
     }
-    std::list<int*>* slif::CLIB_SystemBus_Framework_App_Execute::stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(uint8_t* sysThreadId) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= std::list<int*>* : stat_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses(sysThreadId)." << std::endl;
+    std::list<int*>* slif::CLIB_SystemBus_Framework_App_Execute::stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(uint8_t* sysThreadId) {
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= std::list<int*>* : stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)." << std::endl;
         return stat_PGM_CLIB_List_Of_Busses;
     }
     int* slif::CLIB_SystemBus_Framework_App_Execute::stat_REG_get_PGM_CLIB_MutexQue_Of_SystemBusses(uint8_t* sysThreadId) {

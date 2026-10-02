@@ -1,10 +1,9 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute.h"
 #include "../../CLIB_MutexQue/include/CLIB_MutexQue.h"
-#include "../include/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
+#include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
+#include "../../include/independent/CLIB_Bus_STRUCT_SingleBus.h"
 #include <iostream>
-
-#include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus.h"
-std::list<void*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PGM_CLIB_List_Of_Busses;
+    std::list<void*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PGM_CLIB_List_Of_Busses;
     int* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PGM_CLIB_MutexQue_Of_Bus;
     std::list<int*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PGM_CLIB_MutexQue_Of_Bus_At_Junction;
     std::list<std::list<int*>>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PGM_CLIB_MutexQue_Of_Bus_At_Junction_At_AccessLock;
@@ -52,7 +51,7 @@ std::list<void*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PG
     int* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::dyn_REG_get_PGM_CLIB_Bus_STRUCT_SingleBus_MutexQue_Of_For_Bus(uint8_t* sysThreadId) {
         return stat_REG_get_PGM_CLIB_MutexQue_Of_Bus(sysThreadId);
     }
-    std::list<void*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::dyn_REG_get_PGM_CLIB_Bus_STRUCT_SingleBus_List_Of_Busses(uint8_t* sysThreadId) {
+    std::list<void*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::dyn_PGM_get_List_CLIB_List_Of_Busses(uint8_t* sysThreadId) {
         return stat_REG_get_PGM_CLIB_List_Of_Busses(sysThreadId);
     }
     int* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::dyn_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction(uint8_t* sysThreadId, uint8_t* busId) {
@@ -60,8 +59,12 @@ std::list<void*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PG
         std::advance(temp, *busId);
         return *temp;
     }
-    int*  slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::dyn_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction_At_AccessLock(uint8_t* sysThreadId, uint8_t* busId, uint8_t* junctionId) {
-        
+    int* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::dyn_REG_get_HandleId_CLIB_Item_MutexQue_On_List_Of_Busses_At_Junction_At_AccessLock(uint8_t* sysThreadId, uint8_t* busId, uint8_t* junctionId) {
+        auto temp_A = stat_REG_get_PGM_CLIB_MutexQue_Of_MutexQue_Junction_At_AccessLock(sysThreadId)->begin();
+        std::advance(temp_A, *busId);
+        auto temp_B = temp_A->begin();
+        std::advance(temp_B, *junctionId);
+        return *temp_B;
     }
     void slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_CLASS_boot0_DECLARE_CLIB_Bus_STRUCT_SingleBus_Framework_Execute(uint8_t* sysThreadId) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_App_Data : stat_CLASS_boot0_DECLARE_CLIB_Bus_STRUCT_SingleBus_Framework_Execute(sysThreadId)." << std::endl;
@@ -147,7 +150,7 @@ std::list<void*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PG
         auto oldSize = stat_REG_get_PGM_CLIB_List_Of_Busses(sysThreadId)->size();
         stat_REG_get_PGM_CLIB_List_Of_Busses(sysThreadId)->resize(static_cast<uint8_t>(slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global::dyn_REG_get_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId) / 2));
         for (uint8_t index = oldSize; index < static_cast<uint8_t>(stat_REG_get_PGM_CLIB_List_Of_Busses(sysThreadId)->size()); index++) {
-            stat_REG_get_PGM_CLIB_List_Of_Busses(sysThreadId)->assign(index, slif::Bus::generateHandle(sysThreadId));
+            stat_REG_get_PGM_CLIB_List_Of_Busses(sysThreadId)->assign(index, slif::CLIB_Bus_STRUCT_SingleBus::generateHandle(sysThreadId));
         }
     }
     void slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PGM_boot3_REINITIALISE_CLIB_MutexQue_Of_Bus_At_Junction(uint8_t* sysThreadId) {

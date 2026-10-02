@@ -4,7 +4,6 @@
 #include <iostream>
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_App* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App;
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global;
-	struct slif::CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA;
 // private.
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework::CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId)	{
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : CLIB_Bus_STRUCT_SingleBus_Framework(sysThreadId)." << std::endl;

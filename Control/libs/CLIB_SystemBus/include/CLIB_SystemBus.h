@@ -8,7 +8,7 @@ extern "C" {
     namespace slif {
         class SystemBusses {
             public:
-            static void generateHandle(uint8_t* sysThreadId);
+            static int* generateHandle(uint8_t* sysThreadId);
             static void generateProgram(uint8_t* sysThreadId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
             static void load(uint8_t* sysThreadId, Ticket ticket, unsigned char* bytes_Cargo);

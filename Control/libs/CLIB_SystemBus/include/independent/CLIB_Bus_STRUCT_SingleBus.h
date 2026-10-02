@@ -1,6 +1,7 @@
 #ifndef CLIB_THEADLOGS_slif_H
 #define CLIB_THEADLOGS_slif_H
 #include "CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
+#include <array>
 #include <cstdint>
 namespace slif {
     struct CLIB_Bus_STRUCT_SingleBus {
@@ -10,7 +11,7 @@ namespace slif {
         static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
         static void load(uint8_t* sysThreadId, Ticket ticket, unsigned char* bytes_Cargo);
         static unsigned char* unload(uint8_t* sysThreadId, Ticket ticket);
-        static void reInitialiseHandle(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_JUNCTIONS);
+        static void reInitialiseHandle(uint8_t* sysThreadId, uint8_t MAX_NUMBER_OF_JUNCTIONS);
         static void terminateProgram(uint8_t* sysThreadId);
     private:
         static void stat_APP_FUNCT_slif_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);
