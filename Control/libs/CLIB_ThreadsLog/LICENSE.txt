@@ -1,4 +1,4 @@
-Copyright (c) 2026, CLIB_BUS, Brenton James Maddocks, King Crown of Queensland to
+Copyright (c) 2026, CLIB_Bus_STRUCT_SingleBus, Brenton James Maddocks, King Crown of Queensland to
 the King Emperor of the Commonwealth.
 
 -

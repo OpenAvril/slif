@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_subdirectory(libs/CLIB_MutexQue)
 add_subdirectory(libs/CLIB_ThreadsLog)
 add_subdirectory(libs/CLIB_LaunchQue)
-add_subdirectory(libs/CLIB_SystemBus/libs/CLIB_Bus)
 add_subdirectory(libs/CLIB_SystemBus)
 
 add_library(slif_control STATIC
@@ -28,12 +27,14 @@ add_library(slif_control STATIC
         libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App.cpp
         libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App_Control.cpp
         libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Execute.cpp
-        libs/CLIB_SystemBus/libs/CLIB_Bus/src/CLIB_Bus.cpp
-        libs/CLIB_SystemBus/libs/CLIB_Bus/src/CLIB_Bus_Framework.cpp
-        libs/CLIB_SystemBus/libs/CLIB_Bus/src/CLIB_Bus_Framework_Global.cpp
-        libs/CLIB_SystemBus/libs/CLIB_Bus/src/CLIB_Bus_Framework_App.cpp
-        libs/CLIB_SystemBus/libs/CLIB_Bus/src/CLIB_Bus_Framework_App_Data.cpp
-        libs/CLIB_SystemBus/libs/CLIB_Bus/src/CLIB_Bus_Framework_App_Execute.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute.cpp
         libs/CLIB_SystemBus/src/CLIB_SystemBus.cpp
         libs/CLIB_SystemBus/src/CLIB_SystemBus_Framework.cpp
         libs/CLIB_SystemBus/src/CLIB_SystemBus_Framework_Global.cpp
@@ -45,11 +46,11 @@ target_include_directories(slif_control PUBLIC
         "libs/CLIB_MutexQue/include"
         "libs/CLIB_ThreadsLog/include"
         "libs/CLIB_LaunchQue/include"
-        "libs/CLIB_SystemBus/libs/CLIB_Bus/include"
+        "libs/CLIB_SystemBus/include/independent"
         "libs/CLIB_SystemBus/include"
 )
 
-target_link_libraries(slif_control PUBLIC
+target_link_libraries(slif_control PRIVATE
         CLIB_MutexQue
         CLIB_threads_log
         CLIB_LaunchQue

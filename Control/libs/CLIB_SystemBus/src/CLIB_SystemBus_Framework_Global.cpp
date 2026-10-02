@@ -58,8 +58,8 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbDouble(sysThreadId, byteArray)." << std::endl;
         return pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbDouble(sysThreadId, byteArray);
     }
-    uint8_t slif::CLIB_SystemBus_Framework_Global::dyn_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
-        return *stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId);
+    uint8_t* slif::CLIB_SystemBus_Framework_Global::dyn_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
+        return stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId);
     }
     std::list<uint8_t>* slif::CLIB_SystemBus_Framework_Global::dyn_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId) {
         return stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId);
@@ -109,9 +109,9 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId)." << std::endl;
         return temp;
     }
-    unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, class Object* DATA) {
-        unsigned char* temp;
-        std::memcpy(&temp, DATA, sizeof(double));
+    class slif::Object* slif::CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, unsigned char* byteArray_DATA) {
+        class Object* temp;
+        std::memcpy(&temp, byteArray_DATA, sizeof(double));
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbDouble(sysThreadId)." << std::endl;
         return temp;
     }
@@ -167,9 +167,6 @@
             *temp = 2;
         }
     }
-
-
-
     uint8_t* slif::CLIB_SystemBus_Framework_Global::stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
         return stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS;
     }
