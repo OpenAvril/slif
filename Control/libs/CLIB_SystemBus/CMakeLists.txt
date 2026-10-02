@@ -31,6 +31,6 @@ target_include_directories(slif_control_system_busses PUBLIC
         "../CLIB_MutexQue/include/independent"
 )
 
-target_link_libraries(slif_control_system_busses PRIVATE
+target_link_libraries(slif_control_system_busses PUBLIC
         CLIB_MutexQue
 )

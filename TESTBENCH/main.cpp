@@ -3,6 +3,8 @@
 #include "../Control/libs/CLIB_LaunchQue/include/CLIB_LaunchQue.h"
 #include "../OptimusPrime/CLIB_OptimusPrime.h"
 #include <iostream>
+
+#include "CLIB_SystemBus.h"
 using namespace slif;
 
 int main() {
@@ -15,13 +17,13 @@ int main() {
     slif::OptimusPrime::instantiateAll(sysThreadId);
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : OptimusPrime : instantiateAll." << std::endl;
 
-    std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : MutexQue : generateProgram." << std::endl;
+    std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : generateProgram(s)." << std::endl;
     slif::MutexQue::generateProgram(sysThreadId);
-    std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : MutexQue : generateProgram." << std::endl;
-
-    std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : LaunchQue : generateProgram." << std::endl;
+    slif::ThreadLogs::generateProgram(sysThreadId);
     slif::LaunchQue::generateProgram(sysThreadId);
-    std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : LaunchQue : generateProgram." << std::endl;
+    slif::SystemBusses::generateProgram(sysThreadId);
+    std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : generateProgram(s)." << std::endl;
+
 
     auto handleId_LaunchQue = slif::LaunchQue::generateHandle(sysThreadId);
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : LaunchQue : reInitialiseHandle." << std::endl;

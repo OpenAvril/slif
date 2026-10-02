@@ -46,11 +46,10 @@ target_include_directories(slif_control PUBLIC
         "libs/CLIB_MutexQue/include"
         "libs/CLIB_ThreadsLog/include"
         "libs/CLIB_LaunchQue/include"
-        "libs/CLIB_SystemBus/include/independent"
         "libs/CLIB_SystemBus/include"
 )
 
-target_link_libraries(slif_control PRIVATE
+target_link_libraries(slif_control PUBLIC
         CLIB_MutexQue
         CLIB_threads_log
         CLIB_LaunchQue

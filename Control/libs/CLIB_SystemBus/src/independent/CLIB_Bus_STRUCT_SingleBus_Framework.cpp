@@ -30,12 +30,10 @@
 	}
 	void slif::CLIB_Bus_STRUCT_SingleBus_Framework::dyn_APP_CLIB_Bus_STRUCT_SingleBus_STRUCT_boot1_DEFINE(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : dyn_APP_CLIB_Bus_STRUCT_SingleBus_STRUCT_boot1_DEFINE(sysThreadId)." << std::endl;
-		stat_STRUCT_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(sysThreadId);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : dyn_APP_CLIB_Bus_STRUCT_SingleBus_STRUCT_boot1_DEFINE(sysThreadId)." << std::endl;
 	}
 	void slif::CLIB_Bus_STRUCT_SingleBus_Framework::dyn_APP_CLIB_Bus_STRUCT_SingleBus_STRUCT_boot3_INITIALISE(uint8_t* sysThreadId)	{
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : dyn_APP_CLIB_Bus_STRUCT_SingleBus_STRUCT_boot3_INITIALISE(sysThreadId)." << std::endl;
-		stat_STRUCT_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(sysThreadId);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : dyn_APP_CLIB_Bus_STRUCT_SingleBus_STRUCT_boot3_INITIALISE(sysThreadId)." << std::endl;
 	}
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_App* slif::CLIB_Bus_STRUCT_SingleBus_Framework::dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(uint8_t* sysThreadId) {
@@ -45,10 +43,6 @@
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global* slif::CLIB_Bus_STRUCT_SingleBus_Framework::dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(sysThreadId)." << std::endl;
 		return stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(sysThreadId);
-	}
-	slif::CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA* slif::CLIB_Bus_STRUCT_SingleBus_Framework::dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(uint8_t* sysThreadId) {
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : dyn_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(sysThreadId)." << std::endl;
-		return stat_STRUCT_get_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(sysThreadId);
 	}
 	void slif::CLIB_Bus_STRUCT_SingleBus_Framework::dyn_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : dyn_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework(sysThreadId)." << std::endl;
@@ -111,18 +105,4 @@
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(sysThreadId)."<< std::endl;
 		return stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global;
-	}
-	void slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_STRUCT_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(uint8_t* sysThreadId) {
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : stat_CLASS_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework_App(sysThreadId)." << std::endl;
-		stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA = nullptr;
-	}
-	void slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_STRUCT_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(uint8_t* sysThreadId) {
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework_App(sysThreadId)." << std::endl;
-		stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA = new struct slif::CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA();
-		while (pr_stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(sysThreadId) == nullptr) {}
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework_App(sysThreadId)." << std::endl;
-	}
-	slif::CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_STRUCT_get_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA(uint8_t* sysThreadId)	{
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : pr_stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App(sysThreadId)." << std::endl;
-		return stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA;
 	}
