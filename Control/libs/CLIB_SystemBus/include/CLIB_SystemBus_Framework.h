@@ -2,7 +2,7 @@
 #define CLIB_THEADLOGS_CLIB_SystemBus_Framework_H
 #include "CLIB_SystemBus_Framework_App.h"
 #include "CLIB_SystemBus_Framework_Global.h"
-#include "../include/independent/CLIB_Bus_STRUCT_Bus.h"
+#include "independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_STRUCT_Bus.h"
 #include <cstdint>
 namespace slif {
     class CLIB_SystemBus_Framework {

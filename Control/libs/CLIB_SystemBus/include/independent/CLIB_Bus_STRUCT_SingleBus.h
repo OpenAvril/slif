@@ -1,6 +1,6 @@
 #ifndef CLIB_THEADLOGS_slif_H
 #define CLIB_THEADLOGS_slif_H
-#include "../include/CLIB_Bus_Framework.h"
+#include "../../libs/CLIB_Bus_STRUCT_SingleBus/include/CLIB_Bus_STRUCT_SingleBus_Framework.h"
 #include <cstdint>
 extern "C" {
     namespace slif {
@@ -15,9 +15,9 @@ extern "C" {
             static void terminateProgram(uint8_t* sysThreadId);
         private:
             static void stat_APP_FUNCT_slif_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);
-            static void stat_CLASS_boot1_DEFINE_CLIB_Bus_Framework(uint8_t* sysThreadId);
-            static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_Framework(uint8_t* sysThreadId);
-            static class CLIB_Bus_Framework* stat_CLASS_get_ptr_CLIB_Bus_Framework(uint8_t* sysThreadId);
+            static void stat_CLASS_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
+            static void stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
+            static class CLIB_Bus_STRUCT_SingleBus_STRUCT_SingleBus_Framework* stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework(uint8_t* sysThreadId);
             static void stat_REG_boot1_DEFINE_slif_array_Of_flag_isINSTANTIATED(uint8_t* sysThreadId);
             static void stat_REG_boot2_SUBSTANTIATE_slif_array_Of_flag_isINSTANTIATED(uint8_t* sysThreadId);
             static void stat_REG_boot3_INITIALISE_slif_array_Of_flag_isINSTANTIATED(uint8_t* sysThreadId);

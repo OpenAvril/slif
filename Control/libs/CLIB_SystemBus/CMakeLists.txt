@@ -11,14 +11,14 @@ add_library(slif_control_system_busses STATIC
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
-        libs/CLIB_Bus/src/CLIB_Bus.cpp
-        libs/CLIB_Bus/src/CLIB_Bus_Framework.cpp
-        libs/CLIB_Bus/src/CLIB_Bus_Framework_Global.cpp
-        libs/CLIB_Bus/src/independent/CLIB_Bus_STRUCT_Bus_CLASS_Ticket.cpp
-        libs/CLIB_Bus/src/independent/CLIB_Bus_STRUCT_Bus.cpp
-        libs/CLIB_Bus/src/CLIB_Bus_Framework_App.cpp
-        libs/CLIB_Bus/src/CLIB_Bus_Framework_App_Data.cpp
-        libs/CLIB_Bus/src/CLIB_Bus_Framework_App_Execute.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus_CLASS_Ticket.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute.cpp
         src/CLIB_SystemBus.cpp
         src/CLIB_SystemBus_Framework.cpp
         src/CLIB_SystemBus_Framework_Global.cpp
@@ -28,10 +28,9 @@ add_library(slif_control_system_busses STATIC
 
 target_include_directories(slif_control_system_busses PUBLIC
         "../CLIB_MutexQue/include"
-        "libs/CLIB_Bus/include"
+        "../CLIB_MutexQue/include/independent"
 )
 
 target_link_libraries(slif_control_system_busses PRIVATE
         CLIB_MutexQue
-        slif_control_bus
 )
