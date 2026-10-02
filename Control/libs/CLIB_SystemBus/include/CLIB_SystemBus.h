@@ -1,6 +1,7 @@
-#ifndef CLIB_THEADLOGS_slif_H
-#define CLIB_THEADLOGS_slif_H
+#ifndef CLIB_SYSTEMBUS_H
+#define CLIB_SYSTEMBUS_H
 #include "../include/CLIB_SystemBus_Framework.h"
+#include "independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
 #include <cstdint>
 #include <string>
 extern "C" {

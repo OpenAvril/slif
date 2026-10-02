@@ -30,7 +30,7 @@ add_library(slif_control STATIC
         libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus.cpp
         libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework.cpp
         libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.cpp
-        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus_CLASS_Ticket.cpp
+        libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.cpp
         libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus.cpp
         libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.cpp
         libs/CLIB_SystemBus/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.cpp

@@ -14,7 +14,7 @@ add_library(slif_control_system_busses STATIC
         src/independent/CLIB_Bus_STRUCT_SingleBus.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.cpp
-        src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus_CLASS_Ticket.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_Bus.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.cpp
