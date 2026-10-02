@@ -4,22 +4,22 @@
 #include <cstdint>
 #include <list>
 extern "C" {
-	namespace slif	{
+	namespace DEVELOPMENT	{
 		class CLIB_OpenEpiCentre {
 		public:
-			static void* CLIB_OpenEpiCentre_Framework_App_FUNCT_generate_Program(uint8_t* sysThreadId);
-			static unsigned char* CLIB_OpenEpiCentre_Framework_App_FUNCT_get_FLAG_isPGM_INSTANTIATED(uint8_t* sysThreadId);
-			static void CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
-			static void CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise1(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
-			static void CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise2(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
-			static void CLIB_OpenEpiCentre_Framework_App_FUNCT_set_Items_Input_praise3(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
-			static unsigned char* CLIB_OpenEpiCentre_Framework_App_FUNCT_get_Items_Output_praise0(uint8_t* sysThreadId, std::list<class Object*>* sampleOutput);
-			static void CLIB_OpenEpiCentre_Framework_App_FUNCT_terminate_Program(uint8_t* sysThreadId);
-			static unsigned char* CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerInputReceive(uint8_t* sysThreadId);
-			static unsigned char* CLIB_OpenEpiCentre_dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend(uint8_t* sysThreadId);
-			static unsigned char* CLIB_OpenEpiCentre_dyn_REG_get_FLAG_IsInitialised_slif(uint8_t* sysThreadId);
-			static unsigned char* CLIB_OpenEpiCentre_io_PRAISE_get_MetaData_PraiseEventId(uint8_t* sysThreadId);
-			static void CLIB_OpenEpiCentre_io_PRAISE_set_MetaData_PraiseEventId(uint8_t* sysThreadId, unsigned char* bytes);
+			static void generateProgram(uint8_t* sysThreadId);
+			static unsigned char* get_Output(uint8_t* sysThreadId, unsigned char* bytes_praiseId);
+			static unsigned char* dyn_FLAG_isINITIALISED(uint8_t* sysThreadId);
+			static unsigned char* get_FLAG_isINSTANTIATED(uint8_t* sysThreadId);
+			static unsigned char* get_FLAG_isStackLoaded_ServerInputReceive(uint8_t* sysThreadId);
+			static unsigned char* get_FLAG_isStackLoaded_ServerOutputSend(uint8_t* sysThreadId);
+			static unsigned char* get_MetaData_PraiseEventId(uint8_t* sysThreadId);
+			static void set_InputItemsFor_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
+			static void set_InputItemsFor_praise1(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
+			static void set_InputItemsFor_praise2(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
+			static void set_InputItemsFor_praise3(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
+			static void set_MetaData_PraiseEventId(uint8_t* sysThreadId, unsigned char* bytes);
+			static void terminateProgram(uint8_t* sysThreadId);
 		private:
 			static void CLIB_OpenEpiCentre_stat_app_FUNCT_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);
 			static void CLIB_OpenEpiCentre_stat_CLASS_boot1_DEFINE_Framework(uint8_t* sysThreadId);
@@ -28,7 +28,7 @@ extern "C" {
 			static void CLIB_OpenEpiCentre_stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(uint8_t* sysThreadId);
 			static void CLIB_OpenEpiCentre_stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(uint8_t* sysThreadId);
 			static void CLIB_OpenEpiCentre_stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(uint8_t* sysThreadId);
-			static std::array<bool, 28>* CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(uint8_t* sysThreadId);
+			static std::array<bool, 13>* CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(uint8_t* sysThreadId);
 		};
 	}
 }
