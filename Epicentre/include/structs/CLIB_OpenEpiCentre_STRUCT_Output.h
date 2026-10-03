@@ -1,5 +1,5 @@
-#ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_STRUCT_OUTPUT_H
-#define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_STRUCT_OUTPUT_H
+#ifndef CLIB_OPENEPICENTRE_STRUCT_OUTPUT_H
+#define CLIB_OPENEPICENTRE_STRUCT_OUTPUT_H
 #include "../engine/CLIB_OpenEpiCentre_Framework.h"
 #include "../structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.h"
 #include "../structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise1.h"

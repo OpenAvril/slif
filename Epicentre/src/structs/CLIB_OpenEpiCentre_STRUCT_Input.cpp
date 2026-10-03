@@ -114,8 +114,8 @@
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Input : stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Input(sysThreadId)."));
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Input::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Input(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Input()"));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Input()"));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Input : stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Input(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Input : stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Input(sysThreadId)."));
     }
 // private.
     void slif::CLIB_OpenEpiCentre_STRUCT_Input::stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Input_playerId(uint8_t* sysThreadId) {
