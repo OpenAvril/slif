@@ -2,16 +2,16 @@
 #include "../include/engine/CLIB_OpenEpiCentre_Framework.h"
 #include "../include/engine/CLIB_OpenEpiCentre_Framework_App.h"
 #include "../include/engine/CLIB_OpenEpiCentre_Framework_Global.h"
-#include "../include/structs/CLIB_OpenEpiCentre_STRUCT_Input.h"
-#include "../include/structs/CLIB_OpenEpiCentre_STRUCT_Output.h"
-#include "../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.h"
-#include "../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.h"
-#include "../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.h"
-#include "../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.h"
-#include "../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.h"
-#include "../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise1.h"
-#include "../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise2.h"
-#include "../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.h"
+#include "../include/independent/CLIB_OpenEpiCentre_STRUCT_Input.h"
+#include "../include/independent/CLIB_OpenEpiCentre_STRUCT_Output.h"
+#include "../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.h"
+#include "../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.h"
+#include "../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.h"
+#include "../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.h"
+#include "../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.h"
+#include "../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise1.h"
+#include "../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise2.h"
+#include "../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.h"
 #include "CLIB_MutexQue.h"
 #include "CLIB_ThreadLogs.h"
 #include <string>
@@ -40,7 +40,7 @@
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global(sysThreadId);
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done CLIB_OpenEpiCentre_Global Meta-Data and Settings."));
 
-		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started STRUCTS Generate."));
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started independent Generate."));
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE."));
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_User_Input(sysThreadId);
 		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(sysThreadId)->dyn_STRUCT_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_User_Input(sysThreadId);

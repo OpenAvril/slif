@@ -1,4 +1,4 @@
-#include "../../../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.h"
+#include "../../../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.h"
 #include <cfloat>
 #include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 	double* slif::CLIB_OpenEpiCentre_STRUCT_Output_praise0::stat_REG_ptr_CLIB_OpenEpiCentre_STRUCT_Output_praise0_Value;

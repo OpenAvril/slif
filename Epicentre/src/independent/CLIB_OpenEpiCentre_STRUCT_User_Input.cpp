@@ -1,4 +1,4 @@
-#include "../../include/structs/CLIB_OpenEpiCentre_STRUCT_User_Input.h"
+#include "../../include/independent/CLIB_OpenEpiCentre_STRUCT_User_Input.h"
 #include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 	slif::CLIB_OpenEpiCentre_STRUCT_Input_praise0* slif::CLIB_OpenEpiCentre_STRUCT_User_Input::stat_REG_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise0;
 	slif::CLIB_OpenEpiCentre_STRUCT_Input_praise1* slif::CLIB_OpenEpiCentre_STRUCT_User_Input::stat_REG_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise1;

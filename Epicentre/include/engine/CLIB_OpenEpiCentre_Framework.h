@@ -2,12 +2,12 @@
 #define CLIB_OPENEPICENTRE_FRAMEWORK_H
 #include "CLIB_OpenEpiCentre_Framework_App.h"
 #include "CLIB_OpenEpiCentre_Framework_Global.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_Concurrent.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_Input.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_Output.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_User_Algorithm.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_User_Input.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_User_Output.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_Concurrent.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_Input.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_Output.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_User_Algorithm.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_User_Input.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_User_Output.h"
 namespace slif {
     class CLIB_OpenEpiCentre_Framework {
     public:

@@ -1,4 +1,4 @@
-#include "../../include/structs/CLIB_OpenEpiCentre_STRUCT_Input.h"
+#include "../../include/independent/CLIB_OpenEpiCentre_STRUCT_Input.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_App.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_App_Data.h"
 #include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"

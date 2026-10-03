@@ -2,8 +2,8 @@
 #define CLIB_OPENEPICENTRE_FRAMEWORK_APP_DATA_H
 #include "CLIB_OpenEpiCentre_Framework_App_Data_Control.h"
 #include "CLIB_OpenEpiCentre_Framework.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_Input.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_Output.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_Input.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_Output.h"
 #include <array>
 #include <vector>
 namespace slif {

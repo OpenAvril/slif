@@ -1,4 +1,4 @@
-#include "../../../include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.h"
+#include "../../../include/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.h"
 #include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 #include <cfloat>
 	double* slif::CLIB_OpenEpiCentre_STRUCT_Input_praise2::stat_REG_ptr_Input_praise2_valueA;

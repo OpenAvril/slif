@@ -1,7 +1,7 @@
 #ifndef CLIB_OPENEPICENTRE_FRAMEWORK_APP_ALGORITHMS_H
 #define CLIB_OPENEPICENTRE_FRAMEWORK_APP_ALGORITHMS_H
 #include "CLIB_OpenEpiCentre_Framework.h"
-#include "../structs/CLIB_OpenEpiCentre_STRUCT_Concurrent.h"
+#include "../independent/CLIB_OpenEpiCentre_STRUCT_Concurrent.h"
 #include <cstdint>
 #include <list>
 namespace slif {

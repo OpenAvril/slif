@@ -25,24 +25,24 @@ add_library(slif_epicentre STATIC
         src/CLIB_OpenEpiCentre.cpp
         src/engine/CLIB_OpenEpiCentre_Framework.cpp
         src/engine/CLIB_OpenEpiCentre_Framework_Global.cpp
-        src/structs/CLIB_OpenEpiCentre_STRUCT_Input.cpp
-        src/structs/CLIB_OpenEpiCentre_STRUCT_Output.cpp
-        src/structs/CLIB_OpenEpiCentre_STRUCT_Concurrent.cpp
-        src/structs/CLIB_OpenEpiCentre_STRUCT_User_Input.cpp
-        src/structs/CLIB_OpenEpiCentre_STRUCT_User_Output.cpp
-        src/structs/CLIB_OpenEpiCentre_STRUCT_User_Algorithm.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise0.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise1.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise1.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise2.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise2.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise3.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.cpp
-        src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.cpp
+        src/independent/CLIB_OpenEpiCentre_STRUCT_Input.cpp
+        src/independent/CLIB_OpenEpiCentre_STRUCT_Output.cpp
+        src/independent/CLIB_OpenEpiCentre_STRUCT_Concurrent.cpp
+        src/independent/CLIB_OpenEpiCentre_STRUCT_User_Input.cpp
+        src/independent/CLIB_OpenEpiCentre_STRUCT_User_Output.cpp
+        src/independent/CLIB_OpenEpiCentre_STRUCT_User_Algorithm.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise0.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise1.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise1.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise2.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise2.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Algorithm_praise3.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.cpp
+        src/independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.cpp
         src/engine/CLIB_OpenEpiCentre_Framework.cpp
         src/engine/CLIB_OpenEpiCentre_Framework_App.cpp
         src/engine/CLIB_OpenEpiCentre_Framework_App_Algorithms.cpp

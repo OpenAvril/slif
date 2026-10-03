@@ -1,10 +1,10 @@
 #ifndef CLIB_OPENEPICENTRE_STRUCT_INPUT_H
 #define CLIB_OPENEPICENTRE_STRUCT_INPUT_H
 #include "../engine/CLIB_OpenEpiCentre_Framework.h"
-#include "../structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.h"
-#include "../structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.h"
-#include "../structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.h"
-#include "../structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.h"
+#include "../independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.h"
+#include "../independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.h"
+#include "../independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.h"
+#include "../independent/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.h"
 #include <list>
 namespace slif {
     struct CLIB_OpenEpiCentre_STRUCT_Input {
