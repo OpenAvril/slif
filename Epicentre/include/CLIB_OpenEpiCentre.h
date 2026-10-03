@@ -14,10 +14,10 @@ extern "C" {
 			static unsigned char* get_FLAG_isStackLoaded_ServerInputReceive(uint8_t* sysThreadId);
 			static unsigned char* get_FLAG_isStackLoaded_ServerOutputSend(uint8_t* sysThreadId);
 			static unsigned char* get_MetaData_PraiseEventId(uint8_t* sysThreadId);
-			static void set_InputItemsFor_praise0(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
-			static void set_InputItemsFor_praise1(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
-			static void set_InputItemsFor_praise2(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
-			static void set_InputItemsFor_praise3(uint8_t* sysThreadId, const unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
+			static void set_InputItemsFor_praise0(uint8_t* sysThreadId, unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
+			static void set_InputItemsFor_praise1(uint8_t* sysThreadId, unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
+			static void set_InputItemsFor_praise2(uint8_t* sysThreadId, unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
+			static void set_InputItemsFor_praise3(uint8_t* sysThreadId, unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
 			static void set_MetaData_PraiseEventId(uint8_t* sysThreadId, unsigned char* bytes);
 			static void terminateProgram(uint8_t* sysThreadId);
 		private:
