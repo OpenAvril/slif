@@ -1,5 +1,5 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_Global.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include <CLIB_ThreadLogs.h>
 #include <cfloat>
 #include <climits>
 #include <cstring>
@@ -42,13 +42,13 @@
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Global : dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global(sysThreadId)."));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Global : dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global(sysThreadId)."));
     }
-    uint8_t slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_get_CLIB_OpenEpiCentre_Global_Item_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
+    uint8_t* slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_get_CLIB_OpenEpiCentre_Global_Item_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t : dyn_REG_get_CLIB_OpenEpiCentre_Global_Item_number_Of_Implemented_Cores(sysThreadId)."));
-        return *stat_REG_get_Ptr_number_Of_Implemented_Cores(sysThreadId);
+        return stat_REG_get_Ptr_number_Of_Implemented_Cores(sysThreadId);
     }
-    unsigned long long slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_get_CLIB_OpenEpiCentre_Global_Item_number_Of_Praise_Events(uint8_t* sysThreadId) {
+    unsigned long long* slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_get_CLIB_OpenEpiCentre_Global_Item_number_Of_Praise_Events(uint8_t* sysThreadId) {
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= unsigned long long : dyn_REG_get_CLIB_OpenEpiCentre_Global_Item_number_Of_Praise_Events(sysThreadId)."));
-        return *stat_REG_get_Ptr_number_Of_Praise_Events(sysThreadId);
+        return stat_REG_get_Ptr_number_Of_Praise_Events(sysThreadId);
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global(uint8_t* sysThreadId) {
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Global : stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global(sysThreadId)."));
@@ -70,7 +70,7 @@
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Global : stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global(sysThreadId)."));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Global : stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global(sysThreadId)."));
     }
-    int slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Bool_To_Int(uint8_t* sysThreadId, bool value) {
+    int* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Bool_To_Int(uint8_t* sysThreadId, bool value) {
         int* temp = nullptr;
         temp = new int(INT_MAX);
         if (value) {
@@ -80,7 +80,7 @@
             *temp = 0;
         }
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= int : stat_CONVERT_CLIB_OpenEpiCentre_Global_Bool_To_Int(sysThreadId)."));
-        return *temp;
+        return temp;
     }
     unsigned char* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbbool_to_MsbByteArray(uint8_t* sysThreadId, bool value) {
         unsigned char* buffer = nullptr;
@@ -95,43 +95,43 @@
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= bool : stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_Msbbool(sysThreadId)."));
         return (byteArray[7] & 1) != 0;
     }
-   uint8_t slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_Msbuint8_t(uint8_t* sysThreadId, const unsigned char* byteArray) {
+   uint8_t* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_Msbuint8_t(uint8_t* sysThreadId, const unsigned char* byteArray) {
         uint8_t* temp;
         temp = new uint8_t(INT8_MAX);
         std::memcpy(&temp, byteArray, sizeof(uint8_t));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t : stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)."));
-        return *temp;
+        return temp;
     }
-    double slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbDouble(uint8_t* sysThreadId, const unsigned char* byteArray) {
+    double* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbDouble(uint8_t* sysThreadId, const unsigned char* byteArray) {
         double* temp;
         temp = new double(DBL_MAX);
         std::memcpy(&temp, byteArray, sizeof(double));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= double : stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbDouble(sysThreadId)."));
-        return *temp;
+        return temp;
     }
-    unsigned long long slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbunsignedLongLong(uint8_t* sysThreadId, const unsigned char* byteArray)
+    unsigned long long* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbunsignedLongLong(uint8_t* sysThreadId, const unsigned char* byteArray)
     {
         unsigned long long* temp = nullptr;
         temp = new unsigned long long(ULLONG_MAX);
-        std::memcpy(&temp, byteArray, sizeof(unsigned long long));
+        std::memcpy(&temp, &byteArray, sizeof(unsigned long long));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= unsigned long long : stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbByteArray_To_MsbunsignedLongLong(sysThreadId)."));
-        return *temp;
+        return temp;
     }
-    unsigned char* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t byte) {
+    unsigned char* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t* byte) {
         unsigned char* temp;
         temp = new unsigned char(INT8_MAX);
         std::memcpy(&temp, &byte, sizeof(uint8_t));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= unsigned char* : stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbuint8_t_To_MsbByteArray(sysThreadId)."));
         return temp;
     }
-    unsigned char* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double value) {
+    unsigned char* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double* value) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char(DBL_MAX);
         std::memcpy(buffer, &value, sizeof(double));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= unsigned char* : stat_CONVERT_CLIB_OpenEpiCentre_Global_MsbDouble_To_MsbByteArray(sysThreadId)."));
         return buffer;
     }
-    unsigned char* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long value) {
+    unsigned char* slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long* value) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char(static_cast<unsigned char>(ULONG_LONG_MAX));
         std::memcpy(buffer, &value, sizeof(unsigned long long));
