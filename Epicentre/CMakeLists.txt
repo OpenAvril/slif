@@ -49,6 +49,7 @@ add_library(slif_epicentre STATIC
         src/engine/CLIB_OpenEpiCentre_Framework_App_Data.cpp
         src/engine/CLIB_OpenEpiCentre_Framework_App_Data_Control.cpp
         src/engine/CLIB_OpenEpiCentre_Framework_App_Execute.cpp
+        src/engine/CLIB_OpenEpiCentre_Framework_App_Execute_Control.cpp
 )
 
 target_include_directories(slif_epicentre PUBLIC
