@@ -2,10 +2,10 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_App.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_App_Data.h"
 #include "../../libs/CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
-    bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction;
-    bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend;
-    bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::_stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput;
-    bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::_stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput;
+    bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction;
+    bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend;
+    bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput;
+    bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput;
 // public.
     slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId) {
         stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId);
@@ -15,10 +15,10 @@
         stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId);
     }
     slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::~CLIB_OpenEpiCentre_Framework_App_Data_Control() {
-        delete _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction;
-        delete _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend;
-        delete _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput;
-        delete _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput;
+        delete stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction;
+        delete stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend;
+        delete stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput;
+        delete stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput;
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::app_FUNCT_flip_CLIB_OpenEpiCentre_Framework_App_Data_Control_REG_Input_DoubleBuffer(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj) {
         obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Data(sysThreadId)->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)->app_FUNCT_flip_CLIB_OpenEpiCentre_Framework_App_Data_Control_REG_Input_DoubleBuffer(obj);
@@ -63,28 +63,28 @@
         }
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
         stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction(sysThreadId);
         stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend(sysThreadId);
         stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfInput(sysThreadId);
         stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfOutput(sysThreadId);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
         stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction(sysThreadId);
         stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend(sysThreadId);
         stat_REG_boot2_SUBSTANTIATE_ItemSideToWRITE_For_doubleBufferOfInput(sysThreadId);
         stat_REG_boot2_SUBSTANTIATE_ItemSideToWRITE_For_doubleBufferOfOutput(sysThreadId);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
         stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction(sysThreadId);
         stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend(sysThreadId);
         stat_REG_boot3_INITIALISE_ItemSideToWRITE_For_doubleBufferOfInput(sysThreadId);
         stat_REG_boot3_INITIALISE_ItemSideToWRITE_For_doubleBufferOfOutput(sysThreadId);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
     }
     bool slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::dyn_REG_get_Item_FLAG_isLoaded_Stack_InputAction(uint8_t* sysThreadId) {
         return stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction(sysThreadId);
@@ -111,135 +111,135 @@
         stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(value);
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(sysThreadId)"));
     }
 // private.
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
-        _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction = nullptr;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
+        stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction = nullptr;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
         _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend = nullptr;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfInput(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
         _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput = nullptr;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfOutput(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
         _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput = nullptr;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
         _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction = new bool(sysThreadId);
         stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(true);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
         _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend = new bool(sysThreadId);
         stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(true);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot2_SUBSTANTIATE_ItemSideToWRITE_For_doubleBufferOfInput(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
         _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput = new bool(sysThreadId);
         stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfInput(true);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot2_SUBSTANTIATE_ItemSideToWRITE_For_doubleBufferOfOutput(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
         _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput = new bool(sysThreadId);
         stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfOutput(true);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
         stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(false);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
         stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(false);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot3_INITIALISE_ItemSideToWRITE_For_doubleBufferOfInput(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
         stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfInput(false);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_boot3_INITIALISE_ItemSideToWRITE_For_doubleBufferOfOutput(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
         stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfOutput(false);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
     }
     bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: thread ? :: <= _stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
         return _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction;
     }
     bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: thread ? :: <= _stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
         return _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend;
     }
     bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_get_ptr_ItemSideToWRITE_For_doubleBufferOfInput(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: thread ? :: <= _stat_REG_ptr_side_To_Write_For_doubleBuffer_Input = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
         return _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput;
     }
     bool* slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_get_ptr_ItemSideToWRITE_For_doubleBufferOfOutput(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: thread ? :: <= _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
         return _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput;
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(uint8_t* sysThreadId, bool new_Bool) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
         *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction = new_Bool;
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(uint8_t* sysThreadId, bool new_Bool) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
         *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend = new_Bool;
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfInput(uint8_t* sysThreadId, bool new_Bool) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
         *_stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput = new_Bool;
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Input(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Input(sysThreadId)"));
     }
     void slif::CLIB_OpenEpiCentre_Framework_App_Data_Control::stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfOutput(uint8_t* sysThreadId, bool new_Bool) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
         *_stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput = new_Bool;
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Output(sysThreadId)" << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Output(sysThreadId)"));
     }

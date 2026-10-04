@@ -18,7 +18,7 @@ namespace slif {
         static void stat_CLASS_boot3_INITIALISE_slif_Framework(uint8_t* sysThreadId);
         static void stat_REG_boot0_DECLARE_slif_Framework(uint8_t* sysThreadId);
     private:
-        static class CLIB_Framework_Global* _stat_CLASS_ptr_slif_Framework_Global;
+        static class CLIB_Framework_Global* stat_CLASS_ptr_slif_Framework_Global;
         static void stat_CLASS_boot1_DEFINE_slif_Framework_Global(uint8_t* sysThreadId);
         static void pr_stat_CLASS_boot3_INITIALISE_slif_Framework_Global(uint8_t* sysThreadId);
         static class CLIB_Framework_Global* stat_CLASS_get_ptr_slif_Framework_Global(uint8_t* sysThreadId);

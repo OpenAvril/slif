@@ -8,13 +8,13 @@ extern "C" {
     namespace slif {
         class MutexQue {
         public:
-            static void endByUnlock(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_ACCESS_ID);
-            static int* generateHandle(uint8_t* sysThreadId);
+            static void endByUnlock(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_ACCESS_ID);
+            static unsigned char* generateHandle(uint8_t* sysThreadId);
             static void generateProgram(uint8_t* sysThreadId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
-            static void reInitialiseHandle(uint8_t* sysThreadId, int* handleId, std::byte MAX_NUMBER_OF_THREADS_FOR_ACCESS);
-            static void startByLock(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_ACCESS_ID);
-            static void terminateProgram(uint8_t* sysThreadId, int* handleId);
+            static void reInitialiseHandle(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+            static void startByLock(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_ACCESS_ID);
+            static void terminateProgram(uint8_t* sysThreadId, unsigned char* handleId);
         private:
             static void CLIB_MutexQue_App_FUNCT_generate_Program(uint8_t* sysThreadId);
             static bool CLIB_MutexQue_stat_APP_FUNCT_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);

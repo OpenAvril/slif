@@ -1,135 +1,147 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_App_Execute.h"
-#include "../../libs/CLIB_LaunchQueForThreadsAt_Server/include/CLIB_LaunchEnableForConcurrentThreadsAt_Server.h"
-#include "../../libs/CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
-#include "../../libs/CLIB_WriteQueForThreadsAt_DataStack/include/WriteEnableForThreadsAt_DataStack_Framework.h"
+#include <CLIB_MutexQue.h>
+#include <CLIB_LaunchQue.h>
+#include <CLIB_ThreadLogs.h>
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_App.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_App_Execute_Control.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_Global.h"
 #include "../../include/independent/CLIB_OpenEpiCentre_STRUCT_Concurrent.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
-
-#include "../../libs/CLIB_WriteQueForThreadsAt_DataStack/include/CLIB_WriteEnableForThreadsAt_DataStack.h"
-    slif::CLIB_OpenEpiCentre_Framework_App_Execute_Control* slif::CLIB_OpenEpiCentre_Framework_App_Execute::_stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control;
-    void* slif::CLIB_OpenEpiCentre_Framework_App_Execute::_stat_PGM_CLIB_LaunchQueForThreadsAt_Server;
-    std::array<slif::WriteEnableForThreadsAt_DataStack_Framework*, 2>* slif::CLIB_OpenEpiCentre_Framework_App_Execute::_stat_PGM_CLIB_WriteQueForThreadsAt_DataStack;
+    slif::CLIB_OpenEpiCentre_Framework_App_Execute_Control* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control;
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_REG_HandleId_For_CLIB_LaunchQue_Server;
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_REG_HandleId_For_CLIB_MutexQue_ServerInputReceive;
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_REG_HandleId_For_CLIB_MutexQue_ServerOutputSend;
 // public.
-    slif::CLIB_OpenEpiCentre_Framework_App_Execute::CLIB_OpenEpiCentre_Framework_App_Execute() {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered CONSTRUCTOR of CLIB_OpenEpiCentre_Framework_App_Execute()." << std::endl;
-        stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute();
-        stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute();
-        stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute();
-        stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute();
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting CONSTRUCTOR of CLIB_OpenEpiCentre_Framework_App_Execute()." << std::endl;
+    slif::CLIB_OpenEpiCentre_Framework_App_Execute::CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId);
+        stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId);
+        stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId);
+        stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId);
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-        slif::CLIB_OpenEpiCentre_Framework_App_Execute::~CLIB_OpenEpiCentre_Framework_App_Execute() {
-        delete _stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control;
+    slif::CLIB_OpenEpiCentre_Framework_App_Execute::~CLIB_OpenEpiCentre_Framework_App_Execute() {
+        slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        delete stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control;
+        delete stat_REG_HandleId_For_CLIB_LaunchQue_Server;
+        delete stat_REG_HandleId_For_CLIB_MutexQue_ServerInputReceive;
+        delete stat_REG_HandleId_For_CLIB_MutexQue_ServerOutputSend;
+        slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-    slif::CLIB_OpenEpiCentre_Framework_App_Execute_Control* slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_CLASS_get_ptr_Execute_Control() {
-        return stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control();
+    slif::CLIB_OpenEpiCentre_Framework_App_Execute_Control* slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= class* : dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control(sysThreadId)."));
+        return stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control(sysThreadId);
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
-
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-    class CLIB_WriteEnableForThreadsAt_DataStack* slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_PGM_get_CLIB_OpenEpiCentre_WriteEnable_ServerInputReceive() {
-        return stat_PGM_get_ptr_CLIB_WriteQueForThreadsAt_ServerInputReceive();
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_PGM_get_HandleId_For_CLIB_LaunchQue_Server(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= int* HandleId : dyn_PGM_get_HandleId_For_CLIB_LaunchQue_Server(sysThreadId)."));
+        return stat_PGM_get_HandleId_For_CLIB_LaunchQue_Server(sysThreadId);
     }
-    class CLIB_WriteEnableForThreadsAt_DataStack* slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_PGM_get_CLIB_OpenEpiCentre_WriteEnable_ServerOutputSend() {
-        return stat_PGM_get_ptr_CLIB_WriteQueForThreadsAt_ServerOutputSend();
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_PGM_get_HandleId_For_CLIB_MutexQue_ServerInputReceive(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= int* HandleId : dyn_PGM_get_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId)."));
+        return stat_PGM_get_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId);
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute() {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
-
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::dyn_PGM_get_HandleId_For_CLIB_MutexQue_ServerOutputSend(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= int* HandleId : dyn_PGM_get_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId)."));
+        return stat_PGM_get_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId);
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute() {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
-        stat_CLASS_boot1_DEFINE_Execute_Control();
-        stat_PGM_boot1_DEFINE_CLIB_LaunchQueForThreadsAt_Server();
-        stat_PGM_boot1_DEFINE_array_Of_CLIB_WriteQueForThreadsAt_DataStack();
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute() {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
-        stat_CLASS_boot3_INITIALISE_Execute_Control();
-        stat_PGM_boot3_INITIALISE_CLIB_LaunchQueForThreadsAt_Server();
-        stat_PGM_boot3_INITIALISE_array_Of_CLIB_WriteQueForThreadsAt_DataStack();
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute()" << std::endl;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        stat_CLASS_boot1_DEFINE_Execute_Control(sysThreadId);
+        stat_PGM_boot1_DEFINE_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId);
+        stat_PGM_boot1_DEFINE_HandleId_For_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId);
+        stat_PGM_boot1_DEFINE_HandleId_For_CLIB_LaunchQue_Server(sysThreadId);
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Execute() {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
-        unsigned char* praiseEventId = slif::CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray(UINT8_MAX);
-        unsigned char* sysThreadId = CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbuint8_t_To_MsbByteArray(static_cast<uint8_t>(255));
-        unsigned char* byte_bool = CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbbool_to_MsbByteArray(true);
-
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered CHECK member function of CLIB_LaunchEnableForConcurrentThreadsAt_Server() " << std::endl;
-        //CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_FUNCT_generate_Program();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_FUNCT_request_Wait_launch(sysThreadId);
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_FUNCT_terminate_Progaram();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_FUNCT_thread_End(sysThreadId);
-        unsigned char* tempA0 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_REG_get_coreId_To_launch();
-        unsigned char* tempA2 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_REG_get_Flag_Active();
-        unsigned char* tempA3 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_REG_get_Flag_ConcurrentCoreState(sysThreadId);
-        unsigned char* tempA4 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_REG_get_Flag_Idle();
-        unsigned char* tempA5 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_REG_get_FLAG_isPGM_INSTANTIATED();
-        unsigned char* tempA6 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_REG_get_State_launchBit();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_REG_set_Flag_ConcurrentCoreState(sysThreadId, byte_bool);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: done CHECK member function of CLIB_LaunchEnableForConcurrentThreadsAt_Server() " << std::endl;
-
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        stat_CLASS_boot3_INITIALISE_Execute_Control(sysThreadId);
+        stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId);
+        stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId);
+        stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_LaunchQue_Server(sysThreadId);
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute() {
-
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Execute(sysThreadId)."));
     }
 // private.
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot1_DEFINE_Execute_Control() {
-        _stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control = nullptr;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot1_DEFINE_Execute_Control(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot1_DEFINE_Execute_Control(sysThreadId)."));
+        stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control = nullptr;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot1_DEFINE_Execute_Control(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot3_INITIALISE_Execute_Control() {
-        _stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control = new CLIB_OpenEpiCentre_Framework_App_Execute_Control();
-        while (stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control() == nullptr) {}
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_boot3_INITIALISE_Execute_Control(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot3_INITIALISE_Execute_Control(sysThreadId)."));
+        stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control = new CLIB_OpenEpiCentre_Framework_App_Execute_Control(sysThreadId);
+        while (stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control(sysThreadId) == nullptr) {}
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_CLASS_boot3_INITIALISE_Execute_Control(sysThreadId)."));
     }
-    slif::CLIB_OpenEpiCentre_Framework_App_Execute_Control* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control() {
-        return _stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control;
+    slif::CLIB_OpenEpiCentre_Framework_App_Execute_Control* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= class* : stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Execute_Control(sysThreadId)."));
+        return stat_CLASS_CLIB_OpenEpiCentre_Framework_App_Execute_Control;
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot1_DEFINE_CLIB_LaunchQueForThreadsAt_Server() {
-        _stat_PGM_CLIB_LaunchQueForThreadsAt_Server = nullptr;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot1_DEFINE_HandleId_For_CLIB_LaunchQue_Server(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot1_DEFINE_HandleId_For_CLIB_LaunchQue_Server(sysThreadId)."));
+        stat_REG_HandleId_For_CLIB_LaunchQue_Server = nullptr;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot1_DEFINE_HandleId_For_CLIB_LaunchQue_Server(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot1_DEFINE_array_Of_CLIB_WriteQueForThreadsAt_DataStack() {
-        _stat_PGM_CLIB_WriteQueForThreadsAt_DataStack = nullptr;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot1_DEFINE_HandleId_For_CLIB_MutexQue_ServerInputReceive(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot1_DEFINE_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId)."));
+        stat_REG_HandleId_For_CLIB_MutexQue_ServerInputReceive = nullptr;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot1_DEFINE_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot3_INITIALISE_CLIB_LaunchQueForThreadsAt_Server() {
-        _stat_PGM_CLIB_LaunchQueForThreadsAt_Server = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_FUNCT_generate_Program();
-        while (stat_PGM_get_ptr_CLIB_LaunchQueForThreadsAt_Server() == nullptr) {}
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot1_DEFINE_HandleId_For_HandleId_For_CLIB_MutexQue_ServerOutputSend(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot1_DEFINE_HandleId_For_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId)."));
+        stat_REG_HandleId_For_CLIB_MutexQue_ServerOutputSend = nullptr;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot1_DEFINE_HandleId_For_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId)."));
     }
-    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot3_INITIALISE_array_Of_CLIB_WriteQueForThreadsAt_DataStack() {
-        _stat_PGM_CLIB_WriteQueForThreadsAt_DataStack = new std::array<slif::WriteEnableForThreadsAt_DataStack_Framework*, 2>();
-        for (int index = 0; index < _stat_PGM_CLIB_WriteQueForThreadsAt_DataStack->size(); index++) {
-            stat_PGM_get_ptr_array_Of_CLIB_WriteQueForThreadsAt_DataStack()->at(index) = slif::CLIB_WriteEnableForThreadsAt_DataStack::CLIB_WriteEnableForThreadsAt_DataStack_App_FUNCT_generate_Program(0);
-        }
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_LaunchQue_Server(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_LaunchQue_Server(sysThreadId)."));
+        stat_REG_HandleId_For_CLIB_LaunchQue_Server = slif::LaunchQue::generateHandle(sysThreadId);
+        while (stat_PGM_get_HandleId_For_CLIB_LaunchQue_Server(sysThreadId) == nullptr) {}
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_LaunchQue_Server(sysThreadId)."));
     }
-    void* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_get_ptr_CLIB_LaunchQueForThreadsAt_Server() {
-        return _stat_PGM_CLIB_LaunchQueForThreadsAt_Server;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_MutexQue_ServerInputReceive(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId)."));
+        stat_REG_HandleId_For_CLIB_MutexQue_ServerInputReceive = slif::MutexQue::generateHandle(sysThreadId);
+        while (stat_PGM_get_HandleId_For_CLIB_LaunchQue_Server(sysThreadId) == nullptr) {}
+        slif::MutexQue::reInitialiseHandle(sysThreadId, stat_REG_HandleId_For_CLIB_MutexQue_ServerInputReceive, static_cast<std::byte>(*CLIB_OpenEpiCentre_Framework_Global::dyn_REG_get_CLIB_OpenEpiCentre_Framework_Global_Item_number_Of_Implemented_Cores(sysThreadId)));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId)."));
     }
-    std::array<class slif::WriteEnableForThreadsAt_DataStack_Framework*, 2>* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_get_ptr_array_Of_CLIB_WriteQueForThreadsAt_DataStack() {
-        return _stat_PGM_CLIB_WriteQueForThreadsAt_DataStack;
+    void slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_MutexQue_ServerOutputSend(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId)."));
+        stat_REG_HandleId_For_CLIB_MutexQue_ServerOutputSend = slif::MutexQue::generateHandle(sysThreadId);
+        while (stat_PGM_get_HandleId_For_CLIB_LaunchQue_Server(sysThreadId) == nullptr) {}
+        slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_App_Execute : stat_PGM_boot3_INITIALISE_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId)."));
     }
-    class slif::WriteEnableForThreadsAt_DataStack_Framework* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_get_ptr_CLIB_WriteQueForThreadsAt_ServerInputReceive() {
-        return stat_PGM_get_ptr_array_Of_CLIB_WriteQueForThreadsAt_DataStack()->at(0);
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_get_HandleId_For_CLIB_LaunchQue_Server(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= int* HandleId : stat_PGM_get_HandleId_For_CLIB_LaunchQue_Server(sysThreadId)."));
+        return stat_REG_HandleId_For_CLIB_LaunchQue_Server;
     }
-    class slif::WriteEnableForThreadsAt_DataStack_Framework* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_get_ptr_CLIB_WriteQueForThreadsAt_ServerOutputSend() {
-        return stat_PGM_get_ptr_array_Of_CLIB_WriteQueForThreadsAt_DataStack()->at(1);
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_get_HandleId_For_CLIB_MutexQue_ServerInputReceive(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= int* HandleId : stat_PGM_get_HandleId_For_CLIB_MutexQue_ServerInputReceive(sysThreadId)."));
+        return stat_REG_HandleId_For_CLIB_MutexQue_ServerInputReceive;
+    }
+    int* slif::CLIB_OpenEpiCentre_Framework_App_Execute::stat_PGM_get_HandleId_For_CLIB_MutexQue_ServerOutputSend(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= int* HandleId : stat_PGM_get_HandleId_For_CLIB_MutexQue_ServerOutputSend(sysThreadId)."));
+        return stat_REG_HandleId_For_CLIB_MutexQue_ServerOutputSend;
     }

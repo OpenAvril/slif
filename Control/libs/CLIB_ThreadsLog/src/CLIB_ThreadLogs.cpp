@@ -4,8 +4,8 @@
 #include <array>
 #include <cstdint>
 #include <iostream>
-	static slif::CLIB_ThreadLogs_Framework* _stat_REG_CLIB_Framework;
-	static std::array<bool, 4>* _stat_REG_flag_CLIB_isMemberFunctionINSTANTIATED;
+	static slif::CLIB_ThreadLogs_Framework* stat_REG_CLIB_Framework;
+	static std::array<bool, 4>* stat_REG_flag_CLIB_isMemberFunctionINSTANTIATED;
 // public.
 	void slif::ThreadLogs::generateProgram(uint8_t* sysThreadId) {
 		void* result = nullptr;
@@ -102,8 +102,8 @@
 		slif::MutexQue::startByLock(sysThreadId, stat_CLASS_get_ptr_CLIB_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreadsAt_MutexQue(sysThreadId), CLIB_ThreadLogs_Framework_Global::stat_APP_CONVERT_CLIB_ThreadLogs_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, *sysThreadId));
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : ThreadLogs : stat_App_FUNCT_CLIB_terminate_Program(sysThreadId)." << std::endl;
 		if (!stat_REG_get_CLIB_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0)) {
-			delete _stat_REG_CLIB_Framework;
-			delete _stat_REG_flag_CLIB_isMemberFunctionINSTANTIATED;
+			delete stat_REG_CLIB_Framework;
+			delete stat_REG_flag_CLIB_isMemberFunctionINSTANTIATED;
 		}
 		else {
 			stat_REG_get_CLIB_array_Of_flag_isINSTANTIATED(sysThreadId)->at(3) = !stat_REG_get_CLIB_array_Of_flag_isINSTANTIATED(sysThreadId)->at(2);
@@ -136,7 +136,7 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : ThreadLogs : stat_CLASS_boot3_INITIALISE_CLIB_Framework(sysThreadId)." << std::endl;
 	}
 	slif::CLIB_ThreadLogs_Framework* slif::ThreadLogs::stat_CLASS_get_ptr_CLIB_Framework(uint8_t* sysThreadId) {
-		return _stat_REG_CLIB_Framework;
+		return stat_REG_CLIB_Framework;
 	}
 	void slif::ThreadLogs::stat_REG_boot1_DEFINE_CLIB_array_Of_flag_isINSTANTIATED(uint8_t* sysThreadId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: CLIB : ThreadLogs : stat_REG_boot1_DEFINE_CLIB_array_Of_flag_isINSTANTIATED(sysThreadId)." << std::endl;

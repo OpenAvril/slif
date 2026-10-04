@@ -26,8 +26,8 @@ namespace slif {
         static bool stat_CONVERT_CLIB_LaunchQue_Framework_Global_ByteArray_To_bool(uint8_t* sysThreadId, unsigned char* bytes);
         static uint8_t stat_CONVERT_CLIB_LaunchQue_Framework_Global_ByteArray_To_uint8_t(uint8_t* sysThreadId, unsigned char* bytes);
     private:
-        static std::list<bool>* _stat_REG_CLIB_LaunchQue_Framework_Global_ptr_array_Of_FlagThread2STATE;
-        static std::byte* _stat_REG_CLIB_LaunchQue_Framework_Global_ptr_number_Implemented_Threads;//todo: number of concurrent threads.
+        static std::list<bool>* stat_REG_CLIB_LaunchQue_Framework_Global_ptr_array_Of_FlagThread2STATE;
+        static std::byte* stat_REG_CLIB_LaunchQue_Framework_Global_ptr_number_Implemented_Threads;//todo: number of concurrent threads.
         static void stat_REG_boot1_DEFINE_FLAG_CLIB_LaunchQue_Framework_Global_thread_2STATE(uint8_t* sysThreadId);
         static void stat_REG_boot1_DEFINE_CLIB_LaunchQue_Framework_Global_number_Implemented_Threads(uint8_t* sysThreadId);
         static void stat_REG_boot2_SUBSTANTIATE_FLAG_CLIB_LaunchQue_Framework_Global_thread_2STATE(uint8_t* sysThreadId);

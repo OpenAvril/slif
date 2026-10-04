@@ -39,13 +39,13 @@ namespace slif {
         static void stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data(uint8_t* sysThreadId);
         static void stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data(uint8_t* sysThreadId);
     private:
-        static class CLIB_OpenEpiCentre_Framework_App_Data_Control* _stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control;
-        static std::array<struct CLIB_OpenEpiCentre_STRUCT_Input*, 3>* _stat_REG_ptr_array_Of_buffer_Input_ReferenceForThread;//NUMBER OF CONCURRENT THREADS.
-        static std::array<struct CLIB_OpenEpiCentre_STRUCT_Output*, 3>* _stat_REG_ptr_array_Of_buffer_Output_ReferenceForThread;//NUMBER OF CONCURRENT THREADS.
-        static std::array<struct CLIB_OpenEpiCentre_STRUCT_Input*, 2>* _stat_REG_ptr_array_Of_buffer_ItemSide_For_doubleBufferInput;
-        static std::array<struct CLIB_OpenEpiCentre_STRUCT_Output*, 2>* _stat_REG_ptr_array_Of_buffer_ItemSide_For_doubleBufferOutput;
-        static std::vector<struct CLIB_OpenEpiCentre_STRUCT_Input*>* _stat_REG_ptr_vector_Of_stack_Of_InputPraise;
-        static std::vector<struct CLIB_OpenEpiCentre_STRUCT_Output*>* _stat_REG_ptr_vector_Of_stack_Of_OutputPraise;
+        static class CLIB_OpenEpiCentre_Framework_App_Data_Control* stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control;
+        static std::array<struct CLIB_OpenEpiCentre_STRUCT_Input*, 3>* stat_REG_ptr_array_Of_buffer_Input_ReferenceForThread;//NUMBER OF CONCURRENT THREADS.
+        static std::array<struct CLIB_OpenEpiCentre_STRUCT_Output*, 3>* stat_REG_ptr_array_Of_buffer_Output_ReferenceForThread;//NUMBER OF CONCURRENT THREADS.
+        static std::array<struct CLIB_OpenEpiCentre_STRUCT_Input*, 2>* stat_REG_ptr_array_Of_buffer_ItemSide_For_doubleBufferInput;
+        static std::array<struct CLIB_OpenEpiCentre_STRUCT_Output*, 2>* stat_REG_ptr_array_Of_buffer_ItemSide_For_doubleBufferOutput;
+        static std::vector<struct CLIB_OpenEpiCentre_STRUCT_Input*>* stat_REG_ptr_vector_Of_stack_Of_InputPraise;
+        static std::vector<struct CLIB_OpenEpiCentre_STRUCT_Output*>* stat_REG_ptr_vector_Of_stack_Of_OutputPraise;
         static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId);
         static class CLIB_OpenEpiCentre_Framework_App_Data_Control* stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId);

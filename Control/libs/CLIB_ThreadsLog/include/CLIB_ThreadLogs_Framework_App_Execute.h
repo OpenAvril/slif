@@ -18,7 +18,7 @@ namespace slif {
         static void stat_CLASS_boot3_INITIALISE_CLIB_Framework_Execute(uint8_t* sysThreadId);
         static void stat_REG_boot0_DECLARE_CLIB_Framework_Execute(uint8_t* sysThreadId);
     private:
-        static int* _stat_PGM_CLIB_ForThreadsAt_MutexQue;
+        static int* stat_PGM_CLIB_ForThreadsAt_MutexQue;
         static void stat_PGM_boot1_DEFINE_CLIB_ForThreadsAt_MutexQue(uint8_t* sysThreadId);
         static void stat_PGM_boot3_INITIALISE_CLIB_ForThreadsAt_MutexQue(uint8_t* sysThreadId);
         static void stat_PGM_boot3_REINITIALISE_CLIB_ForThreadsAt_MutexQue(uint8_t* sysThreadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS_ARRAY);

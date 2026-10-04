@@ -31,10 +31,10 @@ namespace slif {
         static void stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId);
         static void stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId);
     private:
-        static bool* _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction;
-        static bool* _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend;
-        static bool* _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput;
-        static bool* _stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput;
+        static bool* stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_InputAction;
+        static bool* stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Framework_App_Data_Control_isLoaded_Stack_OutputSend;
+        static bool* stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput;
+        static bool* stat_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput;
         static void stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction(uint8_t* sysThreadId);
         static void stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend(uint8_t* sysThreadId);
         static void stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfInput(uint8_t* sysThreadId);

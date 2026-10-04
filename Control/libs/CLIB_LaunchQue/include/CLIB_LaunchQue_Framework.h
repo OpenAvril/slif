@@ -20,8 +20,8 @@ namespace slif {
         static void stat_CLASS_boot3_INITIALISE_CLIB_LaunchQue_Framework(uint8_t* sysThreadId);
         static void stat_REG_boot0_DECLARE_CLIB_LaunchQue_Framework(uint8_t* sysThreadId);
     private:
-        static class CLIB_LaunchQue_Framework_App* _stat_CLASS_get_ptr_CLIB_LaunchQue_Framework_App;
-        static class CLIB_LaunchQue_Framework_Global* _stat_CLASS_ptr_CLIB_LaunchQue_Framework_Global;
+        static class CLIB_LaunchQue_Framework_App* stat_CLASS_get_ptr_CLIB_LaunchQue_Framework_App;
+        static class CLIB_LaunchQue_Framework_Global* stat_CLASS_ptr_CLIB_LaunchQue_Framework_Global;
         static void stat_CLASS_boot1_DEFINE_CLIB_LaunchQue_Framework_App(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_LaunchQue_Framework_Global(uint8_t* sysThreadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_LaunchQue_Framework_App(uint8_t* sysThreadId);

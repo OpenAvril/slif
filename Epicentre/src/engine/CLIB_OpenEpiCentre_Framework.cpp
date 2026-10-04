@@ -2,14 +2,14 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_App_Execute.h"
 #include "../../libs/CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
 #include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
-	slif::CLIB_OpenEpiCentre_Framework_App* slif::CLIB_OpenEpiCentre_Framework::_stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App;
-	slif::CLIB_OpenEpiCentre_Framework_Global* slif::CLIB_OpenEpiCentre_Framework::_stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Global;
-	slif::CLIB_OpenEpiCentre_STRUCT_Concurrent* slif::CLIB_OpenEpiCentre_Framework::_stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_Concurrent;
-	slif::CLIB_OpenEpiCentre_STRUCT_Input* slif::CLIB_OpenEpiCentre_Framework::_stat_STRUCT_CLIB_ptr_OpenEpiCentre_Framework_Input;
-	slif::CLIB_OpenEpiCentre_STRUCT_Output* slif::CLIB_OpenEpiCentre_Framework::_stat_STRUCT_CLIB_ptr_OpenEpiCentre_Framework_Output;
-	slif::CLIB_OpenEpiCentre_STRUCT_User_Algorithm* slif::CLIB_OpenEpiCentre_Framework::_stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_User_Algorithm;
-	slif::CLIB_OpenEpiCentre_STRUCT_User_Input* slif::CLIB_OpenEpiCentre_Framework::_stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Input;
-	slif::CLIB_OpenEpiCentre_STRUCT_User_Output* slif::CLIB_OpenEpiCentre_Framework::_stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Output;
+	slif::CLIB_OpenEpiCentre_Framework_App* slif::CLIB_OpenEpiCentre_Framework::stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App;
+	slif::CLIB_OpenEpiCentre_Framework_Global* slif::CLIB_OpenEpiCentre_Framework::stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Global;
+	slif::CLIB_OpenEpiCentre_STRUCT_Concurrent* slif::CLIB_OpenEpiCentre_Framework::stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_Concurrent;
+	slif::CLIB_OpenEpiCentre_STRUCT_Input* slif::CLIB_OpenEpiCentre_Framework::stat_STRUCT_CLIB_ptr_OpenEpiCentre_Framework_Input;
+	slif::CLIB_OpenEpiCentre_STRUCT_Output* slif::CLIB_OpenEpiCentre_Framework::stat_STRUCT_CLIB_ptr_OpenEpiCentre_Framework_Output;
+	slif::CLIB_OpenEpiCentre_STRUCT_User_Algorithm* slif::CLIB_OpenEpiCentre_Framework::stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_User_Algorithm;
+	slif::CLIB_OpenEpiCentre_STRUCT_User_Input* slif::CLIB_OpenEpiCentre_Framework::stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Input;
+	slif::CLIB_OpenEpiCentre_STRUCT_User_Output* slif::CLIB_OpenEpiCentre_Framework::stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Output;
 // public.
 	slif::CLIB_OpenEpiCentre_Framework::CLIB_OpenEpiCentre_Framework(uint8_t* sysThreadId) {
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework : CLIB_OpenEpiCentre_Framework(sysThreadId)."));
@@ -18,11 +18,11 @@
 	}
 	slif::CLIB_OpenEpiCentre_Framework::~CLIB_OpenEpiCentre_Framework() {
 		slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework : ~CLIB_OpenEpiCentre_Framework(sysThreadId)."));
-		delete _stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App;
-		delete _stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Global;
-		delete _stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_Concurrent;
-		delete _stat_STRUCT_CLIB_ptr_OpenEpiCentre_Framework_Input;
-		delete _stat_STRUCT_CLIB_ptr_OpenEpiCentre_Framework_Output;
+		delete stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App;
+		delete stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Global;
+		delete stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_Concurrent;
+		delete stat_STRUCT_CLIB_ptr_OpenEpiCentre_Framework_Input;
+		delete stat_STRUCT_CLIB_ptr_OpenEpiCentre_Framework_Output;
 		delete _stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_User_Algorithm;
 		delete _stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Input;
 		delete _stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Output;
