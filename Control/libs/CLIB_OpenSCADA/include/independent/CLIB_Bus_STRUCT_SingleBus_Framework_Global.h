@@ -18,6 +18,7 @@ namespace slif {
         static bool stat_APP_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MsbByteArray_To_MsbBoolean(uint8_t* sysThreadId, const unsigned char* byteArray);
         static unsigned char* stat_APP_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, class Object* DATA);
         static double stat_APP_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MsbByteArray_To_MsbDouble(uint8_t* sysThreadId, const unsigned char* byteArray);
+        static int* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_MsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array);
         static uint8_t dyn_REG_get_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId);
         static std::list<uint8_t>* dyn_REG_get_CLIB_Bus_STRUCT_SingleBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId);
         static void dyn_REG_set_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId, uint8_t MAX_NUMBER_OF_JUNCTIONS);
