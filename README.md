@@ -32,7 +32,7 @@ A master by coursework with five specialisation electives, I propose Convener of
 ### slif_control : ConcurrentLaunchQueue.
 - LaunchQue:                   CLIB Request, Wait, Launch for : ('ConcurrentThreadId') deployed at Server or Client.
 
-### slif_control : ConcurrentBusSystem (OpenSCADA).
+### slif_control : ConcurrentSystemBusses, (OpenSCADA).
 - MainStreamBussing:           CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
 
 ---
