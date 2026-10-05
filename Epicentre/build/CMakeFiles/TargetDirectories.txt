@@ -1,0 +1,3 @@
+/home/brenton-james/CLionProjects/slif/Epicentre/build/CMakeFiles/slif_epicentre.dir
+/home/brenton-james/CLionProjects/slif/Epicentre/build/CMakeFiles/edit_cache.dir
+/home/brenton-james/CLionProjects/slif/Epicentre/build/CMakeFiles/rebuild_cache.dir

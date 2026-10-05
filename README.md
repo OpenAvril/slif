@@ -5,12 +5,12 @@ The repository is officially marked as "UNDER DEVELOPMENT" and serves as a colle
 
 Key Focus Areas & Features
 The project contains architectural implementations centered heavily around high-concurrency, systems-level logic, and early-stage artificial intelligence:
- - Concurrent Programming Tools: Implementations for full-stack concurrent pipelines, including custom mutex locks, mutex synchronization, and concurrent queues.
+- Concurrent Programming Tools: Implementations for full-stack concurrent pipelines, including custom mutex locks, mutex synchronization, and concurrent queues.
 - Silicon Life Concepts: Targeted frameworks designed for "Silicon Life" computing architectures.
 - Neural Networks: Repositories and logic patterns explicitly tagged for handling Artificial Neural Networks (ANN) and Binary Neural Networks (BNN).
 
-The Silicon Life Project reverlates the field of digital electronics post epitome, which is what I bring after six year reduced hours. 
-A master by coursework with five specialisation electives, I propose Convener of Masters of Engineering – Silicon Life Engineer; (1) Concurrent Embedded Control Systems, (2) Concurrency; Core, Post-Process., (3) Concurrent Networking, (4) Concurrent Bus Systems. (5) Concurrent Full Stack Development, (6) Hemesphoric Binary Neural Intelligence.. 
+The Silicon Life Project reverlates the field of digital electronics post epitome, which is what I bring after six year reduced hours.
+A master by coursework with five specialisation electives, I propose Convener of Masters of Engineering – Silicon Life Engineer; (1) Concurrent Embedded Control Systems, (2) Concurrency; Core, Post-Process., (3) Concurrent Networking, (4) Concurrent Bus Systems. (5) Concurrent Full Stack Development, (6) Hemesphoric Binary Neural Intelligence..
 
 * Google. (2026, 09 28). GitHub OpenAvril slif. Gemini AI search. (https://www.google.com/search?q=github+openavril+slif&rlz=1CDGOYI_enAU1216AU1216&oq=GitHub+OpenAvril+slif&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg8MgcIBBAhGKABMgcIBRAhGKABMgcIBhAhGKABMgcIBxAhGKABMgcICBAhGI8C0gEJMTU4ODRqMGo5qAIBsAIB4gMEGAEgXw&hl=en-GB&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe).
 
@@ -32,7 +32,7 @@ A master by coursework with five specialisation electives, I propose Convener of
 ### slif_control : ConcurrentLaunchQueue.
 - LaunchQue:                   CLIB Request, Wait, Launch for : ('ConcurrentThreadId') deployed at Server or Client.
 
-### slif_control : ConcurrentBusSystem.
+### slif_control : ConcurrentSystemBusses, (OpenSCADA).
 - MainStreamBussing:           CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
 
 ---
@@ -53,7 +53,7 @@ A master by coursework with five specialisation electives, I propose Convener of
 ### LINUX Ubuntu.
 **version:** Ubuntu 24.04.4 LTS.
 
-### CLion. 
+### CLion.
 **Version:** 2026.1.2.
 
 ---
@@ -102,10 +102,10 @@ cmake --build build
 ---
 ## Implementation.
 ### How To Guide - Stack Flow From Client Input Scanner To Server And Back To Client.
- - 
+- 
 
 ### Wrapper Imports and Native IO.
- - 
+- 
 
 ---
 ---
