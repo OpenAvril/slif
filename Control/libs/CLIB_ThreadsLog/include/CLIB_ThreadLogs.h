@@ -11,7 +11,7 @@ extern "C" {
             static void generateProgram(uint8_t* sysThreadId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
             static void printl(uint8_t* sysThreadId, std::string* stringForLogPrint);
-            static void reInitialiseHandle(uint8_t* sysThreadId, std::byte* MAX_NUMBER_OF_THREADS_FOR_ACCESS_ARRAY);
+            static void reInitialiseHandle(uint8_t* sysThreadId, unsigned char* MAX_NUMBER_OF_THREADS_FOR_ACCESS_ARRAY);
             static void terminateProgram(uint8_t* sysThreadId);
         private:
             static void stat_APP_FUNCT_CLIB_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);

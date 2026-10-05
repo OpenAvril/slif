@@ -2,7 +2,7 @@
 #include <climits>
 #include <cstdint>
 #include <cstring>
-#include <iostream>
+#include "CLIB_ThreadLogs.h"
     uint8_t* slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS;
     std::list<uint8_t>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
 // public.
@@ -15,8 +15,8 @@
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_Global : CLIB_Bus_STRUCT_SingleBus_Framework_Global(sysThreadId)."));
     }
     slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global::~CLIB_Bus_STRUCT_SingleBus_Framework_Global() {
-        std::cout << "thread "  << 0 << " :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_Global : ~CLIB_Bus_STRUCT_SingleBus_Framework_Global()."));
-        std::cout << "thread "  << 0 << " :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_Global : ~CLIB_Bus_STRUCT_SingleBus_Framework_Global()."));
+        slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_Global : ~CLIB_Bus_STRUCT_SingleBus_Framework_Global()."));
+        slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_Global : ~CLIB_Bus_STRUCT_SingleBus_Framework_Global()."));
     }
     void slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global::dyn_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId) {
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_Global : dyn_REG_boot1_DEFINE_CLIB_Bus_STRUCT_SingleBus_Framework_Global(sysThreadId)."));

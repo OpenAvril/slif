@@ -1,7 +1,7 @@
 #include "../include/CLIB_SystemBus_Framework.h"
 #include "../include/CLIB_SystemBus_Framework_App.h"
 #include "../include/CLIB_SystemBus_Framework_Global.h"
-#include <iostream>
+#include "CLIB_ThreadLogs.h"
 	slif::CLIB_SystemBus_Framework_App* slif::CLIB_SystemBus_Framework::stat_CLASS_ptr_CLIB_SystemBus_Framework_App;
 	slif::CLIB_SystemBus_Framework_Global* slif::CLIB_SystemBus_Framework::stat_CLASS_ptr_CLIB_SystemBus_Framework_Global;
 // private.
@@ -10,10 +10,10 @@
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework : CLIB_SystemBus_Framework(sysThreadId)."));
 	}
 	slif::CLIB_SystemBus_Framework::~CLIB_SystemBus_Framework() {
-		std::cout << "thread "  << 0 << " :: entered LIB :: slif : CLIB_SystemBus_Framework : ~CLIB_SystemBus_Framework()."));
+		slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework : ~CLIB_SystemBus_Framework()."));
 		delete stat_CLASS_ptr_CLIB_SystemBus_Framework_App;
 		delete stat_CLASS_ptr_CLIB_SystemBus_Framework_Global;
-		std::cout << "thread "  << 0 << ":: exiting LIB :: slif : CLIB_SystemBus_Framework : ~CLIB_SystemBus_Framework()."));
+		slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework : ~CLIB_SystemBus_Framework()."));
 	}
 	void slif::CLIB_SystemBus_Framework::dyn_APP_CLIB_SystemBus_Framework_create_Architecture(std::uint8_t* sysThreadId)	{
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework : dyn_APP_CLIB_SystemBus_Framework_create_Architecture(sysThreadId)."));
@@ -95,6 +95,6 @@
 		return stat_CLASS_ptr_CLIB_SystemBus_Framework_App;
 	}
 	slif::CLIB_SystemBus_Framework_Global* slif::CLIB_SystemBus_Framework::stat_CLASS_get_ptr_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= class : stat_CLASS_get_ptr_CLIB_SystemBus_Framework_Global(sysThreadId)."<< std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= class : stat_CLASS_get_ptr_CLIB_SystemBus_Framework_Global(sysThreadId)."));
 		return stat_CLASS_ptr_CLIB_SystemBus_Framework_Global;
 	}

@@ -1,5 +1,5 @@
 #include "../include/CLIB_SystemBus_Framework_App.h"
-#include <iostream>
+#include "CLIB_ThreadLogs.h"
 	slif::CLIB_SystemBus_Framework_App_Execute* slif::CLIB_SystemBus_Framework_App::stat_CLASS_ptr_CLIB_SystemBus_Framework_App_Execute;
 // public.
 	slif::CLIB_SystemBus_Framework_App::CLIB_SystemBus_Framework_App(uint8_t* sysThreadId)	{
@@ -11,9 +11,9 @@
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_App : CLIB_SystemBus_Framework_App(sysThreadId)."));
 	}
 	slif::CLIB_SystemBus_Framework_App::~CLIB_SystemBus_Framework_App() {
-		std::cout << "thread "  << 0 << " :: entered LIB :: slif : CLIB_SystemBus_Framework_App : ~CLIB_SystemBus_Framework_App()."));
+		slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_App : ~CLIB_SystemBus_Framework_App()."));
 		delete stat_CLASS_ptr_CLIB_SystemBus_Framework_App_Execute;
-		std::cout << "thread "  << 0 << " :: exiting LIB :: slif : CLIB_SystemBus_Framework_App : ~CLIB_SystemBus_Framework_App()."));
+		slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_App : ~CLIB_SystemBus_Framework_App()."));
 	}
 	void slif::CLIB_SystemBus_Framework_App::dyn_REG_boot1_DEFINE_CLIB_SystemBus_Framework_App(uint8_t* sysThreadId) {
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_App : dyn_REG_boot1_DEFINE_CLIB_SystemBus_Framework_App(sysThreadId)."));

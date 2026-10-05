@@ -15,13 +15,9 @@
         slif::MutexQue::startByLock(sysThreadId, CLIB_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_CLIBMutexQue(sysThreadId), CLIB_LaunchQue_Framework_Global::stat_CONVERT_CLIB_LaunchQue_Framework_Global_uint8_t_To_ByteArray(sysThreadId, *memberFunctionId));
         std::cout << "thread " << std::to_string(*sysThreadId) << "  :: entered LIB :: CLIB : LaunchQue : generateHandle(sysThreadId)<< " std::endl;
         if (!CLIB_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(sysThreadId)->at(0)) {
-            std::cout << "thread " << std::to_string(*sysThreadId) << "  :: alpha<< " std::endl;
             CLIB_LaunchQue_stat_REG_get_ptr_List_Of_PGM_CLIB_LaunchQue(sysThreadId)->resize(static_cast<uint8_t>(CLIB_LaunchQue_stat_REG_get_ptr_List_Of_PGM_CLIB_LaunchQue(sysThreadId)->size()+1));
-            std::cout << "thread " << std::to_string(*sysThreadId) << "  :: bravo<< " std::endl;
             CLIB_LaunchQue_stat_REG_get_ptr_List_Of_PGM_CLIB_LaunchQue(sysThreadId)->assign(CLIB_LaunchQue_stat_REG_get_ptr_List_Of_PGM_CLIB_LaunchQue(sysThreadId)->size(), *CLIB_LaunchQue_stat_REG_get_ptr_List_Of_PGM_CLIB_LaunchQue(sysThreadId)->begin());
-            std::cout << "thread " << std::to_string(*sysThreadId) << "  :: charlie<< " std::endl;
             *handleId = static_cast<int>(CLIB_LaunchQue_stat_REG_get_ptr_List_Of_PGM_CLIB_LaunchQue(sysThreadId)->size() - 1);
-            std::cout << "thread " << std::to_string(*sysThreadId) << "  :: end<< " std::endl;
         }
         else {
             CLIB_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(sysThreadId)->at(*memberFunctionId) = !CLIB_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(sysThreadId)->at(0);

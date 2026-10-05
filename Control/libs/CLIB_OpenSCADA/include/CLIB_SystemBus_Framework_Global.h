@@ -12,6 +12,7 @@ namespace slif {
         void dyn_REG_boot3_INITIALISE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId);
         void dyn_REG_boot4_INSTANTIATE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId);
         static int* stat_CONVERT_CLIB_SystemBusses_Framework_Global_Bool_To_Int(uint8_t* sysThreadId, bool newValue_Bool);
+        static  class Object* stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, unsigned char* byteArray_DATA);
         static bool stat_CONVERT_CLIB_SystemBusses_Framework_Global_MsbByteArray_To_VUALUEofMsbBool(uint8_t* sysThreadId, unsigned char* bytes_Array);
         static int* stat_CONVERT_CLIB_SystemBusses_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array);
         static double* stat_CONVERT_CLIB_SystemBusses_Framework_Global_MsbByteArray_To_VUALUEofMsbDouble(uint8_t* sysThreadId, unsigned char* bytes_Array);
@@ -29,12 +30,12 @@ namespace slif {
     private:
         static uint8_t* stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS;
         static std::list<uint8_t>* stat_REG_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
-        static unsigned char* pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(uint8_t* sysThreadId, class Object* value_DATA);
+        static class Object* pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, unsigned char* byteArray_DATA);
         static unsigned char* pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbBoolean_To_MsbByteArray(uint8_t* sysThreadId, bool value);
         static unsigned char* pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double value);
         static unsigned char* pr_stat_CONVERT_CLIB_SystemBusses_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t value);
         static bool pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbBoolean(uint8_t* sysThreadId, const unsigned char* byteArray);
-        static class Object* pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, unsigned char* byteArray_DATA);
+        static unsigned char* pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(uint8_t* sysThreadId, unsigned char* byteArray_DATA);
         static double pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbDouble(uint8_t* sysThreadId, const unsigned char* byteArray);
         static void stat_CLASS_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId);

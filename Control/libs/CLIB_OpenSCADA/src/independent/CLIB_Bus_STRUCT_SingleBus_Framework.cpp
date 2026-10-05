@@ -1,7 +1,7 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
-#include <iostream>
+#include "CLIB_ThreadLogs.h"
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_App* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App;
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global;
 // private.
@@ -11,10 +11,10 @@
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : CLIB_Bus_STRUCT_SingleBus_Framework(sysThreadId)."));
 	}
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework::~CLIB_Bus_STRUCT_SingleBus_Framework() {
-		std::cout << "thread "  << 0 << " :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : ~CLIB_Bus_STRUCT_SingleBus_Framework()."));
+		slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : ~CLIB_Bus_STRUCT_SingleBus_Framework()."));
 		delete stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App;
 		delete stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global;
-		std::cout << "thread "  << 0 << ":: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : ~CLIB_Bus_STRUCT_SingleBus_Framework()."));
+		slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : ~CLIB_Bus_STRUCT_SingleBus_Framework()."));
 	}
 	void slif::CLIB_Bus_STRUCT_SingleBus_Framework::dyn_APP_CLIB_Bus_STRUCT_SingleBus_Framework_create_Architecture(std::uint8_t* sysThreadId, CLIB_Bus_STRUCT_SingleBus_Framework* obj)	{
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework : dyn_APP_CLIB_Bus_STRUCT_SingleBus_Framework_create_Architecture(sysThreadId)."));
@@ -103,6 +103,6 @@
 		return stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App;
 	}
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= class : stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(sysThreadId)."<< std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= class : stat_CLASS_get_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global(sysThreadId)."));
 		return stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global;
 	}

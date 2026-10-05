@@ -5,7 +5,7 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
 #include <array>
 #include <cstdint>
-#include <iostream>
+#include "CLIB_ThreadLogs.h"
 	static slif::CLIB_Bus_STRUCT_SingleBus_Framework* stat_REG_CLIB_SingleBus_STRUCT_SingleBus_Framework;
 	static std::array<bool, 4>* stat_REG_flag_slif_isMemberFunctionINSTANTIATED;
 // public.
