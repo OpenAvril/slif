@@ -8,15 +8,15 @@
 	static std::array stat_REG_ptr_CLIB_OptimusPrime_array_of_array_of_isMemberFunctionINSTANTIATED = { true };
 // public.
 	void slif::OptimusPrime::instantiateAll(uint8_t* sysThreadId) {
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : OptimusPrime : instantiateAll(sysThreadId)."));
+		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : OptimusPrime : instantiateAll(sysThreadId).<< " std::endl;
 		if (!slif_OptimusPrime_stat_REG_get_array_of_isMemberFunctionINSTANTIATED(sysThreadId).at(0)) {
 			slif_OptimusPrime_App_FUNCT_OptimusPrime(sysThreadId);
-			std::cout << "thread " << std::to_string(*sysThreadId) << " :: OptimusPrime : PRIMING PACKAGE."));
+			std::cout << "thread " << std::to_string(*sysThreadId) << " :: OptimusPrime : PRIMING PACKAGE.<< " std::endl;
 		}
 		else {
 			slif_OptimusPrime_stat_REG_get_array_of_isMemberFunctionINSTANTIATED(sysThreadId).at(0) = !slif_OptimusPrime_stat_REG_get_array_of_isMemberFunctionINSTANTIATED(sysThreadId).at(0);
 		}
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : OptimusPrime : instantiateAll(sysThreadId)."));
+		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : OptimusPrime : instantiateAll(sysThreadId).<< " std::endl;
 	}
 // private.
 	void slif::OptimusPrime::slif_OptimusPrime_App_FUNCT_OptimusPrime(uint8_t* sysThreadId) {

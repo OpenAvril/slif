@@ -37,11 +37,11 @@ namespace slif {
         static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_Msbbool_to_MsbByteArray(uint8_t* sysThreadId, bool newValue_Bool);
         static bool stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_Msbbool(uint8_t* sysThreadId, unsigned char* bytes_Array);
         static uint8_t* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_Msbuint8_t(uint8_t* sysThreadId, unsigned char* bytes_Array);
-        static int* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_MsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array);
+        static int* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array);
         static double* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_MsbDouble(uint8_t* sysThreadId, unsigned char* bytes_Array);
         static unsigned long long* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_MsbunsignedLongLong(uint8_t* sysThreadId, unsigned char* bytes_Array);
         static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_Msbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t* newValue_uint8_t);
-        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbInt_To_MsbByteArray(uint8_t* sysThreadId, int* newValue_Int);
+        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(uint8_t* sysThreadId, int* newValue_Int);
         static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double* newValue_Double);
         static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbUnsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long* newValue_ULongLong);
     private:

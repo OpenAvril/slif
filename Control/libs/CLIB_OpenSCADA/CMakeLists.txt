@@ -11,6 +11,12 @@ add_library(slif_control_system_busses STATIC
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.cpp
@@ -27,10 +33,12 @@ add_library(slif_control_system_busses STATIC
 )
 
 target_include_directories(slif_control_system_busses PUBLIC
-        "../CLIB_MutexQue/include"
         "../CLIB_MutexQue/include/independent"
+        "../CLIB_MutexQue/include"
+        "../CLIB_ThreadsLog/include"
 )
 
 target_link_libraries(slif_control_system_busses PUBLIC
         CLIB_MutexQue
+        CLIB_threads_log
 )

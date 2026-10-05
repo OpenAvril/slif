@@ -20,7 +20,7 @@
     uint8_t* slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_REG_CLIB_OpenEpiCentre_Concurrent_ThreadId;
 // public.
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::app_do_Concurrent_Algorithm_For_PraiseEventId(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj, uint8_t* playerId, unsigned long long* praiseEventId, Object* ptr_Input_Subset, Object* ptr_Output_Subset) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : app_do_Concurrent_Algorithm_For_PraiseEventId(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : app_do_Concurrent_Algorithm_For_PraiseEventId(sysThreadId).<< " std::endl;
         switch (*praiseEventId) {
             case 0: {
                 auto temp = reinterpret_cast<CLIB_OpenEpiCentre_STRUCT_Algorithm_praise0*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre_Framework_User_Algorithm(sysThreadId)->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT_UserAlgorithm_Item_On_List_Of_ptr_PraiseAlgorithmSubsets(sysThreadId, praiseEventId));
@@ -46,37 +46,37 @@
                 break;
             }
         }
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : app_do_Concurrent_Algorithm_For_PraiseEventId(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : app_do_Concurrent_Algorithm_For_PraiseEventId(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::dyn_REG_boot1_DEFINE_Concurrent(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot1_DEFINE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot1_DEFINE_Concurrent(sysThreadId).<< " std::endl;
         stat_REG_CLIB_OpenEpiCentre_Concurrent_ThreadId = nullptr;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot1_DEFINE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot1_DEFINE_Concurrent(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::dyn_REG_boot2_SUBSTANTIATE_Concurrent(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot2_SUBSTANTIATE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot2_SUBSTANTIATE_Concurrent(sysThreadId).<< " std::endl;
         stat_REG_CLIB_OpenEpiCentre_Concurrent_ThreadId = new uint8_t();
         *stat_REG_CLIB_OpenEpiCentre_Concurrent_ThreadId = static_cast<uint8_t>(255);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot2_SUBSTANTIATE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot2_SUBSTANTIATE_Concurrent(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::dyn_REG_boot3_INITIALISE_Concurrent(uint8_t* sysThreadId, slif::CLIB_OpenEpiCentre_Framework* obj) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot3_INITIALISE_Concurrent(sysThreadId)."));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot3_INITIALISE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot3_INITIALISE_Concurrent(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot3_INITIALISE_Concurrent(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::dyn_REG_boot4_INSTANTIATE_Concurrent(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot4_INSTANTIATE_Concurrent(sysThreadId)."));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot4_INSTANTIATE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot4_INSTANTIATE_Concurrent(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : dyn_REG_boot4_INSTANTIATE_Concurrent(sysThreadId).<< " std::endl;
     }
     uint8_t* slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::dyn_REG_get_CLIB_OpenEpiCentre_Concurrent_ThreadId(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t* : dyn_REG_get_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t* : dyn_REG_get_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId).<< " std::endl;
         return stat_REG_get_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId);
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::dyn_REG_set_CLIB_OpenEpiCentre_Concurrent_ThreadId(uint8_t* sysThreadId, uint8_t* praiseId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: => uint8_t* : dyn_REG_set_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: => uint8_t* : dyn_REG_set_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId).<< " std::endl;
         stat_REG_set_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId, *praiseId);
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_app_thread_Concurrency(uint8_t* sysThreadId, CLIB_OpenEpiCentre_Framework* obj, uint8_t* concurrentThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_app_thread_Concurrency(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_app_thread_Concurrency(sysThreadId).<< " std::endl;
         bool* checkPass = new bool(false);
         bool* doneOnce = new bool(false);
         while (!checkPass) {
@@ -153,34 +153,34 @@
             *checkPass = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(sysThreadId)->dyn_CLASS_get_ptr_Execute(sysThreadId)->dyn_CLASS_get_ptr_Execute_Control(sysThreadId)->dyn_REG_get_FLAG_CLIB_OpenEpiCentre_Framework_App_Execute_Control_isSystemInitialised(sysThreadId);
             slif::MutexQue::endByUnlock(sysThreadId, nullptr, CLIB_OpenEpiCentre_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_Msbuint8_t_To_MsbByteArray(concurrentThreadId));
         }
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_app_thread_Concurrency(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_app_thread_Concurrency(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_CLASS_boot0_DECLARE_Concurrent(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot0_DECLARE_Concurrent(sysThreadId)."));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot0_DECLARE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot0_DECLARE_Concurrent(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot0_DECLARE_Concurrent(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_CLASS_boot1_DEFINE_Concurrent(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot1_DEFINE_Concurrent(sysThreadId)."));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot1_DEFINE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot1_DEFINE_Concurrent(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot1_DEFINE_Concurrent(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_CLASS_boot3_INITIALISE_Concurrent(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot3_INITIALISE_Concurrent(sysThreadId)."));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot3_INITIALISE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot3_INITIALISE_Concurrent(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot3_INITIALISE_Concurrent(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_CLASS_boot4_INSTANTIATE_Concurrent(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot4_INSTANTIATE_Concurrent(sysThreadId)."));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot4_INSTANTIATE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot4_INSTANTIATE_Concurrent(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_CLASS_boot4_INSTANTIATE_Concurrent(sysThreadId).<< " std::endl;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_REG_boot0_DECLARE_Concurrent(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_REG_boot0_DECLARE_Concurrent(sysThreadId)."));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_REG_boot0_DECLARE_Concurrent(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_REG_boot0_DECLARE_Concurrent(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_STRUCT_Concurrent : stat_REG_boot0_DECLARE_Concurrent(sysThreadId).<< " std::endl;
     }
 // private.
     uint8_t* slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_REG_get_CLIB_OpenEpiCentre_Concurrent_ThreadId(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t* : stat_REG_get_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t* : stat_REG_get_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId).<< " std::endl;
         return stat_REG_CLIB_OpenEpiCentre_Concurrent_ThreadId;
     }
     void slif::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_REG_set_CLIB_OpenEpiCentre_Concurrent_ThreadId(uint8_t* sysThreadId, uint8_t newValue_praiseId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: => uint8_t : stat_REG_set_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: => uint8_t : stat_REG_set_CLIB_OpenEpiCentre_Concurrent_ThreadId(sysThreadId).<< " std::endl;
         *stat_REG_CLIB_OpenEpiCentre_Concurrent_ThreadId = newValue_praiseId;
     }
