@@ -1,4 +1,7 @@
 #include "../include/CLIB_SystemBus_Framework_App_Execute.h"
+
+#include <cmath>
+
 #include "../include/CLIB_SystemBus_Framework_Global.h"
 #include "../include/independent/CLIB_Bus_STRUCT_SingleBus.h"
 #include "CLIB_ThreadLogs.h"
@@ -87,7 +90,8 @@
     }
     void slif::CLIB_SystemBus_Framework_App_Execute::stat_PGM_boot3_REINITIALISE_CLIB_List_Of_Busses(uint8_t* sysThreadId) {
         auto oldSize = stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->size();
-        stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->resize((slif::CLIB_SystemBus_Framework_Global::stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId) / 2));
+        auto size = new unsigned long long(std::pow(slif::CLIB_SystemBus_Framework_Global::stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId) / 2.0, 2) - (slif::CLIB_SystemBus_Framework_Global::stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId) / 2.0));
+        stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->resize(*size);
         for (uint8_t index = oldSize; index < static_cast<int8_t>(stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->size()); index++) {
             stat_REG_get_HandleId_List_Of_CLIB_MutexQue_On_List_Of_Busses(sysThreadId)->assign(index, slif::CLIB_Bus_STRUCT_SingleBus::generateHandle(sysThreadId));
         }
