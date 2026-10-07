@@ -1,7 +1,7 @@
 #include "../include/CLIB_SystemBus_Framework.h"
 #include "../include/CLIB_SystemBus_Framework_App.h"
 #include "../include/CLIB_SystemBus_Framework_Global.h"
-#include "../../include/CLIB_ThreadLogs.h"
+#include "../../../include/CLIB_ThreadLogs.h"
 	slif::CLIB_SystemBus_Framework_App* slif::CLIB_SystemBus_Framework::stat_CLASS_ptr_CLIB_SystemBus_Framework_App;
 	slif::CLIB_SystemBus_Framework_Global* slif::CLIB_SystemBus_Framework::stat_CLASS_ptr_CLIB_SystemBus_Framework_Global;
 // private.

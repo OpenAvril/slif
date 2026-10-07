@@ -1,7 +1,7 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute.h"
 #include "../../CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
-#include "../../include/CLIB_ThreadLogs.h"
-#include "../../include/CLIB_MutexQue.h"
+#include "../../../include/CLIB_ThreadLogs.h"
+#include "../../../include/CLIB_MutexQue.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus.h"
     std::list<void*>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PGM_CLIB_List_Of_Busses;

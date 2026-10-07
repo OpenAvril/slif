@@ -12,8 +12,8 @@
 #include "../include/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise1.h"
 #include "../include/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise2.h"
 #include "../include/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise3.h"
-#include "../../include/CLIB_MutexQue.h"
-#include "../../include/CLIB_ThreadLogs.h"
+#include "../../../include/CLIB_MutexQue.h"
+#include "../../../include/CLIB_ThreadLogs.h"
 #include <string>
 	static DEVELOPMENT::CLIB_LeftHemishpore_Framework* stat_CLASS_CLIB_LeftHemishpore_Framework = nullptr;
 	static std::array<bool, 13>* stat_REG_flag_CLIB_LeftHemishpore_array_isINSTANTIATED = nullptr;

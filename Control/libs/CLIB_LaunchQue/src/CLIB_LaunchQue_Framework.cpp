@@ -1,5 +1,5 @@
 #include "../include/CLIB_LaunchQue_Framework.h"
-#include "../../include/CLIB_ThreadLogs.h"
+#include "../../../include/CLIB_ThreadLogs.h"
 #include <iostream>
 #include <thread>
 	slif::CLIB_LaunchQue_Framework_App* slif::CLIB_LaunchQue_Framework::stat_CLASS_ptr_CLIB_LaunchQue_Framework_App;

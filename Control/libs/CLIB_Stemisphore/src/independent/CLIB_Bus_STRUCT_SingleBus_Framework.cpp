@@ -1,7 +1,7 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
-#include "../../include/CLIB_ThreadLogs.h"
+#include "../../../include/CLIB_ThreadLogs.h"
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_App* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_App;
 	slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global* slif::CLIB_Bus_STRUCT_SingleBus_Framework::stat_CLASS_ptr_CLIB_Bus_STRUCT_SingleBus_Framework_Global;
 // private.

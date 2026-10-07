@@ -1,6 +1,6 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus.h"
-#include "../../include/CLIB_ThreadLogs.h"
-#include "../../include/CLIB_MutexQue.h"
+#include "../../../include/CLIB_ThreadLogs.h"
+#include "../../../include/CLIB_MutexQue.h"
 #include "../../CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
