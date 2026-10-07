@@ -1,5 +1,5 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.h"
-#include "../../CLIB_OpenSCADA/include/CLIB_SystemBus_Framework_Global.h"
+#include "../../CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
 #include "CLIB_ThreadLogs.h"
 	unsigned char* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Data::stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA;

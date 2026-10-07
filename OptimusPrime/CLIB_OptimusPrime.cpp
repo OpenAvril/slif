@@ -3,10 +3,10 @@
 #include "../Control/libs/CLIB_MutexQue/include/CLIB_MutexQue_Framework_Global.h"
 #include "../Control/libs/CLIB_ThreadsLog/include/CLIB_ThreadLogs_Framework_Global.h"
 #include "../Control/libs/CLIB_LaunchQue/include/CLIB_LaunchQue_Framework_Global.h"
-#include "../Control/libs/CLIB_OpenSCADA/include/CLIB_SystemBus_Framework_Global.h"
+#include "../Control/libs/CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
 #include "../Control/libs/CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 #include "../Control/libs/CLIB_LaunchQue/include/CLIB_LaunchQue.h"
-#include "../Control/libs/CLIB_OpenSCADA/include/CLIB_SystemBus.h"
+#include "../Control/libs/CLIB_Stemisphore/include/CLIB_SystemBus.h"
 #include <iostream>
 	static std::array stat_REG_ptr_CLIB_OptimusPrime_array_of_array_of_isMemberFunctionINSTANTIATED = { true };
 // public.

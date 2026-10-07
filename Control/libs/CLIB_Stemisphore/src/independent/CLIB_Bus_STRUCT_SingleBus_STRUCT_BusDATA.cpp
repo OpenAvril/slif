@@ -1,5 +1,5 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA.h"
-#include "../../CLIB_OpenSCADA/include/CLIB_SystemBus_Framework_Global.h"
+#include "../../CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
 #include <cstddef>

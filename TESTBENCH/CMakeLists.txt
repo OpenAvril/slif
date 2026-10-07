@@ -15,7 +15,7 @@ target_include_directories(TESTBENCH PUBLIC
         "../Control/libs/CLIB_MutexQue/include"
         "../Control/libs/CLIB_ThreadsLog/include"
         "../Control/libs/CLIB_LaunchQue/include"
-        "../Control/libs/CLIB_OpenSCADA/include"
+        "../Control/libs/CLIB_Stemisphore/include"
         "include"
 )
 
