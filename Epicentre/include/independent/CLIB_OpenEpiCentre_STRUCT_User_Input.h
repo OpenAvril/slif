@@ -1,0 +1,39 @@
+#ifndef CLIB_OPENEPICENTRE_STRUCT_USER_INPUT_H
+#define CLIB_OPENEPICENTRE_STRUCT_USER_INPUT_H
+#include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.h"
+#include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.h"
+#include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.h"
+#include "praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.h"
+namespace slif {
+	struct CLIB_OpenEpiCentre_STRUCT_User_Input {
+	public:
+		class Object* dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT_UserInput_Item_On_List_Of_ptr_PraiseInputSubsets(uint8_t* sysThreadId, unsigned long long* praiseId);
+		void dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+		void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+		void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+		void dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+		static void stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+		static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+		static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+		static void stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+		static void stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_UserInput(uint8_t* sysThreadId);
+	private:
+		static CLIB_OpenEpiCentre_STRUCT_Input_praise0* stat_REG_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise0;
+		static CLIB_OpenEpiCentre_STRUCT_Input_praise1* stat_REG_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise1;
+		static CLIB_OpenEpiCentre_STRUCT_Input_praise2* stat_REG_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise2;
+		static CLIB_OpenEpiCentre_STRUCT_Input_praise3* stat_REG_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise3;
+		static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_UserInput_Inputpraise0(uint8_t* sysThreadId);
+		static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise1(uint8_t* sysThreadId);
+		static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise2(uint8_t* sysThreadId);
+		static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise3(uint8_t* sysThreadId);
+		static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise0(uint8_t* sysThreadId);
+		static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise1(uint8_t* sysThreadId);
+		static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise2(uint8_t* sysThreadId);
+		static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise3(uint8_t* sysThreadId);
+		static CLIB_OpenEpiCentre_STRUCT_Input_praise0* stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise0(uint8_t* sysThreadId);
+		static CLIB_OpenEpiCentre_STRUCT_Input_praise1* stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise1(uint8_t* sysThreadId);
+		static CLIB_OpenEpiCentre_STRUCT_Input_praise2* stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise2(uint8_t* sysThreadId);
+		static CLIB_OpenEpiCentre_STRUCT_Input_praise3* stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT_UserInput_Input_praise3(uint8_t* sysThreadId);
+	};
+}
+#endif

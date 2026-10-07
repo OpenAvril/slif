@@ -27,8 +27,8 @@ int main() {
 
     auto handleId_LaunchQue = slif::LaunchQue::generateHandle(sysThreadId);
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : LaunchQue : reInitialiseHandle." << std::endl;
-    auto MAX_CONCURRENT_THREAD_COUNT = new std::byte();
-    *MAX_CONCURRENT_THREAD_COUNT = static_cast<std::byte>(3);
+    auto MAX_CONCURRENT_THREAD_COUNT = new uint8_t();
+    *MAX_CONCURRENT_THREAD_COUNT = static_cast<uint8_t>(3);
     slif::LaunchQue::reInitialiseHandle(sysThreadId, handleId_LaunchQue, MAX_CONCURRENT_THREAD_COUNT);
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : LaunchQue : reInitialiseHandle." << std::endl;
 

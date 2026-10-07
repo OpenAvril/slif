@@ -10,6 +10,11 @@ add_library(CLIB_LaunchQue STATIC
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
+        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
         src/CLIB_LaunchQue.cpp
         src/CLIB_LaunchQue_Framework.cpp
         src/CLIB_LaunchQue_Framework_Global.cpp
@@ -20,9 +25,11 @@ add_library(CLIB_LaunchQue STATIC
 
 target_include_directories(CLIB_LaunchQue PUBLIC
         "../CLIB_MutexQue/include"
+        "../CLIB_ThreadsLog/include"
         "include"
 )
 
 target_link_libraries(CLIB_LaunchQue PUBLIC
         CLIB_MutexQue
+        CLIB_threads_log
 )
