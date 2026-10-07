@@ -1,8 +1,8 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
+#include "../../include/CLIB_ThreadLogs.h"
 #include <climits>
 #include <cstdint>
 #include <cstring>
-#include "CLIB_ThreadLogs.h"
     uint8_t* slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS;
     std::list<uint8_t>* slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
 // public.

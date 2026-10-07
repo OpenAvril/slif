@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(CLIB_MutexQue STATIC
-        src/CLIB_MutexQue.cpp
         src/CLIB_MutexQue_Framework.cpp
         src/CLIB_MutexQue_Framework_Global.cpp
         src/CLIB_MutexQue_Framework_App.cpp

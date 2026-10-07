@@ -5,12 +5,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(CLIB_threads_log STATIC
-        ../CLIB_MutexQue/src/CLIB_MutexQue.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
-        src/CLIB_ThreadLogs.cpp
         src/CLIB_ThreadLogs_Framework.cpp
         src/CLIB_ThreadLogs_Framework_Global.cpp
         src/CLIB_ThreadLogs_Framework_App.cpp

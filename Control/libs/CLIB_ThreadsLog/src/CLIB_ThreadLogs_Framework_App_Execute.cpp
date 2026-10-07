@@ -1,5 +1,5 @@
 #include "../include/CLIB_ThreadLogs_Framework_App_Execute.h"
-#include "../../CLIB_MutexQue/include/CLIB_MutexQue.h"
+#include "../../include/CLIB_MutexQue.h"
 #include "../include/CLIB_ThreadLogs_Framework_Global.h"
 #include <iostream>
     int* slif::CLIB_ThreadLogs_Framework_App_Execute::stat_PGM_CLIB_ForThreadsAt_MutexQue;

@@ -5,13 +5,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(slif_control_system_busses STATIC
-        ../CLIB_MutexQue/src/CLIB_MutexQue.cpp
-        ../CLIB_MutexQue/src/CLIB_MutexQue.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
-        ../CLIB_ThreadsLog/src/CLIB_ThreadLogs.cpp
         ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
         ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
         ../CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
@@ -25,7 +22,6 @@ add_library(slif_control_system_busses STATIC
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.cpp
         src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute.cpp
-        src/CLIB_SystemBus.cpp
         src/CLIB_SystemBus_Framework.cpp
         src/CLIB_SystemBus_Framework_Global.cpp
         src/CLIB_SystemBus_Framework_App.cpp
