@@ -48,6 +48,13 @@
         slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= bool : stat_CONVERT_CLIB_SystemBusses_Framework_Global_Bool_To_Int(sysThreadId)."));
         return temp;
     }
+    class slif::Object* slif::CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, unsigned char* byteArray_DATA) {
+        class Object* temp;
+        auto tempDATA = reinterpret_cast<class Object*>(byteArray_DATA);
+        std::memcpy(&temp, byteArray_DATA, sizeof(byteArray_DATA));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_CONVERT_CLIB_SystemBusses_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(sysThreadId)."));
+        return temp;
+    }
     bool slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_SystemBusses_Framework_Global_MsbByteArray_To_VUALUEofMsbBool(uint8_t* sysThreadId, unsigned char* bytes_Array) {
         slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= bool : stat_CONVERT_CLIB_SystemBusses_Framework_Global_MsbByteArray_To_Msbbool(sysThreadId)."));
         return (bytes_Array[7] & 1) != 0;
@@ -79,6 +86,10 @@
         std::memcpy(&temp, bytes_Array, sizeof(uint8_t));
         slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= uint8_t* : stat_CONVERT_CLIB_SystemBusses_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)."));
         return temp;
+    }
+    unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(uint8_t* sysThreadId, class Object* byteArray_DATA) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, value)."));
+        return reinterpret_cast<unsigned char*>(byteArray_DATA);
     }
     unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_SystemBusses_Framework_Global_VUALUEofMsbBool_to_MsbByteArray(uint8_t* sysThreadId, bool newValue_Bool) {
         unsigned char* buffer = nullptr;
@@ -130,50 +141,6 @@
         pr_stat_REG_set_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId, *List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS);
     }
 // private.
-    slif::Object* slif::CLIB_SystemBus_Framework_Global::pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, unsigned char* DATA) {
-        class Object* temp;
-        auto tempDATA = reinterpret_cast<class Object*>(DATA);
-        std::memcpy(&temp, tempDATA, sizeof(tempDATA));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_CONVERT_CLIB_SystemBusses_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(sysThreadId)."));
-        return temp;
-    }
-    unsigned char* slif::CLIB_SystemBus_Framework_Global::pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbBoolean_To_MsbByteArray(uint8_t* sysThreadId, bool value) {
-        unsigned char* buffer = nullptr;
-        buffer = new unsigned char[1];
-        for (uint8_t bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
-            buffer[bitIndex] = static_cast<unsigned char>(value);
-        }
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbBoolean_To_MsbByteArray(sysThreadId)."));
-        return buffer;
-    }
-    unsigned char* slif::CLIB_SystemBus_Framework_Global::pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double value) {
-        unsigned char* buffer = nullptr;
-        buffer = new unsigned char[4] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX };
-        std::memcpy(buffer, &value, sizeof(double));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbDouble_To_MsbByteArray(sysThreadId)."));
-        return buffer;
-    }
-    unsigned char* slif::CLIB_SystemBus_Framework_Global::pr_stat_CONVERT_CLIB_SystemBusses_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t value) {
-        unsigned char* temp;
-        temp = new unsigned char();
-        std::memcpy(&temp, &value, sizeof(uint8_t));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_CONVERT_CLIB_SystemBusses_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(sysThreadId)."));
-        return temp;
-    }
-    bool slif::CLIB_SystemBus_Framework_Global::pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbBoolean(uint8_t* sysThreadId, const unsigned char* byteArray) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbBoolean(sysThreadId)."));
-        return (byteArray[7] & 1) != 0;
-    }
-    unsigned char* slif::CLIB_SystemBus_Framework_Global::pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(uint8_t* sysThreadId, unsigned char* byteArray_DATA) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, value)."));
-        return reinterpret_cast<unsigned char*>(byteArray_DATA);
-    }
-    double slif::CLIB_SystemBus_Framework_Global::pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbDouble(uint8_t* sysThreadId, const unsigned char* byteArray) {
-        double temp;
-        std::memcpy(&temp, byteArray, sizeof(double));
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_MsbDouble(sysThreadId)."));
-        return temp;
-    }
     void slif::CLIB_SystemBus_Framework_Global::stat_CLASS_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : stat_CLASS_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : stat_CLASS_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(sysThreadId)."));

@@ -11,5 +11,15 @@ add_executable(TESTBENCH main.cpp
         src/CLIB_Framework_Execute.cpp
 )
 
-target_link_libraries(TESTBENCH PRIVATE slif_control)
-target_link_libraries(TESTBENCH PRIVATE OptimusPrime)
+target_include_directories(TESTBENCH PUBLIC
+        "../Control/libs/CLIB_MutexQue/include"
+        "../Control/libs/CLIB_ThreadsLog/include"
+        "../Control/libs/CLIB_LaunchQue/include"
+        "../Control/libs/CLIB_OpenSCADA/include"
+        "include"
+)
+
+target_link_libraries(TESTBENCH PRIVATE
+        slif_control
+        OptimusPrime
+)
