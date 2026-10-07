@@ -1,7 +1,7 @@
 #include "../Control/libs/include/CLIB_MutexQue.h"
 #include "../Control/libs/include/CLIB_ThreadLogs.h"
 #include "../Control/libs/include/CLIB_LaunchQue.h"
-#include "../../Control/libs/include/CLIB_SystemBus.h"
+#include "../Control/libs/include/CLIB_SystemBus.h"
 #include "../OptimusPrime/CLIB_OptimusPrime.h"
 #include <iostream>
 using namespace slif;
