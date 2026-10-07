@@ -1,7 +1,6 @@
 #ifndef OPENEPICENTRE_BACKENDSUBUNTU_CLIB_LaunchQue_Framework_Execute_H
 #define OPENEPICENTRE_BACKENDSUBUNTU_CLIB_LaunchQue_Framework_Execute_H
 #include <cstdint>
-#include <list>
 namespace slif {
     class CLIB_LaunchQue_Framework_Execute {
     public:

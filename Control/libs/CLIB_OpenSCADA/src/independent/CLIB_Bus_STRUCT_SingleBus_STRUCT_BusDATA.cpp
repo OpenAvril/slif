@@ -1,4 +1,5 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA.h"
+#include "../../CLIB_OpenSCADA/include/CLIB_SystemBus_Framework_Global.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
 #include <cstddef>
@@ -43,5 +44,5 @@
     }
     void slif::CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA::stat_REG_boot1_INITIALISE_CLIB_Bus_STRUCT_SingleBus_DATA(uint8_t* sysThreadId){
         auto* DATA = new std::byte[1028];
-        *stat_REG_of_CLIB_Bus_STRUCT_SingleBus_DATA = *CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(DATA));
+        *stat_REG_of_CLIB_Bus_STRUCT_SingleBus_DATA = *CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(DATA));
     }

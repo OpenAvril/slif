@@ -9,10 +9,10 @@ namespace slif {
         virtual ~CLIB_OpenEpiCentre_Framework_App_Data_Control();
         void app_FUNCT_flip_CLIB_OpenEpiCentre_Framework_App_Data_Control_REG_Input_DoubleBuffer(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);
         void app_FUNCT_flip_CLIB_OpenEpiCentre_Framework_App_Data_Control_REG_Output_DoubleBuffer(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);
-        void app_FUNCT_pop_CLIB_OpenEpiCentre_Framework_App_Data_Control_STACK_Of_Input(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj, uint8_t concurrentsysThreadId);
+        void app_FUNCT_pop_CLIB_OpenEpiCentre_Framework_App_Data_Control_STACK_Of_Input(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj, uint8_t concurrentThreadId);
         void app_FUNCT_pop_CLIB_OpenEpiCentre_Framework_App_Data_Control_STACK_Of_Output(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);
         void app_FUNCT_push_CLIB_OpenEpiCentre_Framework_App_Data_Control_STACK_Of_Input(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);
-        void app_FUNCT_push_CLIB_OpenEpiCentre_Framework_App_Data_Control_STACK_Of_Output(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj, uint8_t concurrentsysThreadId);
+        void app_FUNCT_push_CLIB_OpenEpiCentre_Framework_App_Data_Control_STACK_Of_Output(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj, uint8_t concurrentThreadId);
         void dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);
         void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App_Data_Control(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);

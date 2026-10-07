@@ -12,12 +12,12 @@
 	slif::CLIB_OpenEpiCentre_STRUCT_User_Output* slif::CLIB_OpenEpiCentre_Framework::stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Output;
 // public.
 	slif::CLIB_OpenEpiCentre_Framework::CLIB_OpenEpiCentre_Framework(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework : CLIB_OpenEpiCentre_Framework(sysThreadId).<< " std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework : CLIB_OpenEpiCentre_Framework(sysThreadId)." << std::endl;
 		stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework(sysThreadId);
-		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework : CLIB_OpenEpiCentre_Framework(sysThreadId).<< " std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework : CLIB_OpenEpiCentre_Framework(sysThreadId)." << std::endl;
 	}
 	slif::CLIB_OpenEpiCentre_Framework::~CLIB_OpenEpiCentre_Framework() {
-		slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework : ~CLIB_OpenEpiCentre_Framework(sysThreadId).<< " std::endl;
+		slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework : ~CLIB_OpenEpiCentre_Framework(sysThreadId)." << std::endl;
 		delete stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App;
 		delete stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Global;
 		delete stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_Concurrent;
@@ -26,10 +26,10 @@
 		delete _stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_User_Algorithm;
 		delete _stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Input;
 		delete _stat_STRUCT_ptr_CLIB_OpenEpiCentre_Framework_User_Output;
-		slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework : ~CLIB_OpenEpiCentre_Framework(sysThreadId).<< " std::endl;
+		slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework : ~CLIB_OpenEpiCentre_Framework(sysThreadId)." << std::endl;
 	}
 	void slif::CLIB_OpenEpiCentre_Framework::dyn_CLASS_create_CLIB_OpenEpiCentre_Framework_Architecture(uint8_t* sysThreadId) {
-		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework : dyn_CLASS_create_CLIB_OpenEpiCentre_Framework_Architecture(sysThreadId).<< " std::endl;
+		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework : dyn_CLASS_create_CLIB_OpenEpiCentre_Framework_Architecture(sysThreadId)." << std::endl;
 		stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework(sysThreadId);
 		stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework(sysThreadId);
 		stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework(sysThreadId);

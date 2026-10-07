@@ -16,17 +16,17 @@ namespace slif {
         static std::array<bool,2>* stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WRITE(uint8_t* sysThreadId);
         static uint8_t* stat_REG_get_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId);
         static void stat_REG_set_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_THREADS_FOR_ACCESS);
-        static int* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_Bool_To_Int(uint8_t* sysThreadId, bool newValue_Bool);
-        static bool stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbBool(uint8_t* sysThreadId, unsigned char* bytes_Array);
-        static int* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array);
-        static double* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbDouble(uint8_t* sysThreadId, unsigned char* bytes_Array);
-        static uint8_t* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbuint8_t(uint8_t* sysThreadId, unsigned char* bytes_Array);
-        static unsigned long long* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbunsignedLongLong(uint8_t* sysThreadId, unsigned char* bytes_Array);
-        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbBool_to_MsbByteArray(uint8_t* sysThreadId, bool newValue_Bool);
-        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(uint8_t* sysThreadId, int* newValue_Int);
-        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double* newValue_Double);
-        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbUnsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long* newValue_ULongLong);
-        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t* newValue_uint8_t);
+        static int* stat_CONVERT_CLIB_MutexQue_Framework_Global_Bool_To_Int(uint8_t* sysThreadId, bool newValue_Bool);
+        static bool stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbBool(uint8_t* sysThreadId, unsigned char* bytes_Array);
+        static int* stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array);
+        static double* stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbDouble(uint8_t* sysThreadId, unsigned char* bytes_Array);
+        static uint8_t* stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbuint8_t(uint8_t* sysThreadId, unsigned char* bytes_Array);
+        static unsigned long long* stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbunsignedLongLong(uint8_t* sysThreadId, unsigned char* bytes_Array);
+        static unsigned char* stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbBool_to_MsbByteArray(uint8_t* sysThreadId, bool newValue_Bool);
+        static unsigned char* stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(uint8_t* sysThreadId, int* newValue_Int);
+        static unsigned char* stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double* newValue_Double);
+        static unsigned char* stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbUnsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long* newValue_ULongLong);
+        static unsigned char* stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t* newValue_uint8_t);
     private:
         static std::array<bool,2>* stat_REG_CONST_CLIB_MutexQue_2bitFLAG_IDLE;
         static std::array<bool,2>* stat_REG_CONST_CLIB_MutexQue_2bitFLAG_WAIT;

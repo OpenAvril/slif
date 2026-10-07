@@ -7,47 +7,47 @@
     unsigned long long* slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events;
 // public.
     slif::CLIB_OpenEpiCentre_Framework_Global::CLIB_OpenEpiCentre_Framework_Global(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
         stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId);
         stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId);
         stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId);
         stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
     }
     slif::CLIB_OpenEpiCentre_Framework_Global::~CLIB_OpenEpiCentre_Framework_Global() {
-        slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : ~CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : ~CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
         delete stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores;
         delete stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events;
-        slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : ~CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : ~CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
         stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores(sysThreadId);
         stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events(sysThreadId);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
         stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores(sysThreadId);
         stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events(sysThreadId);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores(sysThreadId);
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events(sysThreadId);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_Global(sysThreadId)." << std::endl;
     }
     uint8_t* slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_get_CLIB_OpenEpiCentre_Framework_Global_Item_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t : dyn_REG_get_CLIB_OpenEpiCentre_Framework_Global_Item_number_Of_Implemented_Cores(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t : dyn_REG_get_CLIB_OpenEpiCentre_Framework_Global_Item_number_Of_Implemented_Cores(sysThreadId)." << std::endl;
         return stat_REG_get_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores(sysThreadId);
     }
     unsigned long long* slif::CLIB_OpenEpiCentre_Framework_Global::dyn_REG_get_CLIB_OpenEpiCentre_Framework_Global_Item_number_Of_Praise_Events(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= unsigned long long : dyn_REG_get_CLIB_OpenEpiCentre_Framework_Global_Item_number_Of_Praise_Events(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= unsigned long long : dyn_REG_get_CLIB_OpenEpiCentre_Framework_Global_Item_number_Of_Praise_Events(sysThreadId)." << std::endl;
         return stat_REG_get_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events(sysThreadId);
     }
    int* slif::CLIB_ThreadLogs_Framework_Global::stat_CONVERT_CLIB_ThreadsLog_Framework_Global_Bool_To_Int(uint8_t* sysThreadId, bool newValue_Bool) {
@@ -126,42 +126,42 @@
     }
 // private.
     void slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot1_DEFINE_number_Of_Implemented_Cores(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot1_DEFINE_number_Of_Implemented_Cores(sysThreadId)." << std::endl;
         stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores = nullptr;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot1_DEFINE_number_Of_Implemented_Cores(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot1_DEFINE_number_Of_Implemented_Cores(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot1_DEFINE_number_Of_Praise_Events(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot1_DEFINE_number_Of_Praise_Events(sysThreadId)." << std::endl;
         stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events = nullptr;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot1_DEFINE_number_Of_Praise_Events(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot1_DEFINE_number_Of_Praise_Events(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot2_SUBSTANTIATE_number_Of_Implemented_Cores(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot2_SUBSTANTIATE_number_Of_Implemented_Cores(sysThreadId)." << std::endl;
         stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores = new uint8_t();
         *stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores = static_cast<uint8_t>(255);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot2_SUBSTANTIATE_number_Of_Implemented_Cores(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot2_SUBSTANTIATE_number_Of_Implemented_Cores(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events(sysThreadId)." << std::endl;
         stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events = new unsigned long long();
         *stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events = ULLONG_MAX;
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores(sysThreadId)." << std::endl;
         *stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores = static_cast<uint8_t>(4);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores(sysThreadId)." << std::endl;
     }
     void slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot3_INITIALISE_number_Of_Praise_Events(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot3_INITIALISE_number_Of_Praise_Events(sysThreadId)." << std::endl;
         *stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events = static_cast<unsigned long long>(4);
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot3_INITIALISE_number_Of_Praise_Events(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_OpenEpiCentre_Framework_Global : stat_REG_boot3_INITIALISE_number_Of_Praise_Events(sysThreadId)." << std::endl;
     }
     uint8_t* slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_get_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t* : stat_REG_get_Ptr_number_Of_Implemented_Cores(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= uint8_t* : stat_REG_get_Ptr_number_Of_Implemented_Cores(sysThreadId)." << std::endl;
         return stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Implemented_Cores;
     }
     unsigned long long* slif::CLIB_OpenEpiCentre_Framework_Global::stat_REG_get_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events(uint8_t* sysThreadId) {
-        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= unsigned long long* : stat_REG_get_Ptr_number_Of_Praise_Events(sysThreadId).<< " std::endl;
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= unsigned long long* : stat_REG_get_Ptr_number_Of_Praise_Events(sysThreadId)." << std::endl;
         return stat_REG_ptr_CLIB_OpenEpiCentre_Framework_Global_number_Of_Praise_Events;
     }

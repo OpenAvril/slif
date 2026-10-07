@@ -1,4 +1,5 @@
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.h"
+#include "../../CLIB_OpenSCADA/include/CLIB_SystemBus_Framework_Global.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.h"
 #include "CLIB_ThreadLogs.h"
 	unsigned char* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Data::stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA;
@@ -64,7 +65,7 @@
 		for (int i = 0; i < sizeof(*DATA); i++) {
 			DATA[i] = std::byte{0xFF};
 		}
-		*stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA = *CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(DATA));
+		*stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA = *CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(DATA));
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_App_Data : stat_CLASS_boot2_SUBSTANTIATE_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA(sysThreadId)."));
 	}
 	void slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Data::stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA(uint8_t* sysThreadId) {
@@ -73,7 +74,7 @@
 		for (int i = 0; i < sizeof(*DATA); i++) {
 			DATA[i] = std::byte{0x00};
 		}
-		*stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA = *CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(DATA));
+		*stat_REG_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA = *CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, reinterpret_cast<class Object*>(DATA));
 		slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_App_Data : stat_CLASS_boot3_INITIALISE_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA(sysThreadId)."));
 	}
 	unsigned char* slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Data::stat_REG_get_CLIB_Bus_STRUCT_SingleBus_Framework_App_Data_DATA(uint8_t* sysThreadId){

@@ -19,8 +19,8 @@ namespace slif {
         struct CLIB_OpenEpiCentre_STRUCT_Input* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Input_at_ItemSideToWRITE_For_doubleBufferInput(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);
         struct CLIB_OpenEpiCentre_STRUCT_Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Output_at_ItemSideToREAD_For_doubleBufferOutput(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj);
         struct CLIB_OpenEpiCentre_STRUCT_Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Output_at_ItemSideToWRITE_For_doubleBufferOutput(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework *obj);
-        struct CLIB_OpenEpiCentre_STRUCT_Input* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentsysThreadId);
-        struct CLIB_OpenEpiCentre_STRUCT_Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentsysThreadId);
+        struct CLIB_OpenEpiCentre_STRUCT_Input* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentThreadId);
+        struct CLIB_OpenEpiCentre_STRUCT_Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentThreadId);
         struct CLIB_OpenEpiCentre_STRUCT_Input* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_vector_Of_stack_Of_InputPraise(uint8_t* sysThreadId, unsigned long long slot);
         struct CLIB_OpenEpiCentre_STRUCT_Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_vector_Of_stack_Of_OutputPraise(uint8_t* sysThreadId, unsigned long long slot);
         std::vector<struct CLIB_OpenEpiCentre_STRUCT_Input*>* dyn_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_vector_Of_stack_Of_InputPraise(uint8_t* sysThreadId);
@@ -29,8 +29,8 @@ namespace slif {
         void dyn_REG_set_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Input_at_ItemSideToWRITE_For_doubleBufferInput(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj, struct CLIB_OpenEpiCentre_STRUCT_Input* newClass);
         void dyn_REG_set_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Output_at_ItemSideToREAD_For_doubleBufferOutput(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass);
         void dyn_REG_set_ptr_CLIB_OpenEpiCentre_Framework_App_Data_Output_at_ItemSideToWRITE_For_doubleBufferOutput(uint8_t* sysThreadId, class CLIB_OpenEpiCentre_Framework* obj, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass);
-        void dyn_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentsysThreadId, struct CLIB_OpenEpiCentre_STRUCT_Input* newClass);
-        void dyn_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentsysThreadId, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass);
+        void dyn_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT_Input* newClass);
+        void dyn_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass);
         void dyn_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Vector_Of_stack_Of_InputPraise(uint8_t* sysThreadId, unsigned long long slot, struct CLIB_OpenEpiCentre_STRUCT_Input* newClass);
         void dyn_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Vector_Of_stack_Of_OutputPraise(uint8_t* sysThreadId, unsigned long long slot, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass);
         static void stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework_App_Data(uint8_t* sysThreadId);
@@ -75,8 +75,8 @@ namespace slif {
         static std::array<struct CLIB_OpenEpiCentre_STRUCT_Output*, 2>* stat_get_REG_ptr_CLIB_OpenEpiCentre_Framework_App_Data_array_Of_buffer_ItemSide_For_doubleBufferOutput(uint8_t* sysThreadId);
         static std::vector<struct CLIB_OpenEpiCentre_STRUCT_Input*>* stat_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_vector_Of_stack_Of_InputPraise(uint8_t* sysThreadId);
         static std::vector<struct CLIB_OpenEpiCentre_STRUCT_Output*>* stat_REG_get_ptr_CLIB_OpenEpiCentre_Framework_App_Data_vector_Of_stack_Of_OutputPraise(uint8_t* sysThreadId);
-        static void stat_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentsysThreadId, struct CLIB_OpenEpiCentre_STRUCT_Input* newClass);
-        static void stat_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentsysThreadId, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass);
+        static void stat_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT_Input* newClass);
+        static void stat_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t* sysThreadId, uint8_t concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass);
         static void stat_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Vector_Of_stack_Of_InputPraise(uint8_t* sysThreadId, unsigned long long slot, struct CLIB_OpenEpiCentre_STRUCT_Input* newClass);
         static void stat_REG_set_CLIB_OpenEpiCentre_Framework_App_Data_Item_On_Vector_Of_stack_Of_OutputPraise(uint8_t* sysThreadId, unsigned long long slot, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass);
     };

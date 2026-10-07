@@ -69,7 +69,7 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: => uint8_t* : dyn_REG_set_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId)" << std::endl;
         stat_REG_set_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
     }
-    int* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_Bool_To_Int(uint8_t* sysThreadId, bool newValue_Bool) {
+    int* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_Bool_To_Int(uint8_t* sysThreadId, bool newValue_Bool) {
         int* temp = nullptr;
         temp = new int(INT_MAX);
         if (newValue_Bool) {
@@ -78,76 +78,76 @@
         else {
             *temp = 0;
         }
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= bool : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_Bool_To_Int(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= bool : stat_CONVERT_CLIB_MutexQue_Framework_Global_Bool_To_Int(sysThreadId)." << std::endl;
         return temp;
     }
-    bool slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbBool(uint8_t* sysThreadId, unsigned char* bytes_Array) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= bool : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_Msbbool(sysThreadId)." << std::endl;
+    bool slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbBool(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= bool : stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_Msbbool(sysThreadId)." << std::endl;
         return (bytes_Array[7] & 1) != 0;
     }
-    int* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+    int* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array) {
         int* temp;
         temp = new int();
         std::memcpy(&temp, bytes_Array, sizeof(int));
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= uint8_t* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= uint8_t* : stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
         return temp;
     }
-    double* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbDouble(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+    double* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbDouble(uint8_t* sysThreadId, unsigned char* bytes_Array) {
         double* temp;
         temp = new double();
         std::memcpy(&temp, bytes_Array, sizeof(double));
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= uint8_t* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= uint8_t* : stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
         return temp;
     }
-    unsigned long long* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbunsignedLongLong(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+    unsigned long long* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbunsignedLongLong(uint8_t* sysThreadId, unsigned char* bytes_Array) {
         unsigned long long* temp;
         temp = new unsigned long long();
         std::memcpy(&temp, bytes_Array, sizeof(unsigned long long));
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= uint8_t* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= uint8_t* : stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
         return temp;
     }
-    uint8_t* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbuint8_t(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+    uint8_t* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbuint8_t(uint8_t* sysThreadId, unsigned char* bytes_Array) {
         uint8_t* temp;
         temp = new uint8_t();
         std::memcpy(&temp, bytes_Array, sizeof(uint8_t));
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= uint8_t* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= uint8_t* : stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)." << std::endl;
         return temp;
     }
-    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbBool_to_MsbByteArray(uint8_t* sysThreadId, bool newValue_Bool) {
+    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbBool_to_MsbByteArray(uint8_t* sysThreadId, bool newValue_Bool) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char();
         for (int bitIndex = 0; bitIndex < sizeof(uint8_t); bitIndex++) {
             buffer[bitIndex] = static_cast<unsigned char>(newValue_Bool);
         }
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_Msbbool_to_MsbByteArray(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_MutexQue_Framework_Global_Msbbool_to_MsbByteArray(sysThreadId)." << std::endl;
         return buffer;
     }
-    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t* newValue_uint8_t) {
+    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t* newValue_uint8_t) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char(static_cast<uint8_t>(255));
         std::memcpy(buffer, &newValue_uint8_t, sizeof(uint8_t));
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_MutexQue_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)." << std::endl;
         return buffer;
     }
-    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(uint8_t* sysThreadId, int* newValue_Int) {
+    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(uint8_t* sysThreadId, int* newValue_Int) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char(static_cast<unsigned char>(INT_MAX));
         std::memcpy(buffer, &newValue_Int, sizeof(int));
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_MutexQue_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)." << std::endl;
         return buffer;
     }
-    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double* newValue_Double) {
+    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double* newValue_Double) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char(static_cast<unsigned char>(DBL_MAX));
         std::memcpy(buffer, &newValue_Double, sizeof(double));
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_MutexQue_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)." << std::endl;
         return buffer;
     }
-    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_VUALUEofMsbUnsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long* value) {
+    unsigned char* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbUnsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long* value) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char(static_cast<unsigned char>(ULONG_LONG_MAX));
         std::memcpy(buffer, &value, sizeof(unsigned long long));
-        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)." << std::endl;
+        std::cout << "thread " << std::to_string(*sysThreadId) << "  :: <= unsigned char* : stat_CONVERT_CLIB_MutexQue_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)." << std::endl;
         return buffer;
     }
 // private.

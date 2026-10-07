@@ -15,7 +15,7 @@ extern "C" {
             static unsigned char* get_FlagisIdle(uint8_t* sysThreadId, int* handleId);
             static unsigned char* get_FlagSTATEofThreadToLaunch(uint8_t* sysThreadId, int* handleId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
-            static void reInitialiseHandle(uint8_t* sysThreadId, int* handleId, std::byte* MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);
+            static void reInitialiseHandle(uint8_t* sysThreadId, int* handleId, uint8_t* MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);
             static void set_FlagSTATEofConcurrentCore(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_concuurentsysThreadId, unsigned char* byteBool);
             static void terminateProgaram(uint8_t* sysThreadId);
             static void threadRequestlaunch(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_concuurentsysThreadId);
@@ -29,13 +29,9 @@ extern "C" {
             static std::list<class slif::CLIB_LaunchQue_Framework*>* CLIB_LaunchQue_stat_REG_get_ptr_List_Of_PGM_CLIB_LaunchQue(uint8_t* sysThreadId);
             static class slif::CLIB_LaunchQue_Framework* CLIB_LaunchQue_stat_CLASS_get_ptr_PGM_CLIB_LaunchQue_Framework(uint8_t* sysThreadId, const int* handleId);
             static void CLIB_LaunchQue_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId);
-            static void CLIB_LaunchQue_stat_REG_boot1_DEFINE_HandleId_For_PGM_CLIBMutexQue(uint8_t* sysThreadId);
             static void CLIB_LaunchQue_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId);
-            static void CLIB_LaunchQue_stat_REG_boot2_SUBSTANTIATE_HandleId_For_PGM_CLIBMutexQue(uint8_t* sysThreadId);
             static void CLIB_LaunchQue_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId);
-            static void CLIB_LaunchQue_stat_REG_boot3_INITIALISE_HandleId_For_PGM_CLIBMutexQue(uint8_t* sysThreadId);
-            static std::array<bool, 13>* CLIB_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId);
-            static int* CLIB_LaunchQue_stat_REG_get_ptr_HandleId_For_PGM_CLIBMutexQue(uint8_t* sysThreadId);
+            static std::array<bool, 12>* CLIB_LaunchQue_stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId);
         };
     }
 }

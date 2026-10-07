@@ -117,8 +117,8 @@
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_App_Data : stat_PGM_boot3_INITIALISE_CLIB_List_Of_Busses(sysThreadId)."));
         int* handleId = new int(0);
         stat_PGM_CLIB_MutexQue_Of_Bus = new int();
-        stat_PGM_CLIB_MutexQue_Of_Bus = CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, slif::MutexQue::generateHandle(sysThreadId));
-        slif::MutexQue::reInitialiseHandle(sysThreadId, CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_SystemBusses_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(sysThreadId, stat_PGM_CLIB_MutexQue_Of_Bus), CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_APP_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_Msbuint8_t_To_MsbByteArray(sysThreadId, static_cast<uint8_t>(1)));
+        stat_PGM_CLIB_MutexQue_Of_Bus = CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, slif::MutexQue::generateHandle(sysThreadId));
+        slif::MutexQue::reInitialiseHandle(sysThreadId, CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_SystemBusses_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(sysThreadId, stat_PGM_CLIB_MutexQue_Of_Bus), CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(sysThreadId, new uint8_t(1)));
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_App_Data : stat_PGM_boot3_INITIALISE_CLIB_List_Of_Busses(sysThreadId)."));
     }
     void slif::CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute::stat_PGM_boot3_INITIALISE_CLIB_MutexQue_Of_Bus_At_Junction(uint8_t* sysThreadId) {
@@ -126,7 +126,7 @@
         stat_PGM_CLIB_MutexQue_Of_Bus_At_Junction = new std::list<int*>();
         stat_REG_get_PGM_CLIB_MutexQue_Of_Bus_At_Junction(sysThreadId)->resize(slif::CLIB_Bus_STRUCT_SingleBus_Framework_Global::dyn_REG_get_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId));
         for (uint8_t index = 0; index < static_cast<uint8_t>(stat_REG_get_PGM_CLIB_MutexQue_Of_Bus_At_Junction(sysThreadId)->size()); index++) {
-            stat_REG_get_PGM_CLIB_MutexQue_Of_Bus_At_Junction(sysThreadId)->assign(index, CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_CONVERT_CLIB_OpenEpiCentre_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, slif::MutexQue::generateHandle(sysThreadId)));
+            stat_REG_get_PGM_CLIB_MutexQue_Of_Bus_At_Junction(sysThreadId)->assign(index, CLIB_Bus_STRUCT_SingleBus_Framework_Global::stat_CONVERT_CLIB_Bus_STRUCT_SingleBus_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, slif::MutexQue::generateHandle(sysThreadId)));
         }
         slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_Bus_STRUCT_SingleBus_Framework_App_Data : stat_PGM_boot3_INITIALISE_MutexQue_Of___BusId(sysThreadId)."));
     }
