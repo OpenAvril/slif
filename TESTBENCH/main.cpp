@@ -5,15 +5,18 @@
 #include "../OptimusPrime/CLIB_OptimusPrime.h"
 #include <iostream>
 using namespace slif;
+
 int main() {
     auto sysThreadId = new uint8_t();
     *sysThreadId = 0;
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: Main : Running..." << std::endl;
 
-    std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : OptimusPrime : instantiateAll." << std::endl;
+    std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : OptimusPrime : instantiateAll." <<
+            std::endl;
     slif::OptimusPrime::instantiateAll(sysThreadId);
     slif::OptimusPrime::instantiateAll(sysThreadId);
-    std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : OptimusPrime : instantiateAll." << std::endl;
+    std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : OptimusPrime : instantiateAll." <<
+            std::endl;
 
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : generateProgram(s)." << std::endl;
     slif::MutexQue::generateProgram(sysThreadId);
