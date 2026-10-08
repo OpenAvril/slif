@@ -16,7 +16,7 @@ extern "C" {
             static void startByLock(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_ACCESS_ID);
             static void terminateProgram(uint8_t* sysThreadId, unsigned char* handleId);
         private:
-            static void* CLIB_MutexQue_App_FUNCT_generate_Program(uint8_t* sysThreadId);
+            static void CLIB_MutexQue_App_FUNCT_generate_Program(uint8_t* sysThreadId);
             static bool CLIB_MutexQue_stat_APP_FUNCT_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);
             static void CLIB_MutexQue_stat_PGM_boot1_DEFINE_array_of_ptr_Framework(uint8_t* sysThreadId);
             static void CLIB_MutexQue_stat_PGM_boot3_INITIALISE_array_of_ptr_Framework(uint8_t* sysThreadId);

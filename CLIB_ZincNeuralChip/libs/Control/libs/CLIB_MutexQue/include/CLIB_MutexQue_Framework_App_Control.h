@@ -46,7 +46,7 @@ namespace slif {
         static bool* stat_REG_FLAG_CLIB_MutexQue_FLAG_Control_isWriteStartThreadRELASE_REMAINING;
         static bool* stat_REG_FLAG_CLIB_MutexQue_FLAG_Control_isWriteEndThreadRELASE_ONE;
         static bool* stat_REG_FLAG_CLIB_MutexQue_FLAG_Control_isWriteEndThreadRELASE_REMAINING;
-        static std::array<std::array<bool, 2>, 3>* stat_REG_CONST_CLIB_MutexQue_Framework_App_Control_2bitFLAG_STATE;
+        static std::array<std::array<bool, 2>*, 3>* stat_REG_CONST_CLIB_MutexQue_Framework_App_Control_2bitFLAG_STATE;
         static std::list<unsigned long long*>* stat_REG_LIST_Of_CLIB_MutexQue_Framework_App_Control_WriteACTIVE_Count_For_ThreadId;
         static std::list<unsigned long long*>* stat_REG_LIST_Of_CLIB_MutexQue_Framework_App_Control_WriteIDLE_Count_For_ThreadId;
         static std::list<unsigned long long*>* stat_REG_LIST_Of_CLIB_MutexQue_Framework_App_Control_WriteWAIT_Count_For_ThreadId;
@@ -90,7 +90,7 @@ namespace slif {
         static bool stat_REG_get_FLAG_CLIB_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(uint8_t* sysThreadId);
         static bool stat_REG_get_FLAG_CLIB_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_ONE(uint8_t* sysThreadId);
         static bool stat_REG_get_FLAG_CLIB_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_REMAINING(uint8_t* sysThreadId);
-        static std::array <std::array<bool, 2>, 3>* stat_REG_get_ptr_Array_Of_CLIB_MutexQue_Framework_App_Control_3STATE_FLAG_WriteState(uint8_t* sysThreadId);
+        static std::array<std::array<bool, 2>*, 3>* stat_REG_get_ptr_Array_Of_CLIB_MutexQue_Framework_App_Control_3STATE_FLAG_WriteState(uint8_t* sysThreadId);
         static unsigned long long* stat_REG_get_ptr_list_Of_CLIB_MutexQue_Framework_App_Control_WriteActive_Count_For_ThreadId(uint8_t* sysThreadId, uint8_t* coreId);
         static unsigned long long* stat_REG_get_ptr_list_Of_CLIB_MutexQue_Framework_App_Control_WriteIdle_Count_For_ThreadId(uint8_t* sysThreadId, uint8_t* coreId);
         static unsigned long long* stat_REG_get_ptr_list_Of_CLIB_MutexQue_Framework_App_Control_WriteWait_Count_For_ThreadId(uint8_t* sysThreadId, uint8_t* coreId);

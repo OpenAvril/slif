@@ -16,7 +16,7 @@ int main() {
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : OptimusPrime : instantiateAll." << std::endl;
 
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : generateProgram(s)." << std::endl;
-    //slif::MutexQue::generateProgram(sysThreadId);
+    slif::MutexQue::generateProgram(sysThreadId);
     //slif::ThreadLogs::generateProgram(sysThreadId);
     //slif::LaunchQue::generateProgram(sysThreadId);
     //slif::Stemisphore::generateProgram(sysThreadId);
