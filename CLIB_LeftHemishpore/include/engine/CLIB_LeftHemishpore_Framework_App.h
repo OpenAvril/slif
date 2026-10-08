@@ -1,5 +1,5 @@
-#ifndef CLIB_OPENEPICENTRE_FRAMEWORK_APP_H
-#define CLIB_OPENEPICENTRE_FRAMEWORK_APP_H
+#ifndef CLIB_LEFTHEMISPHORE_FRAMEWORK_APP_H
+#define CLIB_LEFTHEMISPHORE_FRAMEWORK_APP_H
 #include "CLIB_LeftHemishpore_Framework_App_Algorithms.h"
 #include "CLIB_LeftHemishpore_Framework_App_Data.h"
 #include "CLIB_LeftHemishpore_Framework_App_Execute.h"

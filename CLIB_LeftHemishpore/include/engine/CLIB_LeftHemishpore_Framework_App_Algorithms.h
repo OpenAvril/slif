@@ -1,6 +1,6 @@
 #ifndef CLIB_OPENEPICENTRE_FRAMEWORK_APP_ALGORITHMS_H
 #define CLIB_OPENEPICENTRE_FRAMEWORK_APP_ALGORITHMS_H
-#include "CLIB_LeftHemishpore_Framework.h"
+#include "../engine/CLIB_LeftHemishpore_Framework.h"
 #include "../independent/CLIB_LeftHemishpore_STRUCT_Concurrent.h"
 #include <cstdint>
 #include <list>
@@ -9,7 +9,7 @@ namespace slif {
     public:
         CLIB_LeftHemishpore_Framework_App_Algorithms();
         virtual ~CLIB_LeftHemishpore_Framework_App_Algorithms();
-        struct CLIB_LeftHemishpore_STRUCT_Concurrent* dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(uint8_t concurrentThreadId);
+        struct CLIB_LeftHemishpore_STRUCT_Concurrent* dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(uint8_t* concurrentThreadId);
         void dyn_REG_boot1_DEFINE_CLIB_LeftHemishpore_Algorithm(class CLIB_LeftHemishpore_Framework* obj);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_LeftHemishpore_Algorithm(class CLIB_LeftHemishpore_Framework* obj);
         void dyn_REG_boot3_INITIALISE_CLIB_LeftHemishpore_Algorithm(class CLIB_LeftHemishpore_Framework* obj, struct CLIB_LeftHemishpore_STRUCT_Concurrent* objConcurrent);

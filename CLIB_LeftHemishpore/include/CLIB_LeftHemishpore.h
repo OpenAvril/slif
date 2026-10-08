@@ -1,5 +1,5 @@
-#ifndef CLIB_OPENEPICENTRE_H
-#define CLIB_OPENEPICENTRE_H
+#ifndef CLIB_LEFTHEMISPHORE_H
+#define CLIB_LEFTHEMISPHORE_H
 #include <array>
 #include <cstdint>
 #include <list>
@@ -24,7 +24,7 @@ extern "C" {
 			static void CLIB_LeftHemishpore_stat_app_FUNCT_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);
 			static void CLIB_LeftHemishpore_stat_CLASS_boot1_DEFINE_Framework(uint8_t* sysThreadId);
 			static void CLIB_LeftHemishpore_stat_CLASS_boot3_INITIALISE_Framework(uint8_t* sysThreadId);
-			static class CLIB_LeftHemishpore_Framework* CLIB_LeftHemishpore_stat_CLASS_get_ptr_CLIB_LeftHemishpore_Framework(uint8_t* sysThreadId);
+			static class CLIB_LeftHemishpore_Framework* CLIB_LeftHemishpore_stat_CLASS_get_ptr_CLIB_LeftHemishpore_Framework(uint8_t* sysThreadId, int* handleId);
 			static void CLIB_LeftHemishpore_stat_REG_boot1_DEFINE_CLIB_LeftHemishpore_isFLAG_INSTANTIATED(uint8_t* sysThreadId);
 			static void CLIB_LeftHemishpore_stat_REG_boot2_SUBSTANTIATE_CLIB_LeftHemishpore_isFLAG_INSTANTIATED(uint8_t* sysThreadId);
 			static void CLIB_LeftHemishpore_stat_REG_boot3_INITIALISE_CLIB_LeftHemishpore_isFLAG_INSTANTIATED(uint8_t* sysThreadId);

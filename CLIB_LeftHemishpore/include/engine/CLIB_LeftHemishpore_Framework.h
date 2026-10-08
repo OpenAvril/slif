@@ -1,7 +1,7 @@
-#ifndef CLIB_OPENEPICENTRE_FRAMEWORK_H
-#define CLIB_OPENEPICENTRE_FRAMEWORK_H
-#include "CLIB_LeftHemishpore_Framework_App.h"
-#include "CLIB_LeftHemishpore_Framework_Global.h"
+#ifndef CLIB_LEFTHEMISPHORE_FRAMEWORK_H
+#define CLIB_LEFTHEMISPHORE_FRAMEWORK_H
+#include "../../include/engine/CLIB_LeftHemishpore_Framework_App.h"
+#include "../../include/engine/CLIB_LeftHemishpore_Framework_Global.h"
 #include "../independent/CLIB_LeftHemishpore_STRUCT_Concurrent.h"
 #include "../independent/CLIB_LeftHemishpore_STRUCT_Input.h"
 #include "../independent/CLIB_LeftHemishpore_STRUCT_Output.h"
