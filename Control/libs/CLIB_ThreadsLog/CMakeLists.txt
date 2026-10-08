@@ -1,10 +1,12 @@
 cmake_minimum_required(VERSION 4.2.3)
-project(CLIB_threads_log VERSION 1.0 LANGUAGES CXX)
+project(slif_control_sys_threads_log VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(CLIB_threads_log STATIC
+add_library(${PROJECT_NAME} STATIC
+        io/src/CLIB_ThreadLogs.cpp
+        ../CLIB_MutexQue/io/src/CLIB_MutexQue.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
         ../CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
@@ -16,11 +18,19 @@ add_library(CLIB_threads_log STATIC
         src/CLIB_ThreadLogs_Framework_App_Execute.cpp
 )
 
-target_include_directories(CLIB_threads_log PUBLIC
-        "../CLIB_MutexQue/include"
-        "include"
+target_include_directories(${PROJECT_NAME}
+        PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/io/include>
+        $<INSTALL_INTERFACE:include>
 )
 
-target_link_libraries(CLIB_threads_log PRIVATE
-        CLIB_MutexQue
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}../CLIB_MutexQue/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>
+)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE
+        slif_control_mutex_que
 )

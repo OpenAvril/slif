@@ -1,0 +1,200 @@
+#include "../include/CLIB_SystemBus_Framework_Global.h"
+#include "../../../CLIB_ThreadsLog/io/include/CLIB_ThreadLogs.h"
+#include <cfloat>
+#include <climits>
+#include <cstdint>
+#include <cstring>
+    uint8_t* slif::CLIB_SystemBus_Framework_Global::stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS;
+    std::list<uint8_t>* slif::CLIB_SystemBus_Framework_Global::stat_REG_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
+// public.
+    slif::CLIB_SystemBus_Framework_Global::CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        stat_CLASS_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(sysThreadId);
+        stat_CLASS_boot1_DEFINE_CLIB_SystemBus_Framework_Global(sysThreadId);
+        stat_CLASS_boot3_INITIALISE_CLIB_SystemBus_Framework_Global(sysThreadId);
+        stat_REG_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(sysThreadId);
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    slif::CLIB_SystemBus_Framework_Global::~CLIB_SystemBus_Framework_Global() {
+        slif::ThreadLogs::printl(0, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : ~CLIB_SystemBus_Framework_Global()."));
+        slif::ThreadLogs::printl(0, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : ~CLIB_SystemBus_Framework_Global()."));
+    }
+    void slif::CLIB_SystemBus_Framework_Global::dyn_REG_boot1_DEFINE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : dyn_REG_boot1_DEFINE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : dyn_REG_boot1_DEFINE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    void slif::CLIB_SystemBus_Framework_Global::dyn_REG_boot2_SUBSTANTIATE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : dyn_REG_boot2_SUBSTANTIATE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : dyn_REG_boot2_SUBSTANTIATE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    void slif::CLIB_SystemBus_Framework_Global::dyn_REG_boot3_INITIALISE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : dyn_REG_boot3_INITIALISE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : dyn_REG_boot3_INITIALISE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    void slif::CLIB_SystemBus_Framework_Global::dyn_REG_boot4_INSTANTIATE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    int* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_Bool_To_Int(uint8_t* sysThreadId, bool newValue_Bool) {
+        int* temp = nullptr;
+        temp = new int(INT_MAX);
+        if (newValue_Bool) {
+            *temp = 1;;
+        }
+        else {
+            *temp = 0;
+        }
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= bool : stat_CONVERT_CLIB_Stemisphore_Framework_Global_Bool_To_Int(sysThreadId)."));
+        return temp;
+    }
+    class slif::Object* slif::CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_MsbByteArray_To_DATA(uint8_t* sysThreadId, unsigned char* byteArray_DATA) {
+        class Object* temp;
+        auto tempDATA = reinterpret_cast<class Object*>(byteArray_DATA);
+        std::memcpy(&temp, byteArray_DATA, sizeof(byteArray_DATA));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_CONVERT_CLIB_Stemisphore_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(sysThreadId)."));
+        return temp;
+    }
+    bool slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_VUALUEofMsbBool(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= bool : stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_Msbbool(sysThreadId)."));
+        return (bytes_Array[7] & 1) != 0;
+    }
+    int* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+        int* temp;
+        temp = new int();
+        std::memcpy(&temp, bytes_Array, sizeof(int));
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= uint8_t* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)."));
+        return temp;
+    }
+    double* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_VUALUEofMsbDouble(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+        double* temp;
+        temp = new double();
+        std::memcpy(&temp, bytes_Array, sizeof(double));
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= uint8_t* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)."));
+        return temp;
+    }
+    unsigned long long* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_VUALUEofMsbunsignedLongLong(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+        unsigned long long* temp;
+        temp = new unsigned long long();
+        std::memcpy(&temp, bytes_Array, sizeof(unsigned long long));
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= uint8_t* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)."));
+        return temp;
+    }
+    uint8_t* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_VUALUEofMsbuint8_t(uint8_t* sysThreadId, unsigned char* bytes_Array) {
+        uint8_t* temp;
+        temp = new uint8_t();
+        std::memcpy(&temp, bytes_Array, sizeof(uint8_t));
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= uint8_t* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_MsbByteArray_To_Msbuint8_t(sysThreadId)."));
+        return temp;
+    }
+    unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(uint8_t* sysThreadId, class Object* byteArray_DATA) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: <= CONVERT : pr_stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, value)."));
+        return reinterpret_cast<unsigned char*>(byteArray_DATA);
+    }
+    unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_VUALUEofMsbBool_to_MsbByteArray(uint8_t* sysThreadId, bool newValue_Bool) {
+        unsigned char* buffer = nullptr;
+        buffer = new unsigned char();
+        for (int bitIndex = 0; bitIndex < sizeof(uint8_t); bitIndex++) {
+            buffer[bitIndex] = static_cast<unsigned char>(newValue_Bool);
+        }
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= unsigned char* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_Msbbool_to_MsbByteArray(sysThreadId)."));
+        return buffer;
+    }
+    unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t* newValue_uint8_t) {
+        unsigned char* buffer = nullptr;
+        buffer = new unsigned char(static_cast<uint8_t>(255));
+        std::memcpy(buffer, &newValue_uint8_t, sizeof(uint8_t));
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= unsigned char* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)."));
+        return buffer;
+    }
+    unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(uint8_t* sysThreadId, int* newValue_Int) {
+        unsigned char* buffer = nullptr;
+        buffer = new unsigned char(static_cast<unsigned char>(INT_MAX));
+        std::memcpy(buffer, &newValue_Int, sizeof(int));
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= unsigned char* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)."));
+        return buffer;
+    }
+    unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_VUALUEofMsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double* newValue_Double) {
+        unsigned char* buffer = nullptr;
+        buffer = new unsigned char(static_cast<unsigned char>(DBL_MAX));
+        std::memcpy(buffer, &newValue_Double, sizeof(double));
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= unsigned char* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)."));
+        return buffer;
+    }
+    unsigned char* slif::CLIB_SystemBus_Framework_Global::stat_CONVERT_CLIB_Stemisphore_Framework_Global_VUALUEofMsbUnsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long* value) {
+        unsigned char* buffer = nullptr;
+        buffer = new unsigned char(static_cast<unsigned char>(ULONG_LONG_MAX));
+        std::memcpy(buffer, &value, sizeof(unsigned long long));
+        slif::ThreadLogs::printl(sysThreadId, new std::string("  :: <= unsigned char* : stat_CONVERT_CLIB_Stemisphore_Framework_Global_unsignedLongLong_to_ByteArray(sysThreadId)."));
+        return buffer;
+    }
+    uint8_t slif::CLIB_SystemBus_Framework_Global::stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
+        return *pr_stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId);
+    }
+    std::list<uint8_t> slif::CLIB_SystemBus_Framework_Global::stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId) {
+        return *pr_stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId);
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_set_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_JUNCTIONS) {
+        pr_stat_REG_set_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId, *MAX_NUMBER_OF_JUNCTIONS);
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_set_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId, std::list<uint8_t>* List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS) {
+        pr_stat_REG_set_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId, *List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS);
+    }
+// private.
+    void slif::CLIB_SystemBus_Framework_Global::stat_CLASS_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : stat_CLASS_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : stat_CLASS_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_CLASS_boot1_DEFINE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : stat_CLASS_boot1_DEFINE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : stat_CLASS_boot1_DEFINE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_CLASS_boot3_INITIALISE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : stat_CLASS_boot3_INITIALISE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : stat_CLASS_boot3_INITIALISE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(uint8_t* sysThreadId) {
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: entered LIB :: slif : CLIB_SystemBus_Framework_Global : stat_REG_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+        slif::ThreadLogs::printl(sysThreadId, new std::string(" :: exiting LIB :: slif : CLIB_SystemBus_Framework_Global : stat_REG_boot0_DECLAIRE_CLIB_SystemBus_Framework_Global(sysThreadId)."));
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_boot1_DEFINE_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
+        stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS = nullptr;
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_boot1_DEFINE_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId) {
+        stat_REG_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS = nullptr;
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_boot2_SUBSTANTIATE_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
+        stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS = new uint8_t();
+        *stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS = UINT8_MAX;
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_boot2_SUBSTANTIATE_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId) {
+        stat_REG_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS = new std::list<uint8_t>;
+        pr_stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId)->resize(stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId));
+        for (uint8_t junctionId = 0; junctionId < pr_stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId)->size(); ++junctionId) {
+            auto temp = pr_stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId)->begin();
+            std::advance(temp, junctionId);
+            *temp = UINT8_MAX;
+        }
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_boot3_INITIALISE_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
+        *stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS = 3;
+    }
+    void slif::CLIB_SystemBus_Framework_Global::stat_REG_boot3_INITIALISE_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId) {
+        pr_stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId)->resize(stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(sysThreadId));
+        for (uint8_t junctionId = 0; junctionId < pr_stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId)->size(); ++junctionId) {
+            auto temp = pr_stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(sysThreadId)->begin();
+            std::advance(temp, junctionId);
+            *temp = 2;
+        }
+    }
+    uint8_t* slif::CLIB_SystemBus_Framework_Global::pr_stat_REG_get_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId) {
+        return stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS;
+    }
+    std::list<uint8_t>* slif::CLIB_SystemBus_Framework_Global::pr_stat_REG_get_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId) {
+        return stat_REG_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
+    }
+    void slif::CLIB_SystemBus_Framework_Global::pr_stat_REG_set_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS(uint8_t* sysThreadId, uint8_t MAX_NUMBER_OF_JUNCTIONS) {
+        *stat_REG_CLIB_SystemBus_Framework_Global_MAX_NUMBER_OF_JUNCTIONS = MAX_NUMBER_OF_JUNCTIONS;
+    }
+    void slif::CLIB_SystemBus_Framework_Global::pr_stat_REG_set_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS(uint8_t* sysThreadId, std::list<uint8_t> List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS) {
+       *stat_REG_CLIB_SystemBus_Framework_Global_List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS = List_Of_MAX_NUMBER_OF_ACCESS_THREADS_AT_JUNCTIONS;
+    }

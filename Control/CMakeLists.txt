@@ -7,52 +7,45 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_subdirectory(libs/CLIB_MutexQue)
 add_subdirectory(libs/CLIB_ThreadsLog)
 add_subdirectory(libs/CLIB_LaunchQue)
-add_subdirectory(libs/CLIB_Stemisphore)
 
-add_library(slif_control STATIC
+add_library(${PROJECT_NAME} STATIC
+        libs/CLIB_MutexQue/io/src/CLIB_MutexQue.cpp
         libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
         libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
         libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
         libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
+        libs/CLIB_ThreadsLog/io/src/CLIB_ThreadLogs.cpp
         libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
         libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
         libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
         libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
         libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
+        libs/CLIB_LaunchQue/io/src/CLIB_LaunchQue.cpp
         libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework.cpp
         libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Global.cpp
         libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App.cpp
         libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App_Control.cpp
         libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Execute.cpp
-        libs/CLIB_Stemisphore/src/independent/CLIB_Bus_STRUCT_SingleBus.cpp
-        libs/CLIB_Stemisphore/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework.cpp
-        libs/CLIB_Stemisphore/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.cpp
-        libs/CLIB_Stemisphore/src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.cpp
-        libs/CLIB_Stemisphore/src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA.cpp
-        libs/CLIB_Stemisphore/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.cpp
-        libs/CLIB_Stemisphore/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.cpp
-        libs/CLIB_Stemisphore/src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute.cpp
-        libs/CLIB_Stemisphore/src/CLIB_SystemBus_Framework.cpp
-        libs/CLIB_Stemisphore/src/CLIB_SystemBus_Framework_Global.cpp
-        libs/CLIB_Stemisphore/src/CLIB_SystemBus_Framework_App.cpp
-        libs/CLIB_Stemisphore/src/CLIB_SystemBus_Framework_App_Execute.cpp
 )
 
-target_include_directories(slif_control PUBLIC
-        "include"
+target_include_directories(${PROJECT_NAME}
+        PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_MutexQue/io/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_ThreadsLogQue/io/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LaunchQue/io/include>
+        $<INSTALL_INTERFACE:include>
 )
 
-target_include_directories(slif_control PRIVATE
-        "libs/CLIB_MutexQue/include"
-        "libs/CLIB_ThreadsLog/include"
-        "libs/CLIB_LaunchQue/include"
-        "libs/CLIB_Stemisphore/include"
+target_include_directories(${PROJECT_NAME}
+        PRIVATE
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_MutexQue/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_ThreadsLogQue/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LaunchQue/include>
+        $<INSTALL_INTERFACE:include>
 )
 
-target_link_libraries(slif_control PUBLIC
-        CLIB_MutexQue
-        CLIB_threads_log
-        CLIB_LaunchQue
-        slif_control_system_busses
+target_link_libraries(${PROJECT_NAME} PRIVATE
+        slif_control_mutex_que
+        slif_control_sys_threads_log
+        slif_control_launch_que
 )
-

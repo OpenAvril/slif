@@ -1,0 +1,64 @@
+cmake_minimum_required(VERSION 4.2.3)
+project(slif_epicentre VERSION 1.0 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_library(slif_epicentre STATIC
+        ../../../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework.cpp
+        ../../../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
+        ../../../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
+        ../../../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
+        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
+        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
+        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
+        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
+        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
+        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework.cpp
+        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Global.cpp
+        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App.cpp
+        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App_Control.cpp
+        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Execute.cpp
+        io/src/CLIB_LeftHemishpore.cpp
+        src/engine/CLIB_LeftHemishpore_Framework.cpp
+        src/engine/CLIB_LeftHemishpore_Framework_Global.cpp
+        src/independent/CLIB_LeftHemishpore_STRUCT_Input.cpp
+        src/independent/CLIB_LeftHemishpore_STRUCT_Output.cpp
+        src/independent/CLIB_LeftHemishpore_STRUCT_Concurrent.cpp
+        src/independent/CLIB_LeftHemishpore_STRUCT_User_Input.cpp
+        src/independent/CLIB_LeftHemishpore_STRUCT_User_Output.cpp
+        src/independent/CLIB_LeftHemishpore_STRUCT_User_Algorithm.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise0.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise0.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise0.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise1.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise1.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise1.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise2.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise2.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise2.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise3.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise3.cpp
+        src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise3.cpp
+        src/engine/CLIB_LeftHemishpore_Framework.cpp
+        src/engine/CLIB_LeftHemishpore_Framework_App.cpp
+        src/engine/CLIB_LeftHemishpore_Framework_App_Algorithms.cpp
+        src/engine/CLIB_LeftHemishpore_Framework_App_Data.cpp
+        src/engine/CLIB_LeftHemishpore_Framework_App_Data_Control.cpp
+        src/engine/CLIB_LeftHemishpore_Framework_App_Execute.cpp
+        src/engine/CLIB_LeftHemishpore_Framework_App_Execute_Control.cpp
+)
+
+target_include_directories(slif_epicentre PUBLIC
+        "../../../Control/libs/CLIB_MutexQue/include"
+        "../../../Control/libs/CLIB_ThreadsLog/include"
+        "../../../Control/libs/CLIB_LaunchQue/include"
+        "include"
+)
+
+target_link_libraries(slif_epicentre PUBLIC
+        CLIB_MutexQue
+        slif_threads_log
+        CLIB_LaunchQue
+        slif_control
+)

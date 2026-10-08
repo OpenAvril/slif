@@ -1,6 +1,6 @@
 #include "../include/CLIB_LaunchQue_Framework_Execute.h"
-#include "../../../include/CLIB_ThreadLogs.h"
-#include "../../../include/CLIB_MutexQue.h"
+#include "../../CLIB_ThreadsLog/io/include/CLIB_ThreadLogs.h"
+#include "../../CLIB_MutexQue/io/include/CLIB_MutexQue.h"
 #include <iostream>
     int* slif::CLIB_LaunchQue_Framework_Execute::stat_REG_HandleId_For_PGM_CLIBMutexQue;
 // public.
