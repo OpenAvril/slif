@@ -7,6 +7,7 @@
 #include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_ThreadsLog/include/CLIB_ThreadLogs_Framework_Global.h"
 #include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_LaunchQue/include/CLIB_LaunchQue_Framework_Global.h"
 #include "../CLIB_ZincNeuralChip/libs/CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
+#include "../CLIB_ZincNeuralChip/libs/CLIB_Stemisphore/include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
 #include <iostream>
 	static std::array stat_REG_ptr_CLIB_OptimusPrime_array_of_array_of_isMemberFunctionINSTANTIATED = { true };
 // public.
@@ -34,7 +35,7 @@
 		auto string = new std::string("");
 		auto byte_bool = new unsigned char();
 		*byte_bool = *CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_VUALUEofMsbBool_to_MsbByteArray(sysThreadId,true);
-		Ticket* ticket = new Ticket(0,0,0,0,0);
+		auto ticket = new class Ticket(0,0,0,0,0);
 		auto bytes_Cargo = new unsigned char();
 		class slif::Object* value_DATA = nullptr;
 		bytes_Cargo = CLIB_SystemBus_Framework_Global::stat_APP_CONVERT_CLIB_SystemBus_Framework_Global_DATA_To_MsbByteArray(sysThreadId, value_DATA);

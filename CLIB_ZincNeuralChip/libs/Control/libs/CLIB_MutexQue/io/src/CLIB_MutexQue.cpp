@@ -85,29 +85,29 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : CLIB_MutexQue : terminateProgram(sysThreadId)" << std::endl;
 	}
 // private.
-	void slif::MutexQue::CLIB_MutexQue_App_FUNCT_generate_Program(uint8_t* sysThreadId) {
+	void* slif::MutexQue::CLIB_MutexQue_App_FUNCT_generate_Program(uint8_t* sysThreadId) {
 		auto handleId = new int(0);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: CLIB : CLIB_MutexQue : CLIB_MutexQue_App_FUNCT_generate_Program(sysThreadId)" << std::endl;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started CLIB_OpenEpiCentre_Global Meta-Data and Settings" << std::endl;
-		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0))->dyn_CLASS_create_CLIB_MutexQue_Global_and_Settings(sysThreadId);
-		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0))->dyn_CLASS_get_ptr_CLIB_MutexQue_Global(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_MutexQue_Global(sysThreadId);
-		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0))->dyn_CLASS_get_ptr_CLIB_MutexQue_Global(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_MutexQue_Global(sysThreadId);
-		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0))->dyn_CLASS_get_ptr_CLIB_MutexQue_Global(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_MutexQue_Global(sysThreadId);
+		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId)->dyn_CLASS_create_CLIB_MutexQue_Global_and_Settings(sysThreadId);
+		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId)->dyn_CLASS_get_ptr_CLIB_MutexQue_Global(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_MutexQue_Global(sysThreadId);
+		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId)->dyn_CLASS_get_ptr_CLIB_MutexQue_Global(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_MutexQue_Global(sysThreadId);
+		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId)->dyn_CLASS_get_ptr_CLIB_MutexQue_Global(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_MutexQue_Global(sysThreadId);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done CLIB_OpenEpiCentre_Global Meta-Data and Settings" << std::endl;
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE" << std::endl;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE" << std::endl;
 
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE" << std::endl;
-		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0))->dyn_CLASS_create_CLIB_MutexQue_Architecture(sysThreadId);
+		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId)->dyn_CLASS_create_CLIB_MutexQue_Architecture(sysThreadId);
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Registers - DEFINE" << std::endl;
-		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0))->dyn_CLASS_get_ptr_CLIB_MutexQue_App(sysThreadId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App_Control(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_MutexQue_Framework_App_Control(sysThreadId, CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0)));
+		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App(sysThreadId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App_Control(sysThreadId)->dyn_REG_boot1_DEFINE_CLIB_MutexQue_Framework_App_Control(sysThreadId, CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId));
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Registers - DEFINE" << std::endl;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Registers - SUBSTANTIATE" << std::endl;
-		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0))->dyn_CLASS_get_ptr_CLIB_MutexQue_App(sysThreadId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App_Control(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_MutexQue_Framework_App_Control(sysThreadId,CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0)));
+		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App(sysThreadId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App_Control(sysThreadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_MutexQue_Framework_App_Control(sysThreadId,CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId));
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Registers - SUBSTANTIATE" << std::endl;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: started Registers - INITIALISE" << std::endl;
-		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0))->dyn_CLASS_get_ptr_CLIB_MutexQue_App(sysThreadId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App_Control(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_MutexQue_Framework_App_Control(sysThreadId,CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_MsbByteArray_To_VUALUEofMsbInt(sysThreadId, 0)));
+		CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App(sysThreadId)->dyn_CLASS_get_ptr_CLIB_MutexQue_App_Control(sysThreadId)->dyn_REG_boot3_INITIALISE_CLIB_MutexQue_Framework_App_Control(sysThreadId,CLIB_MutexQue_stat_PGM_get_ptr_CLIB_MutexQue(sysThreadId, handleId));
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Registers - INITIALISE" << std::endl;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE" << std::endl;
 
@@ -130,6 +130,8 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: |/                //               \\| " << std::endl;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: `                 V                 '" << std::endl;
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : CLIB_MutexQue : CLIB_MutexQue_App_FUNCT_generate_Program(sysThreadId)" << std::endl;
+		auto temp = stat_REG_ptr_CLIB_MutexQue_array_of_ptr_MutexQue->begin();
+		return *temp;
 	}
 	bool slif::MutexQue::CLIB_MutexQue_stat_APP_FUNCT_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId) {
 		CLIB_MutexQue_stat_REG_get_array_of_isMemberFunctionINSTANTIATED(sysThreadId)->at(0) = false;
@@ -152,8 +154,7 @@
 		auto handleId = new int(0);
 		stat_REG_ptr_CLIB_MutexQue_array_of_ptr_MutexQue = new std::list<void*>();
 		CLIB_MutexQue_stat_PGM_get_array_of_ptr_CLIB_MutexQue(sysThreadId)->resize(1);
-		CLIB_MutexQue_stat_PGM_get_array_of_ptr_CLIB_MutexQue(sysThreadId)->assign(*handleId, static_cast<void*>(new class CLIB_MutexQue_Framework(sysThreadId)));
-		CLIB_MutexQue_App_FUNCT_generate_Program(sysThreadId);
+		CLIB_MutexQue_stat_PGM_get_array_of_ptr_CLIB_MutexQue(sysThreadId)->assign(*handleId, CLIB_MutexQue_App_FUNCT_generate_Program(sysThreadId));
 	 	std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : CLIB_MutexQue : CLIB_MutexQue_stat_PGM_boot3_INITIALISE_array_of_ptr_Framework(sysThreadId)" << std::endl;
 	}
 	void slif::MutexQue::CLIB_MutexQue_stat_boot1_DEFINE_array_of_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId) {
