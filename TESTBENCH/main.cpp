@@ -1,6 +1,6 @@
-#include "../Control/libs/CLIB_MutexQue/io/include/CLIB_MutexQue.h"
-#include "../Control/libs/CLIB_ThreadsLog/io/include/CLIB_ThreadLogs.h"
-#include "../Control/libs/CLIB_LaunchQue/io/include/CLIB_LaunchQue.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/io/include/CLIB_MutexQue.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_ThreadsLog/io/include/CLIB_ThreadLogs.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_LaunchQue/io/include/CLIB_LaunchQue.h"
 #include "../CLIB_ZincNeuralChip/libs/CLIB_Stemisphore/io/include/CLIB_SystemBus.h"
 #include "../OptimusPrime/CLIB_OptimusPrime.h"
 #include <iostream>

@@ -25,12 +25,8 @@ target_include_directories(${PROJECT_NAME} PRIVATE
         "../../CLIB_ZincNeuralChip/libs/CLIB_Stemisphore/include"
         "include"
 )
-target_link_libraries(${PROJECT_NAME} PRIVATE
-        slif_control_mutex_que
-        slif_control_sys_threads_log
-        slif_control_launch_que
-        slif_control
-        slif_stemisphore
+
+target_link_libraries(${PROJECT_NAME} PUBLIC
         slif_zinc_neural_chip
         OptimusPrime
 )

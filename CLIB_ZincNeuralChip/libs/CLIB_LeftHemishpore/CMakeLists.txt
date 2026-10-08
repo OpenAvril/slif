@@ -5,20 +5,20 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(slif_epicentre STATIC
-        ../../../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework.cpp
-        ../../../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
-        ../../../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
-        ../../../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
-        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
-        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
-        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
-        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
-        ../../../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
-        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework.cpp
-        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Global.cpp
-        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App.cpp
-        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App_Control.cpp
-        ../../../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Execute.cpp
+        ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework.cpp
+        ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
+        ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
+        ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
+        ../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework.cpp
+        ../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Global.cpp
+        ../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App.cpp
+        ../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_App_Control.cpp
+        ../Control/libs/CLIB_LaunchQue/src/CLIB_LaunchQue_Framework_Execute.cpp
         io/src/CLIB_LeftHemishpore.cpp
         src/engine/CLIB_LeftHemishpore_Framework.cpp
         src/engine/CLIB_LeftHemishpore_Framework_Global.cpp
