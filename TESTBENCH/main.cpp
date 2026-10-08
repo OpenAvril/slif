@@ -19,7 +19,7 @@ int main() {
     slif::MutexQue::generateProgram(sysThreadId);
     slif::ThreadLogs::generateProgram(sysThreadId);
     slif::LaunchQue::generateProgram(sysThreadId);
-    //slif::Stemisphore::generateProgram(sysThreadId);
+    slif::Stemisphore::generateProgram(sysThreadId);
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : generateProgram(s)." << std::endl;
 
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: Main : End!." << std::endl;
