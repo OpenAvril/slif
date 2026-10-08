@@ -1,12 +1,10 @@
-#include "../Control/libs/CLIB_MutexQue/include/CLIB_MutexQue.h"
-#include "../Control/libs/CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
-#include "../Control/libs/CLIB_LaunchQue/include/CLIB_LaunchQue.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/io/include/CLIB_MutexQue.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_ThreadsLog/io/include/CLIB_ThreadLogs.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_LaunchQue/io/include/CLIB_LaunchQue.h"
+#include "../CLIB_ZincNeuralChip/libs/CLIB_Stemisphore/io/include/CLIB_SystemBus.h"
 #include "../OptimusPrime/CLIB_OptimusPrime.h"
 #include <iostream>
-
-#include "CLIB_SystemBus.h"
 using namespace slif;
-
 int main() {
     auto sysThreadId = new uint8_t();
     *sysThreadId = 0;
@@ -21,16 +19,8 @@ int main() {
     slif::MutexQue::generateProgram(sysThreadId);
     slif::ThreadLogs::generateProgram(sysThreadId);
     slif::LaunchQue::generateProgram(sysThreadId);
-    slif::SystemBusses::generateProgram(sysThreadId);
+    slif::Stemisphore::generateProgram(sysThreadId);
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : generateProgram(s)." << std::endl;
-
-
-    auto handleId_LaunchQue = slif::LaunchQue::generateHandle(sysThreadId);
-    std::cout << "thread " << std::to_string(*sysThreadId) << " :: starting : LaunchQue : reInitialiseHandle." << std::endl;
-    auto MAX_CONCURRENT_THREAD_COUNT = new uint8_t();
-    *MAX_CONCURRENT_THREAD_COUNT = static_cast<uint8_t>(3);
-    slif::LaunchQue::reInitialiseHandle(sysThreadId, handleId_LaunchQue, MAX_CONCURRENT_THREAD_COUNT);
-    std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : LaunchQue : reInitialiseHandle." << std::endl;
 
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: Main : End!." << std::endl;
     return 0;

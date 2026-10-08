@@ -1,6 +1,6 @@
 #include "../include/CLIB_Framework_Execute.h"
-#include "CLIB_LaunchQue.h"
-#include "CLIB_MutexQue.h"
+#include "../../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_LaunchQue/io/include/CLIB_LaunchQue.h"
+#include "../../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/io/include/CLIB_MutexQue.h"
 #include <iostream>
     int* slif::CLIB_Framework_Execute::stat_REG_HandleId_For_PGM_slifMutexQue;
     int* slif::CLIB_Framework_Execute::stat_REG_HandleId_For_PGM_slifLaunchQue;

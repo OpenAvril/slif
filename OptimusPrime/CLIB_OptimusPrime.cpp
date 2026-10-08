@@ -1,12 +1,12 @@
 #include "CLIB_OptimusPrime.h"
-#include "../Control/libs/CLIB_MutexQue/include/CLIB_MutexQue.h"
-#include "../Control/libs/CLIB_MutexQue/include/CLIB_MutexQue_Framework_Global.h"
-#include "../Control/libs/CLIB_ThreadsLog/include/CLIB_ThreadLogs_Framework_Global.h"
-#include "../Control/libs/CLIB_LaunchQue/include/CLIB_LaunchQue_Framework_Global.h"
-#include "../Control/libs/CLIB_OpenSCADA/include/CLIB_SystemBus_Framework_Global.h"
-#include "../Control/libs/CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
-#include "../Control/libs/CLIB_LaunchQue/include/CLIB_LaunchQue.h"
-#include "../Control/libs/CLIB_OpenSCADA/include/CLIB_SystemBus.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/io/include/CLIB_MutexQue.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_ThreadsLog/io/include/CLIB_ThreadLogs.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_LaunchQue/io/include/CLIB_LaunchQue.h"
+#include "../CLIB_ZincNeuralChip/libs/CLIB_Stemisphore/io/include/CLIB_SystemBus.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/include/CLIB_MutexQue_Framework_Global.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_ThreadsLog/include/CLIB_ThreadLogs_Framework_Global.h"
+#include "../CLIB_ZincNeuralChip/libs/Control/libs/CLIB_LaunchQue/include/CLIB_LaunchQue_Framework_Global.h"
+#include "../CLIB_ZincNeuralChip/libs/CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
 #include <iostream>
 	static std::array stat_REG_ptr_CLIB_OptimusPrime_array_of_array_of_isMemberFunctionINSTANTIATED = { true };
 // public.
@@ -69,13 +69,13 @@
 		slif::LaunchQue::threadRequestlaunch(sysThreadId, handleId, bytes_concuurentsysThreadId);
 		slif::LaunchQue::threadEnd(sysThreadId, handleId, bytes_concuurentsysThreadId);
 
-		int* tempD0 = slif::SystemBusses::generateHandle(sysThreadId);
+		int* tempD0 = slif::Stemisphore::generateHandle(sysThreadId);
 		//slif::SystemBusses::generateProgram(sysThreadId);
-		unsigned char* tempD1 = slif::SystemBusses::isINSTANTIATED(sysThreadId);
-		slif::SystemBusses::load(sysThreadId, *ticket, bytes_Cargo);
-		slif::SystemBusses::reInitialiseHandle(sysThreadId, MAX_NUMBER_OF_JUNCTIONS);
-		unsigned char* tempD2 = slif::SystemBusses::unload(sysThreadId, *ticket);
-		slif::SystemBusses::terminateProgram(sysThreadId);
+		unsigned char* tempD1 = slif::Stemisphore::isINSTANTIATED(sysThreadId);
+		slif::Stemisphore::load(sysThreadId, *ticket, bytes_Cargo);
+		slif::Stemisphore::reInitialiseHandle(sysThreadId, MAX_NUMBER_OF_JUNCTIONS);
+		unsigned char* tempD2 = slif::Stemisphore::unload(sysThreadId, *ticket);
+		slif::Stemisphore::terminateProgram(sysThreadId);
 	}
 	std::array<bool, 1> slif::OptimusPrime::slif_OptimusPrime_stat_REG_get_array_of_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId) {
 		return stat_REG_ptr_CLIB_OptimusPrime_array_of_array_of_isMemberFunctionINSTANTIATED;

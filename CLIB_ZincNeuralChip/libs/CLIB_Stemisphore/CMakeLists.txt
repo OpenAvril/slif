@@ -1,0 +1,41 @@
+cmake_minimum_required(VERSION 4.2.3)
+project(slif_stemisphore VERSION 1.0 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_library(${PROJECT_NAME} STATIC
+        io/src/CLIB_SystemBus.cpp
+        ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework.cpp
+        ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
+        ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
+        ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App_Control.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_Global.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
+        ../Control/libs/CLIB_ThreadsLog/src/CLIB_ThreadLogs_Framework_App_Execute.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_Global.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Data.cpp
+        src/independent/CLIB_Bus_STRUCT_SingleBus_Framework_App_Execute.cpp
+        src/CLIB_SystemBus_Framework.cpp
+        src/CLIB_SystemBus_Framework_Global.cpp
+        src/CLIB_SystemBus_Framework_App.cpp
+        src/CLIB_SystemBus_Framework_App_Execute.cpp
+)
+
+target_include_directories(${PROJECT_NAME}  PUBLIC
+        "../CLIB_MutexQue/include/independent"
+        "../../../Control/libs/CLIB_MutexQue/include"
+        "../../../Control/libs/CLIB_ThreadsLog/include"
+)
+
+target_link_libraries(${PROJECT_NAME}  PUBLIC
+        slif_control_mutex_que
+        slif_control_sys_threads_log
+)
