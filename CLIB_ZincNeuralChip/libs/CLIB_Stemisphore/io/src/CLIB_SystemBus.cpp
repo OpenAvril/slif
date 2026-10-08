@@ -1,11 +1,11 @@
-#include "../../../../../Control/include/CLIB_SystemBus.h"
-#include "../../../include/CLIB_MutexQue.h"
-#include "../../CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
-#include "../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework.h"
-#include "CLIB_ThreadLogs.h"
+#include "../include/CLIB_SystemBus.h"
+#include "../../../Control/libs/CLIB_MutexQue/io/include/CLIB_MutexQue.h"
+#include "../../../Control/libs/CLIB_ThreadsLog/io/include/CLIB_ThreadLogs.h"
+#include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_Framework.h"
+#include "../../../CLIB_Stemisphore/include/CLIB_SystemBus_Framework_Global.h"
 #include <array>
 #include <cstdint>
-static slif::CLIB_SystemBus_Framework* stat_REG_CLIB_SystemBus_Framework;
+	static slif::CLIB_SystemBus_Framework* stat_REG_CLIB_SystemBus_Framework;
 	static std::array<bool, 4>* stat_REG_flag_slif_isMemberFunctionINSTANTIATED;
 	uint8_t* slif::Stemisphore::accessId = new uint8_t(0);
 	uint8_t* slif::Stemisphore::externalSide = new uint8_t(1);

@@ -3,7 +3,6 @@
 #include "../../include/CLIB_SystemBus_Framework.h"
 #include "../../include/independent/CLIB_Bus_STRUCT_SingleBus_STRUCT_BusDATA_CLASS_Ticket.h"
 #include <cstdint>
-#include <string>
 extern "C" {
     namespace slif {
         class Stemisphore {

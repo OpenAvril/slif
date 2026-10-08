@@ -96,7 +96,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
         slif_control_mutex_que
         slif_control_sys_threads_log
         slif_control_launch_que
-        #slif_epicentre
-        #
         slif_stemisphore
 )

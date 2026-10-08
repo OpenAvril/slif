@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(${PROJECT_NAME} STATIC
+        io/src/CLIB_SystemBus.cpp
         ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework.cpp
         ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_Global.cpp
         ../Control/libs/CLIB_MutexQue/src/CLIB_MutexQue_Framework_App.cpp
@@ -35,6 +36,6 @@ target_include_directories(${PROJECT_NAME}  PUBLIC
 )
 
 target_link_libraries(${PROJECT_NAME}  PUBLIC
-        CLIB_MutexQue
-        CLIB_threads_log
+        slif_control_mutex_que
+        slif_control_sys_threads_log
 )
