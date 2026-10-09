@@ -13,7 +13,6 @@ namespace slif {
         void boot3_REG_INITIALISE_CLIB_LaunchQue_Framework_Global(uint8_t* sysThreadId, CLIB_LaunchQue_Framework* obj);
         bool dyn_REG_get_CLIB_LaunchQue_Framework_Global_ptr_FLAG_thread_2STATE_ACTIVE(uint8_t* sysThreadId);
         bool dyn_REG_get_CLIB_LaunchQue_Framework_Global_ptr_FLAG_thread_2STATE_IDLE(uint8_t* sysThreadId);
-        uint8_t* dyn_REG_get_CLIB_LaunchQue_Framework_Global_number_Implemented_Threads(uint8_t* sysThreadId);
         void dyn_REG_set_CLIB_LaunchQue_Framework_Global_number_Implemented_Threads(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_THREADS_FOR_ACCESS);
         static void boot0_CLASS_DECLARE_CLIB_LaunchQue_Framework_Global(uint8_t* sysThreadId);
         static void boot1_CLASS_DEFINE_CLIB_LaunchQue_Framework_Global(uint8_t* sysThreadId);
@@ -29,6 +28,7 @@ namespace slif {
         static unsigned char* stat_CONVERT_CLIB_LaunchQue_Framework_Global_VUALUEofMsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double* newValue_Double);
         static unsigned char* stat_CONVERT_CLIB_LaunchQue_Framework_Global_VUALUEofMsbUnsignedLongLong_to_ByteArray(uint8_t* sysThreadId, unsigned long long* newValue_ULongLong);
         static unsigned char* stat_CONVERT_CLIB_LaunchQue_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(uint8_t* sysThreadId, uint8_t* newValue_uint8_t);
+        static uint8_t* stat_REG_get_CLIB_LaunchQue_Framework_Global_number_Implemented_Threads(uint8_t* sysThreadId);
     private:
         static std::list<bool>* stat_REG_CLIB_LaunchQue_Framework_Global_ptr_array_Of_FlagThread2STATE;
         static uint8_t* stat_REG_CLIB_LaunchQue_Framework_Global_ptr_number_Implemented_Threads;//todo: number of concurrent threads.

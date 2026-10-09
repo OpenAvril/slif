@@ -9,17 +9,17 @@ extern "C" {
         public:
             static int* generateHandle(uint8_t* sysThreadId);
             static void generateProgram(uint8_t* sysThreadId);
-            static unsigned char* get_coreIdTolaunch(uint8_t* sysThreadId, int* handleId);
-            static unsigned char* get_FlagSTATEisActive(uint8_t* sysThreadId, int* handleId);
-            static unsigned char* get_FlagSTATEofConcurrentCore(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_concuurentsysThreadId);
-            static unsigned char* get_FlagisIdle(uint8_t* sysThreadId, int* handleId);
-            static unsigned char* get_FlagSTATEofThreadToLaunch(uint8_t* sysThreadId, int* handleId);
+            static unsigned char* get_coreIdTolaunch(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId);
+            static unsigned char* get_FlagSTATEisActive(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId);
+            static unsigned char* get_FlagSTATEofConcurrentCore(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId);
+            static unsigned char* get_FlagisIdle(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId);
+            static unsigned char* get_FlagSTATEofThreadToLaunch(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId);
             static unsigned char* isINSTANTIATED(uint8_t* sysThreadId);
-            static void reInitialiseHandle(uint8_t* sysThreadId, int* handleId, uint8_t* MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);
-            static void set_FlagSTATEofConcurrentCore(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_concuurentsysThreadId, unsigned char* byteBool);
+            static void reInitialiseHandle(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId, uint8_t* MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);
+            static void set_FlagSTATEofConcurrentCore(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId, unsigned char* byteBool);
             static void terminateProgaram(uint8_t* sysThreadId);
-            static void threadRequestlaunch(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_concuurentsysThreadId);
-            static void threadEnd(uint8_t* sysThreadId, int* handleId, unsigned char* bytes_concuurentsysThreadId);
+            static void threadRequestlaunch(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId);
+            static void threadEnd(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytes_concurrentThreadId);
         private:
             static int* stat_REG_HandleId_For_PGM_CLIBMutexQue;
             static void CLIB_LaunchQue_generateProgram(uint8_t* sysThreadId);
@@ -27,7 +27,7 @@ extern "C" {
             static void CLIB_LaunchQue_stat_boot1_CLASS_DEFINE_List_Of_PGM_CLIB_LaunchQue_Framework(uint8_t* sysThreadId);
             static void CLIB_LaunchQue_stat_boot3_CLASS_INITIALISE_List_Of_PGM_CLIB_LaunchQue_Framework(uint8_t* sysThreadId);
             static std::list<class slif::CLIB_LaunchQue_Framework*>* CLIB_LaunchQue_stat_REG_get_ptr_List_Of_PGM_CLIB_LaunchQue(uint8_t* sysThreadId);
-            static class slif::CLIB_LaunchQue_Framework* CLIB_LaunchQue_stat_CLASS_get_ptr_PGM_CLIB_LaunchQue_Framework(uint8_t* sysThreadId, const int* handleId);
+            static class slif::CLIB_LaunchQue_Framework* CLIB_LaunchQue_stat_CLASS_get_ptr_PGM_CLIB_LaunchQue_Framework(uint8_t* sysThreadId, int* handleId);
             static void CLIB_LaunchQue_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId);
             static void CLIB_LaunchQue_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId);
             static void CLIB_LaunchQue_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED(uint8_t* sysThreadId);
