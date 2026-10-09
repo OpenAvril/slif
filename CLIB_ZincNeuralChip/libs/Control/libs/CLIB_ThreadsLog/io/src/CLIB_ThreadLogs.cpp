@@ -82,7 +82,7 @@
 	}
 	void slif::ThreadLogs::printl(uint8_t* sysThreadId, std::string* stringForLogPrint) {
 		slif::MutexQue::startByLock(sysThreadId, CLIB_ThreadLogs_Framework_Global::stat_CONVERT_CLIB_ThreadsLog_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(sysThreadId, stat_CLASS_get_ptr_CLIB_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreadsAt_MutexQue(sysThreadId)), CLIB_ThreadLogs_Framework_Global::stat_CONVERT_CLIB_ThreadsLog_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(sysThreadId, sysThreadId));
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : ThreadLogs : stat_APP_FUNCT_CLIB_printConsoleAndLog(sysThreadId)." << std::endl;
+		//std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : ThreadLogs : stat_APP_FUNCT_CLIB_printConsoleAndLog(sysThreadId)." << std::endl;
 		if (!stat_REG_get_CLIB_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0)) {
 			stat_CLASS_get_ptr_CLIB_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(sysThreadId)->dyn_APP_FUNCT_CLIB_printLog(sysThreadId, stringForLogPrint);
 		}
@@ -90,7 +90,7 @@
 			stat_REG_get_CLIB_array_Of_flag_isINSTANTIATED(sysThreadId)->at(2) = !stat_REG_get_CLIB_array_Of_flag_isINSTANTIATED(sysThreadId)->at(0);
 			stat_REG_get_CLIB_array_Of_flag_isINSTANTIATED(sysThreadId);
 		}
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : ThreadLogs : stat_APP_FUNCT_CLIB_printConsoleAndLog(sysThreadId)." << std::endl;
+		//std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : ThreadLogs : stat_APP_FUNCT_CLIB_printConsoleAndLog(sysThreadId)." << std::endl;
 		slif::MutexQue::endByUnlock(sysThreadId, CLIB_ThreadLogs_Framework_Global::stat_CONVERT_CLIB_ThreadsLog_Framework_Global_VUALUEofMsbInt_To_MsbByteArray(sysThreadId, stat_CLASS_get_ptr_CLIB_Framework(sysThreadId)->dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(sysThreadId)->dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Execute(sysThreadId)->dyn_REG_get_HandleId_For_PGM_CLIB_ForThreadsAt_MutexQue(sysThreadId)), CLIB_ThreadLogs_Framework_Global::stat_CONVERT_CLIB_ThreadsLog_Framework_Global_VUALUEofMsbuint8_t_To_MsbByteArray(sysThreadId, sysThreadId));
 	}
 	void slif::ThreadLogs::reInitialiseHandle(uint8_t* sysThreadId, unsigned char* MAX_NUMBER_OF_THREADS_FOR_ACCESS_ARRAY) {

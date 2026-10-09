@@ -193,7 +193,6 @@ bool* slif::CLIB_MutexQue_Framework_App_Control::stat_REG_FLAG_CLIB_MutexQue_FLA
     }
     void slif::CLIB_MutexQue_Framework_App_Control::dyn_REG_boot3_INITIALISE_CLIB_MutexQue_Framework_App_Control(uint8_t* sysThreadId, CLIB_MutexQue_Framework* obj) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: CLIB : CLIB_MutexQue_Framework_App_Control : dyn_REG_boot3_INITIALISE_CLIB_MutexQue_Framework_App_Control(sysThreadId)" << std::endl;
-        std::this_thread::sleep_for(std::chrono::seconds(2));
         stat_REG_boot3_INITIALISE_ptr_FLAG_CLIB_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_ONE(sysThreadId);
         stat_REG_boot3_INITIALISE_ptr_FLAG_CLIB_MutexQue_Framework_App_Control_isWriteStartThreadRELASE_REMAINING(sysThreadId);
         stat_REG_boot3_INITIALISE_ptr_FLAG_CLIB_MutexQue_Framework_App_Control_isWriteEndThreadRELASE_ONE(sysThreadId);

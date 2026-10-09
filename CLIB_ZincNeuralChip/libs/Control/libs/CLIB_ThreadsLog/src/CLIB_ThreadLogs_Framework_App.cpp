@@ -34,7 +34,7 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : CLIB_ThreadLogs_Framework_App : dyn_REG_boot4_INSTANTIATE_CLIB_ThreadLogs_Framework_App(sysThreadId)." << std::endl;
 	}
 	slif::CLIB_ThreadLogs_Framework_App_Algorithms* slif::CLIB_ThreadLogs_Framework_App::dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(uint8_t* sysThreadId)	{
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(sysThreadId)." << std::endl;
+		//std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(sysThreadId)." << std::endl;
 		return stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(sysThreadId);
 	}
 	slif::CLIB_ThreadLogs_Framework_App_Execute* slif::CLIB_ThreadLogs_Framework_App::dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Execute(uint8_t* sysThreadId)	{
@@ -85,10 +85,10 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : CLIB_ThreadLogs_Framework_App : stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework_App_Execute(sysThreadId)." << std::endl;
 	}
 	slif::CLIB_ThreadLogs_Framework_App_Algorithms* slif::CLIB_ThreadLogs_Framework_App::stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(uint8_t* sysThreadId) {
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(sysThreadId)." << std::endl;
+		//std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(sysThreadId)." << std::endl;
 		return stat_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Algorithms;
 	}
 	slif::CLIB_ThreadLogs_Framework_App_Execute* slif::CLIB_ThreadLogs_Framework_App::stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App_Execute(uint8_t* sysThreadId) {
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App_Execute(sysThreadId)." << std::endl;
+		//std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App_Execute(sysThreadId)." << std::endl;
 		return stat_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Execute;
 	}

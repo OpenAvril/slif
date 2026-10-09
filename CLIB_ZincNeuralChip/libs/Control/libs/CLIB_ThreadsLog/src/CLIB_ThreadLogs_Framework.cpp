@@ -29,7 +29,7 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : CLIB_ThreadLogs_Framework : dyn_CLASS_CLIB_create_LaunchEnableForConcurrentThreadsAt_Server_Global_and_Settings(sysThreadId)." << std::endl;
 	}
 	slif::CLIB_ThreadLogs_Framework_App* slif::CLIB_ThreadLogs_Framework::dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_App(uint8_t* sysThreadId) {
-		std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_App(sysThreadId)." << std::endl;
+		//std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= class : dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_App(sysThreadId)." << std::endl;
 		return stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(sysThreadId);
 	}
 	slif::CLIB_ThreadLogs_Framework_Global* slif::CLIB_ThreadLogs_Framework::dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Global(uint8_t* sysThreadId) {

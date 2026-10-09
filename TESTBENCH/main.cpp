@@ -24,7 +24,6 @@ int main() {
     slif::MutexQue::generateProgram(sysThreadId);
     slif::ThreadLogs::generateProgram(sysThreadId);
     //slif::LaunchQue::generateProgram(sysThreadId);
-    std::this_thread::sleep_for(std::chrono::seconds(2));
     slif::Stemisphore::generateProgram(sysThreadId);
     std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting : generateProgram(s)." << std::endl;
 
