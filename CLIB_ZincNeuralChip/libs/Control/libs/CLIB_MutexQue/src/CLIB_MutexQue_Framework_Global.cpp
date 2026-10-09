@@ -50,24 +50,24 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: CLIB : CLIB_MutexQue_Global : dyn_REG_boot3_INITIALISE_CLIB_MutexQue_Global(sysThreadId)" << std::endl;
     }
     std::array<bool,2>* slif::CLIB_MutexQue_Framework_Global::stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_IDLE(uint8_t* sysThreadId) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONST : dyn_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_IDLE(sysThreadId)" << std::endl;
-        return stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_IDLE(sysThreadId);
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONST : stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_IDLE(sysThreadId)" << std::endl;
+        return pr_stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_IDLE(sysThreadId);
     }
     std::array<bool,2>* slif::CLIB_MutexQue_Framework_Global::stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WAIT(uint8_t* sysThreadId) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONST : dyn_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WAIT(sysThreadId)" << std::endl;
-        return stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WAIT(sysThreadId);
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONST : stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WAIT(sysThreadId)" << std::endl;
+        return pr_stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WAIT(sysThreadId);
     }
     std::array<bool,2>* slif::CLIB_MutexQue_Framework_Global::stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WRITE(uint8_t* sysThreadId) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONST : dyn_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WRITE(sysThreadId)" << std::endl;
-        return stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WRITE(sysThreadId);
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= CONST : stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WRITE(sysThreadId)" << std::endl;
+        return pr_stat_REG_get_ptr_CONST_CLIB_MutexQue_2bitFLAG_WRITE(sysThreadId);
     }
     uint8_t* slif::CLIB_MutexQue_Framework_Global::stat_REG_get_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= uint8_t : dyn_REG_get_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId)" << std::endl;
-        return stat_REG_get_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId);
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= uint8_t : stat_REG_get_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId)" << std::endl;
+        return pr_stat_REG_get_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId);
     }
     void slif::CLIB_MutexQue_Framework_Global::stat_REG_set_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(uint8_t* sysThreadId, uint8_t* MAX_NUMBER_OF_THREADS_FOR_ACCESS) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: => uint8_t* : dyn_REG_set_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId)" << std::endl;
-        stat_REG_set_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+        std::cout << "thread " << std::to_string(*sysThreadId) << " :: => uint8_t* : stat_REG_set_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId)" << std::endl;
+        pr_stat_REG_set_ptr_CLIB_MutexQue_number_Of_Implemented_Threads(sysThreadId, *MAX_NUMBER_OF_THREADS_FOR_ACCESS);
     }
     int* slif::CLIB_MutexQue_Framework_Global::stat_CONVERT_CLIB_MutexQue_Framework_Global_Bool_To_Int(uint8_t* sysThreadId, bool newValue_Bool) {
         int* temp = nullptr;
@@ -151,57 +151,6 @@
         return buffer;
     }
 // private.
-    int slif::CLIB_MutexQue_Framework_Global::pr_stat_APP_CONVERT_CLIB_MutexQue_Bool_To_Int(uint8_t* sysThreadId, bool value) {
-        int* temp = nullptr;
-        *temp = 2;
-        if (value) {
-            *temp = 1;;
-        }
-        if (!value) {
-            *temp = 0;
-        }
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= int : pr_stat_APP_CONVERT_CLIB_MutexQue_Bool_To_Int(sysThreadId)" << std::endl;
-        return *temp;
-    }
-    unsigned char* slif::CLIB_MutexQue_Framework_Global::pr_stat_APP_CONVERT_CLIB_MutexQue_MsbBoolean_To_MsbByteArray(uint8_t* sysThreadId, bool value) {
-        unsigned char* buffer = nullptr;
-        buffer = new unsigned char[1];
-        for (uint8_t bitIndex = 0; bitIndex < static_cast<uint8_t>(sizeof(unsigned char)); bitIndex++) {
-            buffer[bitIndex] = static_cast<unsigned char>(value);
-        }
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= unsigned char* : pr_stat_APP_CONVERT_CLIB_MutexQue_MsbBoolean_To_MsbByteArray(sysThreadId)" << std::endl;
-        return buffer;
-    }
-    bool slif::CLIB_MutexQue_Framework_Global::pr_stat_APP_CONVERT_CLIB_MutexQue_MsbByteArray_To_MsbBoolean(uint8_t* sysThreadId, const unsigned char* byteArray) {
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= bool : pr_stat_APP_CONVERT_CLIB_MutexQue_MsbByteArray_To_MsbBoolean(sysThreadId)" << std::endl;
-        return (byteArray[7] & 1) != 0;
-    }
-    double slif::CLIB_MutexQue_Framework_Global::pr_stat_APP_CONVERT_CLIB_MutexQue_MsbByteArray_To_MsbDouble(uint8_t* sysThreadId, const unsigned char* byteArray) {
-        double temp;
-        std::memcpy(&temp, byteArray, sizeof(double));
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= double : pr_stat_APP_CONVERT_CLIB_MutexQue_MsbByteArray_To_MsbDouble(sysThreadId)" << std::endl;
-        return temp;
-    }
-    uint8_t slif::CLIB_MutexQue_Framework_Global::pr_stat_APP_CONVERT_CLIB_MutexQue_MsbByteArray_To_Msbuint8_t(uint8_t* sysThreadId, const unsigned char* byteArray) {
-        uint8_t temp;
-        std::memcpy(&temp, byteArray, sizeof(uint8_t));
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= uint8_t : pr_stat_APP_CONVERT_CLIB_MutexQue_MsbByteArray_To_Msbuint8_t(sysThreadId)" << std::endl;
-        return temp;
-    }
-    unsigned char* slif::CLIB_MutexQue_Framework_Global::pr_stat_APP_CONVERT_CLIB_MutexQue_MsbDouble_To_MsbByteArray(uint8_t* sysThreadId, double value) {
-        unsigned char* buffer = nullptr;
-        buffer = new unsigned char[8] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX};
-        std::memcpy(buffer, &value, sizeof(double));
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= unsigned char* : pr_stat_APP_CONVERT_CLIB_MutexQue_MsbDouble_To_MsbByteArray(sysThreadId)" << std::endl;
-        return buffer;
-    }
-    unsigned char* slif::CLIB_MutexQue_Framework_Global::pr_stat_APP_CONVERT_CLIB_MutexQue_Msb_uint8_t_to_MsbByteArray(uint8_t* sysThreadId, uint8_t value) {
-        unsigned char* buffer = nullptr;
-        buffer = new unsigned char[1] { UCHAR_MAX };
-        std::memcpy(buffer, &value, sizeof(uint8_t));
-        std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= unsigned char* : pr_stat_APP_CONVERT_CLIB_MutexQue_Msb_uint8_t_to_MsbByteArray(sysThreadId)" << std::endl;
-        return buffer;
-    }
     void slif::CLIB_MutexQue_Framework_Global::stat_REG_boot1_DEFINE_CONST_CLIB_MutexQue_2bitFLAG_IDLE(uint8_t* sysThreadId) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: CLIB : CLIB_MutexQue_Global : stat_REG_boot1_DEFINE_CONST_CLIB_MutexQue_2bitFLAG_IDLE(sysThreadId)" << std::endl;
         stat_REG_CONST_CLIB_MutexQue_2bitFLAG_IDLE = nullptr;
