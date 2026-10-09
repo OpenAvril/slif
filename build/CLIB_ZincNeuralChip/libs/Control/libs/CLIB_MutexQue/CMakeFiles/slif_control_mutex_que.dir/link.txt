@@ -1,2 +1,0 @@
-/usr/bin/ar qc libslif_control_mutex_que.a CMakeFiles/slif_control_mutex_que.dir/io/src/CLIB_MutexQue.cpp.o CMakeFiles/slif_control_mutex_que.dir/src/CLIB_MutexQue_Framework.cpp.o CMakeFiles/slif_control_mutex_que.dir/src/CLIB_MutexQue_Framework_Global.cpp.o CMakeFiles/slif_control_mutex_que.dir/src/CLIB_MutexQue_Framework_App.cpp.o CMakeFiles/slif_control_mutex_que.dir/src/CLIB_MutexQue_Framework_App_Control.cpp.o
-/usr/bin/ranlib libslif_control_mutex_que.a
