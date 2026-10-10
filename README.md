@@ -39,34 +39,33 @@ CLIB Concur rent System Bussing.
 Left Hemisphore Logic Task Result Deducer:              
 CLIB Concurrent Server with independent task threads and IO wrapper.
 
+---
+## slif_zinc_neural_chip: Hemisphoric Binary Neural Networking.
+* In A Unified Image  : CLIB Compound of Busses. An array of Busses for each Zone: Id, Ego, SuperEgo. Junctions as Bus Station(s) named 'Id-Ego', 'Ego-SuperEgo'; . Half the number of Stations as Busses due to paired exclusive communication potential.
+* Id                  : binary neural algorithms. : left hemisphore as self requested tasks, right hemisphore as communicated tasks; for 'slif_epicentre'.
+* Ego                 : binary neural controls.
+* Super-Ego           : binary neural desires.
 
 ---
-## LIB : slif_control.
+#### slif_control.
 - Optimus: Package INSTANTIATION Primer.
 
-### slif::MutexQue : Exclusive Cohesion Mutex Queue.
+#### slif::MutexQue : Exclusive Cohesion Mutex Queue.
 * MutexQue: CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 
-### slif::ThreadsLog : Threads Log.
+#### slif::ThreadsLog : Threads Log.
 * ThreadsLog: CLIB Console output via MutexQue, DataCluster is 'Console'.
 
-### slif::LaunchQue : Concurrent Launch Queue.
+#### slif::LaunchQue : Concurrent Launch Queue.
 * LaunchQue: CIB Request, Wait, Launch for : ('ConcurrentThreadId') deployed at Server or Client.
 
-### slif::Stemisphore : System Bussing for Zinc Neural Hemisphoric Chip:.
+---
+## slif::Stemisphore : System Bussing for Zinc Neural Hemisphoric Chip:.
 * MainStreamBussing: CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
 
-
 ---
-## LIB : slif::epicentre : LeftHemisphore.
+## slif::epicentre : Left Hemisphore.
 * Left Hemisphore Logic Task Result Deducer: CLIB Concurrent Server with independent task threads and IO wrapper.
-
----
-## LIB : slif_binary_neural : Hemisphoric Binary Neural Networking.
-* TheMindInHumanImage:         CLIB Compound of Busses. An array of Busses for each Zone: Id, Ego, SuperEgo. Junctions as Bus Station(s) named 'Id-Ego', 'Ego-SuperEgo'; . Half the number of Stations as Busses due to paired exclusive communication potential.
-* Id        : binary neural algorithms. : left hemisphore as self requested tasks, right hemisphore as communicated tasks; for 'slif_epicentre'.
-* Ego       : binary neural controls.
-* Super-Ego : binary neural desires.
 
 
 ---
@@ -124,10 +123,7 @@ cmake --build build
 ---
 ## Implementation.
 ### How To Guide - Stack Flow From Client Input Scanner To Server And Back To Client.
-- 
 
 ### Wrapper Imports and Native IO.
-- 
 
----
 ---
