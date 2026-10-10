@@ -32,7 +32,7 @@ CLIB Console output via MutexQue, DataCluster is 'Console'.
 
 * Stemisphore:     
 System Bussing for Zinc Neural Hemisphoric Chip:        
-CLIB Concur rent System Bussing.
+CLIB Concurrent System Bussing.
 
 
 * LeftHemisphore:  
