@@ -14,7 +14,6 @@
 #include "../../include/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise1.h"
 #include "../../include/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise2.h"
 #include "../../include/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise3.h"
-
 #include <string>
 #include <iostream>
 	static std::list<slif::CLIB_LeftHemishpore_Framework*>* stat_CLASS_CLIB_LeftHemishpore_Framework = nullptr;
@@ -205,10 +204,6 @@
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_LeftHemishpore : CLIB_LeftHemishpore_dyn_REG_get_FLAG_IsInitialised_slif(sysThreadId)." << std::endl;
 		return result;
 	}
-
-
-
-
 	unsigned char* slif::Epicentre::get_FLAG_isINITIALISED(uint8_t* sysThreadId, unsigned char* handleId) {
 		std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_LeftHemishpore : CLIB_LeftHemishpore_dyn_REG_get_FLAG_IsInitialised_slif(sysThreadId)." << std::endl;
 		bool* temp = nullptr;
@@ -423,7 +418,7 @@
 		stat_CLASS_CLIB_LeftHemishpore_Framework = new class slif::CLIB_LeftHemishpore_Framework(sysThreadId);
 		while (CLIB_LeftHemishpore_stat_CLASS_get_ptr_CLIB_LeftHemishpore_Framework(sysThreadId, handleId) == nullptr) {}
 	}
-	DEVELOPMENT::CLIB_LeftHemishpore_Framework* slif::Epicentre::CLIB_LeftHemishpore_stat_CLASS_get_ptr_CLIB_LeftHemishpore_Framework(uint8_t* sysThreadId, int* handleId) {
+	slif::CLIB_LeftHemishpore_Framework* slif::Epicentre::CLIB_LeftHemishpore_stat_CLASS_get_ptr_CLIB_LeftHemishpore_Framework(uint8_t* sysThreadId, int* handleId) {
 		auto temp = stat_CLASS_CLIB_LeftHemishpore_Framework->begin();
 		std::advance(temp, *handleId);
 		return *temp;

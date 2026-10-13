@@ -1,6 +1,6 @@
 #include "../../include/engine/CLIB_LeftHemishpore_Framework.h"
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App_Execute.h"
-#include "../../Control/include/CLIB_ThreadLogs.h"
+#include <iostream>
 	slif::CLIB_LeftHemishpore_Framework_App* slif::CLIB_LeftHemishpore_Framework::stat_CLASS_ptr_CLIB_LeftHemishpore_Framework_App;
 	slif::CLIB_LeftHemishpore_Framework_Global* slif::CLIB_LeftHemishpore_Framework::stat_CLASS_ptr_CLIB_LeftHemishpore_Framework_Global;
 	slif::CLIB_LeftHemishpore_STRUCT_Concurrent* slif::CLIB_LeftHemishpore_Framework::stat_STRUCT_ptr_CLIB_LeftHemishpore_Framework_Concurrent;

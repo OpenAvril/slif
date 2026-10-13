@@ -2,11 +2,12 @@
 #define CLIB_LEFTHEMISPHORE_H
 #include <array>
 #include <cstdint>
-#include <list>
+#include "../../include/engine/CLIB_LeftHemishpore_Framework.h"
 extern "C" {
 	namespace 	{
 		class Epicentre {
 		public:
+			static int* gernerateHandle(uint8_t* sysThreadId);
 			static void generateProgram(uint8_t* sysThreadId);
 			static unsigned char* get_Output(uint8_t* sysThreadId, unsigned char* handleId, char* bytes_praiseId);
 			static unsigned char* get_FLAG_isINITIALISED(uint8_t* sysThreadId, unsigned char* handleId);
@@ -19,6 +20,7 @@ extern "C" {
 			static void set_InputItemsFor_praise2(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
 			static void set_InputItemsFor_praise3(uint8_t* sysThreadId, unsigned char* handleId, unsigned char* bytesPraiseId, unsigned char* bytesValue_A, unsigned char* bytesValue_B);
 			static void set_MetaData_PraiseEventId(uint8_t* sysThreadId, unsigned char* handleId);
+			static void reInitialiseHandle(uint8_t* sysThreadId, unsigned char* handleId, uint8_t* NUMBER_OF_TASK_THREADS);
 			static void terminateProgram(uint8_t* sysThreadId);
 		private:
 			static void CLIB_LeftHemishpore_stat_app_FUNCT_Calc_IsAllINSTANTIATED(uint8_t* sysThreadId);
