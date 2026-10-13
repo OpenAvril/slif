@@ -26,8 +26,8 @@ namespace slif {
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_LeftHemishpore_Framework_Global(uint8_t* sysThreadId);
         void dyn_REG_boot3_INITIALISE_CLIB_LeftHemishpore_Framework_Global(uint8_t* sysThreadId);
         void dyn_REG_boot4_INSTANTIATE_CLIB_LeftHemishpore_Framework_Global(uint8_t* sysThreadId);
-        uint8_t* dyn_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Implemented_Cores(uint8_t* sysThreadId);
-        unsigned long long* dyn_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Praise_Events(uint8_t* sysThreadId);
+        static uint8_t* stat_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Implemented_Cores(uint8_t* sysThreadId);
+        static unsigned long long* stat_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Praise_Events(uint8_t* sysThreadId);
         static void stat_CLASS_boot0_DECLARE_CLIB_LeftHemishpore_Framework_Global(uint8_t* sysThreadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_LeftHemishpore_Framework_Global(uint8_t* sysThreadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_LeftHemishpore_Framework_Global(uint8_t* sysThreadId);

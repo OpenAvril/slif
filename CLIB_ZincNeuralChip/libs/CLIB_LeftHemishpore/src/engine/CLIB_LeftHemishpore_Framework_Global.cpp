@@ -42,11 +42,11 @@
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: entered LIB :: slif : CLIB_LeftHemishpore_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_LeftHemishpore_Framework_Global(sysThreadId). " << std::endl;
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: exiting LIB :: slif : CLIB_LeftHemishpore_Framework_Global : dyn_REG_boot4_INSTANTIATE_CLIB_LeftHemishpore_Framework_Global(sysThreadId). " << std::endl;
     }
-    uint8_t* slif::CLIB_LeftHemishpore_Framework_Global::dyn_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
+    uint8_t* slif::CLIB_LeftHemishpore_Framework_Global::stat_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Implemented_Cores(uint8_t* sysThreadId) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= uint8_t : dyn_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Implemented_Cores(sysThreadId). " << std::endl;
         return stat_REG_get_ptr_CLIB_LeftHemishpore_Framework_Global_number_Of_Implemented_Cores(sysThreadId);
     }
-    unsigned long long* slif::CLIB_LeftHemishpore_Framework_Global::dyn_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Praise_Events(uint8_t* sysThreadId) {
+    unsigned long long* slif::CLIB_LeftHemishpore_Framework_Global::stat_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Praise_Events(uint8_t* sysThreadId) {
         std::cout << "thread " << std::to_string(*sysThreadId) << " :: <= unsigned long long : dyn_REG_get_CLIB_LeftHemishpore_Framework_Global_Item_number_Of_Praise_Events(sysThreadId). " << std::endl;
         return stat_REG_get_ptr_CLIB_LeftHemishpore_Framework_Global_number_Of_Praise_Events(sysThreadId);
     }

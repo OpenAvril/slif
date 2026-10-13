@@ -38,7 +38,7 @@ namespace slif {
         static bool* stat_REG_get_ptr_FLAG_CLIB_LeftHemishpore_Framework_App_Execute_Control_isSystemInitialised(uint8_t* sysThreadId);
         static std::list<bool>* stat_get_ptr_CLIB_LeftHemishpore_Framework_App_Execute_Control_ListOf_FLAGisThreadInitialised(uint8_t* sysThreadId);
         static void stat_REG_set_FLAG_CLIB_LeftHemishpore_Framework_App_Execute_Control_isSystemInitialised(uint8_t* sysThreadId, bool newFLAG);
-        static void stat_set_ptr_CLIB_LeftHemishpore_Framework_App_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t* sysThreadId, uint8_t* threadId,bool state);
+        static void stat_set_ptr_CLIB_LeftHemishpore_Framework_App_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t* sysThreadId, uint8_t threadId, bool state);
     };
 };
 #endif
