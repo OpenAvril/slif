@@ -1,7 +1,7 @@
 #include "../../include/independent/CLIB_LeftHemishpore_STRUCT_Concurrent.h"
-#include <CLIB_LaunchQue.h>
-#include <CLIB_MutexQue.h>
-#include <CLIB_ThreadLogs.h>
+#include "../../../Control/libs/CLIB_LaunchQue/io/include/CLIB_LaunchQue.h"
+#include "../../../Control/libs/CLIB_MutexQue/io/include/CLIB_MutexQue.h"
+#include "../../../Control/libs/CLIB_ThreadsLog/io/include/CLIB_ThreadLogs.h"
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App.h"
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App_Data.h"
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App_Data_Control.h"
