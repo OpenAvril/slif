@@ -33,7 +33,7 @@ CLIB Console output via MutexQue, DataCluster is 'Console'.
 * Stemisphore:     
 System Bussing for Zinc Neural Hemisphoric Chip:        
 CLIB Concurrent System Bussing.
-
+Open Concurrent SCADA.
 
 * LeftHemisphore:  
 Left Hemisphore Logic Task Result Deducer:              
