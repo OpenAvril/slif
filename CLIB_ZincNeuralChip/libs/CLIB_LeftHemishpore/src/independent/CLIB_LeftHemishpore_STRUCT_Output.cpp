@@ -1,7 +1,7 @@
 #include "../../include/independent/CLIB_LeftHemishpore_STRUCT_Output.h"
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App.h"
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App_Data.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include <iostream>
 #include <cstdint>
 #include <list>
     uint8_t* slif::CLIB_LeftHemishpore_STRUCT_Output::stat_REG_ptr_LeftHemishpore_STRUCT_Output_playerId;

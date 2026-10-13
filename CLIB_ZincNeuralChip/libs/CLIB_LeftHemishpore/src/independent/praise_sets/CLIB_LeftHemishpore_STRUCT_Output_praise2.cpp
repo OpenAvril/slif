@@ -1,6 +1,6 @@
 #include "../../../include/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise2.h"
 #include <cfloat>
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include <iostream>
 	double* slif::CLIB_LeftHemishpore_STRUCT_Output_praise2::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_Output_praise2_Value;
 // public.
 	void slif::CLIB_LeftHemishpore_STRUCT_Output_praise2::dyn_REG_boot1_DEFINE_CLIB_LeftHemishpore_STRUCT_Output_praise2(uint8_t* sysThreadId) {

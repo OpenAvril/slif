@@ -1,5 +1,5 @@
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App_Algorithms.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include <iostream>
     std::list<slif::CLIB_LeftHemishpore_STRUCT_Concurrent*>* slif::CLIB_LeftHemishpore_Framework_App_Algorithms::stat_REG_ptr_list_Of_ptr_Concurrent;
 // public.
     slif::CLIB_LeftHemishpore_Framework_App_Algorithms::CLIB_LeftHemishpore_Framework_App_Algorithms()

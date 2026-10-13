@@ -3,7 +3,7 @@
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_Global.h"
 #include "../../libs/CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
 #include <array>
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include <iostream>
     slif::CLIB_LeftHemishpore_Framework_App_Data_Control* slif::CLIB_LeftHemishpore_Framework_App_Data::stat_CLASS_ptr_CLIB_LeftHemishpore_Framework_App_Data_Control;
     std::array<slif::CLIB_LeftHemishpore_STRUCT_Input*, 3>* slif::CLIB_LeftHemishpore_Framework_App_Data::stat_REG_ptr_array_Of_buffer_Input_ReferenceForThread;//todo number of implemented CONCURRENT threads.
     std::array<slif::CLIB_LeftHemishpore_STRUCT_Output*, 3>* slif::CLIB_LeftHemishpore_Framework_App_Data::stat_REG_ptr_array_Of_buffer_Output_ReferenceForThread;//todo number of implemented CONCURRENT threads.

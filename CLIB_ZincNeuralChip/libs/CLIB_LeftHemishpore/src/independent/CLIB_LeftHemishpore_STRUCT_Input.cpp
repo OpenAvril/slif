@@ -1,8 +1,8 @@
 #include "../../include/independent/CLIB_LeftHemishpore_STRUCT_Input.h"
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App.h"
 #include "../../include/engine/CLIB_LeftHemishpore_Framework_App_Data.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
 #include <cstdint>
+#include <iostream>
 #include <list>
     uint8_t* slif::CLIB_LeftHemishpore_STRUCT_Input::stat_REG_ptr_LeftHemishpore_STRUCT_Input_playerId;
     unsigned long long* slif::CLIB_LeftHemishpore_STRUCT_Input::stat_REG_ptr_LeftHemishpore_STRUCT_Input_praiseEventId;

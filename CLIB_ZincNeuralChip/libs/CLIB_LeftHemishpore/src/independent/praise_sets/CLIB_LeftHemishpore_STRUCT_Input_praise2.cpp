@@ -1,5 +1,5 @@
 #include "../../../include/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise2.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include <iostream>
 #include <cfloat>
 	double* slif::CLIB_LeftHemishpore_STRUCT_Input_praise2::stat_REG_ptr_Input_praise2_valueA;
 	double* slif::CLIB_LeftHemishpore_STRUCT_Input_praise2::stat_REG_ptr_Input_praise2_valueB;

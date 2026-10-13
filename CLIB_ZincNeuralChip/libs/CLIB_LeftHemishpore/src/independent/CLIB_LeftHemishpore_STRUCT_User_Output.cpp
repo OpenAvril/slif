@@ -1,6 +1,7 @@
 #include "../../include/independent/CLIB_LeftHemishpore_STRUCT_User_Output.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
-	slif::CLIB_LeftHemishpore_STRUCT_Output_praise0* slif::CLIB_LeftHemishpore_STRUCT_User_Output::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserOutput_Output_praise0;
+#include <iostream>
+#include <list>
+slif::CLIB_LeftHemishpore_STRUCT_Output_praise0* slif::CLIB_LeftHemishpore_STRUCT_User_Output::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserOutput_Output_praise0;
 	slif::CLIB_LeftHemishpore_STRUCT_Output_praise1* slif::CLIB_LeftHemishpore_STRUCT_User_Output::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserOutput_Output_praise1;
 	slif::CLIB_LeftHemishpore_STRUCT_Output_praise2* slif::CLIB_LeftHemishpore_STRUCT_User_Output::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserOutput_Output_praise2;
 	slif::CLIB_LeftHemishpore_STRUCT_Output_praise3* slif::CLIB_LeftHemishpore_STRUCT_User_Output::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserOutput_Output_praise3;

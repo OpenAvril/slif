@@ -4,10 +4,10 @@ project(slif_zinc_neural_chip VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_subdirectory(libs/CLIB_Stemisphore)
-#add_subdirectory(libs/CLIB_LeftHemishpore)
-#add_subdirectory(libs/CLIB_RightHemisphore)
 add_subdirectory(libs/Control)
+add_subdirectory(libs/CLIB_Stemisphore)
+add_subdirectory(libs/CLIB_LeftHemishpore)
+#add_subdirectory(libs/CLIB_RightHemisphore)
 
 add_library(${PROJECT_NAME} STATIC
         libs/Control/libs/CLIB_MutexQue/io/src/CLIB_MutexQue.cpp
@@ -42,31 +42,31 @@ add_library(${PROJECT_NAME} STATIC
         #libs/CLIB_LeftHemishpore/io/src/CLIB_LeftHemishpore.cpp
         #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework.cpp
         #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework_Global.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_Input.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_Output.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_Concurrent.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_User_Input.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_User_Output.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_User_Algorithm.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise0.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise0.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise0.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise1.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise1.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise1.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise2.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise2.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise2.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise3.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise3.cpp
-        #libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise3.cpp
+        libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_Input.cpp
+        libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_Output.cpp
+        libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_Concurrent.cpp
+        libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_User_Input.cpp
+        libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_User_Output.cpp
+        libs/CLIB_LeftHemishpore/src/independent/CLIB_LeftHemishpore_STRUCT_User_Algorithm.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise0.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise0.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise0.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise1.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise1.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise1.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise2.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise2.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise2.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Algorithm_praise3.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Input_praise3.cpp
+        libs/CLIB_LeftHemishpore/src/independent/praise_sets/CLIB_LeftHemishpore_STRUCT_Output_praise3.cpp
         #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework.cpp
         #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework_App.cpp
         #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework_App_Algorithms.cpp
         #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework_App_Data.cpp
         #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework_App_Data_Control.cpp
         #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework_App_Execute.cpp
-        #libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework_App_Execute_Control.cpp
+        libs/CLIB_LeftHemishpore/src/engine/CLIB_LeftHemishpore_Framework_App_Execute_Control.cpp
 )
 
 target_include_directories(${PROJECT_NAME}
@@ -75,7 +75,7 @@ target_include_directories(${PROJECT_NAME}
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}libs/CLIB_ThreadsLogQue/io/include>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}libs/CLIB_LaunchQue/io/include>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_Stemisphore/io/include>
-        #$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LeftHemishpore/io/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LeftHemishpore/io/include>
         #$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_RightHemisphore/io/include>
         $<INSTALL_INTERFACE:include>
 )
@@ -86,7 +86,7 @@ target_include_directories(${PROJECT_NAME}
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}libs/CLIB_ThreadsLogQue/include>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}libs/CLIB_LaunchQue/include>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_Stemisphore/include>
-        #$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LeftHemishpore/include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LeftHemishpore/include>
         #$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_RightHemisphore/include>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
         $<INSTALL_INTERFACE:include>
@@ -97,4 +97,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
         slif_control_sys_threads_log
         slif_control_launch_que
         slif_stemisphore
+        #slif_epicentre
 )

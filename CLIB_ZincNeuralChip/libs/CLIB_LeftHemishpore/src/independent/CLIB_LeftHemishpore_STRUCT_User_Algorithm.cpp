@@ -1,5 +1,5 @@
 #include "../../include/independent/CLIB_LeftHemishpore_STRUCT_User_Algorithm.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include <iostream>
 	slif::CLIB_LeftHemishpore_STRUCT_Algorithm_praise0* slif::CLIB_LeftHemishpore_STRUCT_User_Algorithm::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserAlgorithm_Algorithm_praise0;
 	slif::CLIB_LeftHemishpore_STRUCT_Algorithm_praise1* slif::CLIB_LeftHemishpore_STRUCT_User_Algorithm::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserAlgorithm_Algorithm_praise1;
 	slif::CLIB_LeftHemishpore_STRUCT_Algorithm_praise2* slif::CLIB_LeftHemishpore_STRUCT_User_Algorithm::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserAlgorithm_Algorithm_praise2;

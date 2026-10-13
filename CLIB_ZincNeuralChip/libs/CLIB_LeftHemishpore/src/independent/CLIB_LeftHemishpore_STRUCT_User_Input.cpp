@@ -1,5 +1,5 @@
 #include "../../include/independent/CLIB_LeftHemishpore_STRUCT_User_Input.h"
-#include "../../CLIB_ThreadsLog/include/CLIB_ThreadLogs.h"
+#include <iostream>
 	slif::CLIB_LeftHemishpore_STRUCT_Input_praise0* slif::CLIB_LeftHemishpore_STRUCT_User_Input::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserInput_Input_praise0;
 	slif::CLIB_LeftHemishpore_STRUCT_Input_praise1* slif::CLIB_LeftHemishpore_STRUCT_User_Input::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserInput_Input_praise1;
 	slif::CLIB_LeftHemishpore_STRUCT_Input_praise2* slif::CLIB_LeftHemishpore_STRUCT_User_Input::stat_REG_ptr_CLIB_LeftHemishpore_STRUCT_UserInput_Input_praise2;
