@@ -108,7 +108,7 @@ sudo snap install clion --classic
 - CLion C and C++.
 
 
-#### Clone from GuitHub.
+#### CLion: Clone from GuitHub.
  - File - > New -> Project from Version Control.
  - URL : user entry "https://github.com/OpenAvril/slif.git"
 
