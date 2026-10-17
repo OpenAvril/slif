@@ -16,29 +16,32 @@ A master by coursework with five specialisation electives, I propose Convener of
 
 ---
 * MutexQue:        
-Exclusive Cohesion Mutex Queue:                         
-CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
-
+- Exclusive Cohesion Mutex Queue:                         
+- CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
+- Double standard Mutex Input/Output effecience.
 
 * LaunchQue:       
-Left Hemisphore Task Launcher:                          
-CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
+- Left Hemisphore Task Launcher:                          
+- CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
 
 
 * ThreadsLog:      
-Neural Chip Thread Logging:                             
-CLIB Console output via MutexQue, DataCluster is 'Console'.
-
+- Neural Chip Thread Logging:                             
+- CLIB Console output via MutexQue, DataCluster is 'Console'.
 
 * Stemisphore:     
-System Bussing for Zinc Neural Hemisphoric Chip:        
-CLIB Concurrent System Bussing.
-Open Concurrent SCADA.
+- System Bussing for Zinc Neural Hemisphoric Chip:        
+- CLIB Concurrent System Bussing.
+- Open Concurrent SCADA.
+- Triple MutexQue into a set/get data buffer.
 
 * LeftHemisphore:  
-Left Hemisphore Logic Task Result Deducer:              
-CLIB Concurrent Server with independent task threads and IO wrapper.
+- Left Hemisphore Logic Task Result Deducer:              
+- CLIB Concurrent Server with independent task threads and IO wrapper.
 
+* RightHemisphore:
+-
+ 
 ---
 ## slif_zinc_neural_chip: Hemisphoric Binary Neural Networking.
 * In A Unified Image  : CLIB Compound of Busses. An array of Busses for each Zone: Id, Ego, SuperEgo. Junctions as Bus Station(s) named 'Id-Ego', 'Ego-SuperEgo'; . Half the number of Stations as Busses due to paired exclusive communication potential.
