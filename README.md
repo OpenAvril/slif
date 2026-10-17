@@ -15,28 +15,41 @@ The Silicon Life Project reverlates the field of digital electronics post epitom
 A master by coursework with five specialisation electives, I propose Convener of Masters of Engineering – Silicon Life Engineer; (1) Concurrent Embedded Control Systems, (2) Concurrency; Core, Post-Process., (3) Concurrent Networking, (4) Concurrent Bus Systems. (5) Concurrent Full Stack Development, (6) Hemesphoric Binary Neural Intelligence..
 
 ---
-* MutexQue:        
-Exclusive Cohesion Mutex Queue:                         
+* MutexQue:
+  
+Exclusive Cohesion Mutex Queue:   
+
 CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
+
 Double standard Mutex Input/Output effecience.
 
-* LaunchQue:       
-Left Hemisphore Task Launcher:                          
+* LaunchQue:
+* 
+Left Hemisphore Task Launcher:
+
 CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
 
 
-* ThreadsLog:      
-Neural Chip Thread Logging:                             
+* ThreadsLog:
+  
+Neural Chip Thread Logging:
+     
 CLIB Console output via MutexQue, DataCluster is 'Console'.
 
-* Stemisphore:     
-System Bussing for Zinc Neural Hemisphoric Chip:        
+* Stemisphore:
+  
+System Bussing for Zinc Neural Hemisphoric Chip:  
+
 CLIB Concurrent System Bussing.
+
 Open Concurrent SCADA.
+
 Triple MutexQue into a set/get data buffer.
 
-* LeftHemisphore:  
-Left Hemisphore Logic Task Result Deducer:              
+* LeftHemisphore:
+  
+Left Hemisphore Logic Task Result Deducer:      
+
 CLIB Concurrent Server with independent task threads and IO wrapper.
 
 * RightHemisphore:
