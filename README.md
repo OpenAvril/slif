@@ -105,7 +105,12 @@ sudo snap install clion --classic
 - Cmake.
 - CLion C and C++.
 
----
+
+#### Clone from GuitHub.
+ - File - > New -> Project from Version Control.
+ - URL : user entry "https://github.com/OpenAvril/slif.git"
+
+   ---
 ## Building - Compiler Terminal Commands.
 ### CLIB_LaunchEnableForConcurrentThreadsAt_END.so
 
