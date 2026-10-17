@@ -24,7 +24,7 @@ CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 Double standard Mutex Input/Output effecience.
 
 * LaunchQue:
-* 
+
 Left Hemisphore Task Launcher:
 
 CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
