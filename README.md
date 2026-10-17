@@ -79,6 +79,8 @@ CLIB Concurrent Server with independent task threads and IO wrapper.
 
 ---
 ### Dependencies.
+- [Open Source suite install script for Silicon Life Engineering.](https://github.com/MEngSc-Electrical-ComputerSystems/Linux_bash_scripts/blob/main/freshinstall.sh)
+
 #### Ubuntu Terminal.
 ````
 sudo apt install git
