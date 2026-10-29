@@ -113,10 +113,12 @@ cmake --build build
    
 ---
 Copy from CLion    'build/CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/libzinc_control_mutex_que.a'
+
 Paste to IntelliJ  'src/main/java/libs/libzinc_control_mutex_que.a' 
 
 ---
 Copy from CLion    'build/CLIB_ZincNeuralChip/libs/Control/libs/CLIB_LaunchQue/libzinc_control_launch_que.a'
+
 Paste to IntelliJ  'src/main/java/libs/libzinc_control_launch_que.a' 
 
 ---
