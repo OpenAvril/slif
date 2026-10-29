@@ -1,3 +1,6 @@
+# *** UNDER DEVELOPMENT ***
+
+---
 # slif : Silicon Life Tools.
 ## slif is a Java .jar software library deploying zinc C++ firmware library.
 
