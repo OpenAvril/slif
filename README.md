@@ -81,12 +81,36 @@ ex: Graphics post process.
  - File - > New -> Project from Version Control.
  - URL : user entry 'https://github.com/OpenAvril/slif.git'
 
+
+
 ---
 ### C++ LIB 'zinc'
 MIT package(s) for 'Zinc Insulate Neural Chip' engineering tools :: Concurrent; Embedded control systems, Core, Post-process, Networking, Full stack development, System bussing., Binary neural intelligence.
 
-'https://github.com/OpenAvril/zinc#building---compiler-terminal-commands'
+#### CLion: Clone from GuitHub.
+ - File - > New -> Project from Version Control.
+ - URL : user entry 'https://github.com/OpenAvril/zinc.git'
 
+
+##### Building - Compiler Terminal Commands.
+
+*** Load Root CMake Project ***
+
+````
+cmake -B build
+````
+````
+cmake --build build
+````
+
+*** run TESTBENCH ***
+
+---
+
+#### IntelliJ: Clone from GuitHub.
+ - File - > New -> Project from Version Control.
+ - URL : user entry 'https://github.com/OpenAvril/slif.git'
+   
 ---
 Copy from CLion    'build/CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/libzinc_control_mutex_que.a'
 Paste to IntelliJ  'src/main/java/libs/libzinc_control_mutex_que.a' 
