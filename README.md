@@ -103,8 +103,6 @@ cmake -B build
 cmake --build build
 ````
 
-*** run TESTBENCH ***
-
 ---
 
 #### IntelliJ: Clone from GuitHub.
