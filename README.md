@@ -66,7 +66,7 @@ ex: Graphics post process.
 
 ---
 ### Dependencies.
-- [Open Source suite install script for Silicon Life Engineering.](https://github.com/MEngSc-Electrical-ComputerSystems/Linux_bash_scripts/blob/main/freshinstall.sh)
+- [Open Source suite install script for A Silicon Life Engineer.](https://github.com/MEngSc-Electrical-ComputerSystems/Linux_bash_scripts/blob/main/freshinstall.sh)
 
 
 ---
