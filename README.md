@@ -1,6 +1,6 @@
 # slif : Silicon Life Tools.
 
-slif doubles the combined input and output effiency via Java on Raspberry Pi.
+slif doubles the combined input and output effiency via concurrent Java on Raspberry Pi.
 
 ## slif is a Java .jar software library deploying zinc C++ firmware library.
 
