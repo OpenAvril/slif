@@ -1,6 +1,3 @@
-# *** UNDER DEVELOPMENT ***
-
----
 # slif : Silicon Life Tools.
 ## slif is a Java .jar software library deploying zinc C++ firmware library.
 
@@ -93,6 +90,8 @@ MIT package(s) for 'Zinc Insulate Neural Chip' engineering tools :: Concurrent; 
 
 
 ##### Building - Compiler Terminal Commands.
+
+Open to the sub folder containing the 'CMakeList.txt' for the project desired to be compiled.
 
 *** Load Root CMake Project ***
 
