@@ -15,7 +15,7 @@ Java .jar 'slif' :: MIT package(s) for 'Silicon life' engineering tools :: Concu
 
 ---
 # Silicon Life Open Source Package:
-OpenAvril / slif is now as part of Grittith University - Nathan Open Source comtrubitation to MIT packages, is an open-source development project hosted on GitHub under the Silicon Lifecosystem.
+OpenAvril / slif is an Open Source comtrubitation to MIT packages, is an open-source development project hosted on GitHub under the Silicon Lifecosystem.
 
 The repository is officially marked as "UNDER DEVELOPMENT" and serves as a collection of full-stack concurrent programming packages.
 
