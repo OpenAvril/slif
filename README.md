@@ -84,6 +84,8 @@ ex: Graphics post process.
 ### C++ LIB 'zinc'
 MIT package(s) for 'Zinc Insulate Neural Chip' engineering tools :: Concurrent; Embedded control systems, Core, Post-process, Networking, Full stack development, System bussing., Binary neural intelligence.
 
+
+## [Zinc Insulate Neural Chip Open Source Package.](https://github.com/OpenAvril/zinc/tree/main)
 #### CLion: Clone from GuitHub.
  - File - > New -> Project from Version Control.
  - URL : user entry 'https://github.com/OpenAvril/zinc.git'
