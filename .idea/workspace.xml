@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d19b60be-6409-4482-8723-d71975e57584" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/libzinc_epicentre.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/slif.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/com/github/openavril/slif/Epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/com/github/openavril/slif/Epicentre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/engine/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/engine/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/libs/IO_Epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/IO_Epicentre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/libs/Java_zinc_epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/Java_zinc_epicentre.java" afterDir="false" />
+    <list default="true" id="d19b60be-6409-4482-8723-d71975e57584" name="Changes" comment="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE).">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="DEVELOPMENT" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,25 +41,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;DEVELOPMENT&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/brenton-jmaes/IdeaProjects/slif/epicentre&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven.slif_epicentre [clean].executor": "Run",
+    "Maven.slif_epicentre [package].executor": "Run",
+    "Maven.slif_launch_que [clean].executor": "Run",
+    "Maven.slif_launch_que [package].executor": "Run",
+    "Maven.slif_mutex_que [clean].executor": "Run",
+    "Maven.slif_mutex_que [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/brenton-jmaes/IdeaProjects/slif/epicentre",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/epicentre/src/main/java/libs" />
@@ -98,27 +91,34 @@
       <option name="presentableId" value="Default" />
       <updated>1793437344268</updated>
       <workItem from="1793437345337" duration="1527000" />
-      <workItem from="1793440633149" duration="156000" />
+      <workItem from="1793440633149" duration="530000" />
+      <workItem from="1793442445095" duration="27000" />
     </task>
+    <task id="LOCAL-00001" summary="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE).">
+      <option name="closed" value="true" />
+      <created>1793440993044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1793440993045</updated>
+    </task>
+    <task id="LOCAL-00002" summary="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE).">
+      <option name="closed" value="true" />
+      <created>1793441086287</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1793441086287</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/epicentre/src/main/java/libs/IO_Epicentre.java</url>
-          <line>126</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/epicentre/src/main/java/libs/IO_Epicentre.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update README.md&#10;&#10;Signed-off-by: ZINC (Zinc Insulate Neural Chip) silicon life open source resource package(s). &lt;Jasper.Assembly@icloud.com&gt;" />
+    <MESSAGE value="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE)." />
+    <option name="LAST_COMMIT_MESSAGE" value="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE)." />
   </component>
 </project>
