@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.openavril.slif</groupId>
-  <artifactId>slif</artifactId>
+  <artifactId>slif_epicentre</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>slif</name>
-  <url>http://maven.apache.org</url>
+  <name>slif_epicentre</name>
+  <url>https://github.com/OpenAvril/slif</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

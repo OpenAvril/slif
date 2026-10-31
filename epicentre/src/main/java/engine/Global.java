@@ -4,8 +4,6 @@ import java.nio.ByteOrder;
 import java.util.BitSet;
 import java.util.FormatFlagsConversionMismatchException;
 
-import static SIMULATION.Simulation._SIM_stat_REG_input_Sample;
-
 public class Global {
     private static long _stat_REG_numberOfCores;
     private static long _stat_REG_numberOfPraises;
