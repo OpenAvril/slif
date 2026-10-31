@@ -4,11 +4,11 @@
 
   <groupId>com.github.openavril.slif</groupId>
   <artifactId>slif_launch_que</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
 
   <name>slif_launch_que</name>
-  <url>https://github.com/OpenAvril/slif/tree/main/launch_que</url>
+  <url>https://github.com/OpenAvril/slif</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
