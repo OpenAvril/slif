@@ -77,7 +77,7 @@ ex: Graphics post process.
 ## Building - Compiler Terminal Commands.
 
 ---
-#### CLion: Clone from GuitHub.
+#### Intellij: Clone from GuitHub.
  - File - > New -> Project from Version Control.
  - URL : user entry 'https://github.com/OpenAvril/slif.git'
 
