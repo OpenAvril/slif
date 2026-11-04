@@ -2,8 +2,6 @@
 ---
 ## OpenAvril / slif:
 
-***UNDER DEVELOPMENT*** 
-
 Java .Jar 'slif' Raspberry Pi prototype board firmware update :: MIT package(s) for 'Silicon life' engineering tools :: Concurrent; Embedded control systems, Core, Post-process, Networking, Full stack development, System bussing., Binary neural intelligence.
 
 Is planned to become a part of as part of Grittith University - Nathan Open Source comtrubitation to MIT packages for my master thesis project, is an open-source development project hosted on GitHub under the Silicon Lifec eosystem.
