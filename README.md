@@ -14,21 +14,21 @@ Thread(s):
   
   (2) **Networking**,
   
-  (3) **Input_Scanner** : ('zinc_mutex_que[handle_3][access_0]' for Read Buffer, 'zinc_mutex_que[handle_3][access_1]' for Write Buffer),
+  (3) **Input_Scanner** : ('zinc_mutex_que[handle_3][access_0]' for Read R-W-Buffer, 'zinc_mutex_que[handle_3][access_1]' for Write R-W-Buffer),
   
-  (4) **Ouput_Draw** : ('zinc_mutex_que[handle_4][access_0]' for Read Buffer, 'zinc_mutex_que[handle_4][access_1]' for Write Buffer),
+  (4) **Ouput_Draw** : ('zinc_mutex_que[handle_4][access_0]' for Read R-W-Buffer, 'zinc_mutex_que[handle_4][access_1]' for Write R-W-Buffer),
   
-  (5) **Core_Injection** : ('zinc_mutex_que[handle_1][access_0]' for Read Buffer, 'zinc_mutex_que[handle_1][access_1]' for Write Buffer),
+  (5) **Core_Injection** : ('zinc_mutex_que[handle_1][access_0]' for Read R-W-Buffer, 'zinc_mutex_que[handle_1][access_1]' for Write R-W-Buffer),
   
-  (6) **Core_Extraction** : ('zinc_mutex_que[handle_2][access_1]' for Read Buffer, 'zinc_mutex_que[handle_2][access_0]' for Write Buffer),
+  (6) **Core_Extraction** : ('zinc_mutex_que[handle_2][access_1]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_0]' for Write R-W-Buffer),
 
-  (7) **concurrentTask(s)** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"2"]' for Read Buffer, 'zinc_mutex_que[handle_2][access_"2"]' for Write Buffer),
+  (7) **concurrentTask(s)** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"2"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"2"]' for Write R-W-Buffer),
   
-  (8) **concurrentTask(s)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"3"]' for Read Buffer, 'zinc_mutex_que[handle_2][access_"3"]' for Write Buffer),
+  (8) **concurrentTask(s)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"3"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"3"]' for Write R-W-Buffer),
   
-  (9) **SIM_IN**(concurrentTask(s)_3) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"4"]' for Read Buffer, 'zinc_mutex_que[handle_2][access_"4"]' for Write Buffer), 
+  (9) **SIM_IN**(concurrentTask(s)_3) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"4"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"4"]' for Write R-W-Buffer), 
   
-  (10) **SIM_OUT**(concurrentTask(s)_4) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"5"]' for Read Buffer, 'zinc_mutex_que[handle_2][access_"5"]' for Write Buffer).
+  (10) **SIM_OUT**(concurrentTask(s)_4) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"5"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"5"]' for Write R-W-Buffer).
   
 && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
