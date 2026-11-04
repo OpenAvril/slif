@@ -8,7 +8,7 @@ Java .Jar 'slif' Raspberry Pi prototype board firmware update :: MIT package(s) 
 
 Is planned to become a part of as part of Grittith University - Nathan Open Source comtrubitation to MIT packages for my master thesis project, is an open-source development project hosted on GitHub under the Silicon Lifec eosystem.
 
-Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with 10 Cores: BNI, Networking, Input_Scanner, Ouput_Draw, Core_Injection(zinc_epicentre), Core_Extraction(zinc_epicentre), 2x concurrentTask(s)(zinc_epicentre), SIM_IN(concurrentTask_3), SIM_OUT(concurrentTask_4). && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
+Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with 10 Cores: BNI, Networking, Input_Scanner(via zinc_mutex_que), Ouput_Draw(via zinc_mutex_que), Core_Injection(zinc_epicentre), Core_Extraction(zinc_epicentre), 2x concurrentTask(s)(zinc_epicentre), SIM_IN(concurrentTask_3), SIM_OUT(concurrentTask_4). && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
 ---
 ## CONCURRENT Systems: 
