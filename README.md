@@ -10,25 +10,25 @@ Via concurrency, 'zinc' and 'slif' libraries double the combined input and outpu
 
 Thread(s):
 
-  (1) BNI,
+  (1) **Binary Neural Intellijence**,
   
-  (2) Networking,
+  (2) **Networking**,
   
-  (3) Input_Scanner : ('zinc_mutex_que[handle_1][access_0]' for Read, 'zinc_mutex_que[handle_1][access_1]' for Write),
+  (3) **Input_Scanner** : ('zinc_mutex_que[handle_1][access_0]' for Read, 'zinc_mutex_que[handle_1][access_1]' for Write),
   
-  (4) Ouput_Draw : ('zinc_mutex_que[handle_2][access_1]' for Read, 'zinc_mutex_que[handle_2][access_0]' for Write),
+  (4) **Ouput_Draw** : ('zinc_mutex_que[handle_2][access_1]' for Read, 'zinc_mutex_que[handle_2][access_0]' for Write),
   
-  (5) Core_Injection : (shell running 'zinc_epicentre' & Input_Scanner Write),
+  (5) **Core_Injection** : (shell running 'zinc_epicentre' & Input_Scanner Write),
   
-  (6) Core_Extraction : (shell running 'zinc_epicentre' & Ouput_Draw Read),
+  (6) **Core_Extraction** : (shell running 'zinc_epicentre' & Ouput_Draw Read),
 
-  (7) concurrentTask(s) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"ID+2"]' for Read, 'zinc_mutex_que[handle_2][access_"ID+2"]' for Write),
+  (7) **concurrentTask(s)** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"2"]' for Read, 'zinc_mutex_que[handle_2][access_"2"]' for Write),
   
-  (8) concurrentTask(s) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"ID+2"]' for Read, 'zinc_mutex_que[handle_2][access_"ID+2"]' for Write),
+  (8) **concurrentTask(s)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"3"]' for Read, 'zinc_mutex_que[handle_2][access_"3"]' for Write),
   
-  (9) SIM_IN(concurrentTask(s)_3), 
+  (9) **SIM_IN**(concurrentTask(s)_3) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"4"]' for Read, 'zinc_mutex_que[handle_2][access_"4"]' for Write), 
   
-  (10) SIM_OUT(concurrentTask(s)_4). 
+  (10) **SIM_OUT**(concurrentTask(s)_4) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"5"]' for Read, 'zinc_mutex_que[handle_2][access_"5"]' for Write).
   
 && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
