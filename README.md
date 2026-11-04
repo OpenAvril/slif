@@ -26,9 +26,9 @@ Thread(s):
   
   (8) **concurrentTask(s)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"3"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"3"]' for Write R-W-Buffer),
   
-  (9) **SIM_IN**(concurrentTask(s)_3) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"4"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"4"]' for Write R-W-Buffer), 
+  (9) **SIM_IN** ***(concurrentTask(s)_3)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"4"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"4"]' for Write R-W-Buffer),
   
-  (10) **SIM_OUT**(concurrentTask(s)_4) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"5"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"5"]' for Write R-W-Buffer).
+  (10) **SIM_OUT** ***(concurrentTask(s)_4)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"5"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"5"]' for Write R-W-Buffer).
   
 && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
