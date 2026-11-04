@@ -14,13 +14,13 @@ Thread(s):
   
   (2) **Networking**,
   
-  (3) **Input_Scanner** : ('zinc_mutex_que[handle_1][access_0]' for Read, 'zinc_mutex_que[handle_1][access_1]' for Write),
+  (3) **Input_Scanner** : ('zinc_mutex_que[handle_3][access_0]' for Read, 'zinc_mutex_que[handle_3][access_1]' for Write),
   
-  (4) **Ouput_Draw** : ('zinc_mutex_que[handle_2][access_1]' for Read, 'zinc_mutex_que[handle_2][access_0]' for Write),
+  (4) **Ouput_Draw** : ('zinc_mutex_que[handle_4][access_0]' for Read, 'zinc_mutex_que[handle_4][access_1]' for Write),
   
-  (5) **Core_Injection** : (shell running 'zinc_epicentre' & Input_Scanner),
+  (5) **Core_Injection** : ('zinc_mutex_que[handle_1][access_0]' for Read, 'zinc_mutex_que[handle_1][access_1]' for Write),
   
-  (6) **Core_Extraction** : (shell running 'zinc_epicentre' & Ouput_Draw),
+  (6) **Core_Extraction** : ('zinc_mutex_que[handle_2][access_1]' for Read, 'zinc_mutex_que[handle_2][access_0]' for Write),
 
   (7) **concurrentTask(s)** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"2"]' for Read, 'zinc_mutex_que[handle_2][access_"2"]' for Write),
   
