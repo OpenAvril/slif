@@ -11,8 +11,8 @@ Via concurrency, 'zinc' and 'slif' libraries double the combined input and outpu
 Thread(s): 
   (1) BNI, 
   (2) Networking, 
-  (3) Input_Scanner(using zinc_mutex_que for Read & Write), 
-  (4) Ouput_Draw(using zinc_mutex_que for Read & Write),  
+  (3) Input_Scanner(using zinc_mutex_que for Read & Write),
+  (4) Ouput_Draw(using zinc_mutex_que for Read & Write),
   (5) Core_Injection(shell running zinc_epicentre), 
   (6) Core_Extraction(shell running zinc_epicentre), 
   (7) concurrentTask(s)(zinc_epicentre), 
