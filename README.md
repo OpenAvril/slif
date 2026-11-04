@@ -18,9 +18,9 @@ Thread(s):
   
   (4) Ouput_Draw : ('zinc_mutex_que[handle_2][access_1]' for Read, 'zinc_mutex_que[handle_2][access_0]' for Write),
   
-  (5) Core_Injection : (shell running 'zinc_epicentre' Input_Scanner Write),
+  (5) Core_Injection : (shell running 'zinc_epicentre' & Input_Scanner Write),
   
-  (6) Core_Extraction : (shell running 'zinc_epicentre' Ouput_Draw Read),
+  (6) Core_Extraction : (shell running 'zinc_epicentre' & Ouput_Draw Read),
 
   (7) concurrentTask(s) : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"ID+2"]' for Read, 'zinc_mutex_que[handle_2][access_"ID+2"]' for Write),
   
