@@ -22,9 +22,9 @@ Thread(s):
   
   (6) Core_Extraction : (shell running 'zinc_epicentre' Ouput_Draw Read),
 
-  (7) concurrentTask(s) : (zinc_epicentre using'zinc_mutex_que[handle_1][access_"ID"]' for Read, 'zinc_mutex_que[handle_2][access_"ID"]' for Write),
+  (7) concurrentTask(s) : (zinc_epicentre using'zinc_mutex_que[handle_1][access_"ID+2"]' for Read, 'zinc_mutex_que[handle_2][access_"ID+2"]' for Write),
   
-  (8) concurrentTask(s) : (zinc_epicentre using'zinc_mutex_que[handle_1][access_"ID"]' for Read, 'zinc_mutex_que[handle_2][access_"ID"]' for Write),
+  (8) concurrentTask(s) : (zinc_epicentre using'zinc_mutex_que[handle_1][access_"ID+2"]' for Read, 'zinc_mutex_que[handle_2][access_"ID+2"]' for Write),
   
   (9) SIM_IN(concurrentTask(s)_3), 
   
