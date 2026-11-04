@@ -8,17 +8,28 @@ Is planned to become a part of as part of Grittith University - Nathan Open Sour
 
 Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with 10 Cores.
 
-Thread(s): 
+Thread(s):
+
   (1) BNI, 
+  
   (2) Networking, 
+  
   (3) Input_Scanner(using zinc_mutex_que for Read & Write),
+  
   (4) Ouput_Draw(using zinc_mutex_que for Read & Write),
+  
   (5) Core_Injection(shell running zinc_epicentre), 
+  
   (6) Core_Extraction(shell running zinc_epicentre), 
+
   (7) concurrentTask(s)(zinc_epicentre), 
+  
   (8) concurrentTask(s)(zinc_epicentre), 
+  
   (9) SIM_IN(concurrentTask_3), 
+  
   (10) SIM_OUT(concurrentTask_4). 
+  
 && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
 ---
