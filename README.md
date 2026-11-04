@@ -26,9 +26,9 @@ Thread(s):
   
   (8) concurrentTask(s)(zinc_epicentre), 
   
-  (9) SIM_IN(concurrentTask_3), 
+  (9) SIM_IN(concurrentTask(s)_3), 
   
-  (10) SIM_OUT(concurrentTask_4). 
+  (10) SIM_OUT(concurrentTask(S)_4). 
   
 && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
