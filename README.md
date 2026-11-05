@@ -108,7 +108,7 @@ thread => **SIM_IN**
 
  (1) **SIM_Input_SAMPLE** *(HandleId_SIM_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
 
-thread => ***Input_Scanner*** / ***NETWORKING***
+thread => ***Input_Scanner*** || ***NETWORKING***
 
  (2) **Input_Sample_Buffer** *(HandleId_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
 
@@ -124,7 +124,7 @@ thread => ***Core_Extraction***,
  
  (5) **Output_Sample_Buffer** *(HandleId_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
 
-thread => ***Ouput_Draw*** / ***NETWORKING***
+thread => ***Ouput_Draw*** || ***NETWORKING***
    
  (6) **SIM_Output_SAMPLE** *(HandleId_SIM_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
 
