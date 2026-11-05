@@ -117,3 +117,8 @@ CLIB Concurrent Server with independent task threads and IO wrapper.
 Consumer of spare threads.
 
 ---
+
+Copyright (c) 2026 King Brenton James Maddocks BEng(CompSys), Crown of Queensland the Commonwealth Empire.
+
+---
+---
