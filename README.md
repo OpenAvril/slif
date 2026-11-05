@@ -2,11 +2,49 @@
 ---
 ## OpenAvril / slif:
 
-***UNDER DEVELOPMENT*** 
-
 Java .Jar 'slif' Raspberry Pi prototype board firmware update :: MIT package(s) for 'Silicon life' engineering tools :: Concurrent; Embedded control systems, Core, Post-process, Networking, Full stack development, System bussing., Binary neural intelligence.
 
-Is planned to become a part of as part of Grittith University - Nathan Open Source comtrubitation to MIT packages for my master thesis project, is an open-source development project hosted on GitHub under the Silicon Lifecosystem.
+Is planned to become a part of as part of Grittith University - Nathan Open Source comtrubitation to MIT packages for my master thesis project, is an open-source development project hosted on GitHub under the Silicon Life ecosystem.
+
+Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with 10 Cores.
+
+Thread(s):
+
+  (1) **Binary Neural Intellijence**,
+  
+  (2) **Networking**,
+  
+  (3) **Input_Scanner**,
+  
+  (2) **Core_Injection**,
+  
+  (3) **concurrentTask(s)_1**,
+  
+  (4) **concurrentTask(s)_2**,
+  
+  (6) **Core_Extraction**,
+  
+  (4) **Ouput_Draw**,
+  
+  (9) **SIM_IN** ***(concurrentTask(s)_3)***,
+  
+  (10) **SIM_OUT** ***(concurrentTask(s)_4)***.
+
+&& PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
+
+Data Cluster(s):
+
+ (1) **Input_Sample_Buffer** *(HandleId_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
+ 
+ (2) **zinc_epicentre : Stack_of_Input** *(HandleId_Stack_of_Input_R-W-Buffer = MutexQue::generateHandle())*,
+ 
+ (3) **zinc_epicentre : Stack_of_Output** *(HandleId_Stack_of_Output_R-W-Buffer = MutexQue::generateHandle())*,
+ 
+ (4) **Output_Sample_Buffer** *(HandleId_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
+  
+ (5) **SIM_Input_SAMPLE** *(HandleId_SIM_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
+ 
+ (6) **SIM_Output_SAMPLE** *(HandleId_SIM_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
 
 ---
 ## CONCURRENT Systems: 

@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d19b60be-6409-4482-8723-d71975e57584" name="Changes" comment="DEVELOPMENT_2026_11_04_2101, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_04_2101.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue.&#10;   - CLIB_LaunchQue.&#10;   - CLIB_LeftHemishpore.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;">
-      <change afterPath="$PROJECT_DIR$/launch_que/src/main/java/libs/libzinc_launch_que.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mutex_que/src/main/java/libs/libzinc_mutex_que.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/libs/libzinc_epicentre.a" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/libzinc_epicentre.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch_que/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/launch_que/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mutex_que/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mutex_que/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d19b60be-6409-4482-8723-d71975e57584" name="Changes" comment="DEVELOPMENT_2026_11_05_1251, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_05_1251.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue &lt;version&gt;1.1.1.&#10;   - CLIB_LaunchQue &lt;version&gt;1.1.1.&#10;   - CLIB_LeftHemishpore &lt;version&gt;1.1.1.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +56,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/brenton-jmaes/IdeaProjects/slif/launch_que/src/main/java/libs",
+    "last_opened_file_path": "/home/brenton-jmaes/IdeaProjects/CFSD",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,7 +67,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/launch_que/src/main/java/libs" />
       <recent name="$PROJECT_DIR$/epicentre/src/main/java/libs" />
+      <recent name="$PROJECT_DIR$/mutex_que/src/main/java/libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/epicentre/src/main/java/libs" />
@@ -101,7 +95,7 @@
       <workItem from="1793440633149" duration="530000" />
       <workItem from="1793442445095" duration="27000" />
       <workItem from="1793790488974" duration="310000" />
-      <workItem from="1793846681020" duration="407000" />
+      <workItem from="1793846681020" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE).">
       <option name="closed" value="true" />
@@ -127,7 +121,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793790785714</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="DEVELOPMENT_2026_11_05_1251, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_05_1251.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue &lt;version&gt;1.1.1.&#10;   - CLIB_LaunchQue &lt;version&gt;1.1.1.&#10;   - CLIB_LeftHemishpore &lt;version&gt;1.1.1.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;">
+      <option name="closed" value="true" />
+      <created>1793847133974</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793847133975</updated>
+    </task>
+    <task id="LOCAL-00005" summary="DEVELOPMENT_2026_11_05_1251, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_05_1251.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue &lt;version&gt;1.1.1.&#10;   - CLIB_LaunchQue &lt;version&gt;1.1.1.&#10;   - CLIB_LeftHemishpore &lt;version&gt;1.1.1.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;">
+      <option name="closed" value="true" />
+      <created>1793847153408</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1793847153408</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +147,7 @@
     <MESSAGE value="Update README.md&#10;&#10;Signed-off-by: ZINC (Zinc Insulate Neural Chip) silicon life open source resource package(s). &lt;Jasper.Assembly@icloud.com&gt;" />
     <MESSAGE value="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE)." />
     <MESSAGE value="DEVELOPMENT_2026_11_04_2101, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_04_2101.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue.&#10;   - CLIB_LaunchQue.&#10;   - CLIB_LeftHemishpore.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_04_2101, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_04_2101.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue.&#10;   - CLIB_LaunchQue.&#10;   - CLIB_LeftHemishpore.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;" />
+    <MESSAGE value="DEVELOPMENT_2026_11_05_1251, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_05_1251.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue &lt;version&gt;1.1.1.&#10;   - CLIB_LaunchQue &lt;version&gt;1.1.1.&#10;   - CLIB_LeftHemishpore &lt;version&gt;1.1.1.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_05_1251, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_05_1251.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue &lt;version&gt;1.1.1.&#10;   - CLIB_LaunchQue &lt;version&gt;1.1.1.&#10;   - CLIB_LeftHemishpore &lt;version&gt;1.1.1.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;" />
   </component>
 </project>
