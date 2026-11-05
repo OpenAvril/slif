@@ -1,6 +1,6 @@
 # Silicon Life Open Source Package:
 
-**UNDER DEVELOPMENT**
+***UNDER DEVELOPMENT***
 
 ---
 ## OpenAvril / slif:
@@ -98,7 +98,7 @@ CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly. 
 
 ---
-# Stemisphore : com.github.openavril.slif.Stemisphore.
+# Stemisphore : com.github.openavril.slif.Stemisphore. ***UNDER DEVELOPMENT***
 
 System Bussing for Zinc Neural Hemisphoric Chip:
 
