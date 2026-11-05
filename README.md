@@ -6,7 +6,7 @@ Java .Jar 'slif' Raspberry Pi prototype board firmware update :: MIT package(s) 
 
 Is planned to become a part of as part of Grittith University - Nathan Open Source comtrubitation to MIT packages for my master thesis project, is an open-source development project hosted on GitHub under the Silicon Life ecosystem.
 
-Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with mutpile cores.
+Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with mutpile cores. PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
 ---
 ## CONCURRENT Systems: 
@@ -97,8 +97,6 @@ Thread(s):
   (9) **SIM_IN** ***(concurrentTask(s)_3)***,
   
   (10) **SIM_OUT** ***(concurrentTask(s)_4)***.
-
-&& PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
 
 Data Cluster(s):
