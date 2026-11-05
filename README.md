@@ -1,7 +1,4 @@
 # Silicon Life Open Source Package:
-
-***UNDER DEVELOPMENT***
-
 ---
 ## OpenAvril / slif:
 
@@ -119,7 +116,7 @@ Concurrency; Core, Post-Process.
 
 
 ---
-# LeftHemisphore : com.github.openavril.slif.Epicentre. ***TEMPLATE for user Compilation***
+# LeftHemisphore : com.github.openavril.slif.Epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
   
 Left Hemisphore Logic Task Result Deducer:      
 
