@@ -14,23 +14,37 @@ Thread(s):
   
   (2) **Networking**,
   
-  (3) **Input_Scanner** : ('zinc_mutex_que[handle_3][access_0]' for Read R-W-Buffer, 'zinc_mutex_que[handle_3][access_1]' for Write R-W-Buffer),
+  (3) **Input_Scanner**,
   
-  (4) **Ouput_Draw** : ('zinc_mutex_que[handle_4][access_0]' for Read R-W-Buffer, 'zinc_mutex_que[handle_4][access_1]' for Write R-W-Buffer),
+  (2) **Core_Injection**,
   
-  (5) **Core_Injection** : ('zinc_mutex_que[handle_1][access_0]' for Read R-W-Buffer, 'zinc_mutex_que[handle_1][access_1]' for Write R-W-Buffer),
+  (3) **concurrentTask(s)_1**,
   
-  (6) **Core_Extraction** : ('zinc_mutex_que[handle_2][access_1]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_0]' for Write R-W-Buffer),
+  (4) **concurrentTask(s)_2**,
+  
+  (6) **Core_Extraction**,
+  
+  (4) **Ouput_Draw**,
+  
+  (9) **SIM_IN** ***(concurrentTask(s)_3)***,
+  
+  (10) **SIM_OUT** ***(concurrentTask(s)_4)***.
 
-  (7) **concurrentTask(s)** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"2"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"2"]' for Write R-W-Buffer),
-  
-  (8) **concurrentTask(s)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"3"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"3"]' for Write R-W-Buffer),
-  
-  (9) **SIM_IN** ***(concurrentTask(s)_3)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"4"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"4"]' for Write R-W-Buffer),
-  
-  (10) **SIM_OUT** ***(concurrentTask(s)_4)*** : (zinc_epicentre using 'zinc_mutex_que[handle_1][access_"5"]' for Read R-W-Buffer, 'zinc_mutex_que[handle_2][access_"5"]' for Write R-W-Buffer).
-  
 && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
+
+Data Cluster(s):
+
+ (1) **Input_Sample_Buffer** *(HandleId_Input_Sample_Buffer = MutexQue::generateHandle())*,
+ 
+ (2) **zinc_epicentre : Stack_of_Input** *(HandleId_Stack_of_Input = MutexQue::generateHandle())*,
+ 
+ (3) **zinc_epicentre : Stack_of_Output** *(HandleId_Stack_of_Output = MutexQue::generateHandle())*,
+ 
+ (4) **Output_Sample_Buffer** *(HandleId_Output_Sample_Bufferr = MutexQue::generateHandle())*,
+  
+ (5) **SIM_Input_SAMPLE** *(HandleId_SIM_Input_SAMPLE = MutexQue::generateHandle())*,
+ 
+ (6) **SIM_Output_SAMPLE** *(HandleId_SIM_Output_SAMPLE = MutexQue::generateHandle())*,
 
 ---
 ## CONCURRENT Systems: 
