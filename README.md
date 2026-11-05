@@ -14,7 +14,7 @@ Thread(s):
   
   (2) **Networking**,
   
-  (3) **Input_Scanner**,
+  (3) **Input_Scanner** *server interface input* ***(concurrentTask(s)_5)***,
   
   (2) **Core_Injection**,
   
@@ -24,13 +24,14 @@ Thread(s):
   
   (6) **Core_Extraction**,
   
-  (4) **Ouput_Draw**,
+  (4) **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
   
   (9) **SIM_IN** ***(concurrentTask(s)_3)***,
   
   (10) **SIM_OUT** ***(concurrentTask(s)_4)***.
 
 && PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
+
 
 Data Cluster(s):
 
