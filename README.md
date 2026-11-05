@@ -34,17 +34,17 @@ Thread(s):
 
 Data Cluster(s):
 
- (1) **Input_Sample_Buffer** *(HandleId_Input_Sample_Buffer = MutexQue::generateHandle())*,
+ (1) **Input_Sample_Buffer** *(HandleId_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
  
- (2) **zinc_epicentre : Stack_of_Input** *(HandleId_Stack_of_Input = MutexQue::generateHandle())*,
+ (2) **zinc_epicentre : Stack_of_Input** *(HandleId_Stack_of_Input_R-W-Buffer = MutexQue::generateHandle())*,
  
- (3) **zinc_epicentre : Stack_of_Output** *(HandleId_Stack_of_Output = MutexQue::generateHandle())*,
+ (3) **zinc_epicentre : Stack_of_Output** *(HandleId_Stack_of_Output_R-W-Buffer = MutexQue::generateHandle())*,
  
- (4) **Output_Sample_Buffer** *(HandleId_Output_Sample_Bufferr = MutexQue::generateHandle())*,
+ (4) **Output_Sample_Buffer** *(HandleId_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
   
- (5) **SIM_Input_SAMPLE** *(HandleId_SIM_Input_SAMPLE = MutexQue::generateHandle())*,
+ (5) **SIM_Input_SAMPLE** *(HandleId_SIM_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
  
- (6) **SIM_Output_SAMPLE** *(HandleId_SIM_Output_SAMPLE = MutexQue::generateHandle())*,
+ (6) **SIM_Output_SAMPLE** *(HandleId_SIM_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
 
 ---
 ## CONCURRENT Systems: 
