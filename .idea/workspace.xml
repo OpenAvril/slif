@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d19b60be-6409-4482-8723-d71975e57584" name="Changes" comment="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE).">
+    <list default="true" id="d19b60be-6409-4482-8723-d71975e57584" name="Changes" comment="DEVELOPMENT_2026_11_04_2101, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_04_2101.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue.&#10;   - CLIB_LaunchQue.&#10;   - CLIB_LeftHemishpore.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;">
+      <change afterPath="$PROJECT_DIR$/launch_que/src/main/java/libs/libzinc_launch_que.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mutex_que/src/main/java/libs/libzinc_mutex_que.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epicentre/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/libs/libzinc_epicentre.a" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/libzinc_epicentre.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch_que/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/launch_que/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutex_que/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mutex_que/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +60,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/brenton-jmaes/IdeaProjects/slif/epicentre",
+    "last_opened_file_path": "/home/brenton-jmaes/IdeaProjects/slif/launch_que/src/main/java/libs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +100,8 @@
       <workItem from="1793437345337" duration="1527000" />
       <workItem from="1793440633149" duration="530000" />
       <workItem from="1793442445095" duration="27000" />
+      <workItem from="1793790488974" duration="310000" />
+      <workItem from="1793846681020" duration="407000" />
     </task>
     <task id="LOCAL-00001" summary="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE).">
       <option name="closed" value="true" />
@@ -110,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793441086287</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DEVELOPMENT_2026_11_04_2101, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_04_2101.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue.&#10;   - CLIB_LaunchQue.&#10;   - CLIB_LeftHemishpore.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;">
+      <option name="closed" value="true" />
+      <created>1793790785711</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1793790785714</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update README.md&#10;&#10;Signed-off-by: ZINC (Zinc Insulate Neural Chip) silicon life open source resource package(s). &lt;Jasper.Assembly@icloud.com&gt;" />
     <MESSAGE value="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE)." />
-    <option name="LAST_COMMIT_MESSAGE" value="PUBLISHED:&#10;  - MutexQue.&#10;  - LaunchQue.&#10;  - Epicentre (TEMPLATE)." />
+    <MESSAGE value="DEVELOPMENT_2026_11_04_2101, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_04_2101.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue.&#10;   - CLIB_LaunchQue.&#10;   - CLIB_LeftHemishpore.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_04_2101, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;BUILT: DEVELOPMENT_2026_11_04_2101.&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;IMPLEMENTED:&#10; - LIBRARIES:&#10;   - CLIB_MutexQue.&#10;   - CLIB_LaunchQue.&#10;   - CLIB_LeftHemishpore.&#10;&#10;TODO:&#10; - LIBRARIES:&#10;   - CLIB_Stemisphore.&#10;   - CLIB_ThreadsLog.&#10;&#10;&lt;&lt;&lt; TERMINAL OUT &lt;&lt;&lt;" />
   </component>
 </project>
