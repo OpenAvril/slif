@@ -89,25 +89,30 @@ Consumer of spare threads.
 ---
 ### Thread(s):
 
-  (1) **Binary Neural Intellijence** in || with the following, while training and doing tasks.
+  A(1) **Binary Neural Intellijence** in || with the following, while training and doing tasks.
   
-  (2) **Networking** into Core_Injection, double loop for I and O 1028 bytes,
+// Networking I and O.
+  B(2) **Networking** into Core_Injection, double loop for I and O 1028 bytes,
   
-  (3) **Input_Scanner** *server interface input* ***(concurrentTask(s)_5)*** into Core_Injection, I data for class Input,
+// Shell - Server_Assembly.
+  C(3) **Input_Scanner** *server interface input* ***(concurrentTask(s)_5)*** into Core_Injection, I data for class Input,
   
-  (4) **Core_Injection**,
+  (C4) **Core_Injection**,
   
-  (5) **concurrentTask(s)_1**,
+// zinc_epicentre..  
+  D(5) **concurrentTask(s)_1**,
   
-  (6) **concurrentTask(s)_2**,
+  D(6) **concurrentTask(s)_2**,
   
-  (7) **Core_Extraction** into Ouput_Draw O data for class Output || Networking O 1028 bytes,
+// Shell - Server_Assembly.  
+  C(7) **Core_Extraction** into Ouput_Draw O data for class Output || Networking O 1028 bytes,
   
-  (8) **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
+  C(8) **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
   
-  (9) **SIM_IN** ***(concurrentTask(s)_3)***,
+// SIMULATION I and O.
+  E(9) **SIM_IN** ***(concurrentTask(s)_3)***,
   
-  (10) **SIM_OUT** ***(concurrentTask(s)_4)***.
+  E(10) **SIM_OUT** ***(concurrentTask(s)_4)***.
 
 
 ---
