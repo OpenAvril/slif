@@ -87,30 +87,31 @@ Consumer of spare threads.
 ## How To Guide - Flow From Client I - Server - Client O.
 
 ---
-# Thread(s):
+### Thread(s):
 
-  (1) **Binary Neural Intellijence**,
+  (1) **Binary Neural Intellijence** in || with the following, while training and doing tasks.
   
-  (2) **Networking**,
+  (2) **Networking** into Core_Injection, double loop for I and O 1028 bytes,
   
-  (3) **Input_Scanner** *server interface input* ***(concurrentTask(s)_5)***,
+  (3) **Input_Scanner** *server interface input* ***(concurrentTask(s)_5)*** into Core_Injection, I data for class Input,
   
-  (2) **Core_Injection**,
+  (4) **Core_Injection**,
   
-  (3) **concurrentTask(s)_1**,
+  (5) **concurrentTask(s)_1**,
   
-  (4) **concurrentTask(s)_2**,
+  (6) **concurrentTask(s)_2**,
   
-  (6) **Core_Extraction**,
+  (7) **Core_Extraction** into Ouput_Draw || Networking, O 1028 bytes,  O data for class Output,
   
-  (4) **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
+  (8) **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
   
   (9) **SIM_IN** ***(concurrentTask(s)_3)***,
   
   (10) **SIM_OUT** ***(concurrentTask(s)_4)***.
 
+
 ---
-## Data Cluster(s): via Thread Options as 'AcessId'.
+### Data Cluster(s): via Thread(S).
 
 thread => **SIM_IN**
 
