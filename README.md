@@ -101,7 +101,7 @@ Consumer of spare threads.
   
   (6) **concurrentTask(s)_2**,
   
-  (7) **Core_Extraction** into Ouput_Draw || Networking, O 1028 bytes,  O data for class Output,
+  (7) **Core_Extraction** into Ouput_Draw O data for class Output || Networking O 1028 bytes,
   
   (8) **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
   
