@@ -92,24 +92,29 @@ Consumer of spare threads.
   A(1) **Binary Neural Intellijence** in || with the following, while training and doing tasks.
   
 // Networking I and O.
+
   B(2) **Networking** into Core_Injection, double loop for I and O 1028 bytes,
   
 // Shell - Server_Assembly.
+
   C(3) **Input_Scanner** *server interface input* ***(concurrentTask(s)_5)*** into Core_Injection, I data for class Input,
   
   (C4) **Core_Injection**,
   
-// zinc_epicentre..  
+// zinc_epicentre.
+
   D(5) **concurrentTask(s)_1**,
   
   D(6) **concurrentTask(s)_2**,
   
 // Shell - Server_Assembly.  
+
   C(7) **Core_Extraction** into Ouput_Draw O data for class Output || Networking O 1028 bytes,
   
   C(8) **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
   
 // SIMULATION I and O.
+
   E(9) **SIM_IN** ***(concurrentTask(s)_3)***,
   
   E(10) **SIM_OUT** ***(concurrentTask(s)_4)***.
