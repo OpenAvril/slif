@@ -151,7 +151,7 @@ thread => **SIM_OUT**
 
 ---
 
-Copyright (c) 2026 King Brenton James Maddocks BEng(CompSys), Crown of Queensland the Commonwealth Empire.
+Copyright (c) 2026 King Brenton James Maddocks BEng(CompSys), Crown of Queensland, of the Commonwealth Empire.
 
 ---
 ---
