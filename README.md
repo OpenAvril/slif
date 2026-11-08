@@ -2,7 +2,7 @@
 
 ## 2x ***TEMPLATE(s) for user Compilation***
 
-## 4x ***Libraries(s) for user Compilation***
+## 3x ***Libraries(s) for user Compilation***
 
 ---
 ---
