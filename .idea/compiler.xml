@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="slif_epicentre" />
-        <module name="slif_mutex_que" />
+        <module name="Server_Assembly" />
         <module name="slif_launch_que" />
+        <module name="slif_mutex_que" />
       </profile>
     </annotationProcessing>
   </component>

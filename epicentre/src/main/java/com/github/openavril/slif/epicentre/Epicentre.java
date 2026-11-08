@@ -1,4 +1,4 @@
-package com.github.openavril.slif;
+package com.github.openavril.slif.epicentre;
 import engine.Global;
 import libs.IO_Epicentre;
 
