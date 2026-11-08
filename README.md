@@ -1,51 +1,15 @@
 # Silicon Life Open Source Package:
 ---
+---
 ## OpenAvril / slif:
 
 Java .Jar 'slif' Raspberry Pi prototype board firmware update :: MIT package(s) for 'Silicon life' engineering tools :: Concurrent; Embedded control systems, Core, Post-process, Networking, Full stack development, System bussing., Binary neural intelligence.
 
 Is planned to become a part of as part of Grittith University - Nathan Open Source comtrubitation to MIT packages for my master thesis project, is an open-source development project hosted on GitHub under the Silicon Life ecosystem.
 
-Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with 10 Cores.
+Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with mutpile cores. PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
-Thread(s):
-
-  (1) **Binary Neural Intellijence**,
-  
-  (2) **Networking**,
-  
-  (3) **Input_Scanner**,
-  
-  (2) **Core_Injection**,
-  
-  (3) **concurrentTask(s)_1**,
-  
-  (4) **concurrentTask(s)_2**,
-  
-  (6) **Core_Extraction**,
-  
-  (4) **Ouput_Draw**,
-  
-  (9) **SIM_IN** ***(concurrentTask(s)_3)***,
-  
-  (10) **SIM_OUT** ***(concurrentTask(s)_4)***.
-
-&& PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
-
-Data Cluster(s):
-
- (1) **Input_Sample_Buffer** *(HandleId_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
- 
- (2) **zinc_epicentre : Stack_of_Input** *(HandleId_Stack_of_Input_R-W-Buffer = MutexQue::generateHandle())*,
- 
- (3) **zinc_epicentre : Stack_of_Output** *(HandleId_Stack_of_Output_R-W-Buffer = MutexQue::generateHandle())*,
- 
- (4) **Output_Sample_Buffer** *(HandleId_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
-  
- (5) **SIM_Input_SAMPLE** *(HandleId_SIM_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
- 
- (6) **SIM_Output_SAMPLE** *(HandleId_SIM_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
-
+---
 ---
 ## CONCURRENT Systems: 
 Wi-Fi dual bandwidth each railed to an Interrupt Request Stack array, reading the bandwidth array, writing to the Bus loader for rail. Super computer injection and extraction on independent threads for task algorithms via concurrent I and O. Building concurrent rail systems as RTCOS (Real-Time-Concurrent-Operationg-System). 
@@ -54,6 +18,8 @@ Wi-Fi 2.5 Input 64 pins, Wi-Fi 2.5 Output 64 pins, Wi-Fi 5 Input 64 pins, Wi-Fi 
 
 The repository is officially marked as "UNDER DEVELOPMENT" and serves as a collection of full-stack concurrent programming packages.
 
+
+---
 ---
 ## Key Focus Areas & Features
 The project contains architectural implementations centered heavily around high-concurrency, systems-level logic, and early-stage artificial intelligence:
@@ -70,25 +36,123 @@ A master by coursework with five specialisation electives, I propose Convener of
 
 ---
 ---
-# MutexQue:
+---
+# MutexQue : com.github.openavril.slif.MutexQue.
   
 Exclusive Cohesion Mutex Queue:   
 
 CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 
-Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly.
+Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly. 
 
 ---
-# LaunchQue:
+# Stemisphore : com.github.openavril.slif.Stemisphore. ***UNDER DEVELOPMENT***
 
-Left Hemisphore Task Launcher:
+System Bussing for Zinc Neural Hemisphoric Chip:
+
+CLIB Concurrent System Bussing.
+
+Open Concurrent SCADA.
+
+Triple MutexQue into a set/get data buffer of bus for route of paired junctions.
+
+---
+# LaunchQue : com.github.openavril.slif.LaunchQue.
+
+Left Hemisphore Task Launcher: 
 
 CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
 
-**Concurrency; Core, Post-Process.**
+Concurrency; Core, Post-Process.
 
-ex: Core task chunker.
 
-ex: Graphics post process.
+---
+# LeftHemisphore : com.github.openavril.slif.Epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
+  
+Left Hemisphore Logic Task Result Deducer:      
 
+CLIB Concurrent Server with independent task threads and IO wrapper.
+
+Consumer of spare threads.
+
+**TEMPLATE for user Compilation**
+
+---
+---
+---
+# Implementations.
+
+---
+---
+## How To Guide - Flow From Client I - Server - Client O.
+
+---
+### Thread(s):
+
+  (1)A **Binary Neural Intellijence** in || with the following, while training and doing tasks.
+  
+// Networking I and O.
+
+  (2)B **Networking** into Core_Injection, double loop for I and O 1028 bytes,
+  
+// Shell - Server_Assembly.
+
+  (3)C **Input_Scanner** *server interface input* ***(concurrentTask(s)_5)*** into Core_Injection, I data for class Input,
+  
+  (4)C **Core_Injection**,
+  
+// zinc_epicentre.
+
+  (5)D **concurrentTask(s)_1**,
+  
+  (6)D **concurrentTask(s)_2**,
+  
+// Shell - Server_Assembly.  
+
+  (7)C **Core_Extraction** into Ouput_Draw O data for class Output || Networking O 1028 bytes,
+  
+  (8)C **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
+  
+// SIMULATION I and O.
+
+  (9)E **SIM_IN** ***(concurrentTask(s)_3)***,
+  
+  (10)E **SIM_OUT** ***(concurrentTask(s)_4)***.
+
+
+---
+### Data Cluster(s): via Thread(S).
+
+thread => **SIM_IN**
+
+ (1) **SIM_Input_SAMPLE** *(HandleId_SIM_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
+
+thread => ***Input_Scanner*** || ***NETWORKING***
+
+ (2) **Input_Sample_Buffer** *(HandleId_Input_Sample_R-W-Buffer = MutexQue::generateHandle())*,
+
+thread => ***Core_Injection***
+ 
+ (3) **zinc_epicentre : Stack_of_Input** *(HandleId_Stack_of_Input_R-W-Buffer = MutexQue::generateHandle())*,
+
+thread => ***CONCURRENT***
+ 
+ (4) **zinc_epicentre : Stack_of_Output** *(HandleId_Stack_of_Output_R-W-Buffer = MutexQue::generateHandle())*,
+
+thread => ***Core_Extraction***,
+ 
+ (5) **Output_Sample_Buffer** *(HandleId_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
+
+thread => ***Ouput_Draw*** || ***NETWORKING***
+   
+ (6) **SIM_Output_SAMPLE** *(HandleId_SIM_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
+
+thread => **SIM_OUT**
+
+---
+
+Copyright (c) 2026 King Brenton James Maddocks BEng(CompSys), Crown of Queensland, of the Commonwealth Empire.
+
+---
+---
 ---
