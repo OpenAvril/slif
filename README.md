@@ -51,7 +51,7 @@ CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly. 
 
 ---
-# Stemisphore : com.github.openavril.slif.Stemisphore. ***UNDER DEVELOPMENT***
+# Stemisphore : com.github.openavril.slif.Stemisphore.
 
 System Bussing for Zinc Neural Hemisphoric Chip:
 
@@ -83,7 +83,7 @@ Consumer of spare threads.
 **TEMPLATE for user Compilation**
 
 ---
-# Server_Assembly : com.github.openavril.slif.ServerAssembly. ***TEMPLATE for user Compilation***
+# Server_Assembly : com.github.openavril.slif.ServerAssembly. ***TEMPLATE for user Compilation***  **UNDER DEVELOPMENT**
 
 
 ---
