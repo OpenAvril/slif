@@ -1,4 +1,9 @@
 # Silicon Life Open Source Package:
+
+## 2x ***TEMPLATE(s) for user Compilation***
+
+## 4x ***Libraries(s) for user Compilation***
+
 ---
 ---
 ## OpenAvril / slif:
@@ -67,7 +72,7 @@ Concurrency; Core, Post-Process.
 
 
 ---
-# LeftHemisphore : com.github.openavril.slif.Epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
+# LeftHemisphore : com.github.openavril.slif.Epicentre. ***TEMPLATE for user Compilation***
   
 Left Hemisphore Logic Task Result Deducer:      
 
@@ -78,8 +83,13 @@ Consumer of spare threads.
 **TEMPLATE for user Compilation**
 
 ---
+# Server_assembly : com.github.openavril.slif.ServerAssembly. ***TEMPLATE for user Compilation***
+
+
 ---
 ---
+---
+
 # Implementations.
 
 ---
