@@ -4,7 +4,7 @@
 
   <groupId>com.github.openavril.slif</groupId>
   <artifactId>slif_epicentre</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
   <packaging>jar</packaging>
 
   <name>slif_epicentre</name>
