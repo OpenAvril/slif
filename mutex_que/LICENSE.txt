@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2022 - 2026, 'com.github.oipenavril.slif.mutex_que'. King 
+Copyright (c) 2022 - 2026, 'com.github.oipenavril.slif.MutexQue'. King 
 Brenton James Maddocks BEng(CompSys) - Emperor of Queensland to the King of 
 the Commonwealth (echelon three).
 
