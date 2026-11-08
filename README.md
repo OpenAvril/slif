@@ -83,7 +83,7 @@ Consumer of spare threads.
 **TEMPLATE for user Compilation**
 
 ---
-# Server_assembly : com.github.openavril.slif.ServerAssembly. ***TEMPLATE for user Compilation***
+# Server_Assembly : com.github.openavril.slif.ServerAssembly. ***TEMPLATE for user Compilation***
 
 
 ---
