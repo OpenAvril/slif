@@ -64,7 +64,13 @@ Open Concurrent SCADA.
 
 Triple MutexQue into a set/get data buffer of bus for route of paired junctions.
 
-MainStreamBussing: CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
+Triple MutexQue into a set/get data buffer of bus for route of paired junctions.
+
+MainStreamBussing: CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. 
+
+A single Bus deploying an ExclusiveCohesionMutexQueue('Handle_Id=BusId', 'AccessId_A=StationId'), 
+
+and each Station deploying an ExclusiveCohesionMutexQueue('Handle_Id=StationId', 'AccessId_B=Thread4Mutex').
 
 ---
 ### LaunchQue : zinc_launch_que, v-1.2.0.
