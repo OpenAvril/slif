@@ -1,8 +1,12 @@
 # Silicon Life Open Source Package:
 
-## 2x ***TEMPLATE(s) for user Compilation***
+MutexQue : slif_mutex_que, v-1.2.0.
 
-## 3x ***Libraries(s) for user Compilation***
+Stemisphore : slif_stemisphore, v-1.2.0.
+
+LaunchQue : slif_launch_que, v-1.2.0.
+
+LeftHemisphore : slif_epicentre. ***TEMPLATE for user Compilation*** **UNDER DEVELOPMENT**
 
 ---
 ---
@@ -15,7 +19,6 @@ Is planned to become a part of as part of Grittith University - Nathan Open Sour
 Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with mutpile cores. PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
 ---
----
 ## CONCURRENT Systems: 
 Wi-Fi dual bandwidth each railed to an Interrupt Request Stack array, reading the bandwidth array, writing to the Bus loader for rail. Super computer injection and extraction on independent threads for task algorithms via concurrent I and O. Building concurrent rail systems as RTCOS (Real-Time-Concurrent-Operationg-System). 
 
@@ -24,7 +27,6 @@ Wi-Fi 2.5 Input 64 pins, Wi-Fi 2.5 Output 64 pins, Wi-Fi 5 Input 64 pins, Wi-Fi 
 The repository is officially marked as "UNDER DEVELOPMENT" and serves as a collection of full-stack concurrent programming packages.
 
 
----
 ---
 ## Key Focus Areas & Features
 The project contains architectural implementations centered heavily around high-concurrency, systems-level logic, and early-stage artificial intelligence:
@@ -41,8 +43,9 @@ A master by coursework with five specialisation electives, I propose Convener of
 
 ---
 ---
+## zinc : zinc::.*
 ---
-# MutexQue : com.github.openavril.slif.MutexQue.
+### MutexQue : zinc_mutex_que, v-1.2.0.
   
 Exclusive Cohesion Mutex Queue:   
 
@@ -51,7 +54,7 @@ CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly. 
 
 ---
-# Stemisphore : com.github.openavril.slif.Stemisphore. **UNDER DEVELOPMENT**
+### Stemisphore : zinc_stemisphore, v-1.2.0.
 
 System Bussing for Zinc Neural Hemisphoric Chip:
 
@@ -61,8 +64,10 @@ Open Concurrent SCADA.
 
 Triple MutexQue into a set/get data buffer of bus for route of paired junctions.
 
+MainStreamBussing: CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
+
 ---
-# LaunchQue : com.github.openavril.slif.LaunchQue.
+### LaunchQue : zinc_launch_que, v-1.2.0.
 
 Left Hemisphore Task Launcher: 
 
@@ -72,33 +77,115 @@ Concurrency; Core, Post-Process.
 
 
 ---
-# LeftHemisphore : com.github.openavril.slif.Epicentre. ***TEMPLATE for user Compilation*** **UNDER DEVELOPMENT**
+### LeftHemisphore : zinc_epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
   
 Left Hemisphore Logic Task Result Deducer:      
 
-CLIB Concurrent Server with independent task threads and IO wrapper.
-
 Consumer of spare threads.
 
+Left Hemisphore Logic Task Result Deducer: CLIB Concurrent Server with independent task threads and IO wrapper.
+  
 **TEMPLATE for user Compilation**
 
 ---
-# Server_Assembly : com.github.openavril.slif.ServerAssembly. ***TEMPLATE for user Compilation***  **UNDER DEVELOPMENT**
-
-PSUDOCODE: https://github.com/OpenAvril/CFSD/tree/main/Server_Assembly
-
----
----
----
-
-# Implementations.
+### ThreadsLog: ***UNDER DEVELOPMENT***
+  
+Neural Chip Thread Logging:
+     
+CLIB Console output via MutexQue, DataCluster is 'Console'.
 
 ---
----
-## How To Guide - Flow From Client I - Server - Client O.
+### RightHemisphore: ***UNDER DEVELOPMENT***
+  
+Wi-Fi hi and low bandwidth direct injection to a independent thread 'access-id (ThreadId)' of stemisphore.
 
 ---
-### Thread(s):
+---
+## Building - Compiler Terminal Commands.
+
+Open to the sub folder containing the 'CMakeList.txt' for the project desired to be compiled.
+
+*** Load Root CMake Project ***
+
+cmake -B build
+
+cmake --build build
+
+---
+#### IntelliJ: Clone from GuitHub.
+ - File - > New -> Project from Version Control.
+ - URL : user entry 'https://github.com/OpenAvril/slif.git'
+   
+Copy from CLion    'build/CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/libzinc_control_mutex_que.a'
+
+Paste to IntelliJ  'src/main/java/libs/libzinc_control_mutex_que.a' 
+
+Copy from IntelliJ    'target/slif_mutex_que-1.0.jar'
+
+---
+#### Using.
+import com.github.openavril.slif.MutexQue;
+
+MutexQue::generateProgram(sysThreadId);
+
+int* stat_REG_HandleId_For_PGM_zincMutexQue = MutexQue::generateHandle(sysThreadId);
+
+MutexQue::reInitialiseHandle(sysThreadId, handleId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+
+MutexQue::startByLock(sysThreadId, handleId, ACCESS_ID);
+
+MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
+
+---
+---
+## Building - Compiler Terminal Commands.
+
+Open to the sub folder containing the 'CMakeList.txt' for the project desired to be compiled.
+
+*** Load Root CMake Project ***
+
+cmake -B build
+
+cmake --build build
+
+---
+### IntelliJ: Clone from GuitHub.
+ - File - > New -> Project from Version Control.
+ - URL : user entry 'https://github.com/OpenAvril/slif.git'
+   
+Copy from CLion    'build/CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/libzinc_control_mutex_que.a'
+
+Paste to IntelliJ  'src/main/java/libs/libzinc_control_mutex_que.a' 
+
+Copy from IntelliJ    'target/slif_mutex_que-1.0.jar'
+
+---
+---
+## Using.
+import com.github.openavril.slif.MutexQue;
+
+MutexQue::generateProgram(sysThreadId);
+
+int* stat_REG_HandleId_For_PGM_zincMutexQue = MutexQue::generateHandle(sysThreadId);
+
+MutexQue::reInitialiseHandle(sysThreadId, handleId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+
+MutexQue::startByLock(sysThreadId, handleId, ACCESS_ID);
+
+MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
+---
+---
+#raspberrypi
+
+---
+---
+## Implementation.
+
+---
+### How To Guide - Flow From Client I - Server - Client O.
+
+---
+#### Thread(s):
 
   (1)A **Binary Neural Intellijence** in || with the following, while training and doing tasks.
   
@@ -132,7 +219,7 @@ PSUDOCODE: https://github.com/OpenAvril/CFSD/tree/main/Server_Assembly
 
 
 ---
-### Data Cluster(s): via Thread(S).
+### Data Cluster(s): via Thread Options as 'AcessId'.
 
 thread => **SIM_IN**
 
@@ -159,6 +246,11 @@ thread => ***Ouput_Draw*** || ***NETWORKING***
  (6) **SIM_Output_SAMPLE** *(HandleId_SIM_Output_Sample_R-W-Buffer = MutexQue::generateHandle())*,
 
 thread => **SIM_OUT**
+
+
+___
+---
+## Wrapper Imports and Native IO.  ***UNDER DEVELOPMENT***
 
 ---
 
