@@ -66,7 +66,7 @@ Triple MutexQue into a set/get data buffer of bus for route of paired junctions.
 
 MainStreamBussing: CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. 
 
-A single Bus deploying an ExclusiveCohesionMutexQueue('Handle_Id=BusId', 'AccessId_A=StationId'), 
+A single Bus deploying an ExclusiveCohesionMutexQueue('Handle_Id=BusId', 'AccessId_A=StationId4Mutex'), 
 
 and each Station deploying an ExclusiveCohesionMutexQueue('Handle_Id=StationId', 'AccessId_B=Thread4Mutex').
 
