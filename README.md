@@ -138,9 +138,7 @@ MutexQue::reInitialiseHandle(sysThreadId, handleId, MAX_NUMBER_OF_THREADS_FOR_AC
 MutexQue::startByLock(sysThreadId, handleId, ACCESS_ID);
 
 MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
----
----
-#raspberrypi
+
 
 ---
 ---
