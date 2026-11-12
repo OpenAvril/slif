@@ -158,7 +158,7 @@ MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
   
 // Shell - Server_Assembly.
 
-  (3)C **Input_Scanner** *server interface input* ***(concurrentTask(s)_5)*** into Core_Injection, I data for class Input,
+  (3)C **Input_Scanner** *client interface input* ***(concurrentTask(s)_5)*** into Core_Injection, I data for class Input,
   
   (4)C **Core_Injection**,
   
@@ -172,7 +172,7 @@ MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
 
   (7)C **Core_Extraction** into Ouput_Draw O data for class Output || Networking O 1028 bytes,
   
-  (8)C **Ouput_Draw** *server interface output* ***(concurrentTask(s)_6)***,
+  (8)C **Ouput_Draw** *client interface output* ***(concurrentTask(s)_6)***,
   
 // SIMULATION I and O.
 
