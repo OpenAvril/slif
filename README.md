@@ -102,43 +102,8 @@ Wi-Fi hi and low bandwidth direct injection to a independent thread 'access-id (
 ---
 ---
 ## Building - Compiler Terminal Commands.
-
-Open to the sub folder containing the 'CMakeList.txt' for the project desired to be compiled.
-
-*** Load Root CMake Project ***
-
-cmake -B build
-
-cmake --build build
-
 ---
-#### IntelliJ: Clone from GuitHub.
- - File - > New -> Project from Version Control.
- - URL : user entry 'https://github.com/OpenAvril/slif.git'
-   
-Copy from CLion    'build/CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/libzinc_control_mutex_que.a'
-
-Paste to IntelliJ  'src/main/java/libs/libzinc_control_mutex_que.a' 
-
-Copy from IntelliJ    'target/slif_mutex_que-1.0.jar'
-
----
-#### Using.
-import com.github.openavril.slif.MutexQue;
-
-MutexQue::generateProgram(sysThreadId);
-
-int* stat_REG_HandleId_For_PGM_zincMutexQue = MutexQue::generateHandle(sysThreadId);
-
-MutexQue::reInitialiseHandle(sysThreadId, handleId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
-
-MutexQue::startByLock(sysThreadId, handleId, ACCESS_ID);
-
-MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
-
----
----
-## Building - Compiler Terminal Commands.
+### CLion.
 
 Open to the sub folder containing the 'CMakeList.txt' for the project desired to be compiled.
 
