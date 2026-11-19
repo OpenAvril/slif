@@ -3,7 +3,7 @@
 ## slif Sub-packages.
 - MutexQue : slif_mutex_que, v-1.2.3.
 
-## *UNDER DEVELOPMENT**
+## *UNDER DEVELOPMENT*
 
  - Stemisphore : slif_stemisphore, v-1.2.x.
 
