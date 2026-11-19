@@ -1,12 +1,15 @@
 # Silicon Life Open Source Package:
 
-MutexQue : slif_mutex_que, v-1.2.0.
+## slif Sub-packages.
+- MutexQue : slif_mutex_que, v-1.2.3.
 
-Stemisphore : slif_stemisphore, v-1.2.0.
+## *UNDER DEVELOPMENT**
 
-LaunchQue : slif_launch_que, v-1.2.0.
+ - Stemisphore : slif_stemisphore, v-1.2.x.
 
-LeftHemisphore : slif_epicentre. ***TEMPLATE for user Compilation*** **UNDER DEVELOPMENT**
+- LaunchQue : slif_launch_que, v-1.2.x.
+
+- LeftHemisphore : slif_epicentre. v-1.2.x. ***TEMPLATE for user Compilation***
 
 ---
 ---
