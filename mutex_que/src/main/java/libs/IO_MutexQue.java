@@ -39,22 +39,6 @@ public class IO_MutexQue {
             throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.generateProgram(sysThreadId)%n");
         }
     }
-    public static boolean isINSTANTIATED(byte sysThreadId) {
-        boolean result;
-        try {
-            result = Global.stat_CONVERT_ByteArray_To_Boolean(sysThreadId, Java_zinc_control_mutex_que.INSTANCE.isINSTANTIATED(sysThreadId));
-        } catch (NoClassDefFoundError e) {
-            System.out.printf("NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.isINSTANTIATED(byte sysThreadId)%n");
-            result = true;
-        } catch (UnsatisfiedLinkError e) {
-            System.out.printf("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.isINSTANTIATED(byte sysThreadId)%n");
-            result = true;
-        } catch (NullPointerException e) {
-            result = true;
-            throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.isINSTANTIATED(byte sysThreadId)%n");
-        }
-        return result;
-    }
     public static void reInitialiseHandle(byte sysThreadId, long handleId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS) {
         try {
             Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(sysThreadId, Global.stat_CONVERT_Long_To_ByteArray(sysThreadId, handleId), MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);

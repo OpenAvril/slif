@@ -107,6 +107,32 @@ public class IO_Epicentre {
         }
         return result;
     }
+    public static byte[] get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte[] handleId) {
+        byte[] result = new byte[255];
+        try {
+            result = Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(sysThreadId, handleId);
+        } catch (NoClassDefFoundError e) {
+            System.out.printf("NoClassDefFoundError : Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte[] handleId)%n");
+        } catch (UnsatisfiedLinkError e) {
+            System.out.printf("NullPointerException : Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte[] handleId)%n");
+        } catch (NullPointerException e) {
+            throw new NullPointerException("NullPointerException : Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte[] handleId)%n");
+        }
+        return result;
+    }
+    public static byte[] get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte[] handleId) {
+        byte[] result = new byte[255];
+        try {
+            result = Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(sysThreadId, handleId);
+        } catch (NoClassDefFoundError e) {
+            System.out.printf("NoClassDefFoundError : Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte[] handleId)%n");
+        } catch (UnsatisfiedLinkError e) {
+            System.out.printf("NullPointerException : Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte[] handleId)%n");
+        } catch (NullPointerException e) {
+            throw new NullPointerException("NullPointerException : Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte[] handleId)%n");
+        }
+        return result;
+    }
     public static void set_InputItemsFor_praise0(byte sysThreadId, long handleId, long longPraiseId, double doubleValue_A, double doubleValue_B) {
         try {
             Java_zinc_epicentre.INSTANCE.set_InputItemsFor_praise0(sysThreadId, Global.stat_CONVERT_Long_To_ByteArray(handleId), Global.stat_CONVERT_Long_To_ByteArray(longPraiseId), doubleValue_A, doubleValue_B);

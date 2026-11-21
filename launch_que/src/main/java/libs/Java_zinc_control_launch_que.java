@@ -10,7 +10,6 @@ public interface Java_zinc_control_launch_que extends Library {
     boolean get_FlagSTATEofConcurrentCore(byte sysThreadId, byte[] handleId, byte concurrentThreadId);
     boolean get_FlagisIdle(byte sysThreadId, byte[] handleId, byte concurrentThreadId);
     boolean get_FlagSTATEofThreadToLaunch(byte sysThreadId, byte[] handleId, byte concurrentThreadId);
-    boolean isINSTANTIATED(byte sysThreadId);
     void reInitialiseHandle(byte sysThreadId, byte[] handleId, byte concurrentThreadId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);
     void set_FlagSTATEofConcurrentCore(byte sysThreadId, byte[] handleId, byte concurrentThreadId, boolean boolValue);
     void terminateProgaram(byte sysThreadId);

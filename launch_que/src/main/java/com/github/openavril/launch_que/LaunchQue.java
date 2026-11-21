@@ -19,7 +19,6 @@ public class LaunchQue {
         boolean tempA3 = IO_LaunchQue.get_FlagSTATEofConcurrentCore(sysThreadId, handleId, concuurentThreadId);
         boolean tempA4 = IO_LaunchQue.get_FlagisIdle(sysThreadId, handleId, concuurentThreadId);
         boolean tempA5 = IO_LaunchQue.get_FlagSTATEofThreadToLaunch(sysThreadId, handleId, concuurentThreadId);
-        boolean tempA6 =  IO_LaunchQue.isINSTANTIATED(sysThreadId);
         IO_LaunchQue.reInitialiseHandle(sysThreadId, handleId, concuurentThreadId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
         IO_LaunchQue.set_FlagSTATEofConcurrentCore(sysThreadId, handleId, concuurentThreadId, boolValue);
         IO_LaunchQue.terminateProgaram(sysThreadId);
@@ -40,9 +39,6 @@ public class LaunchQue {
     }
     public static boolean get_FlagSTATEofThreadToLaunch(byte sysThreadId, long handleId, byte concurrentThreadId) {
         return IO_LaunchQue.get_FlagSTATEofThreadToLaunch(sysThreadId, handleId, concurrentThreadId);
-    }
-    public static boolean isINSTANTIATED(byte sysThreadId) {
-        return IO_LaunchQue.isINSTANTIATED(sysThreadId);
     }
     public static void reInitialiseHandle(byte sysThreadId, long handleId, byte concurrentThreadId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS) {
         IO_LaunchQue.reInitialiseHandle(sysThreadId, handleId, concurrentThreadId, MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);

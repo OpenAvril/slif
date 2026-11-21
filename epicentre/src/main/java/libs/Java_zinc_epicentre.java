@@ -7,10 +7,11 @@ public interface Java_zinc_epicentre extends Library {
     void generateProgram(byte sysThreadId);
     byte[] get_Output(byte sysThreadId, byte[] handleId, byte[] praiseId);
     boolean get_FLAG_isINITIALISED(byte sysThreadId, byte[] handleId);
-    boolean get_FLAG_isINSTANTIATED(byte sysThreadId);
     boolean get_FLAG_isStackLoaded_ServerInputReceive(byte sysThreadId, byte[] handleId);
     boolean get_FLAG_isStackLoaded_ServerOutputSend(byte sysThreadId, byte[] handleId);
     byte[] get_MetaData_PraiseEventId(byte sysThreadId, byte[] handleId);
+    byte[] get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte[] handleId);
+    byte[] get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte[] handleId);
     void set_InputItemsFor_praise0(byte sysThreadId, byte[] handleId, byte[] praiseId, double value_A, double value_B);
     void set_InputItemsFor_praise1(byte sysThreadId, byte[] handleId, byte[] praiseId, double value_A, double value_B);
     void set_InputItemsFor_praise2(byte sysThreadId, byte[] handleId, byte[] praiseId, double value_A, double value_B);

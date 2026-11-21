@@ -6,7 +6,6 @@ public interface Java_zinc_control_mutex_que extends Library {
     void endByUnlock(byte sysThreadId, byte[] handleId, byte ACCESS_ID);
     byte[] generateHandle(byte sysThreadId);
     void generateProgram(byte sysThreadId);
-    byte[] isINSTANTIATED(byte sysThreadId);
     void reInitialiseHandle(byte sysThreadId, byte[] handleId, byte MAX_NUMBER_OF_THREADS_FOR_ACCESS);
     void startByLock(byte sysThreadId, byte[] handleId, byte ACCESS_ID);
     void terminateProgram(byte sysThreadId);
