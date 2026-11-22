@@ -1,34 +1,34 @@
-package com.github.openavril.slif.server_assembly.praise_sets;
+package com.github.openavril.slif.server_assembly.independent.praise_sets;
 import com.github.openavril.slif.server_assembly.engine.Framework;
 public class Output_praise0 {
     private static double output_praise0_value;
 
     // public.
-    public void dyn_REG_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj) {
-        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Input_praise0 : dyn_REG_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
+    public void dyn_REG_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId) {
+        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Input_praise0 : dyn_REG_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
         dyn_STRUCT_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output_value(sysThreadId);
-        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Input_praise0 : dyn_REG_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Input_praise0 : dyn_REG_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
     }
 
-    public void dyn_REG_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj) {
-        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Input_praise0 : dyn_REG_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
+    public void dyn_REG_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId) {
+        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Input_praise0 : dyn_REG_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
         dyn_STRUCT_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output_value(sysThreadId);
-        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Input_praise0 : dyn_REG_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Input_praise0 : dyn_REG_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
     }
 
-    public void dyn_STRUCT_boot1_DEFINE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj) {
-        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Output_praise0 : dyn_STRUCT_boot1_DEFINE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
-        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Output_praise0 : dyn_STRUCT_boot1_DEFINE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
+    public void dyn_STRUCT_boot1_DEFINE_ServerAssembly_PraiseSet0_Output(byte sysThreadId) {
+        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Output_praise0 : dyn_STRUCT_boot1_DEFINE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Output_praise0 : dyn_STRUCT_boot1_DEFINE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
     }
 
-    public void dyn_STRUCT_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj) {
-        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Output_praise0 : dyn_STRUCT_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
-        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Output_praise0 : dyn_STRUCT_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
+    public void dyn_STRUCT_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId) {
+        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Output_praise0 : dyn_STRUCT_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Output_praise0 : dyn_STRUCT_boot2_SUBSTANTIATE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
     }
 
-    public void dyn_STRUCT_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj) {
-        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Output_praise0 : dyn_STRUCT_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
-        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Output_praise0 : dyn_STRUCT_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId, Framework obj)" + ".%n");
+    public void dyn_STRUCT_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId) {
+        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Output_praise0 : dyn_STRUCT_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Output_praise0 : dyn_STRUCT_boot3_INITIALISE_ServerAssembly_PraiseSet0_Output(byte sysThreadId)" + ".%n");
     }
 
     public double dyn_REG_get_ServerAssembly_PraiseSet0_STRUCT_Output_value(byte sysThreadId) {

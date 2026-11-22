@@ -1,4 +1,4 @@
-package com.github.openavril.slif.server_assembly.praise_sets;
+package com.github.openavril.slif.server_assembly.independent.praise_sets;
 import com.github.openavril.slif.server_assembly.engine.Framework;
 public class Input_praise1 {
     private static double input_praise1_valueA;

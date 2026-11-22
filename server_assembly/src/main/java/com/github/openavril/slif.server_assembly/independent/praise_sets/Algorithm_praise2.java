@@ -1,4 +1,4 @@
-package com.github.openavril.slif.server_assembly.praise_sets;
+package com.github.openavril.slif.server_assembly.independent.praise_sets;
 public class Algorithm_praise2 {
     public double doWork(byte sysThreadId, Input_praise2 subsetIn, Output_praise2 subsetOut)
     {
