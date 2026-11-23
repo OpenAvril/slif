@@ -1,4 +1,4 @@
-package OpenCFSD_Java_Assembly;
+package com.github.openavril.slif.server_assembly.Main;
 //import com.github.openavril.slif;
 import engine.Framework;
 import java.io.IOException;

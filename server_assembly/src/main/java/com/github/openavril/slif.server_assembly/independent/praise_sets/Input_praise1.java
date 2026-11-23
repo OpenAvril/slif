@@ -82,4 +82,3 @@ public class Input_praise1 {
         input_praise1_valueB = newDouble;
     }
 }
-`

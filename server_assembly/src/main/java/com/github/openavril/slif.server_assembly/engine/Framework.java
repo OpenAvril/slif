@@ -1,8 +1,11 @@
-package engine;
-import SIMULATION.Simulation;
-import independent.threads.*;
-import independent.*;
-
+package com.github.openavril.slif.server_assembly.engine;
+import com.github.openavril.slif.server_assembly.independent.Algorithm;
+import com.github.openavril.slif.server_assembly.independent.Input;
+import com.github.openavril.slif.server_assembly.independent.Output;
+import com.github.openavril.slif.server_assembly.independent.User_Algorithm;
+import com.github.openavril.slif.server_assembly.independent.User_Input;
+import com.github.openavril.slif.server_assembly.independent.User_Output;
+//import com.github.openavril.slif.server_assembly.independent.threads.
 public class Framework
 {
     private static App stat_CLASS_App;
@@ -136,8 +139,8 @@ public class Framework
          System.out.printf("thread " + sysThreadId + "____ / ___\\__ \\@  @/ __/_____\\_____%n");
          System.out.printf("thread " + sysThreadId + "|              |\\../|               |%n");
          System.out.printf("thread " + sysThreadId + "|               \\VV/                |%n");
-         System.out.printf("thread " + sysThreadId + "|           Java TestBench.         |%n");
-         System.out.printf("thread " + sysThreadId + "|          Open Source MIT.         |%n");
+         System.out.printf("thread " + sysThreadId + "|       Java - Open Source MIT.      |%n");
+         System.out.printf("thread " + sysThreadId + "|        slif_server_asssemby        |%n");
          System.out.printf("thread " + sysThreadId + "|         King Brenton James        |%n");
          System.out.printf("thread " + sysThreadId + "|       Maddocks BEng(CompSys).     |%n");
          System.out.printf("thread " + sysThreadId + "|___________________________________|%n");
@@ -210,33 +213,28 @@ public class Framework
     public Thread_OutputRespond dyn_STRUCT_get_Thread_OutputRespond(byte sysThreadId) {
         return stat_STRUCT_get_IO_ListenRespond(sysThreadId);
     }
-    public void dyn_STRUCT_boot0_DECLAIRE(byte sysThreadId)
-    {
+    public void dyn_STRUCT_boot0_DECLAIRE(byte sysThreadId) {
          System.out.printf("thread " + sysThreadId + "entered stat_STRUCT_boot0_DECLAIRE(sysThreadId)" + ".%n");
 
          System.out.printf("thread " + sysThreadId + "exiting stat_STRUCT_boot0_DECLAIRE(sysThreadId)" + ".%n");
     }
     // private.
-    private static void stat_CLASS_boot0_DECLAIRE_Framework(byte sysThreadId)
-    {
+    private static void stat_CLASS_boot0_DECLAIRE_Framework(byte sysThreadId) {
          System.out.printf("thread " + sysThreadId + "entered stat_CLASS_boot0_DECLAIRE_Framework(sysThreadId)" + ".%n");
 
          System.out.printf("thread " + sysThreadId + "exiting stat_CLASS_boot0_DECLAIRE_Framework(sysThreadId)" + ".%n");
     }
-    private static void stat_CLASS_boot1_DEFINE_App(byte sysThreadId)
-    {
+    private static void stat_CLASS_boot1_DEFINE_App(byte sysThreadId) {
          System.out.printf("thread " + sysThreadId + "entered stat_CLASS_boot1_DEFINE_App(sysThreadId)" + ".%n");
         stat_CLASS_App = null;
          System.out.printf("thread " + sysThreadId + "exiting stat_CLASS_boot1_DEFINE_App(sysThreadId)" + ".%n");
     }
-    private static void stat_CLASS_boot1_DEFINE_Framework(byte sysThreadId)
-    {
+    private static void stat_CLASS_boot1_DEFINE_Framework(byte sysThreadId) {
          System.out.printf("thread " + sysThreadId + "entered stat_CLASS_boot1_DEFINE_Framework(sysThreadId)" + ".%n");
         stat_CLASS_boot1_DEFINE_App(sysThreadId);
          System.out.printf("thread " + sysThreadId + "exiting stat_CLASS_boot1_DEFINE_Framework(sysThreadId)" + ".%n");
     }
-    private static void boot1_CLASS_DEFINE_Global(byte sysThreadId)
-    {
+    private static void boot1_CLASS_DEFINE_Global(byte sysThreadId) {
          System.out.printf("thread " + sysThreadId + "entered boot1_CLASS_DEFINE_Global(sysThreadId)" + ".%n");
         stat_CLASS_Global = null;
          System.out.printf("thread " + sysThreadId + "exiting boot1_CLASS_DEFINE_Global(sysThreadId)" + ".%n");
@@ -252,13 +250,12 @@ public class Framework
         }
          System.out.printf("thread " + sysThreadId + "exiting stat_CLASS_boot3_INITIALISE_App(sysThreadId)" + ".%n");
     }
-    private static void stat_CLASS_boot3_INITIALISE_Framework(byte sysThreadId, Framework obj)  {
+    private static void stat_CLASS_boot3_INITIALISE_Framework(byte sysThreadId, Framework obj) {
          System.out.printf("thread " + sysThreadId + "entered stat_CLASS_boot3_INITIALISE_Framework(sysThreadId)" + ".%n");
         stat_CLASS_boot3_INITIALISE_App(obj);
          System.out.printf("thread " + sysThreadId + "exiting stat_CLASS_boot3_INITIALISE_Framework(sysThreadId)" + ".%n");
     }
-    private static void boot3_CLASS_INITIALISE_Global(byte sysThreadId)
-    {
+    private static void boot3_CLASS_INITIALISE_Global(byte sysThreadId) {
          System.out.printf("thread " + sysThreadId + "entered boot3_CLASS_INITIALISE_Global(sysThreadId)" + ".%n");
         stat_CLASS_Global = new Global(sysThreadId);
         try {
@@ -290,8 +287,7 @@ public class Framework
     {
         stat_STRUCT_Output = null;
     }
-    private static void stat_STRUCT_boot1_DEFINE_User_Algorithm(byte sysThreadId)
-    {
+    private static void stat_STRUCT_boot1_DEFINE_User_Algorithm(byte sysThreadId) {
         stat_STRUCT_User_Algorithms = null;
     }
     private static void stat_STRUCT_boot1_DEFINE_User_Input(byte sysThreadId)
@@ -302,8 +298,7 @@ public class Framework
     {
         stat_STRUCT_User_Outputs = null;
     }
-    private static void stat_STRUCT_boot1_DEFINE_IO_ListenRespond(byte sysThreadId)
-    {
+    private static void stat_STRUCT_boot1_DEFINE_IO_ListenRespond(byte sysThreadId) {
         stat_STRUCT_IO_ListenRespond = null;
     }
     private static void stat_STRUCT_boot3_INITIALISE_Algorithm(byte sysThreadId) {
@@ -377,8 +372,7 @@ public class Framework
     {
         return stat_STRUCT_Input;
     }
-    private static Thread_OutputRespond stat_STRUCT_get_IO_ListenRespond(byte sysThreadId)
-    {
+    private static Thread_OutputRespond stat_STRUCT_get_IO_ListenRespond(byte sysThreadId) {
         return stat_STRUCT_IO_ListenRespond;
     }
     private static Output stat_STRUCT_get_Output(byte sysThreadId)
@@ -393,8 +387,7 @@ public class Framework
     {
         return stat_STRUCT_User_Outputs;
     }
-    private static User_Algorithm stat_STRUCT_get_User_Algorithm(byte sysThreadId)
-    {
+    private static User_Algorithm stat_STRUCT_get_User_Algorithm(byte sysThreadId) {
         return stat_STRUCT_User_Algorithms;
     }
     private static void stat_CLASS_boot1_DEFINE_SIMULATION(byte sysThreadId) {
