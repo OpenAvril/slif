@@ -1,7 +1,7 @@
 # Silicon Life Open Source Package:
 
 ## slif Sub-packages.
-- MutexQue : slif_mutex_que, v-1.2.3.
+- MutexQue : slif_mutex_que-1.3.0.jar
 
 ## *UNDER DEVELOPMENT*
 
@@ -48,7 +48,7 @@ A master by coursework with five specialisation electives, I propose Convener of
 ---
 ## zinc : zinc::.*
 ---
-### MutexQue : zinc_mutex_que, v-1.2.0.
+### MutexQue : slif_mutex_que-1.3.0.jar.
   
 Exclusive Cohesion Mutex Queue:   
 
