@@ -57,7 +57,7 @@ CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly. 
 
 ---
-### Stemisphore : zinc_stemisphore, v-1.2.0.
+### Stemisphore : slif_stemisphore, v-1.2.0.
 
 System Bussing for Zinc Neural Hemisphoric Chip:
 
@@ -74,7 +74,7 @@ A single Bus deploying an ExclusiveCohesionMutexQueue('Handle_Id=BusId', 'Access
 and each Station deploying an ExclusiveCohesionMutexQueue('Handle_Id=StationId', 'AccessId_B=Thread4Mutex').
 
 ---
-### LaunchQue : zinc_launch_que, v-1.2.0.
+### LaunchQue : slif_launch_que, v-1.2.0.
 
 Left Hemisphore Task Launcher: 
 
@@ -84,7 +84,7 @@ Concurrency; Core, Post-Process.
 
 
 ---
-### LeftHemisphore : zinc_epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
+### LeftHemisphore : slif_epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
   
 Left Hemisphore Logic Task Result Deducer:      
 
