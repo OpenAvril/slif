@@ -5,7 +5,7 @@
 
 ## *UNDER DEVELOPMENT*
 
- - Stemisphore : slif_stemisphore, v-1.2.x.
+- Stemisphore : slif_stemisphore, v-1.2.x.
 
 - LaunchQue : slif_launch_que, v-1.2.x.
 
@@ -90,7 +90,9 @@ Left Hemisphore Logic Task Result Deducer:
 
 Consumer of spare threads.
 
-Left Hemisphore Logic Task Result Deducer: CLIB Concurrent Server with independent task threads and IO wrapper.
+Super Computer for the modern Server. The below products are *suspected* of implementing 'zinc' and 'slif' with independent I and O 64-bit pins.
+ - [AI Supercomputer Based on NVIDIA® DGX Spark™ GB10 Platform](https://ipc.msi.com/product_detail/Industrial-Computer-Box-PC/AI-Supercomputer/EdgeXpert-MS-C931?utm_id=97757_v0_s00_e0_tv2&fbclid=IwY2xjawVwiQJleHRuA2FlbQIxMQBwZG9mAXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR8f1ni7t3XtfDj8sZilJR8IRPD1M3ZHCdK7U5a4kxYa6k06k9BXj9Q5p06pmg_aem_V1r_xXIlCqnUz8xOJKPD4A)
+ - [NVIDIA DGX Spark Founders Edition Mini PC, NVIDIA Blackwell](https://www.nvidia.com/en-au/products/workstations/dgx-spark/) 
   
 **TEMPLATE for user Compilation**
 
