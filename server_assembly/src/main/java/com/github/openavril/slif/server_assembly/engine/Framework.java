@@ -88,8 +88,8 @@ private static Simulation SIMULATION;
          System.out.printf("thread " + sysThreadId + "done independent STRUCT I_Listen(sysThreadId)" + ".%n");
 
          System.out.printf("thread " + sysThreadId + "started independent STRUCT I_Listen(sysThreadId)" + ".%n");
-         stat_STRUCT_boot1_DEFINE_Output(sysThreadId);
-         stat_STRUCT_boot3_INITIALISE_Output(sysThreadId);
+         stat_STRUCT_boot1_DEFINE_O_Respond(sysThreadId);
+         stat_STRUCT_boot3_INITIALISE_O_Respond(sysThreadId);
          this.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).dyn_REG_boot1_DEFINE_IO_ListenRespond(sysThreadId, this);
          this.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).dyn_REG_boot2_SUBSTANTIATE_IO_ListenRespond(sysThreadId, this);
          this.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).dyn_REG_boot3_INITIALISE_IO_ListenRespond(sysThreadId, this, this.dyn_STRUCT_get_Input(sysThreadId), this.dyn_STRUCT_get_Output(sysThreadId));
