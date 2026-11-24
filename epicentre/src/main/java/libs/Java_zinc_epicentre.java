@@ -3,7 +3,7 @@ import com.sun.jna.Library;
 import com.sun.jna.Native;
 public interface Java_zinc_epicentre extends Library {
     Java_zinc_epicentre INSTANCE = (Java_zinc_epicentre) Native.load("libzinc_epicentre.a", Java_zinc_epicentre.class);
-    byte[] gernerateHandle(byte sysThreadId);
+    byte gernerateHandle(byte sysThreadId);
     void generateProgram(byte sysThreadId);
     byte[] get_Output(byte sysThreadId, byte[] handleId, byte[] praiseId);
     boolean get_FLAG_isINITIALISED(byte sysThreadId, byte[] handleId);

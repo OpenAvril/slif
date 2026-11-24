@@ -1,18 +1,16 @@
 package libs;
 import engine.Global;
 public class IO_Epicentre {
-    public static long generateHandle(byte sysThreadId) {
-        long result;
+    public static byte generateHandle(byte sysThreadId) {
+        byte result = Byte.MAX_VALUE;;
         try {
-            result = Global.stat_CONVERT_ByteArray_To_Long(Java_zinc_epicentre.INSTANCE.gernerateHandle(sysThreadId));
+            result = Java_zinc_epicentre.INSTANCE.gernerateHandle(sysThreadId);
         } catch (NoClassDefFoundError e) {
-            System.out.printf("NoClassDefFoundError : Java_zinc_epicentre.INSTANCE.generateHandle(sysThreadId)%n");
-            result = Long.MAX_VALUE;
+            System.out.printf("NoClassDefFoundError : IO_Epicentre : generateHandle(sysThreadId)%n");
         } catch (UnsatisfiedLinkError e) {
-            System.out.printf("NullPointerException : Java_zinc_epicentre.INSTANCE.generateHandle(sysThreadId)%n");
-            result = Long.MAX_VALUE;
+            System.out.printf("NullPointerException : IO_Epicentre : generateHandle(sysThreadId)%n");
         } catch (NullPointerException e) {
-            throw new NullPointerException("NullPointerException : Java_zinc_epicentre.INSTANCE.generateHandle(sysThreadId)%n");
+            throw new NullPointerException("NullPointerException : IO_Epicentre : generateHandle(sysThreadId)%n");
         }
         return result;
     }

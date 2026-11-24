@@ -22,6 +22,11 @@ public class Execute_Control {
         stat_REG_set_Flag_is_SystemInitialised(sysThreadId, false);
         System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Execute_Control : app_Terminate_All_Threads(byte sysThreadId)" + ".%n");
     }
+    public void dyn_REG_boot1_DEFINE_Execute_Control(byte sysThreadId) {
+        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Execute_Control : dyn_REG_boot2_SUBSTANTIATE_Execute_Control(byte sysThreadId)" + ".%n");
+        stat_REG_boot1_DEFINE_Flag_array_ThreadInitialised(sysThreadId);
+        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Execute_Control : dyn_REG_boot2_SUBSTANTIATE_Execute_Control(byte sysThreadId)" + ".%n");
+    }
     public void dyn_REG_boot2_SUBSTANTIATE_Execute_Control(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Execute_Control : dyn_REG_boot2_SUBSTANTIATE_Execute_Control(byte sysThreadId)" + ".%n");
         stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(sysThreadId);
@@ -94,6 +99,10 @@ public class Execute_Control {
     private static void stat_REG_boot0_DECLAIRE_Execute_Control(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Execute_Control : stat_REG_boot0_DECLAIRE_Execute_Control(byte sysThreadId)" + ".%n");
         System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Execute_Control : stat_REG_boot0_DECLAIRE_Execute_Control(byte sysThreadId)" + ".%n");
+    }
+    private static void stat_REG_boot1_DEFINE_Flag_array_ThreadInitialised(byte sysThreadId) {
+        System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Execute_Control : stat_REG_boot1_DEFINE_Flag_array_ThreadInitialised(byte sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Execute_Control : stat_REG_boot1_DEFINE_Flag_array_ThreadInitialised(byte sysThreadId)" + ".%n");
     }
     private static void stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Execute_Control : stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(byte sysThreadId)" + ".%n");

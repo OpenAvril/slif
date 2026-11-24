@@ -118,7 +118,7 @@ public class User_Algorithm {
         while(stat_CLASS_get_ServerAssembly_User_Algorithm_Subest_praise3(sysThreadId) == null) { }
         System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : User_Algorithm : dyn_STRUCT_boot3_INITIALISE_ServerAssembly_User_Algorithm(byte sysThreadId)" + ".%n");
     }
-    private static User_Algorithm stat_CLASS_get_ServerAssembly_User_Algorithm_Subest_praise0(byte sysThreadId) {
+    private static Algorithm_praise0 stat_CLASS_get_ServerAssembly_User_Algorithm_Subest_praise0(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: <= CLASS : Server_Assembly : Algorithm_praise0 : stat_CLASS_get_ServerAssembly_User_Algorithm_Subest_praise0(byte sysThreadId)" + ".%n");
         return stat_CLASS_Subest_praise0;
     }

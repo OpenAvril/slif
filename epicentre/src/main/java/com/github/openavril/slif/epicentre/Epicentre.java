@@ -5,7 +5,7 @@ import libs.IO_Epicentre;
 import java.nio.DoubleBuffer;
 
 public class Epicentre {
-    public static long gernerateHandle(byte sysThreadId) {
+    public static byte gernerateHandle(byte sysThreadId) {
        return IO_Epicentre.generateHandle(sysThreadId);
     }
     public static void generateProgram(byte sysThreadId) {
