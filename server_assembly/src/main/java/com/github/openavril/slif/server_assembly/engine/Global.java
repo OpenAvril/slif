@@ -39,9 +39,9 @@ public class Global {
         System.out.printf("thread " + sysThreadId + " :: <= long : stat_REG_get_ServerAssembly_NUMBER_OF_PRAISES(sysThreadId)" + ".%n");
         return pr_stat_REG_get_ServerAssembly_NUMBER_OF_PRAISES(sysThreadId);
     }
-    public static byte stat_REG_set_ServerAssembly_NUMBER_OF_THREADS(byte sysThreadId, byte NUMBER_OF_THREADS) {
-        System.out.printf("thread " + sysThreadId + " :: <= byte : stat_REG_set_ServerAssembly_NUMBER_OF_THREADS/(sysThreadId)" + ".%n");
-        return (sysThreadId);
+    public static void stat_REG_set_ServerAssembly_NUMBER_OF_THREADS(byte sysThreadId, byte NUMBER_OF_THREADS) {
+        System.out.printf("thread " + sysThreadId + " :: <= byte : stat_REG_set_ServerAssembly_NUMBER_OF_THREADS(sysThreadId)" + ".%n");
+        pr_stat_REG_set_ServerAssembly_NUMBER_OF_PRAISES(sysThreadId, NUMBER_OF_THREADS);
     }
     public static byte[] stat_CONVERT_ByteArray_To_ReverseByteArray(byte sysThreadId, byte[] buffer) {
         byte[] temp = new byte[buffer.length];
@@ -190,7 +190,7 @@ public class Global {
     }
     private static void stat_REG_boot3_INITIALISE_ServerAssembly_NUMBER_OF_THREADS(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: entered : Global : stat_REG_boot3_INITIALISE_NUMBER_OF_THREADS(sysThreadId)" + ".%n");
-        stat_REG_NUMBER_OF_THREADS = 3;
+        stat_REG_NUMBER_OF_THREADS = 5;
         System.out.printf("thread " + sysThreadId + " :: exiting : Global : stat_REG_boot3_INITIALISE_NUMBER_OF_THREADS(sysThreadId)" + ".%n");
     }
     private static void stat_REG_boot3_INITIALISE_ServerAssembly_NUMBER_OF_PRAISES(byte sysThreadId) {
@@ -199,15 +199,15 @@ public class Global {
         System.out.printf("thread " + sysThreadId + " :: exiting : Global : stat_REG_boot3_INITIALISE_NUMBER_OF_PRAISES(sysThreadId)" + ".%n");
     }
     private static byte pr_stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(byte sysThreadId) {
-        System.out.printf("thread " + sysThreadId + " :: <= byte : pr_stat_REG_get_ServerAssembly_NUMBER_OF_THREADS/(sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: <= byte : pr_stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(sysThreadId)" + ".%n");
         return stat_REG_NUMBER_OF_THREADS;
     }
     private static long pr_stat_REG_get_ServerAssembly_NUMBER_OF_PRAISES(byte sysThreadId) {
-        System.out.printf("thread " + sysThreadId + " :: <= long : pr_stat_REG_get_ServerAssembly_NUMBER_OF_PRAISES/(sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: <= long : pr_stat_REG_get_ServerAssembly_NUMBER_OF_PRAISES(sysThreadId)" + ".%n");
         return stat_REG_NUMBER_OF_PRAISES;
     }
     private static void pr_stat_REG_set_ServerAssembly_NUMBER_OF_PRAISES(byte sysThreadId, byte NUMBER_OF_THREADS) {
-        System.out.printf("thread " + sysThreadId + " :: => long : pr_stat_REG_get_ServerAssembly_NUMBER_OF_PRAISES/(sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: => long : pr_stat_REG_get_ServerAssembly_NUMBER_OF_PRAISES(sysThreadId)" + ".%n");
         stat_REG_NUMBER_OF_PRAISES = NUMBER_OF_THREADS;
     }
 }

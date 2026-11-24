@@ -12,11 +12,11 @@ public class App
         System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : App : App(byte sysThreadId)" + ".%n");
     }
     public Data dyn_CLASS_get_Data(byte sysThreadId) {
-        System.out.printf("thread " + sysThreadId + " :: <= Class : Server_Assembly : App : dyn_CLASS_get_Data/(sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: <= Class : Server_Assembly : App : dyn_CLASS_get_Data(sysThreadId)" + ".%n");
         return stat_CLASS_get_Data(sysThreadId);
     }
     public Execute dyn_CLASS_get_Execute(byte sysThreadId) {
-        System.out.printf("thread " + sysThreadId + " :: <= Class : Server_Assembly : App : dyn_CLASS_get_Execute/(sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: <= Class : Server_Assembly : App : dyn_CLASS_get_Execute(sysThreadId)" + ".%n");
         return stat_CLASS_get_Execute(sysThreadId);
     }
     public void dyn_REG_boot1_DEFINE_App(byte sysThreadId) {
@@ -72,11 +72,11 @@ public class App
 
     }
     private static Data stat_CLASS_get_Data(byte sysThreadId) {
-        System.out.printf("thread " + sysThreadId + " :: <= long : Server_Assembly : App : stat_CLASS_get_Data/(sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: <= long : Server_Assembly : App : stat_CLASS_get_Data(sysThreadId)" + ".%n");
         return stat_CLASS_Data;
     }
     private static Execute stat_CLASS_get_Execute(byte sysThreadId) {
-        System.out.printf("thread " + sysThreadId + " :: <= Class : Server_Assembly : App : pr_stat_Rstat_CLASS_get_ExecuteEG_get_ServerAssembly_NUMBER_OF_PRAISES/(sysThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + " :: <= Class : Server_Assembly : App : pr_stat_Rstat_CLASS_get_ExecuteEG_get_ServerAssembly_NUMBER_OF_PRAISES(sysThreadId)" + ".%n");
         return stat_CLASS_Execute;
     }
 }

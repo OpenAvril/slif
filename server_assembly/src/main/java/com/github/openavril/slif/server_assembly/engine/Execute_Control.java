@@ -147,7 +147,7 @@ public class Execute_Control {
     }
     private static void stat_REG_boot2_SUBSTANTIATE_Flag_array_ThreadInitialised(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Execute_Control : stat_REG_boot2_SUBSTANTIATE_Flag_array_ThreadInitialised(byte sysThreadId)" + ".%n");
-        stat_REG_ptr_Flag_array_ThreadInitialised = new boolean[3];
+        stat_REG_ptr_Flag_array_ThreadInitialised = new boolean[Global.stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(sysThreadId)];
         for(byte threadId = 0; threadId < Global.stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(sysThreadId); threadId++) {
             stat_REG_ptr_Flag_array_ThreadInitialised[threadId] = true;
         }
