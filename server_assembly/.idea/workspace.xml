@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e056be5f-8564-49b6-86ff-d2715cd1e7e6" name="Changes" comment="DEVELOPMENT_2026_11_25_1219 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;---&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1219.&#10; - slif_mutex_que-1.4.0.jar&#10; - slif_launch_que-1.4.0.jar&#10; - slif_epicentre-1.4.0-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../epicentre/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../epicentre/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../epicentre/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../epicentre/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../epicentre/src/main/java/com/github/openavril/slif/Epicentre/Epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../epicentre/src/main/java/com/github/openavril/slif/Epicentre.java" afterDir="false" />
+    <list default="true" id="e056be5f-8564-49b6-86ff-d2715cd1e7e6" name="Changes" comment="DEVELOPMENT_2026_11_25_1233 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1233.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+      <change afterPath="$PROJECT_DIR$/../launch_que/src/main/java/libs/libzinc_launch_que.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mutex_que/src/main/java/libs/libzinc_mutex_que.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../launch_que/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../launch_que/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../launch_que/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../launch_que/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../launch_que/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../launch_que/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../launch_que/src/main/java/com/github/openavril/slif/LaunchQue/LaunchQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../launch_que/src/main/java/com/github/openavril/slif/LaunchQue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mutex_que/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mutex_que/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mutex_que/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mutex_que/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mutex_que/src/main/java/com/github/openavril/slif/MutexQue/MutexQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mutex_que/src/main/java/com/github/openavril/slif/MutexQue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mutex_que/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mutex_que/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mutex_que/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mutex_que/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mutex_que/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mutex_que/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" afterDir="false" />
@@ -53,6 +54,7 @@
   "keyToString": {
     "Maven.slif_server_sssembly [clean].executor": "Run",
     "Maven.slif_server_sssembly [compile].executor": "Run",
+    "Maven.slif_server_sssembly [validate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -60,7 +62,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "DEVELOPMENT",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif",
+    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +73,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.1.jar!/libs" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -97,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795573206489</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="DEVELOPMENT_2026_11_25_1233 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1233.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+      <option name="closed" value="true" />
+      <created>1795574029874</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1795574029874</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DEVELOPMENT_2026_11_25_1219 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;---&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1219.&#10; - slif_mutex_que-1.4.0.jar&#10; - slif_launch_que-1.4.0.jar&#10; - slif_epicentre-1.4.0-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_25_1219 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;---&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1219.&#10; - slif_mutex_que-1.4.0.jar&#10; - slif_launch_que-1.4.0.jar&#10; - slif_epicentre-1.4.0-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <MESSAGE value="DEVELOPMENT_2026_11_25_1233 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1233.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_25_1233 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1233.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
   </component>
 </project>
