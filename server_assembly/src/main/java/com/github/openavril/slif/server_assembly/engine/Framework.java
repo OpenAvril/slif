@@ -82,9 +82,9 @@ public class Framework {
          System.out.printf("thread " + sysThreadId + " : started independent STRUCT I_Listen(sysThreadId)" + ".%n");
          stat_STRUCT_boot1_DEFINE_I_Listen(sysThreadId);
          stat_STRUCT_boot3_INITIALISE_I_Listen(sysThreadId);
-         this.dyn_STRUCT_get_Thread_InputListen(sysThreadId).dyn_REG_boot1_DEFINE_IO_ListenRespond(sysThreadId, this);
-         this.dyn_STRUCT_get_Thread_InputListen(sysThreadId).dyn_REG_boot2_SUBSTANTIATE_IO_ListenRespond(sysThreadId, this);
-         this.dyn_STRUCT_get_Thread_InputListen(sysThreadId).dyn_REG_boot3_INITIALISE_IO_ListenRespond(sysThreadId, this, this.dyn_STRUCT_get_Input(sysThreadId), this.dyn_STRUCT_get_Output(sysThreadId));
+         this.dyn_STRUCT_get_Thread_InputListen(sysThreadId).dyn_REG_boot1_DEFINE_Thread_InputListen(sysThreadId, this);
+         this.dyn_STRUCT_get_Thread_InputListen(sysThreadId).dyn_REG_boot2_SUBSTANTIATE_Thread_InputListen(sysThreadId, this);
+         this.dyn_STRUCT_get_Thread_InputListen(sysThreadId).dyn_REG_boot3_INITIALISE_Thread_InputListen(sysThreadId, this, this.dyn_STRUCT_get_Input(sysThreadId), this.dyn_STRUCT_get_Output(sysThreadId));
          System.out.printf("thread " + sysThreadId + " : done independent STRUCT I_Listen(sysThreadId)" + ".%n");
 
          System.out.printf("thread " + sysThreadId + " : started independent STRUCT I_Listen(sysThreadId)" + ".%n");
