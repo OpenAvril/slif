@@ -10,7 +10,7 @@ public class Thread_OutputRespond {
     public static boolean stat_REG_flag__isNewOutputReady;
     private static Input stat_REG_Buffer_For_Input;
     private static Output stat_REG_Buffer_For_Ouput;
-    private static final byte stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond = 0;
+    private static final byte stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond = 1;
     private static final byte stat_CONST_AccessId_MutexOutputSample_ThreadRespond = 0;
 // public.
     public Thread_OutputRespond(byte sysThreadId) {
@@ -48,7 +48,7 @@ public class Thread_OutputRespond {
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
             if (obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
-                obj.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).stat_App_Thread_Listen(sysThreadId, obj, sysThreadId);
+                obj.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).stat_App_Thread_Listen(sysThreadId, obj, sysThreadId/);
             }
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
             if(obj.dyn_CLASS_get_SIMULATION(sysThreadId).dyn_REG_get_FLAG_isSimulationComplete(sysThreadId)) {//TODO SIMULATION EXIT
