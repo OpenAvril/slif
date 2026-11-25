@@ -75,7 +75,7 @@ public class Thread_InputListen {
         stat_REG_boot2_SUBSTANTIATE_flag_isNewInputReady(sysThreadId);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_InputListen : dyn_REG_boot2_SUBSTANTIATE_Thread_InputListen(sysThreadId)" + ".%n");
     }
-    public void dyn_REG_boot3_INITIALISE_Thread_InputListen(byte sysThreadId, Framework obj, Input structDEFAULT_Input, Output structDEFAULT_Output) {
+    public void dyn_REG_boot3_INITIALISE_Thread_InputListen(byte sysThreadId, Framework obj, Input structDEFAULT_Input) {
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_InputListen : dyn_REG_boot3_INITIALISE_Thread_InputListen(sysThreadId)" + ".%n");
         stat_REG_boot3_INITIALISE_Buffer_Input(sysThreadId, structDEFAULT_Input);
         stat_REG_boot3_INITIALISE_flag_isNewInputReady(sysThreadId);
