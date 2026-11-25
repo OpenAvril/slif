@@ -1,5 +1,5 @@
 package com.github.openavril.slif.server_assembly.independent.threads;
-import com.github.openavril.mutex_que.MutexQue;
+import com.github.openavril.slif.MutexQue;
 import com.github.openavril.slif.server_assembly.engine.Framework;
 import com.github.openavril.slif.server_assembly.engine.Global;
 import com.github.openavril.slif.server_assembly.independent.Input;

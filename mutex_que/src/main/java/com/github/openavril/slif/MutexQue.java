@@ -1,4 +1,4 @@
-package com.github.openavril.mutex_que;
+package com.github.openavril.slif;
 import libs.IO_MutexQue;
 public class MutexQue {
     public MutexQue() {

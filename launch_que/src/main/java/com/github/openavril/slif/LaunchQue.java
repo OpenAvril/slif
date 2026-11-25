@@ -1,4 +1,4 @@
-package com.github.openavril.launch_que;
+package com.github.openavril.slif;
 import libs.IO_LaunchQue;
 public class LaunchQue {
     public LaunchQue() {

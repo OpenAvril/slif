@@ -1,9 +1,7 @@
-package com.github.openavril.slif.epicentre;
+package com.github.openavril.slif;
 import engine.Global;
 import libs.IO_Epicentre;
-
 import java.nio.DoubleBuffer;
-
 public class Epicentre {
     public static byte gernerateHandle(byte sysThreadId) {
        return IO_Epicentre.generateHandle(sysThreadId);

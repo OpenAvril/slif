@@ -1,4 +1,5 @@
 package com.github.openavril.slif.server_assembly.independent.threads;
+import com.github.openavril.slif.MutexQue;
 import com.github.openavril.slif.server_assembly.engine.Framework;
 import com.github.openavril.slif.server_assembly.engine.Global;
 import com.github.openavril.slif.server_assembly.independent.Input;
@@ -14,13 +15,12 @@ public class Thread_InputListen {
         stat_REG_boot0_DECLAIRE_IO_ListenRespond(sysThreadId);
     }
     public void dyn_Thread_InputListen(byte sysThreadId, Framework obj, byte ACCESS_ID) {
-/*
-         System.out.printf("thread " + sysThreadId + "thread " + sysThreadId + " :: entered APP :: threads : Thread_InputListen :  :: dyn_App_Thread_IO(byte sysThreadId, Framework obj, byte concurrentThreadId)" + ".%n");
+        System.out.printf("thread " + sysThreadId + "thread " + sysThreadId + " :: entered APP :: threads : Thread_InputListen :  :: dyn_App_Thread_IO(byte sysThreadId, Framework obj, byte concurrentThreadId)" + ".%n");
         boolean checkPass = false;
         while (!checkPass) {
-            slif..startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute().dyn_PGM_get_HandleId_MutexQue_ConditionCode(sysThreadId), ACCESS_ID);
+            MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute().dyn_PGM_get_HandleId_MutexQue_ConditionCode(sysThreadId), ACCESS_ID);
             obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_set_Item_On_List_Of_Flag_ThreadInitialised(ACCESS_ID, true);
-            IO_MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute().dyn_PGM_get_HandleId_MutexQue_ConditionCode(sysThreadId), ACCESS_ID);
+            MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute().dyn_PGM_get_HandleId_MutexQue_ConditionCode(sysThreadId), ACCESS_ID);
             checkPass = true;
         }
         checkPass = false;
@@ -85,7 +85,6 @@ public class Thread_InputListen {
             WriteQue_ConditionCode.app_FUNCT_write_Start(0);
         }
         obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().app_Terminate_All_Threads(obj);
-*/
     }
     public void dyn_REG_boot1_DEFINE_IO_ListenRespond(byte sysThreadId, Framework obj) {
          System.out.printf("thread " + sysThreadId + "entered dyn_REG_boot1_DEFINE_IO_ListenRespond()" + ".%n");
