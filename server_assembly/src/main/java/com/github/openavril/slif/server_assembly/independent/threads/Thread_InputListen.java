@@ -1,5 +1,5 @@
 package com.github.openavril.slif.server_assembly.independent.threads;
-import com.github.openavril.slif.MutexQue;
+import com.github.openavril.slif.MutexQue.*;
 import com.github.openavril.slif.server_assembly.engine.Framework;
 import com.github.openavril.slif.server_assembly.engine.Global;
 import com.github.openavril.slif.server_assembly.independent.Input;
@@ -18,9 +18,9 @@ public class Thread_InputListen {
         System.out.printf("thread " + sysThreadId + "thread " + sysThreadId + " :: entered APP :: threads : Thread_InputListen :  :: dyn_App_Thread_IO(byte sysThreadId, Framework obj, byte concurrentThreadId)" + ".%n");
         boolean checkPass = false;
         while (!checkPass) {
-            MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute().dyn_PGM_get_HandleId_MutexQue_ConditionCode(sysThreadId), ACCESS_ID);
-            obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute().dyn_CLASS_get_Execute_Control().dyn_REG_set_Item_On_List_Of_Flag_ThreadInitialised(ACCESS_ID, true);
-            MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute().dyn_PGM_get_HandleId_MutexQue_ConditionCode(sysThreadId), ACCESS_ID);
+            MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_PGM_get_HandleId_MutexQue_ConditionCode(sysThreadId), ACCESS_ID);
+            obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_set_Item_On_List_Of_Flag_ThreadInitialised(sysThreadId, ACCESS_ID, true);
+            MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_PGM_get_HandleId_MutexQue_ConditionCode(sysThreadId), ACCESS_ID);
             checkPass = true;
         }
         checkPass = false;

@@ -1,8 +1,8 @@
 package com.github.openavril.slif.server_assembly.engine;
 import com.github.openavril.slif.server_assembly.independent.threads.*;
-import com.github.openavril.slif.epicentre.Epicentre;
-import com.github.openavril.launch_que.LaunchQue;
-import com.github.openavril.mutex_que.MutexQue;
+import com.github.openavril.slif.Epicentre;
+import com.github.openavril.slif.LaunchQue;
+import com.github.openavril.slif.MutexQue;
 public class Execute {
     private static Execute_Control stat_CLASS_Execute_Control;
     private static Thread[] stat_REG_List_Of_Threads;
