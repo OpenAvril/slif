@@ -1,4 +1,4 @@
-package com.github.openavril.slif.Epicentre;
+package com.github.openavril.slif;
 import engine.Global;
 import libs.IO_Epicentre;
 import java.nio.DoubleBuffer;

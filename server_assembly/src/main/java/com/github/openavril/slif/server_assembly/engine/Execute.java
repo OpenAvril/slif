@@ -1,8 +1,8 @@
 package com.github.openavril.slif.server_assembly.engine;
 import com.github.openavril.slif.server_assembly.independent.threads.*;
-import com.github.openavril.slif.Epicentre;
-import com.github.openavril.slif.LaunchQue;
-import com.github.openavril.slif.MutexQue;
+import com.github.openavril.slif.Epicentre.*;
+import com.github.openavril.slif.LaunchQue.*;
+import com.github.openavril.slif.MutexQue.*;
 public class Execute {
     private static Execute_Control stat_CLASS_Execute_Control;
     private static Thread[] stat_REG_List_Of_Threads;
@@ -27,6 +27,18 @@ public class Execute {
     public Execute_Control dyn_CLASS_get_Execute_Control(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: <= Class : dyn_CLASS_get_Execute_Control(sysThreadId)" + ".%n");
         return stat_CLASS_get_Execute_Control(sysThreadId);
+    }
+    public byte dyn_get_PgmHandle_Epicentre(byte sysThreadId) {
+        return stat_PGM_HandleId_slif_Epicentre;
+    }
+    public long dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(byte sysThreadId) {
+        return stat_PGM_HandleId_slif_MutexQue_For_slif_Epicentre_ConditionCode;
+    }
+    public long dyn_get_PgmHandle_MutexQue_For_Buffer_At_Simulation_InputSamples (byte sysThreadId) {
+        return stat_PGM_HandleId_slif_MutexQue_For_Buffer_At_Simulation_InputSamples;
+    }
+    public long dyn_get_PgmHandle_MutexQue_For_Buffer_At_Simulation_OutputSamples(byte sysThreadId) {
+        return stat_PGM_HandleId_slif_MutexQue_For_Buffer_At_Simulation_OutputSamples;
     }
     public void dyn_REG_boot1_DEFINE_Execute(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: entered : Execute : dyn_REG_boot1_DEFINE_Execute(sysThreadId)" + ".%n");
