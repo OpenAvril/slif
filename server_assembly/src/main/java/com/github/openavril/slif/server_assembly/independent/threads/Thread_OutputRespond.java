@@ -117,7 +117,7 @@ public class Thread_OutputRespond {
                             case 0:
                                 try {
                                     subset_of_output_for_praise0 = (Output_praise0)stat_REG_Buffer_For_Output.dyn_REG_get_ServerAssembly_OutputSubset(sysThreadId);
-                                    subset_of_output_for_praise0.dyn_REG_set_ServerAssembly_PraiseSet0_STRUCT_Output_value(sysThreadId, (Double)stat_REG_RAW_Buffer_List_of_Objects.get(2));
+                                    subset_of_output_for_praise0.dyn_REG_set_ServerAssembly_PraiseSet0_STRUCT_Output_value(sysThreadId, Global.stat_CONVERT_ByteArray_To_VALUEofDouble(sysThreadId, Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, (byte[])stat_REG_RAW_Buffer_List_of_Objects.get(2))));
                                 } catch (NullPointerException e) {
                                     System.out.printf("thread " + sysThreadId + " :: NullPointerException" + ".%n");
                                 } catch (NoClassDefFoundError e) {
@@ -130,7 +130,7 @@ public class Thread_OutputRespond {
                             case 1:
                                 try {
                                     subset_of_output_for_praise1 = (Output_praise1)stat_REG_Buffer_For_Output.dyn_REG_get_ServerAssembly_OutputSubset(sysThreadId);
-                                    subset_of_output_for_praise1.dyn_REG_set_ServerAssembly_PraiseSet1_STRUCT_Output_value(sysThreadId, (Double)stat_REG_RAW_Buffer_List_of_Objects.get(2));
+                                    subset_of_output_for_praise1.dyn_REG_set_ServerAssembly_PraiseSet1_STRUCT_Output_value(sysThreadId, Global.stat_CONVERT_ByteArray_To_VALUEofDouble(sysThreadId, Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, (byte[])stat_REG_RAW_Buffer_List_of_Objects.get(2))));
                                 } catch (NullPointerException e) {
                                     System.out.printf("thread " + sysThreadId + " :: NullPointerException" + ".%n");
                                 } catch (NoClassDefFoundError e) {
@@ -143,7 +143,7 @@ public class Thread_OutputRespond {
                             case 2:
                                 try {
                                     subset_of_output_for_praise2 = (Output_praise2)stat_REG_Buffer_For_Output.dyn_REG_get_ServerAssembly_OutputSubset(sysThreadId);
-                                    subset_of_output_for_praise2.dyn_REG_set_ServerAssembly_PraiseSet2_STRUCT_Output_value(sysThreadId, (Double)stat_REG_RAW_Buffer_List_of_Objects.get(2));
+                                    subset_of_output_for_praise2.dyn_REG_set_ServerAssembly_PraiseSet2_STRUCT_Output_value(sysThreadId, Global.stat_CONVERT_ByteArray_To_VALUEofDouble(sysThreadId, Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, (byte[])stat_REG_RAW_Buffer_List_of_Objects.get(2))));
                                 } catch (NullPointerException e) {
                                     System.out.printf("thread " + sysThreadId + " :: NullPointerException" + ".%n");
                                 } catch (NoClassDefFoundError e) {
@@ -156,7 +156,7 @@ public class Thread_OutputRespond {
                             case 3:
                                 try {
                                     subset_of_output_for_praise3 = (Output_praise3)stat_REG_Buffer_For_Output.dyn_REG_get_ServerAssembly_OutputSubset(sysThreadId);
-                                    subset_of_output_for_praise3.dyn_REG_set_ServerAssembly_PraiseSet3_STRUCT_Output_value(sysThreadId, (Double)stat_REG_RAW_Buffer_List_of_Objects.get(2));
+                                    subset_of_output_for_praise3.dyn_REG_set_ServerAssembly_PraiseSet3_STRUCT_Output_value(sysThreadId, Global.stat_CONVERT_ByteArray_To_VALUEofDouble(sysThreadId, Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, (byte[])stat_REG_RAW_Buffer_List_of_Objects.get(2))));
                                 } catch (NullPointerException e) {
                                     System.out.printf("thread " + sysThreadId + " :: NullPointerException" + ".%n");
                                 } catch (NoClassDefFoundError e) {
