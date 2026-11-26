@@ -98,14 +98,14 @@ public class Thread_OutputRespond {
                 stat_REG_Buffer_For_Output = new LinkedList<Object>();
                 long praiseEventId = Epicentre.get_MetaData_PraiseEventId(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_Epicentre(sysThreadId));
                 stat_REG_Buffer_For_Output.addFirst(Epicentre.get_Output(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_Epicentre(sysThreadId), praiseEventId));
-                LinkedList<Object> list_of_objects = (LinkedList<Object>)stat_REG_Buffer_For_Output.getFirst();
+                stat_REG_Buffer_For_Output = (LinkedList<Object>)stat_REG_Buffer_For_Output.getFirst();
                 Output_praise0 subset_of_output_for_praise0 = null;
                 Output_praise1 subset_of_output_for_praise1 = null;
                 Output_praise2 subset_of_output_for_praise2 = null;
                 Output_praise3 subset_of_output_for_praise3 = null;
                 int[] thread_Listen_switch = null;
                 thread_Listen_switch = new int[2];
-                thread_Listen_switch = Global.stat_CONVERT_VALUEofLong_To_VALUEoftwoInts(sysThreadId, (long)list_of_objects.getFirst());
+                thread_Listen_switch = Global.stat_CONVERT_VALUEofLong_To_VALUEoftwoInts(sysThreadId, (long)stat_REG_Buffer_For_Output.getFirst());
                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: switch(" + thread_Listen_switch[0] + ", " + thread_Listen_switch[1] + ")" + ".%n");//todo SIMULATION
                 switch (thread_Listen_switch[0]) {
                     case 0:

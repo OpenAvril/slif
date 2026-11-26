@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b962a268-f1f7-4c13-b799-c40e7ab002d8" name="Changes" comment="DEVELOPMENT_2026_11_23_1713 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_23_1713.&#10; - slif_mutex_que-1.3.0.jar&#10; - slif_launch_que-1.3.0.jar&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar (Testbench)&#10;   &#10;&#10;---&#10;TODO:&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar&#10;   - Thread_OutputRespond.stat_App_Thread_Respond(byte sysThreadId, Framework obj, byte threadId).&#10; - PUBLISH&#10;   - slif_epicentre-1.4.1-SNAPSHOT.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+    <list default="true" id="b962a268-f1f7-4c13-b799-c40e7ab002d8" name="Changes" comment="DEVELOPMENT_2026_11_26_1324 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_26_1324.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar (Testbench)&#10;   &#10;&#10;---&#10;TODO:&#10; - PUBLISH&#10;   - slif_epicentre-1.4.2.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
       <change afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/libzinc_epicentre.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/launch_que/src/main/java/libs/libzinc_launch_que.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mutex_que/src/main/java/libs/libzinc_mutex_que.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.2-SNAPSHOT.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.1.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/com/github/openavril/slif/Epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/com/github/openavril/slif/Epicentre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/libs/IO_Epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/IO_Epicentre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/libs/Java_zinc_epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/Java_zinc_epicentre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_assembly/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795590803559</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="DEVELOPMENT_2026_11_26_1324 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_26_1324.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar (Testbench)&#10;   &#10;&#10;---&#10;TODO:&#10; - PUBLISH&#10;   - slif_epicentre-1.4.2.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+      <option name="closed" value="true" />
+      <created>1795663548664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1795663548664</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +212,8 @@
     <MESSAGE value="DEVELOPMENT_2026_11_23_1654 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_23_1654.&#10; - slif_mutex_que-1.3.0.jar&#10; - slif_launch_que-1.3.0.jar&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar (Testbench)&#10;&#10;---&#10;TODO:&#10; - PUBLISH&#10;   - slif_epicentre-1.4.1-SNAPSHOT.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
     <MESSAGE value="DEVELOPMENT_2026_11_23_1702 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_23_1702.&#10; - slif_mutex_que-1.3.0.jar&#10; - slif_launch_que-1.3.0.jar&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar (Testbench)&#10;&#10;---&#10;TODO:&#10; - PUBLISH&#10;   - slif_epicentre-1.4.1-SNAPSHOT.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
     <MESSAGE value="DEVELOPMENT_2026_11_23_1713 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_23_1713.&#10; - slif_mutex_que-1.3.0.jar&#10; - slif_launch_que-1.3.0.jar&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar (Testbench)&#10;   &#10;&#10;---&#10;TODO:&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar&#10;   - Thread_OutputRespond.stat_App_Thread_Respond(byte sysThreadId, Framework obj, byte threadId).&#10; - PUBLISH&#10;   - slif_epicentre-1.4.1-SNAPSHOT.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_23_1713 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_23_1713.&#10; - slif_mutex_que-1.3.0.jar&#10; - slif_launch_que-1.3.0.jar&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar (Testbench)&#10;   &#10;&#10;---&#10;TODO:&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar&#10;   - Thread_OutputRespond.stat_App_Thread_Respond(byte sysThreadId, Framework obj, byte threadId).&#10; - PUBLISH&#10;   - slif_epicentre-1.4.1-SNAPSHOT.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <MESSAGE value="DEVELOPMENT_2026_11_26_1324 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_26_1324.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar (Testbench)&#10;   &#10;&#10;---&#10;TODO:&#10; - PUBLISH&#10;   - slif_epicentre-1.4.2.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_26_1324 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_26_1324.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar (Testbench)&#10;   &#10;&#10;---&#10;TODO:&#10; - PUBLISH&#10;   - slif_epicentre-1.4.2.jar &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
