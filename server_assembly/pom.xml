@@ -65,9 +65,9 @@
         <dependency>
             <groupId>com.github.openavril.slif</groupId>
             <artifactId>slif_epicentre</artifactId>
-            <version>1.4.1-SNAPSHOT</version>
+            <version>1.4.2-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.2-SNAPSHOT.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

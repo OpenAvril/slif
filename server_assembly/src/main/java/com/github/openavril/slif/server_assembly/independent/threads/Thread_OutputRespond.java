@@ -1,12 +1,14 @@
 package com.github.openavril.slif.server_assembly.independent.threads;
+import com.github.openavril.slif.Epicentre;
 import com.github.openavril.slif.MutexQue;
 import com.github.openavril.slif.server_assembly.engine.Framework;
 import com.github.openavril.slif.server_assembly.engine.Global;
 import com.github.openavril.slif.server_assembly.independent.Output;
 import com.github.openavril.slif.server_assembly.independent.praise_sets.*;
+import java.util.LinkedList;
 public class Thread_OutputRespond {
     public static boolean stat_REG_flag_isNewOutputReady;
-    private static Output stat_REG_Buffer_For_Output;
+    private static LinkedList<Object> stat_REG_Buffer_For_Output;
     private static final byte stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond = 1;
     private static final byte stat_CONST_AccessId_MutexOutputSample_ThreadRespond = 0;
 // public.
@@ -45,18 +47,14 @@ public class Thread_OutputRespond {
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
             if (obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
-                obj.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).stat_App_Thread_Listen(sysThreadId, obj, sysThreadId);
+                obj.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).stat_App_Thread_Respond(sysThreadId, obj, sysThreadId);
             }
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
-            if(obj.dyn_CLASS_get_SIMULATION(sysThreadId).dyn_REG_get_FLAG_isSimulationComplete(sysThreadId)) {//TODO SIMULATION EXIT
-                obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_set_Flag_is_SystemInitialised(sysThreadId,false);//TODO SIMULATION EXIT
-            }//TODO SIMULATION EXIT
             if (!obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 checkPass = true;
             }
-            MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
+            MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
         }
-        obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).app_Terminate_All_Threads(sysThreadId, obj);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_OutputRespond : dyn_Thread_OutputRespond(sysThreadId)" + ".%n");
     }
     public void dyn_REG_boot1_DEFINE_Thread_OutputRespond(byte sysThreadId, Framework obj) {
@@ -76,7 +74,7 @@ public class Thread_OutputRespond {
         stat_REG_boot3_INITIALISE_Buffer_Output(sysThreadId, structDEFAULT_Output);
         stat_REG_boot3_INITIALISE_flag_isNewOutputReady(sysThreadId);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_OutputRespond : dyn_REG_boot3_INITIALISE_Thread_OutputRespond(sysThreadId)" + ".%n");    }
-    public Output dyn_REG_get_Buffer_Output(byte sysThreadId) {
+    public Object dyn_REG_get_Buffer_Output(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: <= Class Output : Thread_OutputRespond : dyn_REG_get_Buffer_Output(sysThreadId)" + ".%n");
         return stat_REG_get_Buffer_Output(sysThreadId);
     }
@@ -90,50 +88,44 @@ public class Thread_OutputRespond {
     }
 // private.
     private void stat_App_Thread_Respond(byte sysThreadId, Framework obj, byte threadId) {
-        WriteQue_ConditionCode.app_FUNCT_write_Start(0);
-         System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : CC : open access @ 0%n");//todo SIMULATION
-        //WriteQue_SimulationIO.app_FUNCT_write_Start(0);//todo SIMULATION
-        // System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : SIM : open access @ 0%n");//todo SIMULATION
-        if (OpenEpiCentre.CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend()) {
-             System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: <= CC : CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend() = " + OpenEpiCentre.CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend() + "%n");//todo SIMULATION
-            if (!obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_get_flag__isNewOutputReady()) {
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: <= CC : dyn_REG_get_flag__isNewOutputReady() => " + obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_get_flag__isNewOutputReady() + "%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : CC : close access @ 0%n");//todo SIMULATION
-                WriteQue_ConditionCode.app_FUNCT_write_End(0);
-                OpenEpiCentre.CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_Start();
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : STACK - ServerOutputSend : open access @ 0 (Extraction)%n");//todo SIMULATION
-                stat_REG_Buffer_For_Ouput = obj.dyn_STRUCT_get_Output();
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                OpenEpiCentre.CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: <= OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId() = " + OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId() + "" + ".%n");//todo SIMULATION
-                stat_REG_Buffer_For_Ouput.dyn_REG_set_Output_praiseId(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId());
-                stat_REG_Buffer_For_Ouput.dyn_REG_set_OutputSubset(obj, stat_REG_Buffer_For_Ouput.dyn_REG_get_Output_praiseId());
+        MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
+        if (Epicentre.get_FLAG_isStackLoaded_ServerOutputSend(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_Epicentre(sysThreadId))) {
+            System.out.printf("thread " + sysThreadId + " :: <= CC : Epicentre : get_FLAG_isStackLoaded_ServerOutputSend() = " + true + "%n");//todo SIMULATION
+            if (!obj.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).dyn_REG_get_flag_isNewOutputReady(sysThreadId)) {
+                System.out.printf("thread " + sysThreadId + " :: <= CC : Epicentre : get_FLAG_isStackLoaded_ServerOutputSend() = " + false + "%n");//todo SIMULATION
+                MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
+                MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Buffer_At_Simulation_OutputSamples(sysThreadId), stat_CONST_AccessId_MutexOutputSample_ThreadRespond);
+                stat_REG_Buffer_For_Output = new LinkedList<Object>();
+                long praiseEventId = Epicentre.get_MetaData_PraiseEventId(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_Epicentre(sysThreadId));
+                stat_REG_Buffer_For_Output.addFirst(Epicentre.get_Output(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_Epicentre(sysThreadId), praiseEventId));
+                LinkedList<Object> list_of_objects = (LinkedList<Object>)stat_REG_Buffer_For_Output.getFirst();
                 Output_praise0 subset_of_output_for_praise0 = null;
                 Output_praise1 subset_of_output_for_praise1 = null;
                 Output_praise2 subset_of_output_for_praise2 = null;
                 Output_praise3 subset_of_output_for_praise3 = null;
-                int[] thread_Listen_switch_B = null;
-                thread_Listen_switch_B = new int[2];
-                thread_Listen_switch_B = Global.stat_CONVERT_Long_To_twoInts(stat_REG_Buffer_For_Ouput.dyn_REG_get_Output_praiseId());
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: switch(" + thread_Listen_switch_B[0] + ", " + thread_Listen_switch_B[1] + ")" + ".%n");//todo SIMULATION
-                switch (thread_Listen_switch_B[0]) {
+                int[] thread_Listen_switch = null;
+                thread_Listen_switch = new int[2];
+                thread_Listen_switch = Global.stat_CONVERT_VALUEofLong_To_VALUEoftwoInts(sysThreadId, (long)list_of_objects.getFirst());
+                System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: switch(" + thread_Listen_switch[0] + ", " + thread_Listen_switch[1] + ")" + ".%n");//todo SIMULATION
+                switch (thread_Listen_switch[0]) {
                     case 0:
-                        switch (thread_Listen_switch_B[1]) {
+                        switch (thread_Listen_switch[1]) {
                             case 0:
+
+
+
+
+
+
                                 try {
                                     subset_of_output_for_praise0 = (Output_praise0) stat_REG_Buffer_For_Ouput.dyn_REG_get_OutputSubset();
                                     subset_of_output_for_praise0.dyn_REG_set_output_praise0_value(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value());
                                 } catch (NullPointerException e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NullPointerException" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NullPointerException" + ".%n");
                                 } catch (NoClassDefFoundError e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NoClassDefFoundError" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NoClassDefFoundError" + ".%n");
                                 } catch (ClassCastException e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: ClassCastException" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: ClassCastException" + ".%n");
                                 }
                                 break;
 
@@ -142,11 +134,11 @@ public class Thread_OutputRespond {
                                     subset_of_output_for_praise1 = (Output_praise1) stat_REG_Buffer_For_Ouput.dyn_REG_get_OutputSubset();
                                     subset_of_output_for_praise1.dyn_REG_set_output_praise1_value(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise1_Value());
                                 } catch (NullPointerException e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NullPointerException" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NullPointerException" + ".%n");
                                 } catch (NoClassDefFoundError e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NoClassDefFoundError" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NoClassDefFoundError" + ".%n");
                                 } catch (ClassCastException e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: ClassCastException" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: ClassCastException" + ".%n");
                                 }
                                 break;
 
@@ -155,11 +147,11 @@ public class Thread_OutputRespond {
                                     subset_of_output_for_praise2 = (Output_praise2) stat_REG_Buffer_For_Ouput.dyn_REG_get_OutputSubset();
                                     subset_of_output_for_praise2.dyn_REG_set_output_praise2_value(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise2_Value());
                                 } catch (NullPointerException e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NullPointerException" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NullPointerException" + ".%n");
                                 } catch (NoClassDefFoundError e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NoClassDefFoundError" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NoClassDefFoundError" + ".%n");
                                 } catch (ClassCastException e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: ClassCastException" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: ClassCastException" + ".%n");
                                 }
                                 break;
 
@@ -168,11 +160,11 @@ public class Thread_OutputRespond {
                                     subset_of_output_for_praise3 = (Output_praise3) stat_REG_Buffer_For_Ouput.dyn_REG_get_OutputSubset();
                                     subset_of_output_for_praise3.dyn_REG_set_output_praise3_value(OpenEpiCentre.CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise3_Value());
                                 } catch (NullPointerException e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NullPointerException" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NullPointerException" + ".%n");
                                 } catch (NoClassDefFoundError e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NoClassDefFoundError" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: NoClassDefFoundError" + ".%n");
                                 } catch (ClassCastException e) {
-                                     System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: ClassCastException" + ".%n");
+                                    System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: ClassCastException" + ".%n");
                                 }
                                 break;
 
@@ -186,13 +178,13 @@ public class Thread_OutputRespond {
                                 break;
 
                             default:
-                                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch_B[0] + ", " + thread_Listen_switch_B[1] + ")" + ".%n");//todo SIMULATION
+                                System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch[0] + ", " + thread_Listen_switch[1] + ")" + ".%n");//todo SIMULATION
                                 break;
                         }
                         break;
 
                     case Integer.MAX_VALUE:
-                        switch (thread_Listen_switch_B[1]) {
+                        switch (thread_Listen_switch[1]) {
                             case 0:
                                 break;
 
@@ -206,13 +198,13 @@ public class Thread_OutputRespond {
                                 break;
 
                             default:
-                                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch_B[0] + ", " + thread_Listen_switch_B[1] + ")" + ".%n");//todo SIMULATION
+                                System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch[0] + ", " + thread_Listen_switch[1] + ")" + ".%n");//todo SIMULATION
                                 break;
                         }
                         break;
 
                     case -1:
-                        switch (thread_Listen_switch_B[1]) {
+                        switch (thread_Listen_switch[1]) {
                             case 0:
                                 break;
 
@@ -226,13 +218,13 @@ public class Thread_OutputRespond {
                                 break;
 
                             default:
-                                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch_B[0] + ", " + thread_Listen_switch_B[1] + ")" + ".%n");//todo SIMULATION
+                                System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch[0] + ", " + thread_Listen_switch[1] + ")" + ".%n");//todo SIMULATION
                                 break;
                         }
                         break;
 
                     case Integer.MIN_VALUE:
-                        switch (thread_Listen_switch_B[1]) {
+                        switch (thread_Listen_switch[1]) {
                             case 0:
                                 break;
 
@@ -243,43 +235,31 @@ public class Thread_OutputRespond {
                                 break;
 
                             case Integer.MIN_VALUE:
-                                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: is primed DEFAULT case(" + thread_Listen_switch_B[0] + ", " + thread_Listen_switch_B[1] + ")" + ".%n");//todo SIMULATION
+                                System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: is primed DEFAULT case(" + thread_Listen_switch[0] + ", " + thread_Listen_switch[1] + ")" + ".%n");//todo SIMULATION
                                 break;
 
                             default:
-                                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch_B[0] + ", " + thread_Listen_switch_B[1] + ")" + ".%n");//todo SIMULATION
+                                System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch[0] + ", " + thread_Listen_switch[1] + ")" + ".%n");//todo SIMULATION
                                 break;
                         }
                         break;
 
                     default:
-                         System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch_B[0] + ", " + thread_Listen_switch_B[1] + ")" + ".%n");//todo SIMULATION
+                        System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: close case(" + thread_Listen_switch[0] + ", " + thread_Listen_switch[1] + ")" + ".%n");//todo SIMULATION
                         break;
                 }
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: IO - OUT =>%n");//todo SIMULATION
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : STACK - ServerOutputSend : close access @ 0 (Extraction)%n");//todo SIMULATION
+
                 OpenEpiCentre.CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_End();
                 WriteQue_ConditionCode.app_FUNCT_write_Start(0);
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : CC : open access @ 0%n");//todo SIMULATION
                 obj.dyn_STRUCT_get_IO_ListenRespond().dyn_REG_set_flag__isNewOutputReady(true);
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : CC : close access @ 0%n");//todo SIMULATION
-                WriteQue_ConditionCode.app_FUNCT_write_End(0);
-                //stat_App_Encode_NetworkingSteam_At_Server_Output_Send(obj, SIMstat_REG_output_Sample, stat_REG_get_Buffer__Ouput());//todo SIMULATION
+
+
+
+                MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Buffer_At_Simulation_OutputSamples(sysThreadId), stat_CONST_AccessId_MutexOutputSample_ThreadRespond);
             } else {
-                 System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : CC : close access @ 0%n");//todo SIMULATION
-                WriteQue_ConditionCode.app_FUNCT_write_End(0);
+                MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
             }
-        } else {
-             System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : CC : close access @ 0%n");//todo SIMULATION
-            WriteQue_ConditionCode.app_FUNCT_write_End(0);
         }
-        // System.out.printf("thread " + sysThreadId + "thread " + threadId + " :: WriteQue : SIM : close access @ 0%n");//todo SIMULATION
-        //WriteQue_SimulationIO.app_FUNCT_write_End(0);//todo SIMULATION
    }
     private void stat_App_Decode_NetworkingSteam_At_Server_Output_Recieve(byte sysThreadId, Framework obj, Output Output, byte[] buffer) {
   /*
@@ -429,7 +409,7 @@ public class Thread_OutputRespond {
         stat_REG_flag_isNewOutputReady = false;
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_OutputRespond : stat_REG_boot3_INITIALISE_flag_isNewOutputReady(sysThreadId)" + ".%n");
     }
-    private static Output stat_REG_get_Buffer_Output(byte sysThreadId) {
+    private static Object stat_REG_get_Buffer_Output(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: <= Class Output : Thread_OutputRespond : stat_REG_get_Buffer_Output(sysThreadId)" + ".%n");
         return stat_REG_Buffer_For_Output;
     }

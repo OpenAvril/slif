@@ -8,7 +8,7 @@ public class Epicentre {
     }
     public static void generateProgram(byte sysThreadId) {
         IO_Epicentre.generateProgram(sysThreadId);
-        long handleId = Long.MAX_VALUE;
+        byte handleId = Byte.MAX_VALUE;
         long praiseId = Long.MAX_VALUE;
         double value_A = Double.MAX_VALUE;
         double value_B = Double.MAX_VALUE;
@@ -27,37 +27,37 @@ public class Epicentre {
         IO_Epicentre.reInitialiseHandle(sysThreadId, handleId, NUMBER_OF_TASK_THREADS);
         IO_Epicentre.terminateProgram(sysThreadId);
     }
-    public static byte[] get_Output(byte sysThreadId, long handleId, long praiseId) {
+    public static byte[] get_Output(byte sysThreadId, byte handleId, long praiseId) {
         return IO_Epicentre.get_Output(sysThreadId, handleId, praiseId);
     }
-    public static boolean get_FLAG_isINITIALISED(byte sysThreadId, long handleId) {
+    public static boolean get_FLAG_isINITIALISED(byte sysThreadId, byte handleId) {
         return IO_Epicentre.get_FLAG_isINITIALISED(sysThreadId, handleId);
     }
-    public static boolean get_FLAG_isStackLoaded_ServerInputReceive(byte sysThreadId, long handleId) {
+    public static boolean get_FLAG_isStackLoaded_ServerInputReceive(byte sysThreadId, byte handleId) {
         return IO_Epicentre.get_FLAG_isStackLoaded_ServerInputReceive(sysThreadId, handleId);
     }
-    public static boolean get_FLAG_isStackLoaded_ServerOutputSend(byte sysThreadId, long handleId) {
+    public static boolean get_FLAG_isStackLoaded_ServerOutputSend(byte sysThreadId, byte handleId) {
         return IO_Epicentre.get_FLAG_isStackLoaded_ServerOutputSend(sysThreadId, handleId);
     }
-    public static long get_MetaData_PraiseEventId(byte sysThreadId, long handleId) {
+    public static long get_MetaData_PraiseEventId(byte sysThreadId, byte handleId) {
         return IO_Epicentre.get_MetaData_PraiseEventId(sysThreadId, handleId);
     }
-    public static void set_InputItemsFor_praise0(byte sysThreadId, long handleId, long praiseId, double value_A, double value_B) {
+    public static void set_InputItemsFor_praise0(byte sysThreadId, byte handleId, long praiseId, double value_A, double value_B) {
         IO_Epicentre.set_InputItemsFor_praise0(sysThreadId, handleId, praiseId, value_A, value_B);
     }
-    public static void set_InputItemsFor_praise1(byte sysThreadId, long handleId, long praiseId, double value_A, double value_B) {
+    public static void set_InputItemsFor_praise1(byte sysThreadId, byte handleId, long praiseId, double value_A, double value_B) {
         IO_Epicentre.set_InputItemsFor_praise1(sysThreadId, handleId, praiseId, value_A, value_B);
     }
-    public static void set_InputItemsFor_praise2(byte sysThreadId, long handleId, long praiseId, double value_A, double value_B) {
+    public static void set_InputItemsFor_praise2(byte sysThreadId, byte handleId, long praiseId, double value_A, double value_B) {
         IO_Epicentre.set_InputItemsFor_praise2(sysThreadId, handleId, praiseId, value_A, value_B);
     }
-    public static void set_InputItemsFor_praise3(byte sysThreadId, long handleId, long praiseId, double value_A, double value_B) {
+    public static void set_InputItemsFor_praise3(byte sysThreadId, byte handleId, long praiseId, double value_A, double value_B) {
         IO_Epicentre.set_InputItemsFor_praise3(sysThreadId, handleId, praiseId, value_A, value_B);
     }
-    public static void set_MetaData_PraiseEventId(byte sysThreadId, long handleId, long praiseId) {
+    public static void set_MetaData_PraiseEventId(byte sysThreadId, byte handleId, long praiseId) {
         IO_Epicentre.set_MetaData_PraiseEventId(sysThreadId, handleId, praiseId);
     }
-    public static void reInitialiseHandle(byte sysThreadId, long handleId, byte NUMBER_OF_TASK_THREADS) {
+    public static void reInitialiseHandle(byte sysThreadId, byte handleId, byte NUMBER_OF_TASK_THREADS) {
         IO_Epicentre.reInitialiseHandle(sysThreadId, handleId, NUMBER_OF_TASK_THREADS);
     }
     public static void terminateProgram(byte sysThreadId) {

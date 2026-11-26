@@ -19,7 +19,7 @@ public class Thread_InputListen {
         stat_REG_boot0_DECLAIRE_Thread_InputListen(sysThreadId);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_InputListen : Thread_InputListen(sysThreadId)" + ".%n");
     }
-    public void dyn_Thread_InputListen(byte sysThreadId, Framework obj) {
+    public void dyn_Thread_InputListen(byte sysThreadId, Framework obj, byte threadId) {
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_InputListen : dyn_Thread_InputListen(sysThreadId)" + ".%n");
         boolean checkPass = false;
         while (!checkPass) {
