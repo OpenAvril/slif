@@ -6,11 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="slif_system_busses" />
         <module name="slif_epicentre" />
-        <module name="slif_launch_que" />
         <module name="slif_server_sssembly" />
-        <module name="system_threads_log" />
+        <module name="slif_launch_que" />
         <module name="slif_mutex_que" />
       </profile>
     </annotationProcessing>
