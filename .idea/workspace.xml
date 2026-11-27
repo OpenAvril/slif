@@ -71,7 +71,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "DEVELOPMENT",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs",
+    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif/server_assembly",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,19 +96,6 @@
       <recent name="$PROJECT_DIR$/epicentre/src/main/java/com/github/openavril/slif" />
       <recent name="$PROJECT_DIR$/launch_que/src/main/java/libs" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="slif" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="slif" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -221,7 +208,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java</url>
           <line>26</line>
-          <properties class="com.github.openavril.slif.server_assembly.engine.Execute" method="dyn_CLASS_get_Execute_Control">
+          <properties class="com.github.openavril.slif.server_assembly.engine.Execute">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -266,7 +253,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java</url>
           <line>250</line>
-          <properties class="com.github.openavril.slif.server_assembly.engine.Framework" method="stat_CLASS_boot3_INITIALISE_Framework">
+          <properties class="com.github.openavril.slif.server_assembly.engine.Framework">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -275,7 +262,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java</url>
           <line>403</line>
-          <properties class="com.github.openavril.slif.server_assembly.engine.Framework" method="stat_STRUCT_get_User_Algorithm">
+          <properties class="com.github.openavril.slif.server_assembly.engine.Framework">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -284,7 +271,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/SIMULATION/Simulation.java</url>
           <line>20</line>
-          <properties class="com.github.openavril.slif.server_assembly.SIMULATION.Simulation" method="&lt;init&gt;">
+          <properties class="com.github.openavril.slif.server_assembly.SIMULATION.Simulation">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -302,7 +289,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java</url>
           <line>80</line>
-          <properties class="com.github.openavril.slif.server_assembly.independent.threads.Thread_OutputRespond" method="dyn_REG_get_flag_isNewOutputReady">
+          <properties class="com.github.openavril.slif.server_assembly.independent.threads.Thread_OutputRespond">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
