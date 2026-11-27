@@ -1,0 +1,28 @@
+<changelist name="Uncommitted_changes_before_Merge_at_11_27_26,_12_12 PM_[Changes]" date="1795745652282" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_27_26,_12_12 PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Merge at 11/27/26, 12:12 PM [Changes]" />
+  <binary>
+    <option name="AFTER_PATH" value="server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.4.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_27_26,_12_12 PM_[Changes]/slif_mutex_que-1.4.4.jar" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.4.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_27_26,_12_12 PM_[Changes]/slif_launch_que-1.4.4.jar" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.2-SNAPSHOT.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_27_26,_12_12 PM_[Changes]/slif_epicentre-1.4.2-SNAPSHOT.jar" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="mutex_que/src/main/java/libs/libzinc_mutex_que.a" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_27_26,_12_12 PM_[Changes]/libzinc_mutex_que.a" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="launch_que/src/main/java/libs/libzinc_launch_que.a" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_27_26,_12_12 PM_[Changes]/libzinc_launch_que.a" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="epicentre/src/main/java/libs/libzinc_epicentre.a" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_27_26,_12_12 PM_[Changes]/libzinc_epicentre.a" />
+  </binary>
+</changelist>
