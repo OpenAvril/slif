@@ -149,7 +149,7 @@ public class Framework {
          System.out.printf("thread " + sysThreadId + "%n");
 
          System.out.printf("thread " + sysThreadId + " : started PROGRAM - LAUNCH THREADS" + ".%n");
-         this.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_APP_Launch_Threads(sysThreadId, this);
+         //this.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_APP_Launch_Threads(sysThreadId, this);
          System.out.printf("thread " + sysThreadId + " : exiting PROGRAM - LAUNCH THREADS" + ".%n");
          System.out.printf("thread " + sysThreadId + " : exiting DESKTOP APPLICATION generate_Program(sysThreadId)" + ".%n");
          System.out.printf("thread " + sysThreadId + " : exiting CONSTRUCTOR Framework(sysThreadId)%n");

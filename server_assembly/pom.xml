@@ -51,16 +51,16 @@
         <dependency>
             <groupId>com.github.openavril.slif</groupId>
             <artifactId>slif_mutex_que</artifactId>
-            <version>1.4.1</version>
+            <version>1.4.4</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.1.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.github.openavril.slif</groupId>
             <artifactId>slif_launch_que</artifactId>
-            <version>1.4.1</version>
+            <version>1.4.4</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.1.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.github.openavril.slif</groupId>

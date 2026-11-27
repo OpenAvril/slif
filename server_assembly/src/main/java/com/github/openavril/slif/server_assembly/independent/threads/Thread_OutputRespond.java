@@ -60,7 +60,6 @@ public class Thread_OutputRespond {
     }
     public void dyn_REG_boot1_DEFINE_Thread_OutputRespond(byte sysThreadId, Framework obj) {
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_OutputRespond : dyn_REG_boot1_DEFINE_Thread_OutputRespond(sysThreadId)" + ".%n");
-        dyn_REG_boot1_DEFINE_Thread_OutputRespond(sysThreadId, obj);
         stat_REG_boot1_DEFINE_Buffer_Output(sysThreadId);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_OutputRespond : dyn_REG_boot1_DEFINE_Thread_OutputRespond(sysThreadId)" + ".%n");
     }

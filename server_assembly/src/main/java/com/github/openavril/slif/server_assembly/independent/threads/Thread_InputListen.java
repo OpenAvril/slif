@@ -65,7 +65,6 @@ public class Thread_InputListen {
     }
     public void dyn_REG_boot1_DEFINE_Thread_InputListen(byte sysThreadId, Framework obj) {
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_InputListen : dyn_REG_boot1_DEFINE_Thread_InputListen(sysThreadId)" + ".%n");
-        dyn_REG_boot1_DEFINE_Thread_InputListen(sysThreadId, obj);
         stat_REG_boot1_DEFINE_Buffer_Input(sysThreadId);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_InputListen : dyn_REG_boot1_DEFINE_Thread_InputListen(sysThreadId)" + ".%n");
     }
