@@ -10,12 +10,10 @@
       <change afterPath="$PROJECT_DIR$/../mutex_que/src/main/java/libs/libzinc_mutex_que.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.2-SNAPSHOT.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/SIMULATION/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/SIMULATION/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mutex_que/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mutex_que/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mutex_que/src/main/java/libs/IO_MutexQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mutex_que/src/main/java/libs/IO_MutexQue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,29 +43,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Maven.slif_server_sssembly [clean].executor": "Run",
-    "Maven.slif_server_sssembly [compile].executor": "Run",
-    "Maven.slif_server_sssembly [validate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "DEVELOPMENT",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.slif_server_sssembly [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.slif_server_sssembly [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.slif_server_sssembly [validate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DEVELOPMENT&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/brenton-james/IdeaProjects/slif&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs" />
@@ -120,6 +118,7 @@
       <updated>1795569775928</updated>
       <workItem from="1795745983142" duration="6383000" />
       <workItem from="1795828021046" duration="2951000" />
+      <workItem from="1795831150401" duration="1568000" />
     </task>
     <task id="LOCAL-00001" summary="DEVELOPMENT_2026_11_25_1219 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;---&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1219.&#10; - slif_mutex_que-1.4.0.jar&#10; - slif_launch_que-1.4.0.jar&#10; - slif_epicentre-1.4.0-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
       <option name="closed" value="true" />

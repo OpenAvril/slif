@@ -1,0 +1,30 @@
+<changelist name="Uncommitted_changes_before_Update_at_11_28_26,_12_22 PM_[Changes]1" date="1795832578901" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_28_26,_12_22 PM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/28/26, 12:22 PM [Changes]" />
+  <binary>
+    <option name="AFTER_PATH" value="server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.5.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_28_26,_12_22 PM_[Changes]1/slif_mutex_que-1.4.5.jar" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="mutex_que/src/main/java/libs/libzinc_mutex_que.a" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_28_26,_12_22 PM_[Changes]1/libzinc_mutex_que.a" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="launch_que/src/main/java/libs/libzinc_launch_que.a" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_28_26,_12_22 PM_[Changes]1/libzinc_launch_que.a" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="launch_que/target/slif_launch_que-1.4.4.jar" />
+    <option name="AFTER_PATH" value="server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.4.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_28_26,_12_22 PM_[Changes]1/slif_launch_que-1.4.4.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="epicentre/target/slif_epicentre-1.4.2-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" value="server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.2-SNAPSHOT.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_28_26,_12_22 PM_[Changes]1/slif_epicentre-1.4.2-SNAPSHOT.jar" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="epicentre/src/main/java/libs/libzinc_epicentre.a" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_28_26,_12_22 PM_[Changes]1/libzinc_epicentre.a" />
+  </binary>
+</changelist>
