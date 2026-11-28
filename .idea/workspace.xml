@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b962a268-f1f7-4c13-b799-c40e7ab002d8" name="Changes" comment="DEVELOPMENT_2026_11_28_1608, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1608.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.5.jar&#10; - slif_epicentre-1.4.5-SNAPSHOT.jar&#10; - server_assembly-1.4.5-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - slif_mutex_que: boot, instantiate, deploy.&#10; - slif_launch_que: boot, instantiate, deploy.&#10; - slif_epicentre: boot, instantiate, deploy, run.&#10; - server_assembly: boot, instantiate, deploy, run.&#10;   RUNNING:&#10;    - Thread boot: injector, extractor, sim_in, sim_out.&#10;    - System boot: do while(!allThreadsInitialised) { /* wait */}.&#10;    - DoTaks: all threads do while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+    <list default="true" id="b962a268-f1f7-4c13-b799-c40e7ab002d8" name="Changes" comment="DEVELOPMENT_2026_11_28_1720, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: **Design**, *Implementation*, Testing, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1720.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.5.jar&#10; - slif_epicentre-1.4.5-SNAPSHOT.jar&#10; - server_assembly-1.4.5-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - slif_mutex_que: boot, instantiate, deploy.&#10; - slif_launch_que: boot, instantiate, deploy.&#10; - slif_epicentre: boot, instantiate, deploy, run.&#10; - server_assembly: boot, instantiate, deploy, run.&#10;   RUNNING:&#10;    - Thread boot: injector, extractor, sim_in, sim_out.&#10;    - System boot: do while(!allThreadsInitialised) { /* wait */}.&#10;    - DoTaks: all threads do while(isSysInitialised) {}.&#10; - slif_stemisphore-x.x.x.jar&#10;   - added CLIB.&#10;   - made native import.&#10;   - made IO caller.&#10;   &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
       <change afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/libzinc_epicentre.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/launch_que/src/main/java/libs/libzinc_launch_que.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mutex_que/src/main/java/libs/libzinc_mutex_que.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.5-SNAPSHOT.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.5.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_busses/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_busses/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_busses/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_busses/src/main/java/com/github/openavril/slif/ConcurrentBussesOnChip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_busses/src/main/java/engine/Global.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_busses/src/main/java/libs/IO_Stemisphore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_busses/src/main/java/libs/Java_zinc_stemisphore.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/system_busses/src/main/java/libs/libzinc_stemisphore.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_assembly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system_busses/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/system_busses/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_busses/src/main/java/libs/IO_Stemisphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/system_busses/src/main/java/libs/IO_Stemisphore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_busses/src/main/java/libs/Java_zinc_stemisphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/system_busses/src/main/java/libs/Java_zinc_stemisphore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +68,7 @@
     "Maven.slif_mutex_que [package].executor": "Run",
     "Maven.slif_server_sssembly [clean].executor": "Run",
     "Maven.slif_server_sssembly [package].executor": "Run",
+    "Maven.slif_stemisphore [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -146,7 +140,7 @@
       <updated>1795230059901</updated>
       <workItem from="1795744203590" duration="1304000" />
       <workItem from="1795831071528" duration="223000" />
-      <workItem from="1795831912654" duration="16815000" />
+      <workItem from="1795831912654" duration="19114000" />
     </task>
     <task id="LOCAL-00001" summary="DEVELOPMENT_2026_11_21_1323 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_21_1323.&#10; - slif_mutex_que-1.3.0.jar&#10; - slif_launch_que-1.3.0.jar&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar (Testbench)&#10;&#10;---&#10;TODO: &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
       <option name="closed" value="true" />
@@ -284,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795846126567</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="DEVELOPMENT_2026_11_28_1720, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: **Design**, *Implementation*, Testing, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1720.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.5.jar&#10; - slif_epicentre-1.4.5-SNAPSHOT.jar&#10; - server_assembly-1.4.5-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - slif_mutex_que: boot, instantiate, deploy.&#10; - slif_launch_que: boot, instantiate, deploy.&#10; - slif_epicentre: boot, instantiate, deploy, run.&#10; - server_assembly: boot, instantiate, deploy, run.&#10;   RUNNING:&#10;    - Thread boot: injector, extractor, sim_in, sim_out.&#10;    - System boot: do while(!allThreadsInitialised) { /* wait */}.&#10;    - DoTaks: all threads do while(isSysInitialised) {}.&#10; - slif_stemisphore-x.x.x.jar&#10;   - added CLIB.&#10;   - made native import.&#10;   - made IO caller.&#10;   &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+      <option name="closed" value="true" />
+      <created>1795850507173</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1795850507173</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +309,8 @@
     <MESSAGE value="DEVELOPMENT_2026_11_28_1351, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1351.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
     <MESSAGE value="DEVELOPMENT_2026_11_28_1559, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1559.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.5.jar&#10; - slif_epicentre-1.4.5-SNAPSHOT.jar&#10; - server_assembly-1.4.5-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - slif_mutex_que: boot, instantiate, deploy.&#10; - slif_launch_que: boot, instantiate, deploy.&#10; - slif_epicentre: boot, instantiate, deploy, run.&#10; - server_assembly: boot, instantiate, deploy, run.&#10;   RUNNING:&#10;    - Thread boot: injector, extractor, sim_in, sim_out.&#10;    - System boot: do while(!allThreadsInitialised) { /* wait */}.&#10;    - DoTaks: all threads do while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
     <MESSAGE value="DEVELOPMENT_2026_11_28_1608, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1608.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.5.jar&#10; - slif_epicentre-1.4.5-SNAPSHOT.jar&#10; - server_assembly-1.4.5-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - slif_mutex_que: boot, instantiate, deploy.&#10; - slif_launch_que: boot, instantiate, deploy.&#10; - slif_epicentre: boot, instantiate, deploy, run.&#10; - server_assembly: boot, instantiate, deploy, run.&#10;   RUNNING:&#10;    - Thread boot: injector, extractor, sim_in, sim_out.&#10;    - System boot: do while(!allThreadsInitialised) { /* wait */}.&#10;    - DoTaks: all threads do while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_28_1608, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1608.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.5.jar&#10; - slif_epicentre-1.4.5-SNAPSHOT.jar&#10; - server_assembly-1.4.5-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - slif_mutex_que: boot, instantiate, deploy.&#10; - slif_launch_que: boot, instantiate, deploy.&#10; - slif_epicentre: boot, instantiate, deploy, run.&#10; - server_assembly: boot, instantiate, deploy, run.&#10;   RUNNING:&#10;    - Thread boot: injector, extractor, sim_in, sim_out.&#10;    - System boot: do while(!allThreadsInitialised) { /* wait */}.&#10;    - DoTaks: all threads do while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <MESSAGE value="DEVELOPMENT_2026_11_28_1720, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: **Design**, *Implementation*, Testing, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1720.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.5.jar&#10; - slif_epicentre-1.4.5-SNAPSHOT.jar&#10; - server_assembly-1.4.5-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - slif_mutex_que: boot, instantiate, deploy.&#10; - slif_launch_que: boot, instantiate, deploy.&#10; - slif_epicentre: boot, instantiate, deploy, run.&#10; - server_assembly: boot, instantiate, deploy, run.&#10;   RUNNING:&#10;    - Thread boot: injector, extractor, sim_in, sim_out.&#10;    - System boot: do while(!allThreadsInitialised) { /* wait */}.&#10;    - DoTaks: all threads do while(isSysInitialised) {}.&#10; - slif_stemisphore-x.x.x.jar&#10;   - added CLIB.&#10;   - made native import.&#10;   - made IO caller.&#10;   &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_28_1720, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: **Design**, *Implementation*, Testing, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1720.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.5.jar&#10; - slif_epicentre-1.4.5-SNAPSHOT.jar&#10; - server_assembly-1.4.5-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - slif_mutex_que: boot, instantiate, deploy.&#10; - slif_launch_que: boot, instantiate, deploy.&#10; - slif_epicentre: boot, instantiate, deploy, run.&#10; - server_assembly: boot, instantiate, deploy, run.&#10;   RUNNING:&#10;    - Thread boot: injector, extractor, sim_in, sim_out.&#10;    - System boot: do while(!allThreadsInitialised) { /* wait */}.&#10;    - DoTaks: all threads do while(isSysInitialised) {}.&#10; - slif_stemisphore-x.x.x.jar&#10;   - added CLIB.&#10;   - made native import.&#10;   - made IO caller.&#10;   &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

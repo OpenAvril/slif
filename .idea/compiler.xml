@@ -9,6 +9,7 @@
         <module name="slif_epicentre" />
         <module name="slif_server_sssembly" />
         <module name="slif_launch_que" />
+        <module name="slif_stemisphore" />
         <module name="slif_mutex_que" />
       </profile>
     </annotationProcessing>
