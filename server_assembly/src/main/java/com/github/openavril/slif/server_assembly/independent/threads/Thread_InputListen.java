@@ -6,6 +6,9 @@ import com.github.openavril.slif.server_assembly.engine.Global;
 import com.github.openavril.slif.server_assembly.independent.Input;
 import com.github.openavril.slif.server_assembly.independent.Output;
 import com.github.openavril.slif.server_assembly.independent.praise_sets.*;
+
+import java.util.Scanner;
+
 public class Thread_InputListen {
     public static boolean stat_REG_flag_isNewInputReady;
     private static Input stat_REG_Buffer_For_Input;
@@ -19,7 +22,7 @@ public class Thread_InputListen {
         stat_REG_boot0_DECLAIRE_Thread_InputListen(sysThreadId);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_InputListen : Thread_InputListen(sysThreadId)" + ".%n");
     }
-    public void dyn_Thread_InputListen(byte sysThreadId, Framework obj, byte threadId) {
+    public void dyn_Thread_InputListen(byte sysThreadId, Framework obj) {
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_InputListen : dyn_Thread_InputListen(sysThreadId)" + ".%n");
         boolean checkPass = false;
         while (!checkPass) {
@@ -28,27 +31,35 @@ public class Thread_InputListen {
             MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
             checkPass = true;
         }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Press Enter to continue...");
+        scanner.nextLine();
         checkPass = false;
         boolean temp = true;
         while (!checkPass) {
+            MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
             temp = true;
-            for (byte index = 0; index < 3; index++) {
+            for (byte index = 0; index < Global.stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(sysThreadId); index++) {
                 if (!obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(sysThreadId, index)) {
                     temp = false;
+                    break;
                 }
             }
-            MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
             obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_set_Flag_is_SystemInitialised(sysThreadId, temp);
             if (obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 checkPass = true;
             }
             MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
         }
+        System.out.println("Press Enter to continue...");
+        scanner.nextLine();
         checkPass = false;
         while (!checkPass) {
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
             if (obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
-                MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
+                MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
+                System.out.println("Press Enter to continue...");
+                scanner.nextLine();
                 obj.dyn_STRUCT_get_Thread_InputListen(sysThreadId).stat_App_Thread_Listen(sysThreadId, obj, (byte)(0));
             }
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
@@ -58,8 +69,9 @@ public class Thread_InputListen {
             if (!obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 checkPass = true;
             }
-            MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
+            MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
         }
+        scanner.close();
         obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).app_Terminate_All_Threads(sysThreadId, obj);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_InputListen : dyn_Thread_InputListen(sysThreadId)" + ".%n");
     }

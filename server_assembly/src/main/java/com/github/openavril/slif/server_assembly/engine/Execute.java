@@ -119,7 +119,7 @@ public class Execute {
             System.out.printf("thread " + sysThreadId + "NullPointerException" + ".%n");
             throw new RuntimeException("NullPointerException.%n", e);
         }
-        for (int threadId = 0; threadId < stat_REG_List_Of_Threads.length; threadId++) {
+        for (byte threadId = 0; threadId < stat_REG_List_Of_Threads.length; threadId++) {
             stat_REG_List_Of_Threads[threadId] = null;
         }
         System.out.printf("thread " + sysThreadId + " :: exiting : Execute : stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(sysThreadId)" + ".%n");
@@ -127,19 +127,17 @@ public class Execute {
     private static void stat_REG_boot3_INITIALISE_List_Of_Threads(byte sysThreadId, Framework obj) {
         System.out.printf("thread " + sysThreadId + " :: entered : Execute : stat_REG_boot3_INITIALISE_List_Of_Threads(sysThreadId)" + ".%n");
         stat_REG_List_Of_Threads[0] = new Thread(() -> {
-            obj.dyn_STRUCT_get_Thread_InputListen(sysThreadId).dyn_Thread_InputListen(sysThreadId, obj, (byte)0);
+            obj.dyn_STRUCT_get_Thread_InputListen(sysThreadId).dyn_Thread_InputListen((byte)1, obj);
         });
         stat_REG_List_Of_Threads[1] = new Thread(() -> {
-            obj.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).dyn_Thread_OutputRespond(sysThreadId, obj, (byte)1);
+            obj.dyn_STRUCT_get_Thread_OutputRespond(sysThreadId).dyn_Thread_OutputRespond((byte)2, obj);
         });
-        //todo remove SIM
         stat_REG_List_Of_Threads[2] = new Thread(() -> {
-            obj.dyn_CLASS_get_SIMULATION(sysThreadId).Thread_Input_Peripheral_Scanner(sysThreadId, obj, (byte)2);
+            obj.dyn_CLASS_get_SIMULATION(sysThreadId).Thread_Input_Peripheral_Scanner((byte)3, obj);
         });
         stat_REG_List_Of_Threads[3] = new Thread(() -> {
-            obj.dyn_CLASS_get_SIMULATION(sysThreadId).Thread_Output_Draw(sysThreadId, obj, (byte)3);
+            obj.dyn_CLASS_get_SIMULATION(sysThreadId).Thread_Output_Draw((byte)4, obj);
         });
-        //todo networking
         System.out.printf("thread " + sysThreadId + " :: exiting : Execute : stat_REG_boot3_INITIALISE_List_Of_Threads(sysThreadId)" + ".%n");
     }
     private static void stat_PGM_boot1_DEFFINE_PGMs(byte sysThreadId) {

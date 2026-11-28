@@ -18,7 +18,8 @@ public class Thread_OutputRespond {
         stat_CLASS_boot1_DEFINE_Thread_OutputRespond(sysThreadId);
         stat_REG_boot0_DECLAIRE_Thread_OutputRespond(sysThreadId);
     }
-    public void dyn_Thread_OutputRespond(byte sysThreadId, Framework obj, byte threadId) {
+    public void dyn_Thread_OutputRespond(byte sysThreadId, Framework obj) {
+  /*
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_OutputRespond : dyn_Thread_OutputRespond(sysThreadId)" + ".%n");
         boolean checkPass = false;
         while (!checkPass) {
@@ -57,6 +58,7 @@ public class Thread_OutputRespond {
             MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadRespond);
         }
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_OutputRespond : dyn_Thread_OutputRespond(sysThreadId)" + ".%n");
+   */
     }
     public void dyn_REG_boot1_DEFINE_Thread_OutputRespond(byte sysThreadId, Framework obj) {
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_OutputRespond : dyn_REG_boot1_DEFINE_Thread_OutputRespond(sysThreadId)" + ".%n");
