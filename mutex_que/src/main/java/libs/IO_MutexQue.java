@@ -5,10 +5,10 @@ public class IO_MutexQue {
         try {
             Java_zinc_control_mutex_que.INSTANCE.endByUnlock(sysThreadId, Global.stat_CONVERT_Long_To_ByteArray(sysThreadId, handleId), ACCESS_ID);
         } catch (NoClassDefFoundError e) {
-            System.out.printf("NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.endByUnlock(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
+            System.out.printf("thread " + sysThreadId + " :: NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.endByUnlock(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
 
         } catch (UnsatisfiedLinkError e) {
-            System.out.printf("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.endByUnlock(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
+            System.out.printf("thread " + sysThreadId + " :: NullPointerException : Java_zinc_control_mutex_que.INSTANCE.endByUnlock(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
         } catch (NullPointerException e) {
             throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.endByUnlock(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
         }
@@ -18,10 +18,10 @@ public class IO_MutexQue {
         try {
             result = Global.stat_CONVERT_ByteArray_To_Long(sysThreadId, Java_zinc_control_mutex_que.INSTANCE.generateHandle(sysThreadId));
         } catch (NoClassDefFoundError e) {
-            System.out.printf("NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.generateHandle(sysThreadId)%n");
+            System.out.printf("thread " + sysThreadId + " :: NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.generateHandle(sysThreadId)%n");
             result = Long.MAX_VALUE;
         } catch (UnsatisfiedLinkError e) {
-            System.out.printf("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.generateHandle(sysThreadId)%n");
+            System.out.printf("thread " + sysThreadId + " :: NullPointerException : Java_zinc_control_mutex_que.INSTANCE.generateHandle(sysThreadId)%n");
             result = Long.MAX_VALUE;
         } catch (NullPointerException e) {
             throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.generateHandle(sysThreadId)%n");
@@ -32,9 +32,9 @@ public class IO_MutexQue {
         try {
             Java_zinc_control_mutex_que.INSTANCE.generateProgram(sysThreadId);
         } catch (NoClassDefFoundError e) {
-            System.out.printf("NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.generateProgram(sysThreadId)%n");
+            System.out.printf("thread " + sysThreadId + " :: NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.generateProgram(sysThreadId)%n");
         } catch (UnsatisfiedLinkError e) {
-            System.out.printf("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.generateProgram(sysThreadId)%n");
+            System.out.printf("thread " + sysThreadId + " :: NullPointerException : Java_zinc_control_mutex_que.INSTANCE.generateProgram(sysThreadId)%n");
         } catch (NullPointerException e) {
             throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.generateProgram(sysThreadId)%n");
         }
@@ -43,9 +43,9 @@ public class IO_MutexQue {
         try {
             Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(sysThreadId, Global.stat_CONVERT_Long_To_ByteArray(sysThreadId, handleId), MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);
         } catch (NoClassDefFoundError e) {
-            System.out.printf("NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(byte sysThreadId, byte[] handleId, byte[] bytes_concurrentThreadId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS)%n");
+            System.out.printf("thread " + sysThreadId + " :: NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(byte sysThreadId, byte[] handleId, byte[] bytes_concurrentThreadId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS)%n");
         } catch (UnsatisfiedLinkError e) {
-            System.out.printf("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(byte sysThreadId, byte[] handleId, byte[] bytes_concurrentThreadId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS)%n");
+            System.out.printf("thread " + sysThreadId + " :: NullPointerException : Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(byte sysThreadId, byte[] handleId, byte[] bytes_concurrentThreadId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS)%n");
         } catch (NullPointerException e) {
             throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(byte sysThreadId, byte[] handleId, byte[] bytes_concurrentThreadId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS)%n");
         }
@@ -54,20 +54,20 @@ public class IO_MutexQue {
         try {
             Java_zinc_control_mutex_que.INSTANCE.startByLock(sysThreadId, Global.stat_CONVERT_Long_To_ByteArray(sysThreadId, handleId), ACCESS_ID);
         } catch (NoClassDefFoundError e) {
-            System.out.printf("NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
+            System.out.printf("thread " + sysThreadId + " :: NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.startByLock(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
         } catch (UnsatisfiedLinkError e) {
-            System.out.printf("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
+            System.out.printf("thread " + sysThreadId + " :: NullPointerException : Java_zinc_control_mutex_que.INSTANCE.startByLock(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
         } catch (NullPointerException e) {
-            throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.reInitialiseHandle(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
+            throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.startByLock(byte sysThreadId, byte[] handleId, byte[] bytes_ACCESS_ID)%n");
         }
     }
     public static void terminateProgram(byte sysThreadId) {
         try {
             Java_zinc_control_mutex_que.INSTANCE.terminateProgram(sysThreadId);
         } catch (NoClassDefFoundError e) {
-            System.out.printf("NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.terminateProgaram(byte sysThreadId)%n");
+            System.out.printf("thread " + sysThreadId + " :: NoClassDefFoundError : Java_zinc_control_mutex_que.INSTANCE.terminateProgaram(byte sysThreadId)%n");
         } catch (UnsatisfiedLinkError e) {
-            System.out.printf("NullPointerException : Java_zinc_control_mutex_que.INSTANCE.terminateProgaram(byte sysThreadId)%n");
+            System.out.printf("thread " + sysThreadId + " :: NullPointerException : Java_zinc_control_mutex_que.INSTANCE.terminateProgaram(byte sysThreadId)%n");
         } catch (NullPointerException e) {
             throw new NullPointerException("NullPointerException : Java_zinc_control_mutex_que.terminateProgaram.generateProgram(byte sysThreadId)%n");
         }

@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e056be5f-8564-49b6-86ff-d2715cd1e7e6" name="Changes" comment="DEVELOPMENT_2026_11_25_1317 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1317.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+    <list default="true" id="e056be5f-8564-49b6-86ff-d2715cd1e7e6" name="Changes" comment="DEVELOPMENT_2026_11_27_1233 &lt;COMPILE_DEV&gt; &lt;RUNTIME_DEV&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1317.&#10;&#10;&#10;---&#10;IMPLEMENTED:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - boot.&#10;   &#10;---&#10;TODO:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - threading.&#10;   - simulation I and o. &#10;&#10;---&#10;---">
       <change afterPath="$PROJECT_DIR$/../epicentre/src/main/java/libs/libzinc_epicentre.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../launch_que/src/main/java/libs/libzinc_launch_que.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mutex_que/src/main/java/libs/libzinc_mutex_que.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.2-SNAPSHOT.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.4.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/SIMULATION/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/SIMULATION/Simulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +31,12 @@
     &quot;assignee&quot;: &quot;ScholarDragon&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/OpenAvril/slif.git",
-    "accountId": "b32b05ec-2581-4c84-b960-e8fb7c5c53e1"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/OpenAvril/slif.git&quot;,
+    &quot;accountId&quot;: &quot;b32b05ec-2581-4c84-b960-e8fb7c5c53e1&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -52,12 +53,13 @@
     "Maven.slif_server_sssembly [validate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "DEVELOPMENT",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif/server_assembly",
+    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,7 +118,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1795569775928</updated>
-      <workItem from="1795745983142" duration="600000" />
+      <workItem from="1795745983142" duration="6383000" />
+      <workItem from="1795828021046" duration="2951000" />
     </task>
     <task id="LOCAL-00001" summary="DEVELOPMENT_2026_11_25_1219 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;---&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1219.&#10; - slif_mutex_que-1.4.0.jar&#10; - slif_launch_que-1.4.0.jar&#10; - slif_epicentre-1.4.0-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
       <option name="closed" value="true" />
@@ -142,7 +145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1795576638134</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="DEVELOPMENT_2026_11_27_1233 &lt;COMPILE_DEV&gt; &lt;RUNTIME_DEV&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1317.&#10;&#10;&#10;---&#10;IMPLEMENTED:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - boot.&#10;   &#10;---&#10;TODO:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - threading.&#10;   - simulation I and o. &#10;&#10;---&#10;---">
+      <option name="closed" value="true" />
+      <created>1795746866460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1795746866460</updated>
+    </task>
+    <task id="LOCAL-00005" summary="DEVELOPMENT_2026_11_27_1233 &lt;COMPILE_DEV&gt; &lt;RUNTIME_DEV&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1317.&#10;&#10;&#10;---&#10;IMPLEMENTED:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - boot.&#10;   &#10;---&#10;TODO:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - threading.&#10;   - simulation I and o. &#10;&#10;---&#10;---">
+      <option name="closed" value="true" />
+      <created>1795746884784</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1795746884784</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +171,22 @@
     <MESSAGE value="DEVELOPMENT_2026_11_25_1219 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;---&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1219.&#10; - slif_mutex_que-1.4.0.jar&#10; - slif_launch_que-1.4.0.jar&#10; - slif_epicentre-1.4.0-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
     <MESSAGE value="DEVELOPMENT_2026_11_25_1233 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1233.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
     <MESSAGE value="DEVELOPMENT_2026_11_25_1317 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1317.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_25_1317 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1317.&#10; - slif_mutex_que-1.4.1.jar&#10; - slif_launch_que-1.4.1.jar&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;&#10;---&#10;TODO:&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <MESSAGE value="DEVELOPMENT_2026_11_27_1233 &lt;COMPILE_DEV&gt; &lt;RUNTIME_DEV&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1317.&#10;&#10;&#10;---&#10;IMPLEMENTED:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - boot.&#10;   &#10;---&#10;TODO:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - threading.&#10;   - simulation I and o. &#10;&#10;---&#10;---" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_27_1233 &lt;COMPILE_DEV&gt; &lt;RUNTIME_DEV&gt;.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_25_1317.&#10;&#10;&#10;---&#10;IMPLEMENTED:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - boot.&#10;   &#10;---&#10;TODO:&#10; - slif_epicentre-1.4.1-SNAPSHOT.jar&#10;   - threading.&#10;   - simulation I and o. &#10;&#10;---&#10;---" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/openavril/slif/server_assembly/SIMULATION/Simulation.java</url>
+          <line>517</line>
+          <properties class="com.github.openavril.slif.server_assembly.SIMULATION.Simulation" method="dyn_REG_boot3_INITIALISE__SIMULATION">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

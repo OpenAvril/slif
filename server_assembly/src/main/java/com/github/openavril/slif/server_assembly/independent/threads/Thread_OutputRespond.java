@@ -74,7 +74,7 @@ public class Thread_OutputRespond {
         stat_REG_boot3_INITIALISE_Buffer_Output(sysThreadId, structDEFAULT_Output);
         stat_REG_boot3_INITIALISE_flag_isNewOutputReady(sysThreadId);
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_OutputRespond : dyn_REG_boot3_INITIALISE_Thread_OutputRespond(sysThreadId)" + ".%n");    }
-    public Object dyn_REG_get_Buffer_Output(byte sysThreadId) {
+    public Output dyn_REG_get_Buffer_Output(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: <= Class Output : Thread_OutputRespond : dyn_REG_get_Buffer_Output(sysThreadId)" + ".%n");
         return stat_REG_get_Buffer_Output(sysThreadId);
     }
@@ -402,7 +402,7 @@ public class Thread_OutputRespond {
         stat_REG_flag_isNewOutputReady = false;
         System.out.printf("thread " + sysThreadId + " :: exiting : Thread_OutputRespond : stat_REG_boot3_INITIALISE_flag_isNewOutputReady(sysThreadId)" + ".%n");
     }
-    private static Object stat_REG_get_Buffer_Output(byte sysThreadId) {
+    private static Output stat_REG_get_Buffer_Output(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: <= Class Output : Thread_OutputRespond : stat_REG_get_Buffer_Output(sysThreadId)" + ".%n");
         return stat_REG_Buffer_For_Output;
     }

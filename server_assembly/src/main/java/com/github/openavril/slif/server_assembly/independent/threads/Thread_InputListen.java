@@ -52,9 +52,9 @@ public class Thread_InputListen {
                 obj.dyn_STRUCT_get_Thread_InputListen(sysThreadId).stat_App_Thread_Listen(sysThreadId, obj, (byte)(0));
             }
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_ThreadListen);
-            if(obj.dyn_CLASS_get_SIMULATION(sysThreadId).dyn_REG_get_FLAG_isSimulationComplete(sysThreadId)) {//TODO SIMULATION EXIT
-                obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_set_Flag_is_SystemInitialised(sysThreadId,false);//TODO SIMULATION EXIT
-            }//TODO SIMULATION EXIT
+            if(obj.dyn_CLASS_get_SIMULATION(sysThreadId).dyn_REG_get_FLAG_isSimulationComplete(sysThreadId)) {
+                obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_set_Flag_is_SystemInitialised(sysThreadId,false);
+            }
             if (!obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 checkPass = true;
             }
