@@ -136,18 +136,54 @@ Copy from IntelliJ    'target/slif_mutex_que-1.0.jar'
 ---
 ---
 ## Using.
+
+---
+# MutexQue.
+
+````
 import com.github.openavril.slif.MutexQue;
+````
 
+````
 MutexQue::generateProgram(sysThreadId);
+````
 
-int* stat_REG_HandleId_For_PGM_zincMutexQue = MutexQue::generateHandle(sysThreadId);
+````
+int* handleId = MutexQue::generateHandle(sysThreadId);
+````
 
+````
 MutexQue::reInitialiseHandle(sysThreadId, handleId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
+````
 
+````
 MutexQue::startByLock(sysThreadId, handleId, ACCESS_ID);
+````
 
+````
 MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
+````
 
+---
+# CBOC - Concurrent Bussing On Chip.
+
+````
+import com.github.openavril.slif.CBOC;
+````
+
+---
+# Launch Que.
+
+````
+import com.github.openavril.slif.LaunchQue;
+````
+
+---
+# Epicentre.
+
+````
+import com.github.openavril.slif.Epicentre;
+````
 
 ---
 ---
