@@ -57,21 +57,13 @@ CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly. 
 
 ---
-### Stemisphore : slif_stemisphore, v-1.2.0.
+### CBOC : slif_cboc, v-1.2.0.
 
-System Bussing for Zinc Neural Hemisphoric Chip:
-
-CLIB Concurrent System Bussing.
-
-Open Concurrent SCADA.
+Concurrent Bussing On A Chip / CLIB Concurrent System Bussing / Open Concurrent SCADA.
 
 Triple MutexQue into a set/get data buffer of bus for route of paired junctions.
 
-MainStreamBussing: CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. 
-
-A single Bus deploying an ExclusiveCohesionMutexQueue('Handle_Id=BusId', 'AccessId_A=StationId4Mutex'), 
-
-and each Station deploying an ExclusiveCohesionMutexQueue('Handle_Id=StationId', 'AccessId_B=Thread4Mutex').
+MainStreamBussing: CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of a single Bus with route array of Stations. A single Bus deploying an ExclusiveCohesionMutexQueue('AccessId_A=StationId','DataClusterId_A=BusId'), and each Station deploying an ExclusiveCohesionMutexQueue('AccessId_B','DataClusterId_B=StationId').
 
 ---
 ### LaunchQue : slif_launch_que, v-1.2.0.
