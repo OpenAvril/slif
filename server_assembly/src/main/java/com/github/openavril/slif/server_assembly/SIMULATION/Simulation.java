@@ -50,7 +50,6 @@ public class Simulation {
         stat_REG_scanner = new Scanner(System.in);
     }
     public void Thread_Input_Peripheral_Scanner(byte sysThreadId, Framework obj) {
-      /*
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_OutputRespond : dyn_Thread_OutputRespond(sysThreadId)" + ".%n");
         boolean checkPass = false;
         while (!checkPass) {
@@ -62,14 +61,7 @@ public class Simulation {
         checkPass = false;
         boolean temp = true;
         while (!checkPass) {
-            temp = true;
-            for (byte index = 0; index < 3; index++) {
-                if (!obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(sysThreadId, index)) {
-                    temp = false;
-                }
-            }
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_SIMULATION_ThreadListen);
-            obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_set_Flag_is_SystemInitialised(sysThreadId, temp);
             if (obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 checkPass = true;
             }
@@ -78,7 +70,6 @@ public class Simulation {
         checkPass = false;
         boolean doneOnce2 = false;
         while(!checkPass) {
-          /*
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_SIMULATION_ThreadListen);
             if(obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 System.out.printf("thread " + sysThreadId + " :: SIM : dyn_REG_get_Flag_is_SystemInitialised() => " + true + "" + ".%n");
@@ -274,11 +265,8 @@ public class Simulation {
                 MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_SIMULATION_ThreadListen);
             }
         }
-       */
     }
     public void Thread_Output_Draw(byte sysThreadId, Framework obj) {
-   /*
-        System.out.printf("thread " + sysThreadId + " :: Entered THREAD member function" + ".%n");
         System.out.printf("thread " + sysThreadId + " :: entered : Thread_OutputRespond : dyn_Thread_OutputRespond(sysThreadId)" + ".%n");
         boolean checkPass = false;
         while (!checkPass) {
@@ -290,14 +278,7 @@ public class Simulation {
         checkPass = false;
         boolean temp = true;
         while (!checkPass) {
-            temp = true;
-            for (byte index = 0; index < 3; index++) {
-                if (!obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(sysThreadId, index)) {
-                    temp = false;
-                }
-            }
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_SIMULATION_ThreadRespond);
-            obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_set_Flag_is_SystemInitialised(sysThreadId, temp);
             if (obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 checkPass = true;
             }
@@ -305,7 +286,6 @@ public class Simulation {
         }
         checkPass = false;
         while (!checkPass) {
-            /*
             MutexQue.startByLock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_SIMULATION_ThreadRespond);
             if (obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_CLASS_get_Execute_Control(sysThreadId).dyn_REG_get_Flag_is_SystemInitialised(sysThreadId)) {
                 System.out.printf("thread " + sysThreadId + " :: <= CC : dyn_REG_get_Flag_is_SystemInitialised() = " + true + "%n");//todo SIMULATION
@@ -483,10 +463,6 @@ public class Simulation {
                 MutexQue.endByUnlock(sysThreadId, obj.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_get_PgmHandle_MutexQue_For_Epicentre_ConditionCode(sysThreadId), stat_CONST_AccessId_MutexQueConditionCode_SIMULATION_ThreadRespond);
             }
         }
-    */
-    }
-    public static void Terminatestat_REG_scanner(byte sysThreadId) {
-        stat_REG_scanner.close();
     }
     public boolean dyn_REG_get_FLAG_isSimulationComplete(byte sysThreadId) {
         boolean result = true;

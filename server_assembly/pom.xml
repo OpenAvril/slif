@@ -6,7 +6,7 @@
 
     <groupId>com.github.openavril.slif</groupId>
     <artifactId>slif_server_sssembly</artifactId>
-    <version>1.4.1-SNAPSHOT</version>
+    <version>1.4.5-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -58,16 +58,16 @@
         <dependency>
             <groupId>com.github.openavril.slif</groupId>
             <artifactId>slif_launch_que</artifactId>
-            <version>1.4.4</version>
+            <version>1.4.5</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.4.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.5.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.github.openavril.slif</groupId>
             <artifactId>slif_epicentre</artifactId>
-            <version>1.4.2-SNAPSHOT</version>
+            <version>1.4.5-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.2-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.5-SNAPSHOT.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

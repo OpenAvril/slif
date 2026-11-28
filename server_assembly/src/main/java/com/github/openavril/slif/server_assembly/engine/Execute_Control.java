@@ -16,7 +16,7 @@ public class Execute_Control {
     }
     public void app_Terminate_All_Threads(byte sysThreadId, Framework obj) {
         System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Execute_Control : app_Terminate_All_Threads(byte sysThreadId)" + ".%n");
-        for(byte threadId = 0; threadId < Global.stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(sysThreadId); threadId++) {
+        for(byte threadId = 1; threadId < Global.stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(sysThreadId); threadId++) {
             stat_REG_set_Item_On_List_Of_Flag_ThreadInitialised(sysThreadId, threadId, false);
         }
         stat_REG_set_Flag_is_SystemInitialised(sysThreadId, false);
@@ -196,7 +196,7 @@ public class Execute_Control {
     }
     private static void stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(byte sysThreadId) {
         System.out.printf("thread " + sysThreadId + " :: entered : Server_Assembly : Execute_Control : stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(byte sysThreadId)" + ".%n");
-        for(byte threadId = 0; threadId < Global.stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(sysThreadId); threadId++) {
+        for(byte threadId = 1; threadId < Global.stat_REG_get_ServerAssembly_NUMBER_OF_THREADS(sysThreadId); threadId++) {
             stat_REG_ptr_Flag_array_ThreadInitialised[threadId] = false;
         }
         System.out.printf("thread " + sysThreadId + " :: exiting : Server_Assembly : Execute_Control : stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(byte sysThreadId)" + ".%n");

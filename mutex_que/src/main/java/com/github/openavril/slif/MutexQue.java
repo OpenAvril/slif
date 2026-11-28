@@ -12,14 +12,6 @@ public class MutexQue {
     }
     public static void generateProgram(byte sysThreadId) {
         IO_MutexQue.generateProgram(sysThreadId);
-        long handleId = Long.MAX_VALUE;
-        byte bytes_AccessId = (byte)255;
-        byte MAX_NUMBER_OF_THREADS_FOR_ACCESS = (byte)255;
-        IO_MutexQue.endByUnlock(sysThreadId, handleId, bytes_AccessId);
-        long tempA0 = IO_MutexQue.generateHandle(sysThreadId);
-        IO_MutexQue.reInitialiseHandle(sysThreadId, handleId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
-        IO_MutexQue.startByLock(sysThreadId, handleId, bytes_AccessId);
-        IO_MutexQue.terminateProgram(sysThreadId);
     }
     public static void reInitialiseHandle(byte sysThreadId, long handleId, byte MAX_NUMBER_OF_CONCURRENT_TASK_THREADS) {
         IO_MutexQue.reInitialiseHandle(sysThreadId, handleId, MAX_NUMBER_OF_CONCURRENT_TASK_THREADS);

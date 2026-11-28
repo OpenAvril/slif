@@ -4,18 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b962a268-f1f7-4c13-b799-c40e7ab002d8" name="Changes" comment="DEVELOPMENT_2026_11_28_1231, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, Implementation, Testing, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1231.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+    <list default="true" id="b962a268-f1f7-4c13-b799-c40e7ab002d8" name="Changes" comment="DEVELOPMENT_2026_11_28_1351, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1351.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
       <change afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/libzinc_epicentre.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/launch_que/src/main/java/libs/libzinc_launch_que.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mutex_que/src/main/java/libs/libzinc_mutex_que.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.2-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_epicentre-1.4.5-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_launch_que-1.4.5.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs/slif_mutex_que-1.4.5.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epicentre/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/com/github/openavril/slif/Epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/com/github/openavril/slif/Epicentre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epicentre/src/main/java/libs/IO_Epicentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/epicentre/src/main/java/libs/IO_Epicentre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch_que/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/launch_que/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch_que/src/main/java/com/github/openavril/slif/LaunchQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/launch_que/src/main/java/com/github/openavril/slif/LaunchQue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch_que/src/main/java/libs/IO_LaunchQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/launch_que/src/main/java/libs/IO_LaunchQue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch_que/src/main/java/libs/Java_zinc_control_launch_que.java" beforeDir="false" afterPath="$PROJECT_DIR$/launch_que/src/main/java/libs/Java_zinc_control_launch_que.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutex_que/src/main/java/com/github/openavril/slif/MutexQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/mutex_que/src/main/java/com/github/openavril/slif/MutexQue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_assembly/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/SIMULATION/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/SIMULATION/Simulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute_Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute_Control.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Global.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java" beforeDir="false" afterPath="$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java" afterDir="false" />
     </list>
@@ -78,7 +89,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "DEVELOPMENT",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif/server_assembly",
+    "last_opened_file_path": "/home/brenton-james/IdeaProjects/slif/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/libs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -142,7 +153,7 @@
       <updated>1795230059901</updated>
       <workItem from="1795744203590" duration="1304000" />
       <workItem from="1795831071528" duration="223000" />
-      <workItem from="1795831912654" duration="5974000" />
+      <workItem from="1795831912654" duration="13603000" />
     </task>
     <task id="LOCAL-00001" summary="DEVELOPMENT_2026_11_21_1323 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, **Testing**, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_21_1323.&#10; - slif_mutex_que-1.3.0.jar&#10; - slif_launch_que-1.3.0.jar&#10; - slif_epicentre-1.3.0-SNAPSHOT.jar (Testbench)&#10;&#10;---&#10;TODO: &#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
       <option name="closed" value="true" />
@@ -256,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795833128243</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="DEVELOPMENT_2026_11_28_1351, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1351.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---">
+      <option name="closed" value="true" />
+      <created>1795838017640</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1795838017640</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +295,8 @@
     <MESSAGE value="DEVELOPMENT_2026_11_28_1218 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;PHASE: Design, Implementation, Testing, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1218.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - slif_epicentre-x.x.x.jar&#10; - LIBRARIES:&#10;   - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
     <MESSAGE value="DEVELOPMENT_2026_11_28_1225 &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, Implementation, Testing, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1225.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
     <MESSAGE value="DEVELOPMENT_2026_11_28_1231, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, Implementation, Testing, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1231.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_28_1231, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, Implementation, Testing, *Review*.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1231.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;TODO:&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <MESSAGE value="DEVELOPMENT_2026_11_28_1351, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1351.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEVELOPMENT_2026_11_28_1351, &lt;COMPILE_SUCCESS&gt; &lt;RUNTIME_TEST&gt;.&#10;&#10;---&#10;PHASE: Design, *Implementation*, **Testing**, Review.&#10;&#10;---&#10;BUILT: DEVELOPMENT_2026_11_28_1351.&#10; - slif_mutex_que-1.4.5.jar&#10; - slif_launch_que-1.4.4.jar&#10; - slif_epicentre-1.4.2-SNAPSHOT.jar&#10; - server_assembly-1.4.1-SNAPSHOT.jar&#10; &#10;---&#10;IMPLEMENTED:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; &#10;---&#10;TODO:&#10; - Thread boot, system boot, while(isSysInitialised) {}.&#10; - PUBLISH&#10;   - LIBRARIES:&#10;     - slif_epicentre-x.x.x.jar&#10;     - server_assembly-x.x.x.jar&#10;&#10;---&#10;---" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -292,7 +312,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java</url>
-          <line>162</line>
+          <line>216</line>
           <properties class="com.github.openavril.slif.server_assembly.engine.Execute">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -301,7 +321,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java</url>
-          <line>100</line>
+          <line>102</line>
           <properties class="com.github.openavril.slif.server_assembly.engine.Execute">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -310,7 +330,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java</url>
-          <line>172</line>
+          <line>226</line>
           <properties class="com.github.openavril.slif.server_assembly.engine.Execute">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -319,7 +339,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java</url>
-          <line>313</line>
+          <line>314</line>
           <properties class="com.github.openavril.slif.server_assembly.engine.Framework" method="stat_STRUCT_boot3_INITIALISE_Input">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -328,7 +348,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java</url>
-          <line>250</line>
+          <line>251</line>
           <properties class="com.github.openavril.slif.server_assembly.engine.Framework" method="stat_CLASS_boot3_INITIALISE_Framework">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -337,7 +357,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java</url>
-          <line>403</line>
+          <line>404</line>
           <properties class="com.github.openavril.slif.server_assembly.engine.Framework" method="stat_STRUCT_get_User_Algorithm">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -355,7 +375,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java</url>
-          <line>413</line>
+          <line>412</line>
           <properties class="com.github.openavril.slif.server_assembly.engine.Framework">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -364,16 +384,61 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_OutputRespond.java</url>
-          <line>82</line>
+          <line>75</line>
           <properties class="com.github.openavril.slif.server_assembly.independent.threads.Thread_OutputRespond" method="dyn_REG_get_flag_isNewOutputReady">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java</url>
+          <line>220</line>
+          <properties class="com.github.openavril.slif.server_assembly.engine.Framework" method="stat_CLASS_boot0_DECLAIRE_Framework">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Framework.java</url>
+          <line>341</line>
+          <properties class="com.github.openavril.slif.server_assembly.engine.Framework" method="stat_STRUCT_boot3_INITIALISE_User_Input">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java</url>
+          <line>94</line>
+          <properties class="com.github.openavril.slif.server_assembly.engine.Execute" method="stat_CLASS_boot1_DEFINE_Execute_Control">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java</url>
+          <line>114</line>
+          <properties class="com.github.openavril.slif.server_assembly.engine.Execute" method="stat_REG_boot2_SUBSTANTIATE_List_Of_Threads">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/engine/Execute.java</url>
+          <line>13</line>
+          <properties class="com.github.openavril.slif.server_assembly.engine.Execute" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/server_assembly/src/main/java/com/github/openavril/slif/server_assembly/independent/threads/Thread_InputListen.java</url>
-          <line>108</line>
+          <line>99</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

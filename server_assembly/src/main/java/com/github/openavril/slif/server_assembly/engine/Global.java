@@ -97,6 +97,10 @@ public class Global {
         System.out.printf("thread " + sysThreadId + " :: <= byte[] : stat_CONVERT_VALUEofBoolean_To_ByteArray(sysThreadId)" + ".%n");
         return new byte[] { (byte) (bool ? 1 : 0) };
     }
+    public static byte[] stat_CONVERT_VALUEofByte_To_ByteArray(byte sysThreadId, boolean bool) {
+        System.out.printf("thread " + sysThreadId + " :: <= byte[] : stat_CONVERT_VALUEofBoolean_To_ByteArray(sysThreadId)" + ".%n");
+        return new byte[] { (byte) (bool ? 1 : 0) };
+    }
     public static byte[] stat_CONVERT_VALUEofLong_To_ByteArray(byte sysThreadId, long value) {
         System.out.printf("thread " + sysThreadId + " :: <= byte[] :     public static byte[] stat_CONVERT_VALUEofLong_To_ByteArray(byte sysThreadId, long value) {\n(sysThreadId)" + ".%n");
         return ByteBuffer.allocate(Long.BYTES).putLong(value).array();

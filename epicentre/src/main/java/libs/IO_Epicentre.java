@@ -105,10 +105,10 @@ public class IO_Epicentre {
         }
         return result;
     }
-    public static byte[] get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte handleId) {
-        byte[] result = new byte[255];
+    public static long get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte handleId) {
+        long result = Long.MAX_VALUE;
         try {
-            result = Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(sysThreadId, handleId);
+            result = Global.stat_CONVERT_ByteArray_To_Long(Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(sysThreadId, handleId));
         } catch (NoClassDefFoundError e) {
             System.out.printf("NoClassDefFoundError : Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte handleId)%n");
         } catch (UnsatisfiedLinkError e) {
@@ -118,10 +118,10 @@ public class IO_Epicentre {
         }
         return result;
     }
-    public static byte[] get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte handleId) {
-        byte[] result = new byte[255];
+    public static long get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte handleId) {
+        long result = Long.MAX_VALUE;
         try {
-            result = Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(sysThreadId, handleId);
+            result = Global.stat_CONVERT_ByteArray_To_Long(Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(sysThreadId, handleId));
         } catch (NoClassDefFoundError e) {
             System.out.printf("NoClassDefFoundError : Java_zinc_epicentre.INSTANCE.get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte handleId)%n");
         } catch (UnsatisfiedLinkError e) {

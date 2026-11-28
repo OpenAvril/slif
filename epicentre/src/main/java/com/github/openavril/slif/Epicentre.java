@@ -8,24 +8,6 @@ public class Epicentre {
     }
     public static void generateProgram(byte sysThreadId) {
         IO_Epicentre.generateProgram(sysThreadId);
-        byte handleId = Byte.MAX_VALUE;
-        long praiseId = Long.MAX_VALUE;
-        double value_A = Double.MAX_VALUE;
-        double value_B = Double.MAX_VALUE;
-        byte NUMBER_OF_TASK_THREADS = (byte)255;
-        long tampaA0 = IO_Epicentre.generateHandle(sysThreadId);
-        byte[] tampaA1 = IO_Epicentre.get_Output(sysThreadId, handleId, praiseId);
-        boolean tampaA2 = IO_Epicentre.get_FLAG_isINITIALISED(sysThreadId, handleId);
-        boolean tampaA4 = IO_Epicentre.get_FLAG_isStackLoaded_ServerInputReceive(sysThreadId, handleId);
-        boolean tampaA5 = IO_Epicentre.get_FLAG_isStackLoaded_ServerOutputSend(sysThreadId, handleId);
-        long tampaA6 = IO_Epicentre.get_MetaData_PraiseEventId(sysThreadId, handleId);
-        IO_Epicentre.set_InputItemsFor_praise0(sysThreadId, handleId, praiseId, value_A, value_B);
-        IO_Epicentre.set_InputItemsFor_praise1(sysThreadId, handleId, praiseId, value_A, value_B);
-        IO_Epicentre.set_InputItemsFor_praise2(sysThreadId, handleId, praiseId, value_A, value_B);
-        IO_Epicentre.set_InputItemsFor_praise3(sysThreadId, handleId, praiseId, value_A, value_B);
-        IO_Epicentre.set_MetaData_PraiseEventId(sysThreadId, handleId, praiseId);
-        IO_Epicentre.reInitialiseHandle(sysThreadId, handleId, NUMBER_OF_TASK_THREADS);
-        IO_Epicentre.terminateProgram(sysThreadId);
     }
     public static byte[] get_Output(byte sysThreadId, byte handleId, long praiseId) {
         return IO_Epicentre.get_Output(sysThreadId, handleId, praiseId);
@@ -41,6 +23,12 @@ public class Epicentre {
     }
     public static long get_MetaData_PraiseEventId(byte sysThreadId, byte handleId) {
         return IO_Epicentre.get_MetaData_PraiseEventId(sysThreadId, handleId);
+    }
+    public static long get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(byte sysThreadId, byte handleId) {
+        return IO_Epicentre.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(sysThreadId, handleId);
+    }
+    public static long get_PGM_HandleId_For_MutexQue_At_OutputStackBuffer(byte sysThreadId, byte handleId) {
+        return IO_Epicentre.get_PGM_HandleId_For_MutexQue_At_InputStackBuffer(sysThreadId, handleId);
     }
     public static void set_InputItemsFor_praise0(byte sysThreadId, byte handleId, long praiseId, double value_A, double value_B) {
         IO_Epicentre.set_InputItemsFor_praise0(sysThreadId, handleId, praiseId, value_A, value_B);

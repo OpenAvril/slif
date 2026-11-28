@@ -1,4 +1,5 @@
 package com.github.openavril.slif.server_assembly.engine;
+
 import com.github.openavril.slif.server_assembly.SIMULATION.Simulation;
 import com.github.openavril.slif.server_assembly.independent.Algorithm;
 import com.github.openavril.slif.server_assembly.independent.Input;
@@ -149,7 +150,7 @@ public class Framework {
         System.out.printf("thread " + sysThreadId + "%n");
 
         System.out.printf("thread " + sysThreadId + " : started PROGRAM - LAUNCH THREADS" + ".%n");
-        this.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_APP_Launch_Threads(sysThreadId, this);
+        //this.dyn_CLASS_get_App(sysThreadId).dyn_CLASS_get_Execute(sysThreadId).dyn_APP_Launch_Threads(sysThreadId, this);//TODO
         System.out.printf("thread " + sysThreadId + " : exiting PROGRAM - LAUNCH THREADS" + ".%n");
         System.out.printf("thread " + sysThreadId + " : exiting DESKTOP APPLICATION generate_Program(sysThreadId)" + ".%n");
         System.out.printf("thread " + sysThreadId + " : exiting CONSTRUCTOR Framework(sysThreadId)%n");
@@ -404,16 +405,13 @@ public class Framework {
     private static User_Algorithm stat_STRUCT_get_User_Algorithm(byte sysThreadId) {
         return stat_STRUCT_User_Algorithms;
     }
-
     private static void stat_CLASS_boot1_DEFINE_SIMULATION(byte sysThreadId) {
         SIMULATION = null;
     }
-
     private static void stat_CLASS_boot3_INITIALISE_SIMULATION(byte sysThreadId, Framework obj) {
         SIMULATION = new Simulation(sysThreadId, obj, obj.dyn_STRUCT_get_Input(sysThreadId), obj.dyn_STRUCT_get_Output(sysThreadId));
         while (SIMULATION == null) {}
     }
-
     private static Simulation stat_CLASS_get_SIMULATION(byte sysThreadId) {
         return SIMULATION;
     }
