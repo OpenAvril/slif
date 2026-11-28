@@ -138,7 +138,7 @@ Copy from IntelliJ    'target/slif_mutex_que-1.0.jar'
 ## Using.
 
 ---
-# MutexQue.
+### MutexQue.
 
 ````
 import com.github.openavril.slif.MutexQue;
@@ -165,21 +165,21 @@ MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
 ````
 
 ---
-# CBOC - Concurrent Bussing On Chip.
+### CBOC - Concurrent Bussing On Chip.
 
 ````
 import com.github.openavril.slif.CBOC;
 ````
 
 ---
-# Launch Que.
+### Launch Que.
 
 ````
 import com.github.openavril.slif.LaunchQue;
 ````
 
 ---
-# Epicentre.
+### Epicentre.
 
 ````
 import com.github.openavril.slif.Epicentre;
