@@ -6,10 +6,10 @@
 ## slif Sub-packages.
 
 --- 
- - MutexQue : slif_mutex_que, v-1.4.1.
+ - MutexQue : slif_mutex_que, v-1.4.5.
 
 ---
- - LaunchQue : slif_launch_que, v-1.4.1.
+ - LaunchQue : slif_launch_que, v-1.4.5.
 
 ---
 
@@ -17,8 +17,11 @@
 ## *UNDER DEVELOPMENT*
 
 ---
- - LeftHemisphore : slif_epicentre-1.4.2-SNAPSHOT ***TEMPLATE for user Compilation***
+ - LeftHemisphore : slif_epicentre-1.4.5-SNAPSHOT ***TEMPLATE for user Compilation***
  
+---
+ - Server Shell : slif_server_assembly-1.4.5-SNAPSHOT ***TEMPLATE for user Compilation***
+
 ---
  - Stemisphore : slif_stemisphore, v-1.2.x.
  
@@ -34,7 +37,7 @@ Java .Jar 'slif' Raspberry Pi prototype board firmware update :: MIT package(s) 
 
 Is planned to become a part of as part of Grittith University - Nathan Open Source comtrubitation to MIT packages for my master thesis project, is an open-source development project hosted on GitHub under the Silicon Life ecosystem.
 
-Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with mutpile cores. PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
+Via concurrency, 'slif' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." Expect a united trio, making developer / editors protytype board(s). xilinx, Arduino, Raspberry Pi. All making boards for editors with mutpile cores. PRAM Model and the BNI Thread for your custom BNI tasks. Such needed to fully test-bench a Concurrent Full Stack Development side for a Server inside a firmware Application.
 
 ---
 ## CONCURRENT Systems: 
@@ -61,20 +64,20 @@ A master by coursework with five specialisation electives, I propose Convener of
 
 ---
 ---
-## zinc : zinc::.*
+## slif : slif::.*
 ---
-### MutexQue : zinc_mutex_que, v-1.2.0.
+### MutexQue : slif_mutex_que, v-1.2.0.
   
 Exclusive Cohesion Mutex Queue:   
 
 CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
 
-Via concurrency, 'zinc' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly. 
+Via concurrency, 'slif' and 'slif' libraries double the combined input and output efficiency with three "Threads; Input, Output, Task." on Raspberry Pi & Arduino via respectivly. 
 
 ---
-### Stemisphore : zinc_stemisphore, v-1.2.0.
+### Stemisphore : slif_stemisphore, v-1.2.0.
 
-System Bussing for Zinc Neural Hemisphoric Chip:
+System Bussing for slif Neural Hemisphoric Chip:
 
 CLIB Concurrent System Bussing.
 
@@ -89,7 +92,7 @@ A single Bus deploying an ExclusiveCohesionMutexQueue('Handle_Id=BusId', 'Access
 and each Station deploying an ExclusiveCohesionMutexQueue('Handle_Id=StationId', 'AccessId_B=Thread4Mutex').
 
 ---
-### LaunchQue : zinc_launch_que, v-1.2.0.
+### LaunchQue : slif_launch_que, v-1.2.0.
 
 Left Hemisphore Task Launcher: 
 
@@ -99,7 +102,7 @@ Concurrency; Core, Post-Process.
 
 
 ---
-### LeftHemisphore : zinc_epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
+### LeftHemisphore : slif_epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
   
 Left Hemisphore Logic Task Result Deducer:      
 
@@ -108,6 +111,16 @@ Consumer of spare threads.
 Left Hemisphore Logic Task Result Deducer: CLIB Concurrent Server with independent task threads and IO wrapper.
   
 **TEMPLATE for user Compilation**
+
+---
+### Server Shell : slif_server_assembly-1.4.5-SNAPSHOT ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
+
+IMPLEMENTS:
+ - slif_mutex_que
+ - slif_launch_que
+ - slif_epicentre
+
+Injector / Extractor Shell - for a Super computer on a chip for the modern server.
 
 ---
 ### ThreadsLog: ***UNDER DEVELOPMENT***
@@ -140,9 +153,9 @@ cmake --build build
  - File - > New -> Project from Version Control.
  - URL : user entry 'https://github.com/OpenAvril/slif.git'
    
-Copy from CLion    'build/CLIB_ZincNeuralChip/libs/Control/libs/CLIB_MutexQue/libzinc_control_mutex_que.a'
+Copy from CLion    'build/CLIB_slifNeuralChip/libs/Control/libs/CLIB_MutexQue/libslif_control_mutex_que.a'
 
-Paste to IntelliJ  'src/main/java/libs/libzinc_control_mutex_que.a' 
+Paste to IntelliJ  'src/main/java/libs/libslif_control_mutex_que.a' 
 
 Copy from IntelliJ    'target/slif_mutex_que-1.0.jar'
 
@@ -153,7 +166,7 @@ import com.github.openavril.slif.MutexQue;
 
 MutexQue::generateProgram(sysThreadId);
 
-int* stat_REG_HandleId_For_PGM_zincMutexQue = MutexQue::generateHandle(sysThreadId);
+int* stat_REG_HandleId_For_PGM_slifMutexQue = MutexQue::generateHandle(sysThreadId);
 
 MutexQue::reInitialiseHandle(sysThreadId, handleId, MAX_NUMBER_OF_THREADS_FOR_ACCESS);
 
@@ -184,7 +197,7 @@ MutexQue::endByUnlock(sysThreadId, handleId, ACCESS_ID);
   
   (4)C **Core_Injection**,
   
-// zinc_epicentre.
+// slif_epicentre.
 
   (5)D **concurrentTask(s)_1**,
   
@@ -216,11 +229,11 @@ thread => ***Input_Scanner*** || ***NETWORKING***
 
 thread => ***Core_Injection***
  
- (3) **zinc_epicentre : Stack_of_Input** *(HandleId_Stack_of_Input_R-W-Buffer = MutexQue::generateHandle())*,
+ (3) **slif_epicentre : Stack_of_Input** *(HandleId_Stack_of_Input_R-W-Buffer = MutexQue::generateHandle())*,
 
 thread => ***CONCURRENT***
  
- (4) **zinc_epicentre : Stack_of_Output** *(HandleId_Stack_of_Output_R-W-Buffer = MutexQue::generateHandle())*,
+ (4) **slif_epicentre : Stack_of_Output** *(HandleId_Stack_of_Output_R-W-Buffer = MutexQue::generateHandle())*,
 
 thread => ***Core_Extraction***,
  
