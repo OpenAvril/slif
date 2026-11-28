@@ -49,7 +49,9 @@ A master by coursework with five specialisation electives, I propose Convener of
 ## zinc : zinc::.*
 ---
 ### MutexQue : slif_mutex_que-1.3.0.jar.
-  
+
+_DEPLOYS: libzinc_mutex_que.a_
+
 Exclusive Cohesion Mutex Queue:   
 
 CLIB Request, Wait, Write-Read for 'ThreadId' at 'DataCluster'.
@@ -58,6 +60,8 @@ Via concurrency, 'zinc' and 'slif' libraries double the combined input and outpu
 
 ---
 ### CBOC : slif_cboc, v-1.2.0.
+
+_DEPLOYS: libzinc_stemisphore.a_
 
 Concurrent Bussing On A Chip / CLIB Concurrent System Bussing / Open Concurrent SCADA.
 
@@ -68,6 +72,8 @@ MainStreamBussing: CLIB Compound of ExclusiveCohesionMutexQueue(s). An array of 
 ---
 ### LaunchQue : slif_launch_que, v-1.2.0.
 
+_DEPLOYS: libzinc_launch_que.a_
+
 Left Hemisphore Task Launcher: 
 
 CLIB Request, Wait, Launch for 'ThreadId' at Server-Client.
@@ -77,7 +83,9 @@ Concurrency; Core, Post-Process.
 
 ---
 ### LeftHemisphore : slif_epicentre. ***TEMPLATE for user Compilation*** ***UNDER DEVELOPMENT***
-  
+
+_DEPLOYS: libzinc_epicentre.a_
+
 Left Hemisphore Logic Task Result Deducer:      
 
 Consumer of spare threads.
