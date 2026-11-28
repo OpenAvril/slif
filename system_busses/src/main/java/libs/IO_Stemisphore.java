@@ -27,9 +27,9 @@ public class IO_Stemisphore {
             throw new NullPointerException("NullPointerException : NoClassDefFoundError : IO_Stemisphore : generateProgram(sysThreadId);.%n");
         }
     }
-    public static void load(byte sysThreadId, byte handleId, StemTicket StemTicket, byte[] bytes_Cargo) {
+    public static void load(byte sysThreadId, byte handleId, byte[] StemTicket, byte[] bytes_Cargo) {
         try {
-            Java_zinc_stemisphore.INSTANCE.load(sysThreadId, handleId, StemTicket, bytes_Cargo);
+            Java_zinc_stemisphore.INSTANCE.load(sysThreadId, handleId, Global.stat_CONVERT_ByteArray_To_ListOfParameterInByteArray(sysThreadId, StemTicket), bytes_Cargo);
         } catch (NoClassDefFoundError e) {
             System.out.printf("thread " + sysThreadId + " :: NoClassDefFoundError : IO_Stemisphore : load(byte sysThreadId, byte handleId, StemTicket StemTicket, byte[] bytes_Cargo).%n");
         } catch (UnsatisfiedLinkError e) {
@@ -49,9 +49,9 @@ public class IO_Stemisphore {
             throw new NullPointerException("NullPointerException : NoClassDefFoundError : IO_Stemisphore : reInitialiseHandle(sysThreadId, byte handleId, byte MAX_NUMBER_OF_JUNCTIONS);.%n");
         }
     }
-    public static byte[] unload(byte sysThreadId, byte handleId, StemTicket StemTicket) {
+    public static byte[] unload(byte sysThreadId, byte handleId, byte[] StemTicket) {
         try {
-            Java_zinc_stemisphore.INSTANCE.unload(sysThreadId, handleId, StemTicket);
+            Java_zinc_stemisphore.INSTANCE.unload(sysThreadId, handleId, Global.stat_CONVERT_ByteArray_To_ListOfParameterInByteArray(sysThreadId, StemTicket));
         } catch (NoClassDefFoundError e) {
             System.out.printf("thread " + sysThreadId + " :: NoClassDefFoundError : IO_Stemisphore : unload(byte sysThreadId, byte handleId, StemTicket StemTicket).%n");
         } catch (UnsatisfiedLinkError e) {
