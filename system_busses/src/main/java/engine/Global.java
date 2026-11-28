@@ -19,11 +19,11 @@ public class Global {
         StemTicket ticket = new StemTicket();
         LinkedList<byte[]> listOfParameters = new LinkedList<byte[]>();
         listOfParameters = (LinkedList<byte[]>) (Object) byteArray;
-        ticket.set_BusIdForJunctionPair(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int8(sysThreadId, (byte[])listOfParameters.get(0)));
-        ticket.set_Arrival_JunctionId(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int64(sysThreadId, (byte[])listOfParameters.get(1)));
-        ticket.set_Arrival_AccessId(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int16(sysThreadId, (byte[])listOfParameters.get(2)));
-        ticket.set_Arrival_JunctionId(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int64(sysThreadId, (byte[])listOfParameters.get(3)));
-        ticket.set_Arrival_AccessId(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int16(sysThreadId, (byte[])listOfParameters.get(4)));
+        ticket.set_BusIdForJunctionPair(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int8(sysThreadId, (byte[])Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, listOfParameters.get(0)));
+        ticket.set_Arrival_JunctionId(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int64(sysThreadId, (byte[])Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, listOfParameters.get(1)));
+        ticket.set_Arrival_AccessId(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int16(sysThreadId, (byte[])Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, listOfParameters.get(2)));
+        ticket.set_Arrival_JunctionId(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int64(sysThreadId, (byte[])Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, listOfParameters.get(3)));
+        ticket.set_Arrival_AccessId(sysThreadId, Global.stat_CONVERT_ByteArray_To_Int16(sysThreadId, (byte[])Global.stat_CONVERT_ByteArray_To_ReverseByteArray(sysThreadId, listOfParameters.get(4)));
         return ticket;
     }
     public static byte[] stat_CONVERT_ByteArray_To_ReverseByteArray(byte sysThreadId, byte[] buffer) {
